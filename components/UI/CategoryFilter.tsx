@@ -1,5 +1,6 @@
 'use client'
 import { CATEGORY_COLORS } from '@/lib/timelineUtils'
+import { useTranslation } from '@/hooks/useLocale'
 
 interface Props {
   active: string | null
@@ -8,6 +9,7 @@ interface Props {
 }
 
 export default function CategoryFilter({ active, onChange, counts }: Props) {
+  const { t } = useTranslation()
   const cats = Object.keys(counts).filter(c => counts[c] > 0)
   if (cats.length === 0) return null
 
@@ -21,7 +23,7 @@ export default function CategoryFilter({ active, onChange, counts }: Props) {
             : 'bg-white/5 text-white/35 hover:bg-white/8'
         }`}
       >
-        Todos
+        {t('home.all')}
       </button>
       {cats.map(cat => {
         const color = CATEGORY_COLORS[cat] ?? '#94a3b8'

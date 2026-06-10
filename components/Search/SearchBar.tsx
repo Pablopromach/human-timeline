@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { HistoricalFigure } from '@/types'
 import { searchFigures } from '@/lib/searchEngine'
 import { getCategoryColor } from '@/lib/timelineUtils'
+import { useTranslation } from '@/hooks/useLocale'
 
 interface Props {
   allFigures: HistoricalFigure[]
@@ -13,6 +14,7 @@ interface Props {
 }
 
 export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
+  const { t, fy } = useTranslation()
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -46,7 +48,7 @@ export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
           value={query}
           onChange={e => { setQuery(e.target.value); setOpen(true) }}
           onFocus={() => setOpen(true)}
-          placeholder="Buscar personaje… Napoleón, Einstein, Cleopatra…"
+          placeholder={t('home.searchPlaceholder')}
           className="w-full bg-white/5 border border-white/10 rounded-xl pl-10 pr-9 py-2.5 text-sm text-white/80 placeholder-white/25 outline-none focus:border-indigo-500/50 focus:bg-white/8 transition-all duration-200 font-body"
           style={{ fontFamily: 'var(--font-body)' }}
         />
@@ -101,9 +103,9 @@ export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
                       {r.figure.name}
                     </div>
                     <div className="text-xs text-white/35 font-mono mt-0.5">
-                      {r.figure.birthYear < 0 ? `${Math.abs(r.figure.birthYear)} a.C.` : r.figure.birthYear}
+                      {fy(r.figure.birthYear)}
                       {' — '}
-                      {r.figure.deathYear < 0 ? `${Math.abs(r.figure.deathYear)} a.C.` : r.figure.deathYear}
+                      {fy(r.figure.deathYear)}
                       {' · '}
                       {r.figure.country}
                     </div>
@@ -115,7 +117,7 @@ export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
                     {r.figure.category}
                   </span>
                   {isAdded && (
-                    <span className="text-xs text-white/30 flex-shrink-0">Añadido</span>
+                    <span className="text-xs text-white/30 flex-shrink-0">{t('home.search.added')}</span>
                   )}
                 </motion.button>
               )

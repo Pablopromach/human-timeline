@@ -7,7 +7,7 @@ import { ArrowLeft, Search, Share2, RotateCcw, Infinity as InfinityIcon, ListChe
 import { HistoricalFigure } from '@/types'
 import figuresData from '@/data/figures.json'
 import { searchFigures } from '@/lib/searchEngine'
-import { getCategoryColor, formatYear } from '@/lib/timelineUtils'
+import { getCategoryColor } from '@/lib/timelineUtils'
 import {
   getRandomTargetYear,
   scoreAnswer,
@@ -16,6 +16,9 @@ import {
   ScoreResult,
 } from '@/lib/game'
 import HumanTimelineIcon from '@/components/UI/HumanTimelineIcon'
+import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
+import { useTranslation } from '@/hooks/useLocale'
+import { Locale } from '@/lib/i18n'
 
 const allFigures = figuresData as HistoricalFigure[]
 const MAX_MISSES = 3
@@ -29,8 +32,36 @@ interface RoundResult {
   result: ScoreResult
 }
 
+function getRatingTranslated(score: number, t: (k: string) => string) {
+  const r = getScoreRating(score)
+  const pct = (score / (TOTAL_ROUNDS * 10)) * 100
+  let labelKey = 'rating.review'
+  if (pct >= 90) labelKey = 'rating.master'
+  else if (pct >= 75) labelKey = 'rating.brilliant'
+  else if (pct >= 55) labelKey = 'rating.advanced'
+  else if (pct >= 35) labelKey = 'rating.curious'
+  else if (pct >= 15) labelKey = 'rating.traveler'
+  return { ...r, label: t(labelKey) }
+}
+
+function getRevealMessage(result: ScoreResult, t: (k: string, v?: Record<string, string | number>) => string): string {
+  const n = result.distance
+  switch (result.status) {
+    case 'perfect': return t('reveal.alive')
+    case 'close':
+      if (result.points === 5) return t('reveal.veryClose', { n })
+      return t('reveal.closeDist', { n })
+    case 'fair': return t('reveal.medDist', { n })
+    case 'far':
+      if (result.points === -3) return t('reveal.farDist', { n })
+      return t('reveal.veryFarDist', { n })
+    case 'wrong': return t('reveal.wrongEra', { n })
+  }
+}
+
 export default function RetoGame() {
   const router = useRouter()
+  const { t, fy, locale } = useTranslation()
   const [phase, setPhase] = useState<Phase>('intro')
   const [mode, setMode] = useState<Mode>('classic')
   const [round, setRound] = useState(1)
@@ -94,16 +125,15 @@ export default function RetoGame() {
 
   const goToResult = useCallback(() => {
     const modeSlug = mode === 'classic' ? 'clasico' : 'infinito'
-    const url = `/reto/r/${modeSlug}-${score}?rounds=${history.length}`
-    router.push(url)
+    router.push(`/reto/r/${modeSlug}-${score}?rounds=${history.length}`)
   }, [mode, score, history.length, router])
 
   // ── INTRO ─────────────────────────────────────────────────────────────────
   if (phase === 'intro') {
     return (
-      <div className="min-h-screen flex flex-col" style={{ background: 'var(--void)' }}>
+      <div className="min-h-[100dvh] flex flex-col" style={{ background: 'var(--void)' }}>
         <Header />
-        <div className="flex-1 flex items-center justify-center px-6 py-12">
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -111,29 +141,27 @@ export default function RetoGame() {
             className="max-w-2xl w-full text-center"
           >
             <div
-              className="inline-block px-3 py-1 rounded-full text-[11px] font-mono tracking-widest uppercase mb-6"
+              className="inline-block px-3 py-1 rounded-full text-[10px] sm:text-[11px] font-mono tracking-widest uppercase mb-4 sm:mb-6"
               style={{ background: 'rgba(245,158,11,0.15)', color: '#f59e0b', border: '1px solid rgba(245,158,11,0.3)' }}
             >
-              · Reto Histórico ·
+              {t('game.tag')}
             </div>
             <h1
-              className="text-5xl md:text-6xl mb-6 leading-[0.95] tracking-tight"
+              className="text-4xl sm:text-5xl md:text-6xl mb-4 sm:mb-6 leading-[0.95] tracking-tight"
               style={{ fontFamily: 'var(--font-display)', color: 'rgba(255,255,255,0.94)', fontStyle: 'italic' }}
             >
-              ¿Quién vivió<br />en este año?
+              {t('game.title1')}<br />{t('game.title2')}
             </h1>
-            <p className="text-white/55 text-base mb-10 leading-relaxed max-w-md mx-auto">
-              Te damos un año al azar. Tú buscas un personaje histórico que viviera entonces.
-              Cuanto más cerca, más puntos.
+            <p className="text-white/55 text-sm sm:text-base mb-8 sm:mb-10 leading-relaxed max-w-md mx-auto px-2">
+              {t('game.subtitle')}
             </p>
 
-            {/* Mode selection */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 sm:mb-8">
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => startGame('classic')}
-                className="glass-2 rounded-2xl p-6 text-left transition-all hover:border-white/20 group"
+                className="glass-2 rounded-2xl p-5 sm:p-6 text-left transition-all hover:border-white/20"
                 style={{ border: '1px solid rgba(255,255,255,0.1)' }}
               >
                 <div className="flex items-center gap-2 mb-3">
@@ -143,13 +171,13 @@ export default function RetoGame() {
                   >
                     <ListChecks size={18} className="text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white/90">Clásico</h3>
+                  <h3 className="text-base sm:text-lg font-semibold text-white/90">{t('game.mode.classic')}</h3>
                 </div>
-                <p className="text-sm text-white/55 leading-snug mb-3">
-                  10 rondas fijas. Suma todos los puntos que puedas y comparte tu marca.
+                <p className="text-xs sm:text-sm text-white/55 leading-snug mb-3">
+                  {t('game.mode.classicDesc')}
                 </p>
                 <div className="text-[10px] font-mono text-indigo-400 tracking-wider">
-                  10 RONDAS · MÁX 100 PTS →
+                  {t('game.mode.classicBadge')}
                 </div>
               </motion.button>
 
@@ -157,7 +185,7 @@ export default function RetoGame() {
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => startGame('infinite')}
-                className="glass-2 rounded-2xl p-6 text-left transition-all hover:border-white/20 group"
+                className="glass-2 rounded-2xl p-5 sm:p-6 text-left transition-all hover:border-white/20"
                 style={{ border: '1px solid rgba(255,255,255,0.1)' }}
               >
                 <div className="flex items-center gap-2 mb-3">
@@ -167,45 +195,44 @@ export default function RetoGame() {
                   >
                     <InfinityIcon size={18} className="text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white/90">Infinito</h3>
+                  <h3 className="text-base sm:text-lg font-semibold text-white/90">{t('game.mode.infinite')}</h3>
                 </div>
-                <p className="text-sm text-white/55 leading-snug mb-3">
-                  Sigue jugando hasta fallar 3 veces (años no vividos). ¿Cuánto aguantas?
+                <p className="text-xs sm:text-sm text-white/55 leading-snug mb-3">
+                  {t('game.mode.infiniteDesc')}
                 </p>
                 <div className="text-[10px] font-mono text-amber-400 tracking-wider flex items-center gap-1">
-                  3 FALLOS Y FUERA <Heart size={9} fill="currentColor" /> <Heart size={9} fill="currentColor" /> <Heart size={9} fill="currentColor" />
+                  {t('game.mode.infiniteBadge')} <Heart size={9} fill="currentColor" /> <Heart size={9} fill="currentColor" /> <Heart size={9} fill="currentColor" />
                 </div>
               </motion.button>
             </div>
 
-            {/* Scoring guide */}
-            <div className="glass rounded-2xl p-5 text-left">
+            <div className="glass rounded-2xl p-4 sm:p-5 text-left">
               <div className="text-[10px] font-mono text-white/30 tracking-widest uppercase mb-3">
-                Sistema de puntos
+                {t('game.scoring.title')}
               </div>
-              <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-xs sm:text-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-emerald-400">🟢 Vivía en el año</span>
+                  <span className="text-emerald-400">🟢 {t('game.scoring.alive')}</span>
                   <span className="font-mono text-emerald-400">+10</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-amber-400">🟡 ≤ 25 años</span>
+                  <span className="text-amber-400">🟡 {t('game.scoring.veryClose')}</span>
                   <span className="font-mono text-amber-400">+5</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-amber-400/70">🟡 ≤ 75 años</span>
+                  <span className="text-amber-400/70">🟡 {t('game.scoring.close')}</span>
                   <span className="font-mono text-amber-400/70">+2</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-white/50">⚪ ≤ 200 años</span>
+                  <span className="text-white/50">⚪ {t('game.scoring.medium')}</span>
                   <span className="font-mono text-white/50">0</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-orange-400">🟠 ≤ 500 años</span>
+                  <span className="text-orange-400">🟠 {t('game.scoring.far')}</span>
                   <span className="font-mono text-orange-400">−3</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-red-400">🔴 más de 500</span>
+                  <span className="text-red-400">🔴 {t('game.scoring.wrong')}</span>
                   <span className="font-mono text-red-400">−6 / −10</span>
                 </div>
               </div>
@@ -218,80 +245,79 @@ export default function RetoGame() {
 
   // ── FINISHED ──────────────────────────────────────────────────────────────
   if (phase === 'finished') {
-    const rating = getScoreRating(score)
+    const rating = getRatingTranslated(score, t)
     return (
-      <div className="min-h-screen flex flex-col" style={{ background: 'var(--void)' }}>
+      <div className="min-h-[100dvh] flex flex-col" style={{ background: 'var(--void)' }}>
         <Header />
-        <div className="flex-1 flex items-center justify-center px-6 py-10 overflow-y-auto">
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-10 overflow-y-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.5 }}
             className="max-w-xl w-full"
           >
-            <div className="text-center mb-8">
+            <div className="text-center mb-6 sm:mb-8">
               <motion.div
                 initial={{ scale: 0, rotate: -30 }}
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ delay: 0.2, type: 'spring', stiffness: 180, damping: 14 }}
-                className="text-7xl mb-4"
+                className="text-6xl sm:text-7xl mb-3 sm:mb-4"
               >
                 {rating.emoji}
               </motion.div>
               <h2
-                className="text-4xl md:text-5xl mb-3 tracking-tight"
+                className="text-3xl sm:text-4xl md:text-5xl mb-2 sm:mb-3 tracking-tight"
                 style={{ fontFamily: 'var(--font-display)', color: rating.color, fontStyle: 'italic' }}
               >
                 {rating.label}
               </h2>
-              <div className="text-7xl font-bold font-mono" style={{ color: 'rgba(255,255,255,0.92)' }}>
+              <div className="text-6xl sm:text-7xl font-bold font-mono" style={{ color: 'rgba(255,255,255,0.92)' }}>
                 {score}
-                <span className="text-white/25 text-3xl">
+                <span className="text-white/25 text-2xl sm:text-3xl">
                   {mode === 'classic' ? `/${TOTAL_ROUNDS * 10}` : ''}
                 </span>
               </div>
-              <div className="text-xs text-white/40 font-mono mt-2 uppercase tracking-widest">
+              <div className="text-[10px] sm:text-xs text-white/40 font-mono mt-2 uppercase tracking-widest">
                 {mode === 'classic'
-                  ? `Modo Clásico · ${history.length} rondas`
-                  : `Modo Infinito · ${history.length} rondas · ${MAX_MISSES} fallos`}
+                  ? `${t('game.modeClassic')} · ${history.length} ${t('game.rounds')}`
+                  : `${t('game.modeInfinite')} · ${history.length} ${t('game.rounds')} · ${MAX_MISSES} ${t('game.misses')}`}
               </div>
             </div>
 
-            {/* History */}
-            <div className="glass rounded-2xl p-5 mb-6">
+            <div className="glass rounded-2xl p-4 sm:p-5 mb-6">
               <div className="text-[10px] font-mono text-white/30 tracking-widest uppercase mb-3">
-                Tu recorrido
+                {t('game.journey')}
               </div>
               <div className="space-y-1.5 max-h-72 overflow-y-auto pr-1">
                 {history.map((h, i) => (
-                  <RoundRow key={i} index={i} round={h} />
+                  <RoundRow key={i} index={i} round={h} t={t} fy={fy} locale={locale} />
                 ))}
               </div>
             </div>
 
-            <div className="flex gap-3 justify-center flex-wrap">
+            <div className="flex gap-2 sm:gap-3 justify-center flex-wrap">
               <button
                 onClick={goToResult}
-                className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-all"
+                className="flex items-center gap-2 px-4 sm:px-5 py-3 rounded-xl text-sm font-semibold transition-all"
                 style={{
                   background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
                   color: 'white',
                   boxShadow: '0 8px 20px rgba(99,102,241,0.3)',
                 }}
               >
-                <Share2 size={15} /> Compartir resultado
+                <Share2 size={15} /> {t('game.shareResult')}
               </button>
               <button
                 onClick={restart}
-                className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-white/8 text-white/85 hover:bg-white/14 transition-all"
+                className="flex items-center gap-2 px-4 sm:px-5 py-3 rounded-xl text-sm font-semibold bg-white/8 text-white/85 hover:bg-white/14 transition-all"
               >
-                <RotateCcw size={15} /> Otra partida
+                <RotateCcw size={15} /> {t('game.playAgain')}
               </button>
               <Link
                 href="/"
-                className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm bg-white/4 text-white/55 hover:text-white/85 transition-all"
+                className="flex items-center gap-2 px-4 sm:px-5 py-3 rounded-xl text-sm bg-white/4 text-white/55 hover:text-white/85 transition-all"
               >
-                Timeline
+                {t('common.timeline')}
               </Link>
             </div>
           </motion.div>
@@ -302,20 +328,20 @@ export default function RetoGame() {
 
   // ── PLAYING / REVEAL ──────────────────────────────────────────────────────
   return (
-    <div className="h-screen flex flex-col overflow-hidden" style={{ background: 'var(--void)' }}>
+    <div className="h-[100dvh] flex flex-col overflow-hidden" style={{ background: 'var(--void)' }}>
       <Header />
 
       {/* Progress bar */}
-      <div className="px-6 pt-4">
+      <div className="px-4 sm:px-6 pt-3 sm:pt-4">
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-[11px] font-mono text-white/40 tracking-wider">
+          <div className="flex items-center justify-between mb-2 gap-3">
+            <span className="text-[10px] sm:text-[11px] font-mono text-white/40 tracking-wider">
               {mode === 'classic'
-                ? <>RONDA {round} <span className="text-white/20">/</span> {TOTAL_ROUNDS}</>
-                : <>RONDA {round} <span className="text-white/20">·</span> MODO INFINITO</>
+                ? <>{t('game.round')} {round} <span className="text-white/20">/</span> {TOTAL_ROUNDS}</>
+                : <>{t('game.round')} {round} <span className="text-white/20 mx-1">·</span> {t('game.round.infinite')}</>
               }
             </span>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               {mode === 'infinite' && (
                 <span className="flex items-center gap-1">
                   {Array.from({ length: MAX_MISSES }).map((_, i) => (
@@ -328,8 +354,8 @@ export default function RetoGame() {
                   ))}
                 </span>
               )}
-              <span className="text-sm font-mono">
-                <span className="text-white/30 mr-2">Puntos</span>
+              <span className="text-xs sm:text-sm font-mono">
+                <span className="text-white/30 mr-1.5 sm:mr-2 hidden xs:inline">{t('game.points')}</span>
                 <span className="font-semibold" style={{ color: score >= 0 ? '#10b981' : '#ef4444' }}>
                   {score >= 0 ? '+' : ''}{score}
                 </span>
@@ -356,7 +382,7 @@ export default function RetoGame() {
         </div>
       </div>
 
-      <div className="flex-1 flex items-center justify-center px-6 py-6 overflow-y-auto">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-4 sm:py-6 overflow-y-auto">
         <div className="max-w-2xl w-full">
           <AnimatePresence mode="wait">
             {phase === 'playing' && (
@@ -365,18 +391,18 @@ export default function RetoGame() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -16 }}
-                transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.35 }}
               >
-                <div className="text-center mb-8">
-                  <div className="text-[10px] font-mono text-white/30 tracking-widest uppercase mb-3">
-                    ¿Quién vivió en…
+                <div className="text-center mb-6 sm:mb-8">
+                  <div className="text-[10px] sm:text-[11px] font-mono text-white/30 tracking-widest uppercase mb-2 sm:mb-3">
+                    {t('game.questionLabel')}
                   </div>
                   <motion.div
                     key={targetYear}
                     initial={{ scale: 0.85, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.4, type: 'spring', stiffness: 160, damping: 14 }}
-                    className="text-7xl md:text-8xl tracking-tight"
+                    className="text-6xl sm:text-7xl md:text-8xl tracking-tight leading-none"
                     style={{
                       fontFamily: 'var(--font-display)',
                       background: 'linear-gradient(135deg, #a5b4fc 0%, #f9a8d4 50%, #fcd34d 100%)',
@@ -387,22 +413,21 @@ export default function RetoGame() {
                   >
                     {targetYear < 0 ? Math.abs(targetYear) : targetYear}
                   </motion.div>
-                  <div className="text-base text-white/40 font-mono mt-1">
-                    {targetYear < 0 ? 'a.C.' : 'd.C.'}
+                  <div className="text-sm sm:text-base text-white/40 font-mono mt-1">
+                    {targetYear < 0 ? t('common.bc') : t('common.ad')}
                   </div>
                 </div>
 
-                {/* Search */}
                 <div className="relative">
-                  <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-white/35 pointer-events-none" />
+                  <Search size={18} className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-white/35 pointer-events-none" />
                   <input
                     ref={inputRef}
                     value={query}
                     onChange={e => setQuery(e.target.value)}
-                    placeholder="Escribe el nombre de un personaje histórico…"
+                    placeholder={t('game.searchPlaceholder')}
                     autoComplete="off"
                     spellCheck={false}
-                    className="w-full bg-white/5 border border-white/12 rounded-2xl pl-12 pr-4 py-4 text-base text-white/90 placeholder-white/30 outline-none focus:border-indigo-400/50 focus:bg-white/8 transition-all"
+                    className="w-full bg-white/5 border border-white/12 rounded-2xl pl-10 sm:pl-12 pr-4 py-3.5 sm:py-4 text-sm sm:text-base text-white/90 placeholder-white/30 outline-none focus:border-indigo-400/50 focus:bg-white/8 transition-all"
                   />
 
                   <AnimatePresence>
@@ -422,7 +447,7 @@ export default function RetoGame() {
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: i * 0.03 }}
                               onClick={() => handlePick(r.figure)}
-                              className="w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-white/6 transition-colors border-b border-white/5 last:border-0"
+                              className="w-full flex items-center gap-3 px-3 sm:px-4 py-3 sm:py-3.5 text-left hover:bg-white/6 active:bg-white/10 transition-colors border-b border-white/5 last:border-0"
                             >
                               <span
                                 className="w-2 h-2 rounded-full flex-shrink-0"
@@ -432,12 +457,12 @@ export default function RetoGame() {
                                 <div className="text-sm font-semibold text-white/90 truncate">
                                   {r.figure.name}
                                 </div>
-                                <div className="text-[11px] text-white/40 mt-0.5 truncate">
+                                <div className="text-[10px] sm:text-[11px] text-white/40 mt-0.5 truncate">
                                   {r.figure.country}
                                 </div>
                               </div>
                               <span
-                                className="text-[10px] px-2 py-0.5 rounded-md font-medium"
+                                className="text-[10px] px-2 py-0.5 rounded-md font-medium flex-shrink-0"
                                 style={{ background: `${color}22`, color }}
                               >
                                 {r.figure.category}
@@ -450,10 +475,10 @@ export default function RetoGame() {
                   </AnimatePresence>
                 </div>
 
-                <p className="text-center mt-4 text-[11px] text-white/30">
+                <p className="text-center mt-3 sm:mt-4 text-[10px] sm:text-[11px] text-white/30 px-2">
                   {usedFigureIds.size > 0
-                    ? `${usedFigureIds.size} personaje${usedFigureIds.size !== 1 ? 's' : ''} ya usado${usedFigureIds.size !== 1 ? 's' : ''} no puede${usedFigureIds.size === 1 ? '' : 'n'} repetirse`
-                    : 'Pulsa sobre el personaje para responder'}
+                    ? t('game.usedHint', { n: usedFigureIds.size })
+                    : t('game.tapHint')}
                 </p>
               </motion.div>
             )}
@@ -467,6 +492,8 @@ export default function RetoGame() {
                   (mode === 'infinite' && misses >= MAX_MISSES)
                 }
                 onNext={nextRound}
+                t={t}
+                fy={fy}
               />
             )}
           </AnimatePresence>
@@ -477,35 +504,48 @@ export default function RetoGame() {
 }
 
 function Header() {
+  const { t } = useTranslation()
   return (
-    <header className="flex-shrink-0 border-b border-white/6 px-5 py-3">
-      <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group">
+    <header className="flex-shrink-0 border-b border-white/6 px-3 sm:px-5 py-2.5 sm:py-3">
+      <div className="max-w-screen-2xl mx-auto flex items-center justify-between gap-2">
+        <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
           <div
-            className="w-9 h-9 rounded-xl flex items-center justify-center"
+            className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
             style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', boxShadow: '0 4px 16px rgba(99,102,241,0.4)' }}
           >
             <HumanTimelineIcon size={20} className="text-white" />
           </div>
-          <div>
-            <div className="text-base font-semibold text-white/90 leading-none group-hover:text-white transition-colors" style={{ fontFamily: 'var(--font-display)' }}>
+          <div className="min-w-0">
+            <div className="text-sm sm:text-base font-semibold text-white/90 leading-none group-hover:text-white transition-colors truncate" style={{ fontFamily: 'var(--font-display)' }}>
               Human Timeline
             </div>
-            <div className="text-[10px] text-white/30 font-mono mt-0.5 tracking-widest">RETO HISTÓRICO</div>
+            <div className="text-[9px] sm:text-[10px] text-white/30 font-mono mt-0.5 tracking-widest">
+              {t('game.subtitle.header')}
+            </div>
           </div>
         </Link>
-        <Link
-          href="/"
-          className="flex items-center gap-1.5 text-xs text-white/40 hover:text-white/75 transition-colors"
-        >
-          <ArrowLeft size={13} /> Volver al timeline
-        </Link>
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <Link
+            href="/"
+            className="flex items-center gap-1.5 text-[11px] sm:text-xs text-white/40 hover:text-white/75 transition-colors"
+          >
+            <ArrowLeft size={13} />
+            <span className="hidden sm:inline">{t('common.back')}</span>
+          </Link>
+          <LanguageSwitcher />
+        </div>
       </div>
     </header>
   )
 }
 
-function RoundRow({ index, round }: { index: number; round: RoundResult }) {
+function RoundRow({ index, round, t, fy, locale }: {
+  index: number
+  round: RoundResult
+  t: (k: string, v?: Record<string, string | number>) => string
+  fy: (y: number) => string
+  locale: Locale
+}) {
   const color = getCategoryColor(round.figure.category)
   const points = round.result.points
   const statusColor =
@@ -513,22 +553,25 @@ function RoundRow({ index, round }: { index: number; round: RoundResult }) {
     round.result.status === 'close' ? '#f59e0b' :
     round.result.status === 'fair' ? '#94a3b8' :
     round.result.status === 'far' ? '#f97316' : '#ef4444'
+  const bcSuffix = locale === 'es' ? 'aC' : 'BC'
   return (
     <motion.div
       initial={{ opacity: 0, x: -8 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: index * 0.05 }}
-      className="flex items-center gap-3 py-2 px-2 rounded-lg hover:bg-white/3"
+      className="flex items-center gap-2 sm:gap-3 py-2 px-1 sm:px-2 rounded-lg hover:bg-white/3"
     >
-      <span className="text-[10px] font-mono text-white/30 w-6">#{index + 1}</span>
-      <span className="font-mono text-xs text-white/55 w-16">
-        {round.year < 0 ? Math.abs(round.year) + ' aC' : round.year}
+      <span className="text-[10px] font-mono text-white/30 w-5 sm:w-6 flex-shrink-0">#{index + 1}</span>
+      <span className="font-mono text-[11px] sm:text-xs text-white/55 w-12 sm:w-16 flex-shrink-0">
+        {round.year < 0 ? Math.abs(round.year) + bcSuffix : round.year}
       </span>
       <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: color }} />
-      <span className="flex-1 text-sm text-white/80 truncate">{round.figure.name}</span>
-      <span className="text-[11px] text-white/40 hidden sm:inline">{round.result.message}</span>
+      <span className="flex-1 text-xs sm:text-sm text-white/80 truncate">{round.figure.name}</span>
+      <span className="text-[10px] sm:text-[11px] text-white/40 hidden md:inline truncate max-w-[140px]">
+        {getRevealMessage(round.result, t)}
+      </span>
       <span
-        className="font-mono font-semibold text-sm w-12 text-right"
+        className="font-mono font-semibold text-xs sm:text-sm w-9 sm:w-12 text-right flex-shrink-0"
         style={{ color: statusColor }}
       >
         {points >= 0 ? '+' : ''}{points}
@@ -537,10 +580,12 @@ function RoundRow({ index, round }: { index: number; round: RoundResult }) {
   )
 }
 
-function RevealCard({ round, isLastRound, onNext }: {
+function RevealCard({ round, isLastRound, onNext, t, fy }: {
   round: RoundResult
   isLastRound: boolean
   onNext: () => void
+  t: (k: string, v?: Record<string, string | number>) => string
+  fy: (y: number) => string
 }) {
   const color = getCategoryColor(round.figure.category)
   const points = round.result.points
@@ -555,40 +600,40 @@ function RevealCard({ round, isLastRound, onNext }: {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -16 }}
-      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.35 }}
       className="text-center"
     >
       <motion.div
         initial={{ scale: 0.3, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 200, damping: 14, delay: 0.1 }}
-        className="text-7xl font-bold mb-2 font-mono"
+        className="text-6xl sm:text-7xl font-bold mb-1 sm:mb-2 font-mono"
         style={{ color: statusColor }}
       >
         {points >= 0 ? '+' : ''}{points}
       </motion.div>
-      <div className="text-sm text-white/60 mb-8">{round.result.message}</div>
+      <div className="text-xs sm:text-sm text-white/60 mb-6 sm:mb-8 px-2">{getRevealMessage(round.result, t)}</div>
 
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25 }}
-        className="glass-2 rounded-2xl p-6 mb-6 text-left"
+        className="glass-2 rounded-2xl p-4 sm:p-6 mb-5 sm:mb-6 text-left"
       >
-        <div className="flex items-start gap-3 mb-4">
+        <div className="flex items-start gap-3 mb-3 sm:mb-4">
           <div
-            className="w-3 h-12 rounded-full flex-shrink-0 mt-1"
+            className="w-2.5 h-12 sm:w-3 rounded-full flex-shrink-0 mt-1"
             style={{ background: color, boxShadow: `0 0 12px ${color}88` }}
           />
-          <div className="flex-1">
+          <div className="flex-1 min-w-0">
             <h3
-              className="text-2xl mb-1 tracking-tight"
+              className="text-xl sm:text-2xl mb-1 tracking-tight"
               style={{ fontFamily: 'var(--font-display)', color: 'rgba(255,255,255,0.95)' }}
             >
               {round.figure.name}
             </h3>
-            <div className="text-xs text-white/40 font-mono">
-              {formatYear(round.figure.birthYear)} → {formatYear(round.figure.deathYear)}
+            <div className="text-[11px] sm:text-xs text-white/40 font-mono">
+              {fy(round.figure.birthYear)} → {fy(round.figure.deathYear)}
               <span className="mx-2 text-white/20">|</span>
               {round.figure.country} · {round.figure.category}
             </div>
@@ -602,21 +647,21 @@ function RevealCard({ round, isLastRound, onNext }: {
           color={color}
         />
 
-        <p className="text-sm text-white/55 mt-4 leading-relaxed">
+        <p className="text-xs sm:text-sm text-white/55 mt-4 leading-relaxed">
           {round.figure.description}
         </p>
       </motion.div>
 
       <button
         onClick={onNext}
-        className="px-8 py-3 rounded-xl text-base font-semibold transition-all"
+        className="px-6 sm:px-8 py-3 rounded-xl text-sm sm:text-base font-semibold transition-all"
         style={{
           background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
           color: 'white',
           boxShadow: '0 8px 24px rgba(99,102,241,0.35)',
         }}
       >
-        {isLastRound ? 'Ver resultados →' : 'Siguiente ronda →'}
+        {isLastRound ? t('game.seeResults') : t('game.nextRound')}
       </button>
     </motion.div>
   )

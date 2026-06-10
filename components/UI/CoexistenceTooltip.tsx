@@ -1,13 +1,14 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CoexistenceInfo } from '@/types'
-import { formatYear } from '@/lib/timelineUtils'
+import { useTranslation } from '@/hooks/useLocale'
 
 interface Props {
   coexistences: CoexistenceInfo[]
 }
 
 export default function CoexistenceTooltip({ coexistences }: Props) {
+  const { t, fy } = useTranslation()
   return (
     <AnimatePresence>
       {coexistences.length > 0 && (
@@ -18,7 +19,7 @@ export default function CoexistenceTooltip({ coexistences }: Props) {
           className="glass-2 rounded-xl p-4 space-y-2"
         >
           <div className="text-[10px] font-mono text-white/30 tracking-widest uppercase mb-3">
-            Coexistencias
+            {t('coexist.title')}
           </div>
           {coexistences.map((cx, i) => (
             <motion.div
@@ -30,13 +31,12 @@ export default function CoexistenceTooltip({ coexistences }: Props) {
             >
               <span className="text-emerald-400 text-xs">✦</span>
               <p className="text-xs text-white/65 leading-snug">
-                <span className="text-white/85 font-medium">{cx.person1.name}</span>
-                {' y '}
-                <span className="text-white/85 font-medium">{cx.person2.name}</span>
-                {' coincidieron '}
-                <span className="text-emerald-400 font-mono font-medium">{cx.years} años</span>
+                <span dangerouslySetInnerHTML={{
+                  __html: t('coexist.message', { a: `<strong class="text-white/85 font-medium">${cx.person1.name}</strong>`, b: `<strong class="text-white/85 font-medium">${cx.person2.name}</strong>`, n: cx.years })
+                    .replace(/<strong/g, '<strong')
+                }} />
                 <span className="text-white/30 text-[10px] ml-1">
-                  ({formatYear(cx.overlapStart)} – {formatYear(cx.overlapEnd)})
+                  ({fy(cx.overlapStart)} – {fy(cx.overlapEnd)})
                 </span>
               </p>
             </motion.div>

@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { ExternalLink, X, ArrowUpRight } from 'lucide-react'
 import { HistoricalFigure } from '@/types'
-import { getCategoryColor, formatYear } from '@/lib/timelineUtils'
+import { getCategoryColor } from '@/lib/timelineUtils'
 import { figureSlug } from '@/lib/slug'
+import { useTranslation } from '@/hooks/useLocale'
 
 interface Props {
   figure: HistoricalFigure | null
@@ -13,6 +14,7 @@ interface Props {
 }
 
 export default function PersonCard({ figure, onClose, onAdd }: Props) {
+  const { t, fy } = useTranslation()
   return (
     <AnimatePresence>
       {figure && (
@@ -70,23 +72,23 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
                   className="text-xs font-mono font-medium"
                   style={{ color: getCategoryColor(figure.category) }}
                 >
-                  {formatYear(figure.birthYear)}
+                  {fy(figure.birthYear)}
                 </div>
-                <div className="text-[9px] text-white/30 mt-0.5">NACIMIENTO</div>
+                <div className="text-[9px] text-white/30 mt-0.5">{t('person.birth')}</div>
               </div>
               <div className="flex-1 h-px" style={{ background: `${getCategoryColor(figure.category)}40` }} />
               <div
                 className="text-xs font-mono font-medium"
                 style={{ color: getCategoryColor(figure.category), opacity: 0.7 }}
               >
-                {figure.deathYear - figure.birthYear} años
+                {figure.deathYear - figure.birthYear} {t('person.ageAt')}
               </div>
               <div className="flex-1 h-px" style={{ background: `${getCategoryColor(figure.category)}40` }} />
               <div className="text-center">
                 <div className="text-xs font-mono text-white/40">
-                  {formatYear(figure.deathYear)}
+                  {fy(figure.deathYear)}
                 </div>
-                <div className="text-[9px] text-white/30 mt-0.5">MUERTE</div>
+                <div className="text-[9px] text-white/30 mt-0.5">{t('person.death')}</div>
               </div>
             </div>
 
@@ -121,7 +123,7 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
                     border: `1px solid ${getCategoryColor(figure.category)}33`,
                   }}
                 >
-                  Añadir al Timeline
+                  {t('person.add')}
                 </button>
               )}
               <Link
@@ -129,7 +131,7 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
                 className="flex items-center gap-1 text-xs py-1.5 px-3 rounded-lg bg-white/5 text-white/45 hover:bg-white/10 hover:text-white/80 transition-colors"
               >
                 <ArrowUpRight size={11} />
-                Ficha
+                {t('person.profile')}
               </Link>
               <a
                 href={figure.wikipedia}
@@ -138,7 +140,7 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
                 className="flex items-center gap-1 text-xs py-1.5 px-3 rounded-lg bg-white/5 text-white/40 hover:text-white/70 transition-colors"
               >
                 <ExternalLink size={11} />
-                Wiki
+                {t('person.wiki')}
               </a>
             </div>
           </div>

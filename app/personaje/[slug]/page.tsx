@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ExternalLink, Clock, Globe, Tag } from 'lucide-react'
+import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
 import figuresData from '@/data/figures.json'
 import { HistoricalFigure } from '@/types'
 import { figureSlug, findFigureBySlug } from '@/lib/slug'
@@ -112,15 +113,17 @@ export default function PersonajePage({ params }: Params) {
           }}
         />
 
-        <div className="relative max-w-4xl mx-auto px-6 py-8">
-          {/* Back link */}
-          <Link
-            href="/"
-            className="inline-flex items-center gap-1.5 text-xs text-white/40 hover:text-white/70 transition-colors mb-8 font-mono"
-          >
-            <ArrowLeft size={12} />
-            VOLVER AL TIMELINE
-          </Link>
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+          <div className="flex items-center justify-between mb-6 sm:mb-8">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-1.5 text-xs text-white/40 hover:text-white/70 transition-colors font-mono"
+            >
+              <ArrowLeft size={12} />
+              VOLVER · BACK
+            </Link>
+            <LanguageSwitcher />
+          </div>
 
           {/* Header */}
           <header className="mb-12">
@@ -138,7 +141,7 @@ export default function PersonajePage({ params }: Params) {
             </div>
 
             <h1
-              className="text-5xl md:text-7xl leading-[0.95] mb-6 tracking-tight"
+              className="text-4xl sm:text-5xl md:text-7xl leading-[0.95] mb-4 sm:mb-6 tracking-tight"
               style={{ fontFamily: 'var(--font-display)', color: 'rgba(255,255,255,0.95)' }}
             >
               {figure.name}

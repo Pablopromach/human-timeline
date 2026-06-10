@@ -2,7 +2,8 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Users, X, Plus } from 'lucide-react'
 import { HistoricalFigure } from '@/types'
-import { getCategoryColor, formatYear } from '@/lib/timelineUtils'
+import { getCategoryColor } from '@/lib/timelineUtils'
+import { useTranslation } from '@/hooks/useLocale'
 
 interface Props {
   year: number | null
@@ -13,6 +14,8 @@ interface Props {
 }
 
 export default function WhoWasAlive({ year, figures, selectedIds, onAdd, onClose }: Props) {
+  const { t, fy, locale } = useTranslation()
+  const bcSuffix = locale === 'es' ? 'aC' : 'BC'
   return (
     <AnimatePresence>
       {year !== null && figures.length > 0 && (
@@ -28,8 +31,8 @@ export default function WhoWasAlive({ year, figures, selectedIds, onAdd, onClose
             <div className="flex items-center gap-2">
               <Users size={14} className="text-indigo-400" />
               <span className="text-xs font-medium text-white/70">
-                Vivos en{' '}
-                <span className="text-indigo-400 font-mono">{formatYear(year)}</span>
+                {t('whoAlive.title')}{' '}
+                <span className="text-indigo-400 font-mono">{fy(year)}</span>
               </span>
               <span className="text-[10px] bg-indigo-500/20 text-indigo-400 px-1.5 py-0.5 rounded-full font-mono">
                 {figures.length}
@@ -63,7 +66,7 @@ export default function WhoWasAlive({ year, figures, selectedIds, onAdd, onClose
                   <div className="flex-1 min-w-0">
                     <div className="text-xs font-medium text-white/75 truncate">{fig.name}</div>
                     <div className="text-[10px] text-white/30 font-mono">
-                      {Math.abs(fig.birthYear)}{fig.birthYear < 0 ? 'aC' : ''} – {fig.deathYear < 0 ? `${Math.abs(fig.deathYear)}aC` : fig.deathYear}
+                      {Math.abs(fig.birthYear)}{fig.birthYear < 0 ? bcSuffix : ''} – {fig.deathYear < 0 ? `${Math.abs(fig.deathYear)}${bcSuffix}` : fig.deathYear}
                     </div>
                   </div>
                   {!isAdded && (

@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Sparkles, Plus } from 'lucide-react'
 import { HistoricalFigure } from '@/types'
 import { getCategoryColor } from '@/lib/timelineUtils'
+import { useTranslation } from '@/hooks/useLocale'
 
 interface Props {
   figures: HistoricalFigure[]
@@ -11,6 +12,7 @@ interface Props {
 }
 
 export default function RelatedFigures({ figures, sourceName, onAdd }: Props) {
+  const { t } = useTranslation()
   return (
     <AnimatePresence>
       {figures.length > 0 && (
@@ -23,7 +25,7 @@ export default function RelatedFigures({ figures, sourceName, onAdd }: Props) {
           <div className="flex items-center gap-1.5 mb-2.5">
             <Sparkles size={11} className="text-amber-400" />
             <span className="text-[10px] font-mono text-white/35 tracking-wider uppercase">
-              Relacionados con {sourceName.split(' ')[0]}
+              {t('related.title', { name: sourceName.split(' ')[0] })}
             </span>
           </div>
           <div className="flex flex-wrap gap-1.5">

@@ -2,15 +2,16 @@
 import { useRef, useEffect, useCallback } from 'react'
 import * as d3 from 'd3'
 import { HistoricalFigure, Civilization } from '@/types'
-import { getCategoryColor, ERAS, formatYear } from '@/lib/timelineUtils'
+import { getCategoryColor, ERAS } from '@/lib/timelineUtils'
+import { useTranslation } from '@/hooks/useLocale'
 
 const MIN_YEAR = -4000
 const MAX_YEAR = 2026
 const AXIS_HEIGHT = 56
-const LABEL_WIDTH = 200
 const MIN_ROW_HEIGHT = 44
 const MAX_ROW_HEIGHT = 84
 const TOP_PADDING = 8
+const MOBILE_BREAKPOINT = 640
 
 interface Props {
   figures: HistoricalFigure[]
@@ -24,12 +25,15 @@ const CIV_BAR_HEIGHT = 16
 const CIV_TRACK_GAP = 4
 
 export default function TimelineChart({ figures, civilizations = [], onHover, onYearClick, onSelectFigure }: Props) {
+  const { t, locale } = useTranslation()
   const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null)
   const transformRef = useRef<d3.ZoomTransform>(d3.zoomIdentity)
   const drawRef = useRef<() => void>(() => {})
   const prevFigureCountRef = useRef(0)
+  const bcSuffix = locale === 'es' ? 'aC' : 'BC'
+  const bcLabel = locale === 'es' ? 'a.C.' : 'BC'
 
   const getRow = useCallback(
     (figId: number) => figures.findIndex(f => f.id === figId),
@@ -58,6 +62,8 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
 
     const totalWidth = container.clientWidth
     const containerH = Math.max(container.clientHeight, 360)
+    const isMobile = totalWidth < MOBILE_BREAKPOINT
+    const LABEL_WIDTH = isMobile ? 120 : 200
     const innerW = totalWidth - LABEL_WIDTH
     if (innerW <= 0) return
 
@@ -184,10 +190,10 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
 
     const axisG = chart.append('g').attr('transform', `translate(0,${AXIS_HEIGHT - 2})`)
     const axis = d3.axisBottom(xScaled)
-      .ticks(12)
+      .ticks(isMobile ? 7 : 12)
       .tickFormat(d => {
         const y = d as number
-        return y < 0 ? `${Math.abs(y)} a.C.` : `${y}`
+        return y < 0 ? `${Math.abs(y)} ${bcLabel}` : `${y}`
       })
     axisG.call(axis)
     axisG.select('.domain').attr('stroke', 'rgba(255,255,255,0.16)')
@@ -236,7 +242,7 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       .on('mousemove', (event: MouseEvent) => {
         const [mx] = d3.pointer(event)
         const year = Math.round(xScaled.invert(mx))
-        const label = year < 0 ? `${Math.abs(year)} a.C.` : `${year}`
+        const label = year < 0 ? `${Math.abs(year)} ${bcLabel}` : `${year}`
         hoverLine.attr('x1', mx).attr('x2', mx)
         hoverText.attr('x', mx).text(label)
         const textWidth = label.length * 7 + 18
@@ -314,8 +320,8 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       // Year labels inside/next to bar when zoomed enough
       if (clipW > 60) {
         const lifeSpan = figure.deathYear - figure.birthYear
-        const birthLabel = figure.birthYear < 0 ? `${Math.abs(figure.birthYear)}aC` : `${figure.birthYear}`
-        const deathLabel = figure.deathYear < 0 ? `${Math.abs(figure.deathYear)}aC` : `${figure.deathYear}`
+        const birthLabel = figure.birthYear < 0 ? `${Math.abs(figure.birthYear)}${bcSuffix}` : `${figure.birthYear}`
+        const deathLabel = figure.deathYear < 0 ? `${Math.abs(figure.deathYear)}${bcSuffix}` : `${figure.deathYear}`
         if (clipW > 140) {
           barG.append('text')
             .attr('x', clipX + 8).attr('y', y + barH / 2 + 4)
@@ -370,7 +376,7 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         .attr('font-weight', '600')
         .attr('font-family', 'DM Mono, monospace')
         .attr('letter-spacing', '0.12em')
-        .text('CIVILIZACIONES')
+        .text(t('chart.civilizations'))
     }
 
     // Header chips
@@ -381,7 +387,7 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       .attr('font-weight', '600')
       .attr('font-family', 'DM Mono, monospace')
       .attr('letter-spacing', '0.15em')
-      .text('PERSONAJE')
+      .text(t('chart.figure'))
 
     const labelsG = svg.append('g')
     figures.forEach((figure, i) => {
@@ -434,7 +440,7 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         .text(displayName)
 
       // Years
-      const yrStr = `${figure.birthYear < 0 ? Math.abs(figure.birthYear) + ' aC' : figure.birthYear} – ${figure.deathYear < 0 ? Math.abs(figure.deathYear) + ' aC' : figure.deathYear}`
+      const yrStr = `${figure.birthYear < 0 ? Math.abs(figure.birthYear) + ' ' + bcSuffix : figure.birthYear} – ${figure.deathYear < 0 ? Math.abs(figure.deathYear) + ' ' + bcSuffix : figure.deathYear}`
       labelsG.append('text')
         .attr('x', 32).attr('y', centerY + (rowH > 60 ? 13 : 11))
         .attr('fill', 'rgba(255,255,255,0.45)')
@@ -467,7 +473,7 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         .attr('fill', 'rgba(255,255,255,0.22)')
         .attr('font-size', '15px')
         .attr('font-family', 'DM Sans, sans-serif')
-        .text('Busca un personaje histórico para comenzar')
+        .text(t('home.empty.title'))
       svg.append('text')
         .attr('x', cx).attr('y', cy + 14)
         .attr('text-anchor', 'middle')
@@ -475,9 +481,9 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         .attr('font-size', '11px')
         .attr('font-family', 'DM Mono, monospace')
         .attr('letter-spacing', '0.1em')
-        .text('USA LA BARRA DE BÚSQUEDA ARRIBA')
+        .text(t('home.empty.sub'))
     }
-  }, [figures, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight])
+  }, [figures, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight, t, bcSuffix, bcLabel])
 
   useEffect(() => { drawRef.current = draw }, [draw])
 
@@ -515,7 +521,9 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
     const container = containerRef.current
     if (!el || !container || !zoomRef.current) return
 
-    const innerW = container.clientWidth - LABEL_WIDTH
+    const cw = container.clientWidth
+    const lw = cw < MOBILE_BREAKPOINT ? 120 : 200
+    const innerW = cw - lw
     if (innerW <= 0) return
 
     const minYear = Math.min(...figures.map(f => f.birthYear))
@@ -542,7 +550,9 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       const container = containerRef.current
       const el = svgRef.current
       if (!container || !el) return
-      const newInnerW = container.clientWidth - LABEL_WIDTH
+      const cw = container.clientWidth
+      const lw = cw < MOBILE_BREAKPOINT ? 120 : 200
+      const newInnerW = cw - lw
       const prevInnerW = prevInnerWRef.current
       if (prevInnerW > 0 && newInnerW > 0 && Math.abs(prevInnerW - newInnerW) > 1) {
         const t = transformRef.current
