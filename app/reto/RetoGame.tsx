@@ -526,11 +526,11 @@ function Header() {
         </Link>
         <div className="flex items-center gap-2 flex-shrink-0">
           <Link
-            href="/"
-            className="flex items-center gap-1.5 text-[11px] sm:text-xs text-white/40 hover:text-white/75 transition-colors"
+            href="/?desktop=1"
+            className="hidden sm:flex items-center gap-1.5 text-[11px] sm:text-xs text-white/40 hover:text-white/75 transition-colors"
           >
             <ArrowLeft size={13} />
-            <span className="hidden sm:inline">{t('common.back')}</span>
+            {t('common.back')}
           </Link>
           <LanguageSwitcher />
         </div>

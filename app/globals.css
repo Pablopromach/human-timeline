@@ -51,6 +51,19 @@ html, body {
   height: 100%;
 }
 
+/* Prevent iOS Safari from zooming in when focusing an input
+   (any font-size < 16px triggers the zoom on mobile Safari).
+   We bump every text input to 16px on touch/small screens. */
+@media (max-width: 767px) {
+  input[type="text"],
+  input[type="search"],
+  input:not([type]),
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;

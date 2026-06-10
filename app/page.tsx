@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Shuffle, Trash2, ChevronDown, Crown, Gamepad2 } from 'lucide-react'
 import HumanTimelineIcon from '@/components/UI/HumanTimelineIcon'
 import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
+import MobileRedirect from '@/components/MobileRedirect'
 import { useTimeline } from '@/hooks/useTimeline'
 import { useTranslation } from '@/hooks/useLocale'
 import { findFigureBySlug } from '@/lib/slug'
@@ -89,6 +90,7 @@ export default function HomePage() {
 
   return (
     <div className="h-[100dvh] flex flex-col overflow-hidden" style={{ background: 'var(--void)' }}>
+      <MobileRedirect />
       {/* Header */}
       <header className="flex-shrink-0 border-b border-white/6 px-3 sm:px-5 py-3">
         <div className="max-w-screen-2xl mx-auto">

@@ -16,7 +16,7 @@ function HeaderLabel() {
 function HomeLink() {
   const { t } = useTranslation()
   return (
-    <Link href="/" className="flex items-center gap-1.5 text-[11px] sm:text-xs text-white/40 hover:text-white/75 transition-colors">
+    <Link href="/reto" className="flex items-center gap-1.5 text-[11px] sm:text-xs text-white/40 hover:text-white/75 transition-colors">
       <ArrowLeft size={13} />
       <span className="hidden sm:inline">{t('common.home')}</span>
     </Link>

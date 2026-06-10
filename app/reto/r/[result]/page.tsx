@@ -15,7 +15,8 @@ interface Params {
 }
 
 function parseResult(result: string) {
-  const idx = result.lastIndexOf('-')
+  // Use first dash so negative scores (e.g. "infinito--20") parse correctly
+  const idx = result.indexOf('-')
   if (idx === -1) return null
   const modeSlug = result.slice(0, idx)
   const scoreStr = result.slice(idx + 1)

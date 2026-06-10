@@ -17,17 +17,40 @@ export default function ShareButton({ url, score, mode }: Props) {
     const text = mode === 'clasico'
       ? t('game.shareText.classic', { score })
       : t('game.shareText.infinite', { score })
+    const fullText = `${text}\n${url}`
 
-    if (navigator.share) {
+    // Try Web Share API first (mobile)
+    if (typeof navigator !== 'undefined' && navigator.share) {
       try {
-        await navigator.share({ title: 'Mi puntuación', text, url })
+        await navigator.share({ title: 'Human Timeline', text, url })
         return
-      } catch {}
+      } catch (err: any) {
+        // User cancelled — don't fall back to clipboard in that case
+        if (err?.name === 'AbortError') return
+        // Otherwise fall through to clipboard
+      }
     }
-    if (navigator.clipboard) {
-      await navigator.clipboard.writeText(`${text}\n${url}`)
+
+    // Fall back to clipboard
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(fullText)
+      } else {
+        // Last resort: temporary textarea
+        const ta = document.createElement('textarea')
+        ta.value = fullText
+        ta.style.position = 'fixed'
+        ta.style.opacity = '0'
+        document.body.appendChild(ta)
+        ta.select()
+        document.execCommand('copy')
+        document.body.removeChild(ta)
+      }
       setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      setTimeout(() => setCopied(false), 2200)
+    } catch {
+      // Truly nothing worked — open mail/whatsapp deep link
+      window.prompt(t('result.shareLink'), fullText)
     }
   }
 
