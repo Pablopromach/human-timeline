@@ -1,7 +1,8 @@
 'use client'
 import { useState, useCallback, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Shuffle, Trash2, ChevronDown, Crown } from 'lucide-react'
+import Link from 'next/link'
+import { Shuffle, Trash2, ChevronDown, Crown, Gamepad2 } from 'lucide-react'
 import HumanTimelineIcon from '@/components/UI/HumanTimelineIcon'
 import { useTimeline } from '@/hooks/useTimeline'
 import { findFigureBySlug } from '@/lib/slug'
@@ -124,6 +125,18 @@ export default function HomePage() {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
+            <Link
+              href="/reto"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+              style={{
+                background: 'linear-gradient(135deg, rgba(245,158,11,0.2), rgba(239,68,68,0.18))',
+                color: '#fbbf24',
+                border: '1px solid rgba(245,158,11,0.35)',
+              }}
+            >
+              <Gamepad2 size={13} />
+              Jugar Reto
+            </Link>
             <button
               onClick={() => setShowCivilizations(v => !v)}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all"

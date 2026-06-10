@@ -535,8 +535,26 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       .call(zoomRef.current.transform, newTransform)
   }, [figures])
 
+  // On resize, preserve the visible window center by scaling tx proportionally
+  const prevInnerWRef = useRef(0)
   useEffect(() => {
-    const ro = new ResizeObserver(() => drawRef.current())
+    const ro = new ResizeObserver(() => {
+      const container = containerRef.current
+      const el = svgRef.current
+      if (!container || !el) return
+      const newInnerW = container.clientWidth - LABEL_WIDTH
+      const prevInnerW = prevInnerWRef.current
+      if (prevInnerW > 0 && newInnerW > 0 && Math.abs(prevInnerW - newInnerW) > 1) {
+        const t = transformRef.current
+        const ratio = newInnerW / prevInnerW
+        const adjusted = d3.zoomIdentity.translate(t.x * ratio, 0).scale(t.k)
+        transformRef.current = adjusted
+        // Sync d3's internal __zoom so future zoom events build on this
+        ;(el as unknown as { __zoom: d3.ZoomTransform }).__zoom = adjusted
+      }
+      prevInnerWRef.current = newInnerW
+      drawRef.current()
+    })
     if (containerRef.current) ro.observe(containerRef.current)
     return () => ro.disconnect()
   }, [])
