@@ -2515,5 +2515,29 @@
     "wikipedia": "https://es.wikipedia.org/wiki/Caracalla",
     "tags": ["roma", "imperio", "política"],
     "relatedIds": [14, 17]
+  },
+  {
+    "id": 230,
+    "name": "Isabel I de Castilla",
+    "birthYear": 1451,
+    "deathYear": 1504,
+    "country": "España",
+    "category": "Político",
+    "description": "reina de Castilla y reina consorte de Aragón.Se la conoce también como Isabel la Católica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Isabel_I_de_Castilla",
+    "tags": ["españa", "imperio", "política"],
+    "relatedIds": [14, 17]
+  },
+  {
+    "id": 231,
+    "name": "Fernando II de Aragón",
+    "birthYear": 1452,
+    "deathYear": 1516,
+    "country": "España",
+    "category": "Político",
+    "description": "Fue rey de Aragón y regente de Castilla.Fernando y su esposa Isabel fueron los primeros monarcas de Castilla y Aragón en ser llamados Reyes Católicos.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Fernando_II_de_Arag%C3%B3n",
+    "tags": ["españa", "imperio", "política"],
+    "relatedIds": [14, 17]
   }
 ]
