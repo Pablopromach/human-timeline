@@ -6,13 +6,11 @@ import { getCategoryColor, ERAS, formatYear } from '@/lib/timelineUtils'
 
 const MIN_YEAR = -4000
 const MAX_YEAR = 2026
-const ROW_HEIGHT = 36
-const BAR_HEIGHT = 18
-const AXIS_HEIGHT = 52
-const LABEL_WIDTH = 176
-const ERA_LABEL_Y = 14
-const FIT_PADDING_RATIO = 0.18
-const FIT_PADDING_MIN = 80
+const AXIS_HEIGHT = 56
+const LABEL_WIDTH = 200
+const MIN_ROW_HEIGHT = 44
+const MAX_ROW_HEIGHT = 84
+const TOP_PADDING = 8
 
 interface Props {
   figures: HistoricalFigure[]
@@ -22,8 +20,8 @@ interface Props {
   onSelectFigure: (fig: HistoricalFigure) => void
 }
 
-const CIV_BAR_HEIGHT = 14
-const CIV_TRACK_GAP = 3
+const CIV_BAR_HEIGHT = 16
+const CIV_TRACK_GAP = 4
 
 export default function TimelineChart({ figures, civilizations = [], onHover, onYearClick, onSelectFigure }: Props) {
   const svgRef = useRef<SVGSVGElement>(null)
@@ -33,10 +31,10 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
   const drawRef = useRef<() => void>(() => {})
   const prevFigureCountRef = useRef(0)
 
-  // Each figure occupies its own dedicated row (by insertion order) — no packing
-  const getRow = useCallback((figId: number) => {
-    return figures.findIndex(f => f.id === figId)
-  }, [figures])
+  const getRow = useCallback(
+    (figId: number) => figures.findIndex(f => f.id === figId),
+    [figures]
+  )
 
   // Pack civilizations into non-overlapping tracks (greedy)
   const civTracks = (() => {
@@ -51,36 +49,50 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
     })
   })()
   const civRowCount = civTracks.length > 0 ? Math.max(...civTracks.map(c => c.track)) + 1 : 0
-  const civBandHeight = civRowCount > 0 ? civRowCount * (CIV_BAR_HEIGHT + CIV_TRACK_GAP) + 8 : 0
-
-  const chartHeight = Math.max(figures.length * ROW_HEIGHT + AXIS_HEIGHT + civBandHeight + 48, 280)
+  const civBandHeight = civRowCount > 0 ? civRowCount * (CIV_BAR_HEIGHT + CIV_TRACK_GAP) + 12 : 0
 
   const draw = useCallback(() => {
     const svg = d3.select(svgRef.current)
     const container = containerRef.current
     if (!container) return
+
     const totalWidth = container.clientWidth
+    const containerH = Math.max(container.clientHeight, 360)
     const innerW = totalWidth - LABEL_WIDTH
     if (innerW <= 0) return
 
-    const xBase = d3.scaleLinear()
-      .domain([MIN_YEAR, MAX_YEAR])
-      .range([0, innerW])
+    // Dynamic row height: fill available space, capped between MIN/MAX
+    const figureRows = Math.max(figures.length, 1)
+    const availForRows = containerH - AXIS_HEIGHT - civBandHeight - TOP_PADDING - 20
+    let rowH = figures.length > 0
+      ? Math.max(MIN_ROW_HEIGHT, Math.min(MAX_ROW_HEIGHT, availForRows / figureRows))
+      : MIN_ROW_HEIGHT
+    const barH = Math.round(rowH * 0.42)
 
-    const t = transformRef.current
-    const xScaled = t.rescaleX(xBase)
+    const figureBlockH = figures.length * rowH
+    const computedH = AXIS_HEIGHT + civBandHeight + TOP_PADDING + figureBlockH + 20
+    const chartHeight = Math.max(computedH, containerH)
+
+    const xBase = d3.scaleLinear().domain([MIN_YEAR, MAX_YEAR]).range([0, innerW])
+    const xScaled = transformRef.current.rescaleX(xBase)
 
     svg.attr('width', totalWidth).attr('height', chartHeight)
     svg.selectAll('*').remove()
 
-    // ── Background ──────────────────────────────────────────────────────────
+    // ── Background gradient ─────────────────────────────────────────────────
+    const bg = svg.append('defs').append('linearGradient')
+      .attr('id', 'bg-gradient').attr('x1', '0').attr('y1', '0').attr('x2', '0').attr('y2', '1')
+    bg.append('stop').attr('offset', '0%').attr('stop-color', '#0a0a0f')
+    bg.append('stop').attr('offset', '100%').attr('stop-color', '#0d0d18')
+
     svg.append('rect')
       .attr('width', totalWidth).attr('height', chartHeight)
-      .attr('fill', '#0a0a0f')
+      .attr('fill', 'url(#bg-gradient)')
 
     const chart = svg.append('g').attr('transform', `translate(${LABEL_WIDTH},0)`)
+    const bodyTop = AXIS_HEIGHT + civBandHeight + TOP_PADDING
 
-    // ── Era bands ────────────────────────────────────────────────────────────
+    // ── Era bands (subtle background colors per era) ────────────────────────
     const eraBands = chart.append('g')
     for (const era of ERAS) {
       const x1 = xScaled(era.startYear)
@@ -89,35 +101,36 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       const bx = Math.max(0, x1)
       const bw = Math.min(innerW, x2) - bx
       eraBands.append('rect')
-        .attr('x', bx).attr('y', AXIS_HEIGHT)
-        .attr('width', bw).attr('height', chartHeight - AXIS_HEIGHT)
-        .attr('fill', era.color).attr('opacity', era.opacity)
-      if (bw > 56) {
+        .attr('x', bx).attr('y', bodyTop)
+        .attr('width', bw).attr('height', chartHeight - bodyTop)
+        .attr('fill', era.color).attr('opacity', era.opacity * 0.8)
+      if (bw > 70) {
         eraBands.append('text')
-          .attr('x', bx + bw / 2).attr('y', ERA_LABEL_Y)
+          .attr('x', bx + bw / 2).attr('y', 18)
           .attr('text-anchor', 'middle')
-          .attr('fill', era.color).attr('opacity', 0.6)
-          .attr('font-size', '9px')
+          .attr('fill', era.color).attr('opacity', 0.75)
+          .attr('font-size', '11px')
           .attr('font-family', 'DM Mono, monospace')
-          .attr('letter-spacing', '0.1em')
+          .attr('font-weight', '500')
+          .attr('letter-spacing', '0.12em')
           .text(era.name.toUpperCase())
       }
     }
 
-    // ── Grid lines ───────────────────────────────────────────────────────────
+    // ── Grid lines (every tick) ──────────────────────────────────────────────
     const gridG = chart.append('g')
     for (const tick of xScaled.ticks(12)) {
       const x = xScaled(tick)
       gridG.append('line')
         .attr('x1', x).attr('x2', x)
-        .attr('y1', AXIS_HEIGHT).attr('y2', chartHeight)
-        .attr('stroke', 'rgba(255,255,255,0.04)')
-        .attr('stroke-width', 1)
+        .attr('y1', bodyTop).attr('y2', chartHeight)
+        .attr('stroke', tick === 0 ? 'rgba(255,255,255,0.18)' : 'rgba(255,255,255,0.05)')
+        .attr('stroke-width', tick === 0 ? 1.5 : 1)
     }
 
-    // ── Civilization bands (between axis and figures) ───────────────────────
+    // ── Civilization bands ──────────────────────────────────────────────────
     if (civTracks.length > 0) {
-      const civG = chart.append('g').attr('class', 'civ-bands')
+      const civG = chart.append('g')
       for (const { civ, track } of civTracks) {
         const x1 = xScaled(civ.startYear)
         const x2 = xScaled(civ.endYear)
@@ -125,86 +138,95 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         const cx2 = Math.min(x2, innerW)
         const cw = cx2 - cx1
         if (cw <= 0) continue
-        const y = AXIS_HEIGHT + 4 + track * (CIV_BAR_HEIGHT + CIV_TRACK_GAP)
+        const y = AXIS_HEIGHT + 6 + track * (CIV_BAR_HEIGHT + CIV_TRACK_GAP)
         const g = civG.append('g')
-        // Background
         g.append('rect')
           .attr('x', cx1).attr('y', y)
           .attr('width', cw).attr('height', CIV_BAR_HEIGHT)
-          .attr('rx', 2)
-          .attr('fill', civ.color).attr('opacity', 0.18)
-        // Border
+          .attr('rx', 3)
+          .attr('fill', civ.color).attr('opacity', 0.22)
         g.append('rect')
           .attr('x', cx1).attr('y', y)
           .attr('width', cw).attr('height', CIV_BAR_HEIGHT)
-          .attr('rx', 2)
+          .attr('rx', 3)
           .attr('fill', 'none')
-          .attr('stroke', civ.color).attr('stroke-opacity', 0.5)
+          .attr('stroke', civ.color).attr('stroke-opacity', 0.6)
           .attr('stroke-width', 1)
-        // Label if wide enough
-        if (cw > 70) {
+        if (cw > 80) {
           g.append('text')
-            .attr('x', cx1 + 6).attr('y', y + CIV_BAR_HEIGHT / 2 + 3)
+            .attr('x', cx1 + 8).attr('y', y + CIV_BAR_HEIGHT / 2 + 4)
             .attr('fill', civ.color)
-            .attr('font-size', '9.5px')
+            .attr('font-size', '11px')
             .attr('font-weight', '600')
-            .attr('font-family', 'DM Mono, monospace')
+            .attr('font-family', 'DM Sans, sans-serif')
             .text(civ.name)
         }
       }
     }
 
     // ── Row separator lines ──────────────────────────────────────────────────
-    for (let i = 0; i < figures.length; i++) {
-      const y = AXIS_HEIGHT + civBandHeight + i * ROW_HEIGHT
+    for (let i = 0; i <= figures.length; i++) {
+      const y = bodyTop + i * rowH
+      if (y > chartHeight) break
       chart.append('line')
         .attr('x1', 0).attr('x2', innerW)
         .attr('y1', y).attr('y2', y)
-        .attr('stroke', 'rgba(255,255,255,0.03)')
+        .attr('stroke', 'rgba(255,255,255,0.04)')
         .attr('stroke-width', 1)
     }
 
     // ── Axis ─────────────────────────────────────────────────────────────────
+    // Background strip behind axis for legibility
+    chart.append('rect')
+      .attr('x', 0).attr('y', AXIS_HEIGHT - 24)
+      .attr('width', innerW).attr('height', 24)
+      .attr('fill', 'rgba(10,10,15,0.7)')
+
     const axisG = chart.append('g').attr('transform', `translate(0,${AXIS_HEIGHT - 2})`)
     const axis = d3.axisBottom(xScaled)
       .ticks(12)
       .tickFormat(d => {
         const y = d as number
-        return y < 0 ? `${Math.abs(y)} aC` : `${y}`
+        return y < 0 ? `${Math.abs(y)} a.C.` : `${y}`
       })
     axisG.call(axis)
-    axisG.select('.domain').attr('stroke', 'rgba(255,255,255,0.1)')
-    axisG.selectAll('.tick line').attr('stroke', 'rgba(255,255,255,0.1)')
+    axisG.select('.domain').attr('stroke', 'rgba(255,255,255,0.16)')
+    axisG.selectAll('.tick line').attr('stroke', 'rgba(255,255,255,0.16)')
     axisG.selectAll('.tick text')
-      .attr('fill', 'rgba(255,255,255,0.35)')
-      .attr('font-size', '10px')
+      .attr('fill', 'rgba(255,255,255,0.62)')
+      .attr('font-size', '12px')
       .attr('font-family', 'DM Mono, monospace')
-      .attr('y', 10)
+      .attr('font-weight', '500')
+      .attr('y', 14)
 
-    // Clickable axis overlay
+    // Axis click overlay
     chart.append('rect')
       .attr('x', 0).attr('y', 0)
       .attr('width', innerW).attr('height', AXIS_HEIGHT)
       .attr('fill', 'transparent')
       .attr('cursor', 'crosshair')
-      .attr('title', 'Clic para ver quién vivía en ese año')
       .on('click', (event: MouseEvent) => {
         const [mx] = d3.pointer(event)
         onYearClick(Math.round(xScaled.invert(mx)))
       })
 
-    // Year indicator line on hover over axis
-    const axisOverlay = chart.append('g').attr('opacity', 0)
-    const hoverLine = axisOverlay.append('line')
-      .attr('y1', 0).attr('y2', chartHeight)
-      .attr('stroke', 'rgba(99,102,241,0.4)')
+    // ── Year indicator line on hover ─────────────────────────────────────────
+    const hoverG = chart.append('g').attr('opacity', 0).style('pointer-events', 'none')
+    const hoverLine = hoverG.append('line')
+      .attr('y1', bodyTop - 8).attr('y2', chartHeight)
+      .attr('stroke', 'rgba(165,180,252,0.55)')
       .attr('stroke-width', 1)
-      .attr('stroke-dasharray', '3,3')
-    const hoverLabel = axisOverlay.append('text')
-      .attr('y', AXIS_HEIGHT - 6)
+      .attr('stroke-dasharray', '4,3')
+    const hoverPill = hoverG.append('rect')
+      .attr('y', bodyTop - 22).attr('height', 18)
+      .attr('rx', 9)
+      .attr('fill', 'rgba(99,102,241,0.95)')
+    const hoverText = hoverG.append('text')
+      .attr('y', bodyTop - 9)
       .attr('text-anchor', 'middle')
-      .attr('fill', '#818cf8')
-      .attr('font-size', '9px')
+      .attr('fill', 'white')
+      .attr('font-size', '11px')
+      .attr('font-weight', '600')
       .attr('font-family', 'DM Mono, monospace')
 
     chart.append('rect')
@@ -214,11 +236,14 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       .on('mousemove', (event: MouseEvent) => {
         const [mx] = d3.pointer(event)
         const year = Math.round(xScaled.invert(mx))
+        const label = year < 0 ? `${Math.abs(year)} a.C.` : `${year}`
         hoverLine.attr('x1', mx).attr('x2', mx)
-        hoverLabel.attr('x', mx).text(year < 0 ? `${Math.abs(year)} a.C.` : year)
-        axisOverlay.attr('opacity', 1)
+        hoverText.attr('x', mx).text(label)
+        const textWidth = label.length * 7 + 18
+        hoverPill.attr('x', mx - textWidth / 2).attr('width', textWidth)
+        hoverG.attr('opacity', 1)
       })
-      .on('mouseleave', () => axisOverlay.attr('opacity', 0))
+      .on('mouseleave', () => hoverG.attr('opacity', 0))
 
     // ── Bars ─────────────────────────────────────────────────────────────────
     const barsG = chart.append('g')
@@ -228,108 +253,150 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
       const color = getCategoryColor(figure.category)
       const x1 = xScaled(figure.birthYear)
       const x2 = xScaled(figure.deathYear)
-      const barW = Math.max(x2 - x1, 3)
-      const y = AXIS_HEIGHT + civBandHeight + row * ROW_HEIGHT + (ROW_HEIGHT - BAR_HEIGHT) / 2
+      const barW = Math.max(x2 - x1, 4)
+      const y = bodyTop + row * rowH + (rowH - barH) / 2
 
-      // Skip bars fully out of view
       if (x2 < 0 || x1 > innerW) {
-        // Still render a "out of view" indicator
-        const side = x1 > innerW ? innerW - 6 : 0
-        const arrow = x1 > innerW ? '›' : '‹'
+        // Off-screen indicator
+        const isLeft = x2 < 0
+        const ax = isLeft ? 8 : innerW - 8
+        const arrow = isLeft ? '◀' : '▶'
         barsG.append('text')
-          .attr('x', side + (x1 > innerW ? 4 : -4)).attr('y', y + BAR_HEIGHT / 2 + 4)
-          .attr('fill', color).attr('opacity', 0.5)
-          .attr('font-size', '10px').attr('text-anchor', 'middle')
+          .attr('x', ax).attr('y', y + barH / 2 + 4)
+          .attr('text-anchor', 'middle').attr('fill', color)
+          .attr('opacity', 0.6).attr('font-size', '12px')
           .text(arrow)
         continue
       }
 
-      const barG = barsG.append('g')
-        .attr('class', 'bar-group')
-        .attr('cursor', 'pointer')
+      const barG = barsG.append('g').attr('cursor', 'pointer')
 
-      // Glow backing
-      barG.append('rect')
-        .attr('x', Math.max(x1 - 2, 0)).attr('y', y - 4)
-        .attr('width', Math.min(barW + 4, innerW - Math.max(x1, 0))).attr('height', BAR_HEIGHT + 8)
-        .attr('rx', 5).attr('fill', color).attr('opacity', 0.08)
-
-      // Main bar
       const clipX = Math.max(x1, 0)
       const clipW = Math.min(x2, innerW) - clipX
+      if (clipW < 0) continue
+
+      // Glow
+      barG.append('rect')
+        .attr('x', clipX).attr('y', y - 5)
+        .attr('width', clipW).attr('height', barH + 10)
+        .attr('rx', 6).attr('fill', color).attr('opacity', 0.12)
+
+      // Main bar
       barG.append('rect')
         .attr('x', clipX).attr('y', y)
-        .attr('width', Math.max(clipW, 0)).attr('height', BAR_HEIGHT)
-        .attr('rx', 3)
-        .attr('fill', color).attr('opacity', 0.82)
+        .attr('width', clipW).attr('height', barH)
+        .attr('rx', 4)
+        .attr('fill', color).attr('opacity', 0.88)
 
       // Top highlight
       barG.append('rect')
         .attr('x', clipX).attr('y', y)
-        .attr('width', Math.max(clipW, 0)).attr('height', BAR_HEIGHT * 0.35)
-        .attr('rx', 3)
-        .attr('fill', 'rgba(255,255,255,0.14)')
+        .attr('width', clipW).attr('height', barH * 0.35)
+        .attr('rx', 4)
+        .attr('fill', 'rgba(255,255,255,0.18)')
 
       // Birth dot
       if (x1 >= 0 && x1 <= innerW) {
         barG.append('circle')
-          .attr('cx', x1).attr('cy', y + BAR_HEIGHT / 2)
-          .attr('r', 3.5).attr('fill', 'white').attr('opacity', 0.85)
+          .attr('cx', x1).attr('cy', y + barH / 2)
+          .attr('r', 5).attr('fill', 'white').attr('opacity', 0.95)
+        barG.append('circle')
+          .attr('cx', x1).attr('cy', y + barH / 2)
+          .attr('r', 2.5).attr('fill', color)
       }
-
       // Death dot
       if (x2 >= 0 && x2 <= innerW) {
         barG.append('circle')
-          .attr('cx', x2).attr('cy', y + BAR_HEIGHT / 2)
-          .attr('r', 2.5).attr('fill', 'white').attr('opacity', 0.35)
+          .attr('cx', x2).attr('cy', y + barH / 2)
+          .attr('r', 3).attr('fill', 'white').attr('opacity', 0.5)
       }
 
-      // Invisible hit area (full row height)
+      // Year labels inside/next to bar when zoomed enough
+      if (clipW > 60) {
+        const lifeSpan = figure.deathYear - figure.birthYear
+        const birthLabel = figure.birthYear < 0 ? `${Math.abs(figure.birthYear)}aC` : `${figure.birthYear}`
+        const deathLabel = figure.deathYear < 0 ? `${Math.abs(figure.deathYear)}aC` : `${figure.deathYear}`
+        if (clipW > 140) {
+          barG.append('text')
+            .attr('x', clipX + 8).attr('y', y + barH / 2 + 4)
+            .attr('fill', 'white').attr('opacity', 0.95)
+            .attr('font-size', '11px')
+            .attr('font-family', 'DM Mono, monospace')
+            .attr('font-weight', '600')
+            .text(`${birthLabel} → ${deathLabel}`)
+        } else {
+          barG.append('text')
+            .attr('x', clipX + clipW / 2).attr('y', y + barH / 2 + 4)
+            .attr('text-anchor', 'middle')
+            .attr('fill', 'white').attr('opacity', 0.9)
+            .attr('font-size', '10px')
+            .attr('font-family', 'DM Mono, monospace')
+            .attr('font-weight', '600')
+            .text(`${lifeSpan}a`)
+        }
+      }
+
+      // Hit area
       barG.append('rect')
-        .attr('x', Math.max(x1 - 2, 0)).attr('y', AXIS_HEIGHT + civBandHeight + row * ROW_HEIGHT)
-        .attr('width', Math.max(clipW + 4, 4)).attr('height', ROW_HEIGHT)
+        .attr('x', clipX - 4).attr('y', bodyTop + row * rowH)
+        .attr('width', clipW + 8).attr('height', rowH)
         .attr('fill', 'transparent')
         .on('mouseenter', () => onHover(figure))
         .on('mouseleave', () => onHover(null))
         .on('click', () => onSelectFigure(figure))
     }
 
-    // ── Left label panel ─────────────────────────────────────────────────────
-    // Separator line
+    // ── Left labels panel ────────────────────────────────────────────────────
+    // Dark background panel
+    svg.append('rect')
+      .attr('x', 0).attr('y', AXIS_HEIGHT + civBandHeight)
+      .attr('width', LABEL_WIDTH).attr('height', chartHeight - AXIS_HEIGHT - civBandHeight)
+      .attr('fill', '#0b0b14').attr('opacity', 0.85)
+
+    // Separator
     svg.append('line')
-      .attr('x1', LABEL_WIDTH - 1).attr('x2', LABEL_WIDTH - 1)
+      .attr('x1', LABEL_WIDTH - 0.5).attr('x2', LABEL_WIDTH - 0.5)
       .attr('y1', AXIS_HEIGHT + civBandHeight).attr('y2', chartHeight)
-      .attr('stroke', 'rgba(255,255,255,0.06)')
+      .attr('stroke', 'rgba(255,255,255,0.1)')
       .attr('stroke-width', 1)
 
-    // Civilization track label on left side
+    // Civilizations track label
     if (civBandHeight > 0) {
       svg.append('text')
-        .attr('x', LABEL_WIDTH - 10).attr('y', AXIS_HEIGHT + civBandHeight / 2 + 4)
+        .attr('x', LABEL_WIDTH - 12).attr('y', AXIS_HEIGHT + civBandHeight / 2 + 4)
         .attr('text-anchor', 'end')
-        .attr('fill', 'rgba(255,255,255,0.3)')
-        .attr('font-size', '9px')
+        .attr('fill', 'rgba(255,255,255,0.42)')
+        .attr('font-size', '10px')
+        .attr('font-weight', '600')
         .attr('font-family', 'DM Mono, monospace')
-        .attr('letter-spacing', '0.1em')
+        .attr('letter-spacing', '0.12em')
         .text('CIVILIZACIONES')
     }
 
-    const labelsG = svg.append('g')
+    // Header chips
+    svg.append('text')
+      .attr('x', 14).attr('y', AXIS_HEIGHT - 8)
+      .attr('fill', 'rgba(255,255,255,0.4)')
+      .attr('font-size', '10px')
+      .attr('font-weight', '600')
+      .attr('font-family', 'DM Mono, monospace')
+      .attr('letter-spacing', '0.15em')
+      .text('PERSONAJE')
 
-    // One label per figure, each in its own dedicated row — no overlapping
+    const labelsG = svg.append('g')
     figures.forEach((figure, i) => {
       const color = getCategoryColor(figure.category)
-      const rowY = AXIS_HEIGHT + civBandHeight + i * ROW_HEIGHT
-      const centerY = rowY + ROW_HEIGHT / 2
+      const rowY = bodyTop + i * rowH
+      const centerY = rowY + rowH / 2
 
-      // Row background on hover (invisible by default)
+      // Row hit
       labelsG.append('rect')
         .attr('x', 0).attr('y', rowY)
-        .attr('width', LABEL_WIDTH - 2).attr('height', ROW_HEIGHT)
+        .attr('width', LABEL_WIDTH - 1).attr('height', rowH)
         .attr('fill', 'transparent')
         .attr('cursor', 'pointer')
         .on('mouseenter', function () {
-          d3.select(this).attr('fill', 'rgba(255,255,255,0.04)')
+          d3.select(this).attr('fill', 'rgba(255,255,255,0.05)')
           onHover(figure)
         })
         .on('mouseleave', function () {
@@ -338,47 +405,80 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         })
         .on('click', () => onSelectFigure(figure))
 
-      // Category dot
-      labelsG.append('circle')
-        .attr('cx', 10).attr('cy', centerY)
-        .attr('r', 4)
+      // Color stripe on left edge
+      labelsG.append('rect')
+        .attr('x', 0).attr('y', rowY + 4)
+        .attr('width', 3).attr('height', rowH - 8)
+        .attr('rx', 1.5)
         .attr('fill', color)
-        .attr('style', `filter: drop-shadow(0 0 3px ${color})`)
+
+      // Color dot with glow
+      labelsG.append('circle')
+        .attr('cx', 18).attr('cy', centerY - (rowH > 60 ? 6 : 0))
+        .attr('r', 5).attr('fill', color)
+        .attr('style', `filter: drop-shadow(0 0 4px ${color}aa)`)
 
       // Name
-      const displayName = figure.name.length > 20 ? figure.name.slice(0, 19) + '…' : figure.name
+      const maxNameLen = rowH > 60 ? 22 : 24
+      const displayName = figure.name.length > maxNameLen
+        ? figure.name.slice(0, maxNameLen - 1) + '…'
+        : figure.name
       labelsG.append('text')
-        .attr('x', 22).attr('y', centerY - 3)
-        .attr('fill', 'rgba(255,255,255,0.80)')
-        .attr('font-size', '11px')
-        .attr('font-weight', '500')
+        .attr('x', 32)
+        .attr('y', centerY + (rowH > 60 ? -4 : -2))
+        .attr('fill', 'rgba(255,255,255,0.94)')
+        .attr('font-size', rowH > 60 ? '13.5px' : '12.5px')
+        .attr('font-weight', '600')
         .attr('font-family', 'DM Sans, sans-serif')
         .attr('dominant-baseline', 'middle')
         .text(displayName)
 
       // Years
-      const yearStr = `${figure.birthYear < 0 ? Math.abs(figure.birthYear) + ' aC' : figure.birthYear} – ${figure.deathYear < 0 ? Math.abs(figure.deathYear) + ' aC' : figure.deathYear}`
+      const yrStr = `${figure.birthYear < 0 ? Math.abs(figure.birthYear) + ' aC' : figure.birthYear} – ${figure.deathYear < 0 ? Math.abs(figure.deathYear) + ' aC' : figure.deathYear}`
       labelsG.append('text')
-        .attr('x', 22).attr('y', centerY + 10)
-        .attr('fill', 'rgba(255,255,255,0.28)')
-        .attr('font-size', '9px')
+        .attr('x', 32).attr('y', centerY + (rowH > 60 ? 13 : 11))
+        .attr('fill', 'rgba(255,255,255,0.45)')
+        .attr('font-size', '10.5px')
         .attr('font-family', 'DM Mono, monospace')
-        .text(yearStr)
+        .attr('dominant-baseline', 'middle')
+        .text(yrStr)
+
+      // Category (only if row is tall enough)
+      if (rowH > 60) {
+        labelsG.append('text')
+          .attr('x', 32).attr('y', centerY + 28)
+          .attr('fill', color).attr('opacity', 0.7)
+          .attr('font-size', '9.5px')
+          .attr('font-weight', '600')
+          .attr('font-family', 'DM Mono, monospace')
+          .attr('letter-spacing', '0.06em')
+          .attr('dominant-baseline', 'middle')
+          .text(figure.category.toUpperCase())
+      }
     })
 
     // ── Empty state ──────────────────────────────────────────────────────────
     if (figures.length === 0) {
+      const cx = totalWidth / 2
+      const cy = chartHeight / 2
       svg.append('text')
-        .attr('x', totalWidth / 2).attr('y', chartHeight / 2)
+        .attr('x', cx).attr('y', cy - 8)
         .attr('text-anchor', 'middle')
-        .attr('fill', 'rgba(255,255,255,0.15)')
-        .attr('font-size', '13px')
+        .attr('fill', 'rgba(255,255,255,0.22)')
+        .attr('font-size', '15px')
         .attr('font-family', 'DM Sans, sans-serif')
-        .text('Busca un personaje histórico para añadirlo al timeline')
+        .text('Busca un personaje histórico para comenzar')
+      svg.append('text')
+        .attr('x', cx).attr('y', cy + 14)
+        .attr('text-anchor', 'middle')
+        .attr('fill', 'rgba(255,255,255,0.14)')
+        .attr('font-size', '11px')
+        .attr('font-family', 'DM Mono, monospace')
+        .attr('letter-spacing', '0.1em')
+        .text('USA LA BARRA DE BÚSQUEDA ARRIBA')
     }
-  }, [figures, chartHeight, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight])
+  }, [figures, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight])
 
-  // Keep drawRef always current (avoids stale closures in zoom handler)
   useEffect(() => { drawRef.current = draw }, [draw])
 
   // Set up zoom ONCE
@@ -387,6 +487,11 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
     if (!el) return
     const zoom = d3.zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.2, 50])
+      .filter((event) => {
+        // Allow wheel always, but only drag with non-modifier left-click
+        if (event.type === 'wheel') return true
+        return !event.ctrlKey && !event.button
+      })
       .on('zoom', (event) => {
         transformRef.current = event.transform
         drawRef.current()
@@ -395,16 +500,11 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
     zoomRef.current = zoom
   }, [])
 
-  // Redraw whenever figures or dimensions change
   useEffect(() => { draw() }, [draw])
 
-  // Auto-fit: when a NEW figure is added, animate the view to show all figures
+  // Auto-fit when new figure added
   useEffect(() => {
-    if (figures.length === 0) {
-      prevFigureCountRef.current = 0
-      return
-    }
-    // Only fire when count increases (figure added, not removed or reordered)
+    if (figures.length === 0) { prevFigureCountRef.current = 0; return }
     if (figures.length <= prevFigureCountRef.current) {
       prevFigureCountRef.current = figures.length
       return
@@ -421,26 +521,20 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
     const minYear = Math.min(...figures.map(f => f.birthYear))
     const maxYear = Math.max(...figures.map(f => f.deathYear))
     const span = Math.max(maxYear - minYear, 10)
-    const padding = Math.max(span * FIT_PADDING_RATIO, FIT_PADDING_MIN)
+    const padding = Math.max(span * 0.18, 80)
     const visStart = Math.max(minYear - padding, MIN_YEAR - 50)
     const visEnd = Math.min(maxYear + padding, MAX_YEAR + 50)
     const visRange = visEnd - visStart
     const totalRange = MAX_YEAR - MIN_YEAR
-
     const k = Math.min(Math.max(totalRange / visRange, 0.2), 50)
     const tx = -((visStart - MIN_YEAR) / totalRange) * innerW * k
-
     const newTransform = d3.zoomIdentity.translate(tx, 0).scale(k)
 
     d3.select<SVGSVGElement, unknown>(el)
-      .transition()
-      .duration(700)
-      .ease(d3.easeCubicInOut)
+      .transition().duration(700).ease(d3.easeCubicInOut)
       .call(zoomRef.current.transform, newTransform)
+  }, [figures])
 
-  }, [figures]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  // Resize observer
   useEffect(() => {
     const ro = new ResizeObserver(() => drawRef.current())
     if (containerRef.current) ro.observe(containerRef.current)
@@ -448,7 +542,11 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
   }, [])
 
   return (
-    <div ref={containerRef} className="w-full" style={{ minHeight: 280 }}>
+    <div
+      ref={containerRef}
+      className="w-full h-full"
+      style={{ minHeight: 360 }}
+    >
       <svg
         ref={svgRef}
         style={{ display: 'block', cursor: 'grab', userSelect: 'none' }}

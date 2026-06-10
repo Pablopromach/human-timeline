@@ -1798,5 +1798,698 @@
     "wikipedia": "https://es.wikipedia.org/wiki/Espartaco",
     "tags": ["roma", "rebelión", "gladiador"],
     "relatedIds": [14, 13]
+  },
+  {
+    "id": 151,
+    "name": "Tales de Mileto",
+    "birthYear": -624, "deathYear": -546,
+    "country": "Grecia", "category": "Filósofo",
+    "description": "Filósofo y matemático griego, considerado uno de los Siete Sabios de Grecia. Primer filósofo occidental conocido.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tales_de_Mileto",
+    "tags": ["filosofía", "matemáticas", "grecia"], "relatedIds": [6, 90, 174]
+  },
+  {
+    "id": 152,
+    "name": "Solón",
+    "birthYear": -638, "deathYear": -558,
+    "country": "Grecia", "category": "Político",
+    "description": "Estadista, legislador y poeta ateniense. Sentó las bases de la democracia ateniense con sus reformas.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Solón",
+    "tags": ["grecia", "derecho", "democracia"], "relatedIds": [151, 166]
+  },
+  {
+    "id": 153,
+    "name": "Safo de Lesbos",
+    "birthYear": -630, "deathYear": -570,
+    "country": "Grecia", "category": "Escritor",
+    "description": "Poetisa griega de Lesbos. Una de las voces más célebres de la lírica antigua, llamada la 'Décima Musa' por Platón.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Safo_de_Mitilene",
+    "tags": ["poesía", "grecia", "lírica"], "relatedIds": [3]
+  },
+  {
+    "id": 154,
+    "name": "Anaximandro",
+    "birthYear": -610, "deathYear": -546,
+    "country": "Grecia", "category": "Filósofo",
+    "description": "Filósofo presocrático, discípulo de Tales. Pionero de la cosmología y la cartografía.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Anaximandro",
+    "tags": ["filosofía", "grecia", "cosmología"], "relatedIds": [151]
+  },
+  {
+    "id": 155,
+    "name": "Esopo",
+    "birthYear": -620, "deathYear": -564,
+    "country": "Grecia", "category": "Escritor",
+    "description": "Fabulista griego. Autor de las célebres fábulas con animales como protagonistas que han inspirado la literatura universal.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Esopo",
+    "tags": ["literatura", "fábula", "grecia"], "relatedIds": [3]
+  },
+  {
+    "id": 156,
+    "name": "Heráclito",
+    "birthYear": -535, "deathYear": -475,
+    "country": "Grecia", "category": "Filósofo",
+    "description": "Filósofo presocrático conocido por su frase 'todo fluye'. Defendió el cambio como esencia del universo.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Heráclito",
+    "tags": ["filosofía", "grecia", "cambio"], "relatedIds": [151, 154]
+  },
+  {
+    "id": 157,
+    "name": "Pericles",
+    "birthYear": -495, "deathYear": -429,
+    "country": "Grecia", "category": "Político",
+    "description": "Estadista ateniense. Su gobierno marcó el Siglo de Oro de Atenas. Construyó el Partenón y consolidó la democracia.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Pericles",
+    "tags": ["grecia", "democracia", "atenas"], "relatedIds": [6, 152, 158]
+  },
+  {
+    "id": 158,
+    "name": "Esquilo",
+    "birthYear": -525, "deathYear": -456,
+    "country": "Grecia", "category": "Escritor",
+    "description": "Dramaturgo griego, considerado el padre de la tragedia. Autor de la Orestíada.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Esquilo",
+    "tags": ["teatro", "tragedia", "grecia"], "relatedIds": [159, 160, 161]
+  },
+  {
+    "id": 159,
+    "name": "Sófocles",
+    "birthYear": -497, "deathYear": -406,
+    "country": "Grecia", "category": "Escritor",
+    "description": "Dramaturgo griego, autor de Edipo Rey y Antígona. Uno de los tres grandes trágicos del teatro ateniense.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Sófocles",
+    "tags": ["teatro", "tragedia", "grecia"], "relatedIds": [158, 160, 161]
+  },
+  {
+    "id": 160,
+    "name": "Eurípides",
+    "birthYear": -480, "deathYear": -406,
+    "country": "Grecia", "category": "Escritor",
+    "description": "Dramaturgo griego, autor de Medea y Las Troyanas. Innovó la tragedia con personajes psicológicamente complejos.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Eurípides",
+    "tags": ["teatro", "tragedia", "grecia"], "relatedIds": [158, 159, 161]
+  },
+  {
+    "id": 161,
+    "name": "Aristófanes",
+    "birthYear": -446, "deathYear": -386,
+    "country": "Grecia", "category": "Escritor",
+    "description": "Comediógrafo griego. Máximo representante de la comedia antigua, autor de Las Nubes y Lisístrata.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Aristófanes",
+    "tags": ["teatro", "comedia", "grecia"], "relatedIds": [158, 159, 160]
+  },
+  {
+    "id": 162,
+    "name": "Demócrito",
+    "birthYear": -460, "deathYear": -370,
+    "country": "Grecia", "category": "Filósofo",
+    "description": "Filósofo presocrático. Propuso por primera vez la teoría atómica de la materia, milenios antes de su confirmación.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Demócrito",
+    "tags": ["filosofía", "átomo", "grecia"], "relatedIds": [95, 156]
+  },
+  {
+    "id": 163,
+    "name": "Diógenes Laercio",
+    "birthYear": 180, "deathYear": 240,
+    "country": "Grecia", "category": "Escritor",
+    "description": "Biógrafo griego. Su obra Vidas de los filósofos ilustres es nuestra principal fuente sobre los filósofos antiguos.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Diógenes_Laercio",
+    "tags": ["historia", "filosofía", "biografía"], "relatedIds": []
+  },
+  {
+    "id": 164,
+    "name": "Escipión el Africano",
+    "birthYear": -236, "deathYear": -183,
+    "country": "Roma", "category": "Militar",
+    "description": "General romano. Derrotó a Aníbal en la batalla de Zama, poniendo fin a la Segunda Guerra Púnica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Escipión_el_Africano",
+    "tags": ["roma", "guerra", "cartago"], "relatedIds": [12]
+  },
+  {
+    "id": 165,
+    "name": "Catón el Viejo",
+    "birthYear": -234, "deathYear": -149,
+    "country": "Roma", "category": "Político",
+    "description": "Político y escritor romano. Defensor implacable de las tradiciones republicanas y de la destrucción de Cartago.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Catón_el_Viejo",
+    "tags": ["roma", "política", "república"], "relatedIds": [164, 12]
+  },
+  {
+    "id": 166,
+    "name": "Pompeyo Magno",
+    "birthYear": -106, "deathYear": -48,
+    "country": "Roma", "category": "Militar",
+    "description": "General y estadista romano. Miembro del Primer Triunvirato junto a César y Craso. Rival y luego enemigo de César.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Pompeyo",
+    "tags": ["roma", "guerra", "política"], "relatedIds": [14, 13]
+  },
+  {
+    "id": 167,
+    "name": "Marco Antonio",
+    "birthYear": -83, "deathYear": -30,
+    "country": "Roma", "category": "Militar",
+    "description": "General romano. Aliado de César, amante de Cleopatra. Su derrota en Actium ante Octavio cambió la historia de Roma.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Marco_Antonio",
+    "tags": ["roma", "guerra", "política"], "relatedIds": [14, 15, 16]
+  },
+  {
+    "id": 168,
+    "name": "Bruto",
+    "birthYear": -85, "deathYear": -42,
+    "country": "Roma", "category": "Político",
+    "description": "Senador romano. Conspirador y uno de los asesinos de Julio César en los Idus de Marzo del 44 a.C.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Marco_Junio_Bruto",
+    "tags": ["roma", "política", "república"], "relatedIds": [14, 167]
+  },
+  {
+    "id": 169,
+    "name": "Séneca",
+    "birthYear": -4, "deathYear": 65,
+    "country": "Roma", "category": "Filósofo",
+    "description": "Filósofo estoico, escritor y político romano. Tutor del emperador Nerón. Sus Cartas a Lucilio son una joya filosófica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Séneca",
+    "tags": ["estoicismo", "filosofía", "roma"], "relatedIds": [19, 170, 171]
+  },
+  {
+    "id": 170,
+    "name": "Calígula",
+    "birthYear": 12, "deathYear": 41,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano. Símbolo del despotismo y la locura imperial. Asesinado por la guardia pretoriana tras 4 años de reinado.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Calígula",
+    "tags": ["roma", "imperio", "tiranía"], "relatedIds": [16]
+  },
+  {
+    "id": 171,
+    "name": "Nerón",
+    "birthYear": 37, "deathYear": 68,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano. Famoso por el incendio de Roma y la persecución de los cristianos. Acabó suicidándose.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Nerón",
+    "tags": ["roma", "imperio", "tiranía"], "relatedIds": [169, 170]
+  },
+  {
+    "id": 172,
+    "name": "Vespasiano",
+    "birthYear": 9, "deathYear": 79,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano y fundador de la dinastía Flavia. Inició la construcción del Coliseo.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Vespasiano",
+    "tags": ["roma", "imperio", "arquitectura"], "relatedIds": [171]
+  },
+  {
+    "id": 173,
+    "name": "Trajano",
+    "birthYear": 53, "deathYear": 117,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano. Bajo su mandato el Imperio Romano alcanzó su mayor extensión territorial.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Trajano",
+    "tags": ["roma", "imperio", "conquista"], "relatedIds": [174, 19]
+  },
+  {
+    "id": 174,
+    "name": "Adriano",
+    "birthYear": 76, "deathYear": 138,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano. Construyó el Muro de Adriano en Britania y consolidó las fronteras del Imperio.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Adriano",
+    "tags": ["roma", "imperio", "arquitectura"], "relatedIds": [173, 19]
+  },
+  {
+    "id": 175,
+    "name": "Tácito",
+    "birthYear": 56, "deathYear": 120,
+    "country": "Roma", "category": "Escritor",
+    "description": "Historiador romano. Sus Anales y Historias son fuentes esenciales para conocer el Imperio Romano.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tácito",
+    "tags": ["historia", "roma", "literatura"], "relatedIds": [173, 174, 169]
+  },
+  {
+    "id": 176,
+    "name": "Plinio el Viejo",
+    "birthYear": 23, "deathYear": 79,
+    "country": "Roma", "category": "Científico",
+    "description": "Naturalista y militar romano. Autor de Historia Natural. Murió investigando la erupción del Vesubio.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Plinio_el_Viejo",
+    "tags": ["ciencia", "naturaleza", "roma"], "relatedIds": [172, 175]
+  },
+  {
+    "id": 177,
+    "name": "Epicteto",
+    "birthYear": 50, "deathYear": 135,
+    "country": "Roma", "category": "Filósofo",
+    "description": "Filósofo estoico nacido esclavo. Sus enseñanzas, recogidas por su discípulo Arriano, influyen aún hoy.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Epicteto",
+    "tags": ["estoicismo", "filosofía", "roma"], "relatedIds": [19, 169]
+  },
+  {
+    "id": 178,
+    "name": "Beda el Venerable",
+    "birthYear": 672, "deathYear": 735,
+    "country": "Inglaterra", "category": "Religioso",
+    "description": "Monje y erudito anglosajón. Padre de la historia de Inglaterra. Su Historia Eclesiástica es un pilar medieval.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Beda",
+    "tags": ["medieval", "religión", "historia"], "relatedIds": [179]
+  },
+  {
+    "id": 179,
+    "name": "Alcuino de York",
+    "birthYear": 735, "deathYear": 804,
+    "country": "Inglaterra", "category": "Filósofo",
+    "description": "Erudito y teólogo anglosajón. Consejero de Carlomagno e impulsor del Renacimiento Carolingio.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Alcuino_de_York",
+    "tags": ["medieval", "educación", "carolingio"], "relatedIds": [20, 178]
+  },
+  {
+    "id": 180,
+    "name": "El Cid Campeador",
+    "birthYear": 1043, "deathYear": 1099,
+    "country": "España", "category": "Militar",
+    "description": "Caballero castellano. Líder militar legendario de la Reconquista. Su gesta inspiró el Cantar de Mio Cid.",
+    "wikipedia": "https://es.wikipedia.org/wiki/El_Cid_Campeador",
+    "tags": ["medieval", "reconquista", "españa"], "relatedIds": []
+  },
+  {
+    "id": 181,
+    "name": "Leonor de Aquitania",
+    "birthYear": 1122, "deathYear": 1204,
+    "country": "Francia", "category": "Político",
+    "description": "Reina de Francia e Inglaterra, una de las mujeres más poderosas de la Edad Media. Madre de Ricardo Corazón de León.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Leonor_de_Aquitania",
+    "tags": ["medieval", "reina", "francia"], "relatedIds": [182, 104]
+  },
+  {
+    "id": 182,
+    "name": "Ricardo Corazón de León",
+    "birthYear": 1157, "deathYear": 1199,
+    "country": "Inglaterra", "category": "Militar",
+    "description": "Rey de Inglaterra. Líder de la Tercera Cruzada y caballero legendario. Murió por una flecha en un asedio.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Ricardo_I_de_Inglaterra",
+    "tags": ["medieval", "cruzadas", "inglaterra"], "relatedIds": [181, 104]
+  },
+  {
+    "id": 183,
+    "name": "Federico II Hohenstaufen",
+    "birthYear": 1194, "deathYear": 1250,
+    "country": "Sacro Imperio", "category": "Político",
+    "description": "Emperador del Sacro Imperio. Llamado 'stupor mundi', su corte siciliana fue un faro cultural medieval.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Federico_II_Hohenstaufen",
+    "tags": ["medieval", "imperio", "cultura"], "relatedIds": [20]
+  },
+  {
+    "id": 184,
+    "name": "San Francisco de Asís",
+    "birthYear": 1181, "deathYear": 1226,
+    "country": "Italia", "category": "Religioso",
+    "description": "Fraile italiano, fundador de la Orden Franciscana. Símbolo universal de pobreza voluntaria y amor a la naturaleza.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Francisco_de_Asís",
+    "tags": ["religión", "medieval", "italia"], "relatedIds": [23]
+  },
+  {
+    "id": 185,
+    "name": "Roger Bacon",
+    "birthYear": 1219, "deathYear": 1292,
+    "country": "Inglaterra", "category": "Científico",
+    "description": "Filósofo y científico franciscano. Defensor del método experimental, precursor de la ciencia moderna.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Roger_Bacon",
+    "tags": ["medieval", "ciencia", "método"], "relatedIds": [23, 184]
+  },
+  {
+    "id": 186,
+    "name": "Guillermo de Ockham",
+    "birthYear": 1287, "deathYear": 1347,
+    "country": "Inglaterra", "category": "Filósofo",
+    "description": "Filósofo franciscano. Famoso por la 'navaja de Ockham', principio de simplicidad lógica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Guillermo_de_Ockham",
+    "tags": ["filosofía", "medieval", "lógica"], "relatedIds": [23, 185]
+  },
+  {
+    "id": 187,
+    "name": "Petrarca",
+    "birthYear": 1304, "deathYear": 1374,
+    "country": "Italia", "category": "Escritor",
+    "description": "Poeta y humanista italiano. Padre del humanismo renacentista. Sus sonetos a Laura son clásicos universales.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Francesco_Petrarca",
+    "tags": ["literatura", "humanismo", "renacimiento"], "relatedIds": [25, 188]
+  },
+  {
+    "id": 188,
+    "name": "Boccaccio",
+    "birthYear": 1313, "deathYear": 1375,
+    "country": "Italia", "category": "Escritor",
+    "description": "Escritor italiano. Autor del Decamerón, una de las grandes obras narrativas del Trecento.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Giovanni_Boccaccio",
+    "tags": ["literatura", "renacimiento", "italia"], "relatedIds": [187, 25]
+  },
+  {
+    "id": 189,
+    "name": "Filippo Brunelleschi",
+    "birthYear": 1377, "deathYear": 1446,
+    "country": "Italia", "category": "Arquitecto",
+    "description": "Arquitecto e ingeniero florentino. Diseñó la cúpula de la catedral de Florencia, hazaña técnica del Renacimiento.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Filippo_Brunelleschi",
+    "tags": ["arquitectura", "renacimiento", "florencia"], "relatedIds": [190, 107]
+  },
+  {
+    "id": 190,
+    "name": "Donatello",
+    "birthYear": 1386, "deathYear": 1466,
+    "country": "Italia", "category": "Artista",
+    "description": "Escultor florentino. Maestro del Renacimiento temprano, pionero del bronce y el realismo escultórico.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Donatello",
+    "tags": ["escultura", "renacimiento", "florencia"], "relatedIds": [189, 32]
+  },
+  {
+    "id": 191,
+    "name": "Sandro Botticelli",
+    "birthYear": 1445, "deathYear": 1510,
+    "country": "Italia", "category": "Artista",
+    "description": "Pintor florentino. Autor de El Nacimiento de Venus y La Primavera, obras cumbre del Renacimiento.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Sandro_Botticelli",
+    "tags": ["pintura", "renacimiento", "florencia"], "relatedIds": [29, 107]
+  },
+  {
+    "id": 192,
+    "name": "Tiziano",
+    "birthYear": 1488, "deathYear": 1576,
+    "country": "Italia", "category": "Artista",
+    "description": "Pintor veneciano. Maestro del color y referente del Renacimiento veneciano. Retratista de la realeza europea.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tiziano",
+    "tags": ["pintura", "renacimiento", "venecia"], "relatedIds": [32, 33, 193]
+  },
+  {
+    "id": 193,
+    "name": "Tintoretto",
+    "birthYear": 1518, "deathYear": 1594,
+    "country": "Italia", "category": "Artista",
+    "description": "Pintor veneciano del manierismo. Conocido por la energía dramática y los efectos de luz en sus obras.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tintoretto",
+    "tags": ["pintura", "manierismo", "venecia"], "relatedIds": [192]
+  },
+  {
+    "id": 194,
+    "name": "El Greco",
+    "birthYear": 1541, "deathYear": 1614,
+    "country": "España", "category": "Artista",
+    "description": "Pintor griego-español. Su estilo único, con figuras alargadas y colores intensos, anticipó el expresionismo.",
+    "wikipedia": "https://es.wikipedia.org/wiki/El_Greco",
+    "tags": ["pintura", "manierismo", "españa"], "relatedIds": [193, 113]
+  },
+  {
+    "id": 195,
+    "name": "Erasmo de Rotterdam",
+    "birthYear": 1466, "deathYear": 1536,
+    "country": "Países Bajos", "category": "Filósofo",
+    "description": "Humanista holandés. Su Elogio de la locura es un clásico. Defendió la reforma sin romper con Roma.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Erasmo_de_Róterdam",
+    "tags": ["humanismo", "renacimiento", "religión"], "relatedIds": [35, 196]
+  },
+  {
+    "id": 196,
+    "name": "Tomás Moro",
+    "birthYear": 1478, "deathYear": 1535,
+    "country": "Inglaterra", "category": "Escritor",
+    "description": "Humanista y estadista inglés. Autor de Utopía. Ejecutado por oponerse a Enrique VIII.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tomás_Moro",
+    "tags": ["humanismo", "literatura", "política"], "relatedIds": [195]
+  },
+  {
+    "id": 197,
+    "name": "Vasco da Gama",
+    "birthYear": 1469, "deathYear": 1524,
+    "country": "Portugal", "category": "Explorador",
+    "description": "Navegante portugués. Primer europeo en llegar a India por mar, inaugurando la era colonial portuguesa.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Vasco_da_Gama",
+    "tags": ["exploración", "portugal", "asia"], "relatedIds": [28, 34]
+  },
+  {
+    "id": 198,
+    "name": "Américo Vespucio",
+    "birthYear": 1454, "deathYear": 1512,
+    "country": "Italia", "category": "Explorador",
+    "description": "Explorador italiano. Sus viajes demostraron que las tierras descubiertas por Colón eran un nuevo continente. América lleva su nombre.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Américo_Vespucio",
+    "tags": ["exploración", "américa", "renacimiento"], "relatedIds": [28]
+  },
+  {
+    "id": 199,
+    "name": "Johannes Kepler",
+    "birthYear": 1571, "deathYear": 1630,
+    "country": "Alemania", "category": "Científico",
+    "description": "Astrónomo y matemático alemán. Formuló las tres leyes del movimiento planetario.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Johannes_Kepler",
+    "tags": ["astronomía", "matemáticas", "ciencia"], "relatedIds": [31, 36, 200]
+  },
+  {
+    "id": 200,
+    "name": "Tycho Brahe",
+    "birthYear": 1546, "deathYear": 1601,
+    "country": "Dinamarca", "category": "Científico",
+    "description": "Astrónomo danés. Realizó las observaciones más precisas pre-telescópicas. Maestro de Kepler.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tycho_Brahe",
+    "tags": ["astronomía", "observación", "ciencia"], "relatedIds": [199, 31]
+  },
+  {
+    "id": 201,
+    "name": "Baruch Spinoza",
+    "birthYear": 1632, "deathYear": 1677,
+    "country": "Países Bajos", "category": "Filósofo",
+    "description": "Filósofo racionalista. Su Ética geometricaente demostrada es un pilar de la filosofía moderna.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Baruch_Spinoza",
+    "tags": ["filosofía", "racionalismo", "ética"], "relatedIds": [40, 202]
+  },
+  {
+    "id": 202,
+    "name": "Gottfried Wilhelm Leibniz",
+    "birthYear": 1646, "deathYear": 1716,
+    "country": "Alemania", "category": "Matemático",
+    "description": "Polímata alemán. Co-inventor del cálculo infinitesimal junto con Newton. Pionero de la lógica simbólica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Gottfried_Leibniz",
+    "tags": ["matemáticas", "filosofía", "cálculo"], "relatedIds": [41, 201]
+  },
+  {
+    "id": 203,
+    "name": "Antoine Lavoisier",
+    "birthYear": 1743, "deathYear": 1794,
+    "country": "Francia", "category": "Científico",
+    "description": "Químico francés, padre de la química moderna. Guillotinado durante el Terror revolucionario.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Antoine_Lavoisier",
+    "tags": ["química", "ciencia", "francia"], "relatedIds": [204]
+  },
+  {
+    "id": 204,
+    "name": "Carl Friedrich Gauss",
+    "birthYear": 1777, "deathYear": 1855,
+    "country": "Alemania", "category": "Matemático",
+    "description": "Matemático alemán. 'Príncipe de las matemáticas'. Contribuciones fundamentales en álgebra, geometría y estadística.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Carl_Friedrich_Gauss",
+    "tags": ["matemáticas", "estadística", "ciencia"], "relatedIds": [41, 202]
+  },
+  {
+    "id": 205,
+    "name": "Gregor Mendel",
+    "birthYear": 1822, "deathYear": 1884,
+    "country": "Imperio Austríaco", "category": "Científico",
+    "description": "Monje y científico, padre de la genética moderna. Sus leyes sobre la herencia revolucionaron la biología.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Gregor_Mendel",
+    "tags": ["genética", "biología", "ciencia"], "relatedIds": [54]
+  },
+  {
+    "id": 206,
+    "name": "Dmitri Mendeléyev",
+    "birthYear": 1834, "deathYear": 1907,
+    "country": "Rusia", "category": "Científico",
+    "description": "Químico ruso. Creó la tabla periódica de los elementos, base de la química moderna.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Dmitri_Mendeléyev",
+    "tags": ["química", "ciencia", "rusia"], "relatedIds": [203, 65]
+  },
+  {
+    "id": 207,
+    "name": "Luis XIV de Francia",
+    "birthYear": 1638, "deathYear": 1715,
+    "country": "Francia", "category": "Político",
+    "description": "Rey Sol. Encarnación del absolutismo francés. Construyó el palacio de Versalles. Reinó 72 años.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Luis_XIV_de_Francia",
+    "tags": ["francia", "absolutismo", "monarquía"], "relatedIds": [208]
+  },
+  {
+    "id": 208,
+    "name": "Luis XVI",
+    "birthYear": 1754, "deathYear": 1793,
+    "country": "Francia", "category": "Político",
+    "description": "Último rey del Antiguo Régimen francés. Guillotinado durante la Revolución Francesa.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Luis_XVI_de_Francia",
+    "tags": ["francia", "revolución", "monarquía"], "relatedIds": [209, 210, 207]
+  },
+  {
+    "id": 209,
+    "name": "María Antonieta",
+    "birthYear": 1755, "deathYear": 1793,
+    "country": "Francia", "category": "Político",
+    "description": "Reina de Francia. Esposa de Luis XVI. Su frivolidad simbolizó los excesos del Antiguo Régimen. Guillotinada.",
+    "wikipedia": "https://es.wikipedia.org/wiki/María_Antonieta",
+    "tags": ["francia", "revolución", "monarquía"], "relatedIds": [208]
+  },
+  {
+    "id": 210,
+    "name": "Maximilien Robespierre",
+    "birthYear": 1758, "deathYear": 1794,
+    "country": "Francia", "category": "Político",
+    "description": "Líder jacobino durante la Revolución Francesa. Cabeza del Terror. Guillotinado en Termidor.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Maximilien_Robespierre",
+    "tags": ["revolución", "francia", "terror"], "relatedIds": [208, 211, 212]
+  },
+  {
+    "id": 211,
+    "name": "Georges Danton",
+    "birthYear": 1759, "deathYear": 1794,
+    "country": "Francia", "category": "Político",
+    "description": "Líder revolucionario francés. Co-protagonista del Terror antes de ser guillotinado por orden de Robespierre.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Georges_Jacques_Danton",
+    "tags": ["revolución", "francia", "política"], "relatedIds": [210, 212]
+  },
+  {
+    "id": 212,
+    "name": "Jean-Paul Marat",
+    "birthYear": 1743, "deathYear": 1793,
+    "country": "Francia", "category": "Político",
+    "description": "Periodista y revolucionario radical. Asesinado en su bañera por Charlotte Corday durante la Revolución.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Jean-Paul_Marat",
+    "tags": ["revolución", "francia", "periodismo"], "relatedIds": [210, 211]
+  },
+  {
+    "id": 213,
+    "name": "Marqués de Lafayette",
+    "birthYear": 1757, "deathYear": 1834,
+    "country": "Francia", "category": "Militar",
+    "description": "General francés. Héroe de las Revoluciones Americana y Francesa. Símbolo de la libertad transatlántica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Marqués_de_La_Fayette",
+    "tags": ["revolución", "francia", "eeuu"], "relatedIds": [116, 117, 208]
+  },
+  {
+    "id": 214,
+    "name": "Talleyrand",
+    "birthYear": 1754, "deathYear": 1838,
+    "country": "Francia", "category": "Político",
+    "description": "Diplomático francés. Sirvió a la Revolución, Napoleón y la Restauración. Maestro del arte de la supervivencia política.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Charles_Maurice_de_Talleyrand-Périgord",
+    "tags": ["diplomacia", "francia", "política"], "relatedIds": [49, 208]
+  },
+  {
+    "id": 215,
+    "name": "Montesquieu",
+    "birthYear": 1689, "deathYear": 1755,
+    "country": "Francia", "category": "Filósofo",
+    "description": "Filósofo ilustrado. Formuló la separación de poderes en El espíritu de las leyes, base de las democracias modernas.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Montesquieu",
+    "tags": ["ilustración", "política", "filosofía"], "relatedIds": [44, 45, 46]
+  },
+  {
+    "id": 216,
+    "name": "Denis Diderot",
+    "birthYear": 1713, "deathYear": 1784,
+    "country": "Francia", "category": "Filósofo",
+    "description": "Filósofo y enciclopedista. Director de la Enciclopedia, obra clave de la Ilustración.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Denis_Diderot",
+    "tags": ["ilustración", "enciclopedia", "filosofía"], "relatedIds": [44, 45, 215]
+  },
+  {
+    "id": 217,
+    "name": "Olympe de Gouges",
+    "birthYear": 1748, "deathYear": 1793,
+    "country": "Francia", "category": "Escritor",
+    "description": "Escritora y feminista francesa. Autora de la Declaración de los derechos de la mujer. Guillotinada por sus ideas.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Olympe_de_Gouges",
+    "tags": ["revolución", "feminismo", "francia"], "relatedIds": [210]
+  },
+  {
+    "id": 218,
+    "name": "Tommaso Campanella",
+    "birthYear": 1568, "deathYear": 1639,
+    "country": "Italia", "category": "Filósofo",
+    "description": "Filósofo dominicano italiano. Autor de La Ciudad del Sol, utopía renacentista. Pasó 27 años en prisión por sus ideas.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tommaso_Campanella",
+    "tags": ["filosofía", "utopía", "italia"], "relatedIds": [196, 36]
+  },
+  {
+    "id": 219,
+    "name": "George Orwell",
+    "birthYear": 1903, "deathYear": 1950,
+    "country": "Reino Unido", "category": "Escritor",
+    "description": "Escritor británico. Autor de 1984 y Rebelión en la granja. Crítico del totalitarismo del siglo XX.",
+    "wikipedia": "https://es.wikipedia.org/wiki/George_Orwell",
+    "tags": ["literatura", "política", "distopía"], "relatedIds": [220, 78]
+  },
+  {
+    "id": 220,
+    "name": "Virginia Woolf",
+    "birthYear": 1882, "deathYear": 1941,
+    "country": "Reino Unido", "category": "Escritor",
+    "description": "Escritora británica, figura modernista. Autora de Mrs. Dalloway y Una habitación propia.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Virginia_Woolf",
+    "tags": ["literatura", "modernismo", "feminismo"], "relatedIds": [219, 77]
+  },
+  {
+    "id": 221,
+    "name": "Jean-Paul Sartre",
+    "birthYear": 1905, "deathYear": 1980,
+    "country": "Francia", "category": "Filósofo",
+    "description": "Filósofo existencialista francés. Premio Nobel rechazado. Pareja intelectual de Simone de Beauvoir.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Jean-Paul_Sartre",
+    "tags": ["existencialismo", "filosofía", "francia"], "relatedIds": [222, 223, 125]
+  },
+  {
+    "id": 222,
+    "name": "Simone de Beauvoir",
+    "birthYear": 1908, "deathYear": 1986,
+    "country": "Francia", "category": "Filósofo",
+    "description": "Filósofa y feminista francesa. Su obra El segundo sexo fundó el feminismo moderno.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Simone_de_Beauvoir",
+    "tags": ["feminismo", "existencialismo", "filosofía"], "relatedIds": [221, 217]
+  },
+  {
+    "id": 223,
+    "name": "Albert Camus",
+    "birthYear": 1913, "deathYear": 1960,
+    "country": "Francia", "category": "Escritor",
+    "description": "Escritor y filósofo francoargelino. Premio Nobel de Literatura. Autor de El extranjero y La peste.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Albert_Camus",
+    "tags": ["existencialismo", "literatura", "filosofía"], "relatedIds": [221, 222]
+  },
+  {
+    "id": 224,
+    "name": "Federico García Lorca",
+    "birthYear": 1898, "deathYear": 1936,
+    "country": "España", "category": "Escritor",
+    "description": "Poeta y dramaturgo español. Figura central de la Generación del 27. Asesinado al inicio de la Guerra Civil.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Federico_García_Lorca",
+    "tags": ["poesía", "teatro", "españa"], "relatedIds": [225, 88]
+  },
+  {
+    "id": 225,
+    "name": "Pablo Neruda",
+    "birthYear": 1904, "deathYear": 1973,
+    "country": "Chile", "category": "Escritor",
+    "description": "Poeta chileno. Premio Nobel de Literatura 1971. Voz mayor de la poesía amorosa y política latinoamericana.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Pablo_Neruda",
+    "tags": ["poesía", "chile", "nobel"], "relatedIds": [132, 133, 224]
+  },
+  {
+    "id": 226,
+    "name": "Erwin Schrödinger",
+    "birthYear": 1887, "deathYear": 1961,
+    "country": "Austria", "category": "Científico",
+    "description": "Físico austríaco. Su ecuación es fundamental en mecánica cuántica. Famoso por el experimento del gato.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Erwin_Schrödinger",
+    "tags": ["física", "cuántica", "ciencia"], "relatedIds": [66, 71, 72]
+  },
+  {
+    "id": 227,
+    "name": "Vincenzo Bellini",
+    "birthYear": 1801, "deathYear": 1835,
+    "country": "Italia", "category": "Músico",
+    "description": "Compositor italiano de ópera. Maestro del bel canto, autor de Norma y La Sonnambula.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Vincenzo_Bellini",
+    "tags": ["música", "ópera", "italia"], "relatedIds": [62, 60]
   }
 ]

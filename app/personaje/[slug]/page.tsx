@@ -103,7 +103,7 @@ export default function PersonajePage({ params }: Params) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
-      <main className="min-h-screen" style={{ background: 'var(--void)' }}>
+      <main className="min-h-screen overflow-y-auto" style={{ background: 'var(--void)', height: 'auto' }}>
         {/* Ambient color glow */}
         <div
           className="fixed inset-0 pointer-events-none"

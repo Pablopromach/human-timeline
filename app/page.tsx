@@ -1,7 +1,8 @@
 'use client'
 import { useState, useCallback, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Shuffle, Trash2, ChevronDown, GitCommitHorizontal, Crown } from 'lucide-react'
+import { Shuffle, Trash2, ChevronDown, Crown } from 'lucide-react'
+import HumanTimelineIcon from '@/components/UI/HumanTimelineIcon'
 import { useTimeline } from '@/hooks/useTimeline'
 import { findFigureBySlug } from '@/lib/slug'
 import civilizationsData from '@/data/civilizations.json'
@@ -81,7 +82,7 @@ export default function HomePage() {
   }, [addFigure])
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ background: 'var(--void)' }}>
+    <div className="h-screen flex flex-col overflow-hidden" style={{ background: 'var(--void)' }}>
       {/* Header */}
       <header className="flex-shrink-0 border-b border-white/6 px-5 py-4">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between gap-4">
@@ -89,10 +90,10 @@ export default function HomePage() {
           <div className="flex items-center gap-3">
             <div className="relative">
               <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center"
-                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)' }}
+                className="w-9 h-9 rounded-xl flex items-center justify-center"
+                style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', boxShadow: '0 4px 16px rgba(99,102,241,0.4)' }}
               >
-                <GitCommitHorizontal size={16} className="text-white" />
+                <HumanTimelineIcon size={20} className="text-white" />
               </div>
               <span
                 className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full"
@@ -255,16 +256,17 @@ export default function HomePage() {
                 onChange={setCategoryFilter}
                 counts={categoryCounts}
               />
-              <span className="text-[10px] text-white/20 font-mono ml-auto">
-                {selectedFigures.length} personaje{selectedFigures.length !== 1 ? 's' : ''}
-                {' · '}
-                <span className="text-white/30">Rueda para zoom · Arrastra para mover · Clic en eje para ver quién vivía</span>
+              <span className="text-[11px] text-white/40 font-mono ml-auto">
+                <span className="text-white/70 font-semibold">{selectedFigures.length}</span>
+                {' personaje'}{selectedFigures.length !== 1 ? 's' : ''}
+                <span className="mx-3 text-white/15">|</span>
+                <span className="text-white/40">Rueda = zoom · Arrastra = mover · Clic en eje = quién vivía</span>
               </span>
             </motion.div>
           )}
 
-          {/* Chart */}
-          <div className="flex-1 overflow-auto">
+          {/* Chart — fills all remaining vertical space */}
+          <div className="flex-1 min-h-0 overflow-auto">
             <TimelineChart
               figures={selectedFigures}
               civilizations={showCivilizations ? civilizations : []}
@@ -320,19 +322,6 @@ export default function HomePage() {
         </AnimatePresence>
       </div>
 
-      {/* Footer */}
-      <footer className="flex-shrink-0 border-t border-white/4 px-5 py-3">
-        <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
-          <p className="text-[11px] text-white/18 font-mono">
-            {allFigures.length} personajes · 4000 a.C. — 2026
-          </p>
-          <div className="flex items-center gap-4">
-            <p className="text-[11px] text-white/18">
-              Haz clic en el eje temporal para ver quién estaba vivo ese año
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
