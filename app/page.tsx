@@ -303,6 +303,7 @@ export default function HomePage() {
             <TimelineChart
               figures={selectedFigures}
               civilizations={showCivilizations ? civilizations : []}
+              highlightedId={selectedCard?.id ?? null}
               onHover={setHoveredFigure}
               onYearClick={year => { setActiveYear(year); setShowIntro(false); setMobileSidebarOpen(true) }}
               onSelectFigure={handleSelectFigure}

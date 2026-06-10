@@ -159,3 +159,24 @@ html, body {
 .pulse-border {
   animation: pulse-border 2s ease-in-out infinite;
 }
+
+/* Highlighted bar in timeline (pulsing halo) */
+@keyframes halo-breath {
+  0%, 100% { opacity: 0.18; transform: scale(1); }
+  50%      { opacity: 0.45; transform: scale(1.015); }
+}
+
+@keyframes halo-ring {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1; }
+}
+
+.highlight-halo {
+  animation: halo-breath 1.8s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.highlight-halo-2 {
+  animation: halo-ring 1.8s ease-in-out infinite;
+}

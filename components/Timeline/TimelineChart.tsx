@@ -16,6 +16,7 @@ const MOBILE_BREAKPOINT = 640
 interface Props {
   figures: HistoricalFigure[]
   civilizations?: Civilization[]
+  highlightedId?: number | null
   onHover: (fig: HistoricalFigure | null) => void
   onYearClick: (year: number) => void
   onSelectFigure: (fig: HistoricalFigure) => void
@@ -24,7 +25,7 @@ interface Props {
 const CIV_BAR_HEIGHT = 16
 const CIV_TRACK_GAP = 4
 
-export default function TimelineChart({ figures, civilizations = [], onHover, onYearClick, onSelectFigure }: Props) {
+export default function TimelineChart({ figures, civilizations = [], highlightedId = null, onHover, onYearClick, onSelectFigure }: Props) {
   const { t, locale } = useTranslation()
   const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -275,24 +276,45 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         continue
       }
 
-      const barG = barsG.append('g').attr('cursor', 'pointer')
+      const isHighlighted = figure.id === highlightedId
+      const barG = barsG.append('g')
+        .attr('cursor', 'pointer')
+        .attr('class', isHighlighted ? 'bar-group highlighted' : 'bar-group')
 
       const clipX = Math.max(x1, 0)
       const clipW = Math.min(x2, innerW) - clipX
       if (clipW < 0) continue
 
+      // Outer pulsing halo (only when highlighted)
+      if (isHighlighted) {
+        barG.append('rect')
+          .attr('class', 'highlight-halo')
+          .attr('x', clipX - 10).attr('y', y - 12)
+          .attr('width', clipW + 20).attr('height', barH + 24)
+          .attr('rx', 10)
+          .attr('fill', color).attr('opacity', 0.32)
+        barG.append('rect')
+          .attr('class', 'highlight-halo-2')
+          .attr('x', clipX - 4).attr('y', y - 6)
+          .attr('width', clipW + 8).attr('height', barH + 12)
+          .attr('rx', 6)
+          .attr('fill', 'none')
+          .attr('stroke', color).attr('stroke-width', 1.5).attr('stroke-opacity', 0.8)
+      }
+
       // Glow
       barG.append('rect')
         .attr('x', clipX).attr('y', y - 5)
         .attr('width', clipW).attr('height', barH + 10)
-        .attr('rx', 6).attr('fill', color).attr('opacity', 0.12)
+        .attr('rx', 6).attr('fill', color)
+        .attr('opacity', isHighlighted ? 0.22 : 0.12)
 
       // Main bar
       barG.append('rect')
         .attr('x', clipX).attr('y', y)
         .attr('width', clipW).attr('height', barH)
         .attr('rx', 4)
-        .attr('fill', color).attr('opacity', 0.88)
+        .attr('fill', color).attr('opacity', isHighlighted ? 1 : 0.88)
 
       // Top highlight
       barG.append('rect')
@@ -392,21 +414,31 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
     const labelsG = svg.append('g')
     figures.forEach((figure, i) => {
       const color = getCategoryColor(figure.category)
+      const isHighlighted = figure.id === highlightedId
       const rowY = bodyTop + i * rowH
       const centerY = rowY + rowH / 2
 
-      // Row hit
+      // Persistent highlight background for the row
+      if (isHighlighted) {
+        labelsG.append('rect')
+          .attr('x', 0).attr('y', rowY)
+          .attr('width', LABEL_WIDTH - 1).attr('height', rowH)
+          .attr('fill', color).attr('opacity', 0.12)
+      }
+
+      // Row hit (hover + click)
+      const restingFill = isHighlighted ? 'transparent' : 'transparent'
       labelsG.append('rect')
         .attr('x', 0).attr('y', rowY)
         .attr('width', LABEL_WIDTH - 1).attr('height', rowH)
-        .attr('fill', 'transparent')
+        .attr('fill', restingFill)
         .attr('cursor', 'pointer')
         .on('mouseenter', function () {
           d3.select(this).attr('fill', 'rgba(255,255,255,0.05)')
           onHover(figure)
         })
         .on('mouseleave', function () {
-          d3.select(this).attr('fill', 'transparent')
+          d3.select(this).attr('fill', restingFill)
           onHover(null)
         })
         .on('click', () => onSelectFigure(figure))
@@ -483,7 +515,7 @@ export default function TimelineChart({ figures, civilizations = [], onHover, on
         .attr('letter-spacing', '0.1em')
         .text(t('home.empty.sub'))
     }
-  }, [figures, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight, t, bcSuffix, bcLabel])
+  }, [figures, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight, t, bcSuffix, bcLabel, highlightedId])
 
   useEffect(() => { drawRef.current = draw }, [draw])
 
