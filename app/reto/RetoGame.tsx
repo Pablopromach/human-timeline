@@ -1,9 +1,8 @@
 'use client'
 import { useState, useCallback, useMemo, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowLeft, Search, Share2, RotateCcw, Infinity as InfinityIcon, ListChecks, Heart } from 'lucide-react'
+import { ArrowLeft, Search, Share2, RotateCcw, Infinity as InfinityIcon, ListChecks, Heart, Check, Link as LinkIcon } from 'lucide-react'
 import { HistoricalFigure } from '@/types'
 import figuresData from '@/data/figures.json'
 import { searchFigures } from '@/lib/searchEngine'
@@ -60,7 +59,6 @@ function getRevealMessage(result: ScoreResult, t: (k: string, v?: Record<string,
 }
 
 export default function RetoGame() {
-  const router = useRouter()
   const { t, fy, locale } = useTranslation()
   const [phase, setPhase] = useState<Phase>('intro')
   const [mode, setMode] = useState<Mode>('classic')
@@ -71,6 +69,8 @@ export default function RetoGame() {
   const [history, setHistory] = useState<RoundResult[]>([])
   const [query, setQuery] = useState('')
   const [lastResult, setLastResult] = useState<RoundResult | null>(null)
+  const [shareToast, setShareToast] = useState<string | null>(null)
+  const [shareCopied, setShareCopied] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const usedYears = useMemo(() => history.map(h => h.year), [history])
@@ -123,10 +123,55 @@ export default function RetoGame() {
 
   const restart = useCallback(() => startGame(mode), [startGame, mode])
 
-  const goToResult = useCallback(() => {
+  // Build the shareable result URL — kept for "view shared page" link
+  const resultUrl = useMemo(() => {
+    if (typeof window === 'undefined') return ''
     const modeSlug = mode === 'classic' ? 'clasico' : 'infinito'
-    router.push(`/reto/r/${modeSlug}-${score}?rounds=${history.length}`)
-  }, [mode, score, history.length, router])
+    return `${window.location.origin}/reto/r/${modeSlug}-${score}?rounds=${history.length}`
+  }, [mode, score, history.length])
+
+  // Trigger native share (or fallback to clipboard) — directly from finished screen
+  const handleShare = useCallback(async () => {
+    if (typeof window === 'undefined') return
+    const url = resultUrl
+    const text = mode === 'classic'
+      ? t('game.shareText.classic', { score })
+      : t('game.shareText.infinite', { score })
+
+    // 1. Try Web Share API (native sheet on iOS/Android)
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: 'Human Timeline', text, url })
+        return // user shared or completed share
+      } catch (err: any) {
+        // user cancelled → do nothing, don't fall through to clipboard
+        if (err?.name === 'AbortError') return
+        // any other error → fall through
+      }
+    }
+
+    // 2. Try modern clipboard
+    const fullText = `${text}\n${url}`
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(fullText)
+      } else {
+        const ta = document.createElement('textarea')
+        ta.value = fullText
+        ta.style.position = 'fixed'
+        ta.style.opacity = '0'
+        document.body.appendChild(ta)
+        ta.select()
+        document.execCommand('copy')
+        document.body.removeChild(ta)
+      }
+      setShareCopied(true)
+      setShareToast(t('common.copied'))
+      setTimeout(() => { setShareCopied(false); setShareToast(null) }, 2200)
+    } catch {
+      window.prompt(t('result.shareLink'), fullText)
+    }
+  }, [resultUrl, mode, score, t])
 
   // ── INTRO ─────────────────────────────────────────────────────────────────
   if (phase === 'intro') {
@@ -297,7 +342,7 @@ export default function RetoGame() {
 
             <div className="flex gap-2 sm:gap-3 justify-center flex-wrap">
               <button
-                onClick={goToResult}
+                onClick={handleShare}
                 className="flex items-center gap-2 px-4 sm:px-5 py-3 rounded-xl text-sm font-semibold transition-all"
                 style={{
                   background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
@@ -305,7 +350,7 @@ export default function RetoGame() {
                   boxShadow: '0 8px 20px rgba(99,102,241,0.3)',
                 }}
               >
-                <Share2 size={15} /> {t('game.shareResult')}
+                {shareCopied ? <><Check size={15} /> {t('common.copied')}</> : <><Share2 size={15} /> {t('game.shareResult')}</>}
               </button>
               <button
                 onClick={restart}
@@ -314,12 +359,27 @@ export default function RetoGame() {
                 <RotateCcw size={15} /> {t('game.playAgain')}
               </button>
               <Link
-                href="/"
+                href={`/reto/r/${mode === 'classic' ? 'clasico' : 'infinito'}-${score}?rounds=${history.length}`}
                 className="flex items-center gap-2 px-4 sm:px-5 py-3 rounded-xl text-sm bg-white/4 text-white/55 hover:text-white/85 transition-all"
               >
-                {t('common.timeline')}
+                <LinkIcon size={13} /> {t('result.shareLink')}
               </Link>
             </div>
+
+            {/* Toast */}
+            <AnimatePresence>
+              {shareToast && (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 glass-2 rounded-full px-5 py-2.5 flex items-center gap-2 text-sm text-white/90"
+                >
+                  <Check size={14} className="text-emerald-400" />
+                  {shareToast}
+                </motion.div>
+              )}
+            </AnimatePresence>
           </motion.div>
         </div>
       </div>
