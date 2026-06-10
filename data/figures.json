@@ -192,6 +192,18 @@
     "relatedIds": [14, 17]
   },
   {
+    "id": 228,
+    "name": "Tiberio Claudio",
+    "birthYear": 10,
+    "deathYear": 54,
+    "country": "Roma",
+    "category": "Político",
+    "description": "Primer emperador romano nacido fuera de la península itálica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Claudio",
+    "tags": ["roma", "imperio", "política"],
+    "relatedIds": [14, 17]
+  },
+  {
     "id": 17,
     "name": "Virgilio",
     "birthYear": -70,
