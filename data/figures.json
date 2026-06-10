@@ -192,18 +192,6 @@
     "relatedIds": [14, 17]
   },
   {
-    "id": 228,
-    "name": "Tiberio Claudio",
-    "birthYear": 10,
-    "deathYear": 54,
-    "country": "Roma",
-    "category": "Político",
-    "description": "Primer emperador romano nacido fuera de la península itálica.",
-    "wikipedia": "https://es.wikipedia.org/wiki/Claudio",
-    "tags": ["roma", "imperio", "política"],
-    "relatedIds": [14, 17]
-  },
-  {
     "id": 17,
     "name": "Virgilio",
     "birthYear": -70,
@@ -2503,5 +2491,29 @@
     "description": "Compositor italiano de ópera. Maestro del bel canto, autor de Norma y La Sonnambula.",
     "wikipedia": "https://es.wikipedia.org/wiki/Vincenzo_Bellini",
     "tags": ["música", "ópera", "italia"], "relatedIds": [62, 60]
-  }
+  },
+  {
+    "id": 228,
+    "name": "Tiberio Claudio",
+    "birthYear": 10,
+    "deathYear": 54,
+    "country": "Roma",
+    "category": "Político",
+    "description": "Primer emperador romano nacido fuera de la península itálica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Claudio",
+    "tags": ["roma", "imperio", "política"],
+    "relatedIds": [14, 17]
+  },
+  {
+    "id": 229,
+    "name": "Caracalla",
+    "birthYear": 188,
+    "deathYear": 217,
+    "country": "Roma",
+    "category": "Político",
+    "description": "El reinado de Caracalla se hizo notable por el edicto de Caracalla.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Caracalla",
+    "tags": ["roma", "imperio", "política"],
+    "relatedIds": [14, 17]
+  },
 ]
