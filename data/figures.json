@@ -2539,5 +2539,680 @@
     "wikipedia": "https://es.wikipedia.org/wiki/Fernando_II_de_Arag%C3%B3n",
     "tags": ["españa", "imperio", "política"],
     "relatedIds": [14, 17]
+  },
+  {
+    "id": 232,
+    "name": "Cayo Mario",
+    "birthYear": -157, "deathYear": -86,
+    "country": "Roma", "category": "Militar",
+    "description": "General y estadista romano. Reformó el ejército creando las legiones profesionales. Cónsul siete veces, rival de Sila.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Cayo_Mario",
+    "tags": ["roma", "guerra", "república"], "relatedIds": [233, 166]
+  },
+  {
+    "id": 233,
+    "name": "Lucio Cornelio Sila",
+    "birthYear": -138, "deathYear": -78,
+    "country": "Roma", "category": "Militar",
+    "description": "Dictador romano. Primer general en marchar sobre Roma con sus legiones. Sus proscripciones marcaron el fin de la República.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Lucio_Cornelio_Sila",
+    "tags": ["roma", "dictador", "república"], "relatedIds": [232, 166]
+  },
+  {
+    "id": 234,
+    "name": "Craso",
+    "birthYear": -115, "deathYear": -53,
+    "country": "Roma", "category": "Político",
+    "description": "Político y general romano. Hombre más rico de Roma, miembro del Primer Triunvirato con César y Pompeyo. Aplastó la rebelión de Espartaco.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Marco_Licinio_Craso",
+    "tags": ["roma", "política", "república"], "relatedIds": [14, 166, 150]
+  },
+  {
+    "id": 235,
+    "name": "Tiberio",
+    "birthYear": -42, "deathYear": 37,
+    "country": "Roma", "category": "Político",
+    "description": "Segundo emperador romano, sucesor de Augusto. Retirado a Capri durante sus últimos años, dejó el poder en manos de Sejano.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tiberio",
+    "tags": ["roma", "imperio"], "relatedIds": [16, 170]
+  },
+  {
+    "id": 236,
+    "name": "Claudio",
+    "birthYear": -10, "deathYear": 54,
+    "country": "Roma", "category": "Político",
+    "description": "Cuarto emperador romano. Conquistó Britania y amplió el Imperio. Envenenado por su esposa Agripina.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Claudio",
+    "tags": ["roma", "imperio", "conquista"], "relatedIds": [171, 170]
+  },
+  {
+    "id": 237,
+    "name": "Tito",
+    "birthYear": 39, "deathYear": 81,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano. Destruyó el Templo de Jerusalén en el año 70. Inauguró el Coliseo en Roma.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Tito_(emperador)",
+    "tags": ["roma", "imperio", "guerra"], "relatedIds": [172, 173]
+  },
+  {
+    "id": 238,
+    "name": "Domiciano",
+    "birthYear": 51, "deathYear": 96,
+    "country": "Roma", "category": "Político",
+    "description": "Último emperador de la dinastía Flavia. Reinó con mano de hierro. Asesinado por una conspiración palaciega.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Domiciano",
+    "tags": ["roma", "imperio"], "relatedIds": [237, 172]
+  },
+  {
+    "id": 239,
+    "name": "Antonino Pío",
+    "birthYear": 86, "deathYear": 161,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano, uno de los Cinco Buenos Emperadores. Su reinado fue época de paz y prosperidad.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Antonino_Pío",
+    "tags": ["roma", "imperio"], "relatedIds": [174, 19]
+  },
+  {
+    "id": 240,
+    "name": "Cómodo",
+    "birthYear": 161, "deathYear": 192,
+    "country": "Roma", "category": "Político",
+    "description": "Hijo de Marco Aurelio y emperador romano. Famoso por su gusto por los combates de gladiadores. Su muerte inició una guerra civil.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Cómodo",
+    "tags": ["roma", "imperio", "decadencia"], "relatedIds": [19]
+  },
+  {
+    "id": 241,
+    "name": "Diocleciano",
+    "birthYear": 244, "deathYear": 311,
+    "country": "Roma", "category": "Político",
+    "description": "Emperador romano. Estableció la Tetrarquía dividiendo el Imperio en cuatro. Abdicó voluntariamente para retirarse a cultivar coles.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Diocleciano",
+    "tags": ["roma", "imperio", "reforma"], "relatedIds": [100]
+  },
+  {
+    "id": 242,
+    "name": "Teodosio I",
+    "birthYear": 347, "deathYear": 395,
+    "country": "Roma", "category": "Político",
+    "description": "Último emperador del Imperio Romano unificado. Estableció el cristianismo como religión oficial.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Teodosio_I_el_Grande",
+    "tags": ["roma", "imperio", "cristianismo"], "relatedIds": [100, 241]
+  },
+  {
+    "id": 243,
+    "name": "Belisario",
+    "birthYear": 505, "deathYear": 565,
+    "country": "Imperio Bizantino", "category": "Militar",
+    "description": "General bizantino al servicio de Justiniano I. Reconquistó el norte de África y gran parte de Italia para el Imperio.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Belisario",
+    "tags": ["bizancio", "guerra", "reconquista"], "relatedIds": [102]
+  },
+  {
+    "id": 244,
+    "name": "Godofredo de Bouillon",
+    "birthYear": 1060, "deathYear": 1100,
+    "country": "Sacro Imperio", "category": "Militar",
+    "description": "Caballero franco. Líder de la Primera Cruzada y primer gobernante del Reino de Jerusalén tras conquistar la ciudad en 1099.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Godofredo_de_Bouillon",
+    "tags": ["cruzadas", "medieval", "jerusalén"], "relatedIds": [182, 104]
+  },
+  {
+    "id": 245,
+    "name": "Pedro el Ermitaño",
+    "birthYear": 1050, "deathYear": 1115,
+    "country": "Francia", "category": "Religioso",
+    "description": "Monje francés. Predicó la Cruzada Popular que precedió a la Primera Cruzada oficial.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Pedro_el_Ermitaño",
+    "tags": ["cruzadas", "religión", "medieval"], "relatedIds": [244]
+  },
+  {
+    "id": 246,
+    "name": "Federico Barbarroja",
+    "birthYear": 1122, "deathYear": 1190,
+    "country": "Sacro Imperio", "category": "Político",
+    "description": "Emperador del Sacro Imperio. Líder de la Tercera Cruzada, donde murió ahogado en el río Salef.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Federico_I_Barbarroja",
+    "tags": ["cruzadas", "medieval", "imperio"], "relatedIds": [182, 104]
+  },
+  {
+    "id": 247,
+    "name": "Inocencio III",
+    "birthYear": 1161, "deathYear": 1216,
+    "country": "Estados Pontificios", "category": "Religioso",
+    "description": "Papa de la Iglesia Católica. Convocó la Cuarta Cruzada y el Concilio IV de Letrán. Llevó el poder papal a su máximo apogeo.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Inocencio_III",
+    "tags": ["cruzadas", "papado", "medieval"], "relatedIds": [184, 23]
+  },
+  {
+    "id": 248,
+    "name": "Vasco Núñez de Balboa",
+    "birthYear": 1475, "deathYear": 1519,
+    "country": "España", "category": "Explorador",
+    "description": "Conquistador español. Primer europeo en avistar el océano Pacífico desde América (1513). Ejecutado por orden de Pedrarias.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Vasco_Núñez_de_Balboa",
+    "tags": ["conquista", "américa", "exploración"], "relatedIds": [28, 108, 109]
+  },
+  {
+    "id": 249,
+    "name": "Moctezuma II",
+    "birthYear": 1466, "deathYear": 1520,
+    "country": "Imperio Azteca", "category": "Político",
+    "description": "Último gran tlatoani del Imperio Azteca. Recibió a Hernán Cortés como huésped antes de ser derrocado y morir durante la Conquista.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Moctezuma_Xocoyotzin",
+    "tags": ["azteca", "méxico", "conquista"], "relatedIds": [108]
+  },
+  {
+    "id": 250,
+    "name": "Atahualpa",
+    "birthYear": 1497, "deathYear": 1533,
+    "country": "Imperio Inca", "category": "Político",
+    "description": "Último emperador inca antes de la conquista española. Capturado y ejecutado por Pizarro en Cajamarca.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Atahualpa",
+    "tags": ["inca", "perú", "conquista"], "relatedIds": [109]
+  },
+  {
+    "id": 251,
+    "name": "La Malinche",
+    "birthYear": 1500, "deathYear": 1529,
+    "country": "México", "category": "Político",
+    "description": "Intérprete, consejera y amante de Hernán Cortés. Figura clave en la conquista de México como mediadora cultural y lingüística.",
+    "wikipedia": "https://es.wikipedia.org/wiki/La_Malinche",
+    "tags": ["conquista", "méxico", "azteca"], "relatedIds": [108, 249]
+  },
+  {
+    "id": 252,
+    "name": "Bartolomé de las Casas",
+    "birthYear": 1484, "deathYear": 1566,
+    "country": "España", "category": "Religioso",
+    "description": "Fraile dominico español. Defensor de los pueblos indígenas. Sus escritos influyeron en las Leyes Nuevas de Indias (1542).",
+    "wikipedia": "https://es.wikipedia.org/wiki/Bartolomé_de_las_Casas",
+    "tags": ["conquista", "américa", "derechos"], "relatedIds": [108, 109]
+  },
+  {
+    "id": 253,
+    "name": "Cabeza de Vaca",
+    "birthYear": 1488, "deathYear": 1559,
+    "country": "España", "category": "Explorador",
+    "description": "Explorador español. Sobrevivió ocho años perdido en Norteamérica caminando desde Florida hasta México. Cronista pionero.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Álvar_Núñez_Cabeza_de_Vaca",
+    "tags": ["exploración", "américa", "españa"], "relatedIds": [248]
+  },
+  {
+    "id": 254,
+    "name": "Edgar Allan Poe",
+    "birthYear": 1809, "deathYear": 1849,
+    "country": "Estados Unidos", "category": "Escritor",
+    "description": "Escritor estadounidense. Maestro del relato corto, pionero del cuento detectivesco y del terror gótico moderno.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Edgar_Allan_Poe",
+    "tags": ["literatura", "terror", "poesía"], "relatedIds": [56, 63]
+  },
+  {
+    "id": 255,
+    "name": "Walt Whitman",
+    "birthYear": 1819, "deathYear": 1892,
+    "country": "Estados Unidos", "category": "Escritor",
+    "description": "Poeta y ensayista estadounidense. Autor de Hojas de hierba. Padre del verso libre americano.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Walt_Whitman",
+    "tags": ["poesía", "literatura", "eeuu"], "relatedIds": [254]
+  },
+  {
+    "id": 256,
+    "name": "Mark Twain",
+    "birthYear": 1835, "deathYear": 1910,
+    "country": "Estados Unidos", "category": "Escritor",
+    "description": "Escritor y humorista estadounidense. Autor de Las aventuras de Tom Sawyer y Huckleberry Finn. Padre de la literatura americana.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Mark_Twain",
+    "tags": ["literatura", "novela", "eeuu"], "relatedIds": [56, 254]
+  },
+  {
+    "id": 257,
+    "name": "Oscar Wilde",
+    "birthYear": 1854, "deathYear": 1900,
+    "country": "Irlanda", "category": "Escritor",
+    "description": "Escritor, poeta y dramaturgo irlandés. Autor de El retrato de Dorian Gray. Icono del esteticismo y víctima célebre del puritanismo victoriano.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Oscar_Wilde",
+    "tags": ["literatura", "teatro", "esteticismo"], "relatedIds": [56, 220]
+  },
+  {
+    "id": 258,
+    "name": "Julio Verne",
+    "birthYear": 1828, "deathYear": 1905,
+    "country": "Francia", "category": "Escritor",
+    "description": "Escritor francés. Padre de la ciencia ficción moderna. Autor de Veinte mil leguas de viaje submarino y La vuelta al mundo en ochenta días.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Julio_Verne",
+    "tags": ["literatura", "ciencia ficción", "aventura"], "relatedIds": [63, 56]
+  },
+  {
+    "id": 259,
+    "name": "Mary Shelley",
+    "birthYear": 1797, "deathYear": 1851,
+    "country": "Reino Unido", "category": "Escritor",
+    "description": "Novelista británica. Autora de Frankenstein o el moderno Prometeo, considerada la primera obra de ciencia ficción.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Mary_Shelley",
+    "tags": ["literatura", "ciencia ficción", "romanticismo"], "relatedIds": [254]
+  },
+  {
+    "id": 260,
+    "name": "Jane Austen",
+    "birthYear": 1775, "deathYear": 1817,
+    "country": "Reino Unido", "category": "Escritor",
+    "description": "Novelista británica. Autora de Orgullo y prejuicio. Maestra del retrato social de la aristocracia rural inglesa.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Jane_Austen",
+    "tags": ["literatura", "novela", "victoriana"], "relatedIds": [56, 259]
+  },
+  {
+    "id": 261,
+    "name": "Johann Wolfgang von Goethe",
+    "birthYear": 1749, "deathYear": 1832,
+    "country": "Alemania", "category": "Escritor",
+    "description": "Escritor alemán. Autor de Fausto y Las desventuras del joven Werther. Figura cumbre de la literatura europea.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe",
+    "tags": ["literatura", "romanticismo", "alemania"], "relatedIds": [262, 46]
+  },
+  {
+    "id": 262,
+    "name": "Friedrich Schiller",
+    "birthYear": 1759, "deathYear": 1805,
+    "country": "Alemania", "category": "Escritor",
+    "description": "Poeta y dramaturgo alemán. Amigo de Goethe. Autor de Guillermo Tell y de la Oda a la Alegría que Beethoven musicalizó.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Friedrich_Schiller",
+    "tags": ["literatura", "teatro", "romanticismo"], "relatedIds": [261, 48]
+  },
+  {
+    "id": 263,
+    "name": "Alexander Pushkin",
+    "birthYear": 1799, "deathYear": 1837,
+    "country": "Rusia", "category": "Escritor",
+    "description": "Poeta ruso. Considerado el padre de la literatura rusa moderna. Muerto en duelo a los 37 años.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Aleksandr_Pushkin",
+    "tags": ["poesía", "literatura", "rusia"], "relatedIds": [58, 59]
+  },
+  {
+    "id": 264,
+    "name": "Anton Chéjov",
+    "birthYear": 1860, "deathYear": 1904,
+    "country": "Rusia", "category": "Escritor",
+    "description": "Escritor y dramaturgo ruso. Maestro del relato corto y del teatro moderno. Autor de El jardín de los cerezos.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Antón_Chéjov",
+    "tags": ["literatura", "teatro", "rusia"], "relatedIds": [58, 59, 263]
+  },
+  {
+    "id": 265,
+    "name": "Franz Schubert",
+    "birthYear": 1797, "deathYear": 1828,
+    "country": "Austria", "category": "Músico",
+    "description": "Compositor austriaco. Pionero del lied romántico. Compuso más de 600 canciones y nueve sinfonías en sus 31 años de vida.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Franz_Schubert",
+    "tags": ["música", "romántico", "lied"], "relatedIds": [48, 60]
+  },
+  {
+    "id": 266,
+    "name": "Robert Schumann",
+    "birthYear": 1810, "deathYear": 1856,
+    "country": "Alemania", "category": "Músico",
+    "description": "Compositor y crítico musical alemán. Figura central del Romanticismo musical. Marido de la pianista Clara Schumann.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Robert_Schumann",
+    "tags": ["música", "romántico", "alemania"], "relatedIds": [60, 61, 62]
+  },
+  {
+    "id": 267,
+    "name": "Johannes Brahms",
+    "birthYear": 1833, "deathYear": 1897,
+    "country": "Alemania", "category": "Músico",
+    "description": "Compositor alemán. Cuarto gran 'B' de la música alemana (junto a Bach, Beethoven y Bruckner). Maestro de la sinfonía romántica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Johannes_Brahms",
+    "tags": ["música", "romántico", "sinfonía"], "relatedIds": [266, 62]
+  },
+  {
+    "id": 268,
+    "name": "Giuseppe Verdi",
+    "birthYear": 1813, "deathYear": 1901,
+    "country": "Italia", "category": "Músico",
+    "description": "Compositor italiano. Maestro de la ópera. Autor de Aida, La Traviata, Rigoletto y Nabucco.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Giuseppe_Verdi",
+    "tags": ["música", "ópera", "italia"], "relatedIds": [62, 269]
+  },
+  {
+    "id": 269,
+    "name": "Giacomo Puccini",
+    "birthYear": 1858, "deathYear": 1924,
+    "country": "Italia", "category": "Músico",
+    "description": "Compositor italiano. Heredero de Verdi en la ópera italiana. Autor de Madama Butterfly, La Bohème y Tosca.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Giacomo_Puccini",
+    "tags": ["música", "ópera", "italia"], "relatedIds": [268]
+  },
+  {
+    "id": 270,
+    "name": "Piotr Ilich Tchaikovsky",
+    "birthYear": 1840, "deathYear": 1893,
+    "country": "Rusia", "category": "Músico",
+    "description": "Compositor ruso. Autor de El lago de los cisnes y El cascanueces. Maestro de la melodía romántica.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Piotr_Ilich_Chaikovski",
+    "tags": ["música", "romántico", "ballet"], "relatedIds": [266, 267]
+  },
+  {
+    "id": 271,
+    "name": "Claude Debussy",
+    "birthYear": 1862, "deathYear": 1918,
+    "country": "Francia", "category": "Músico",
+    "description": "Compositor francés. Pionero del impresionismo musical. Autor de Claro de luna y La mer.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Claude_Debussy",
+    "tags": ["música", "impresionismo", "francia"], "relatedIds": [272]
+  },
+  {
+    "id": 272,
+    "name": "Maurice Ravel",
+    "birthYear": 1875, "deathYear": 1937,
+    "country": "Francia", "category": "Músico",
+    "description": "Compositor francés. Autor del célebre Bolero y de los Cuadros de una exposición orquestados. Maestro del color orquestal.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Maurice_Ravel",
+    "tags": ["música", "impresionismo", "francia"], "relatedIds": [271]
+  },
+  {
+    "id": 273,
+    "name": "Ígor Stravinski",
+    "birthYear": 1882, "deathYear": 1971,
+    "country": "Rusia", "category": "Músico",
+    "description": "Compositor ruso. Su obra La consagración de la primavera (1913) provocó un escándalo y revolucionó la música del siglo XX.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Ígor_Stravinski",
+    "tags": ["música", "siglo xx", "ballet"], "relatedIds": [270, 271]
+  },
+  {
+    "id": 274,
+    "name": "Káiser Guillermo II",
+    "birthYear": 1859, "deathYear": 1941,
+    "country": "Alemania", "category": "Político",
+    "description": "Último emperador alemán. Su ambición naval y diplomacia agresiva contribuyeron al estallido de la Primera Guerra Mundial.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Guillermo_II_de_Alemania",
+    "tags": ["primera guerra mundial", "alemania", "imperio"], "relatedIds": [275, 276]
+  },
+  {
+    "id": 275,
+    "name": "Erich Ludendorff",
+    "birthYear": 1865, "deathYear": 1937,
+    "country": "Alemania", "category": "Militar",
+    "description": "General alemán. Comandante de facto del ejército alemán durante la Primera Guerra Mundial junto a Hindenburg.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Erich_Ludendorff",
+    "tags": ["primera guerra mundial", "alemania", "guerra"], "relatedIds": [274, 276]
+  },
+  {
+    "id": 276,
+    "name": "Paul von Hindenburg",
+    "birthYear": 1847, "deathYear": 1934,
+    "country": "Alemania", "category": "Militar",
+    "description": "Mariscal alemán. Héroe de Tannenberg en 1914. Presidente de la República de Weimar que nombró a Hitler canciller en 1933.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Paul_von_Hindenburg",
+    "tags": ["primera guerra mundial", "alemania", "weimar"], "relatedIds": [274, 275]
+  },
+  {
+    "id": 277,
+    "name": "John Pershing",
+    "birthYear": 1860, "deathYear": 1948,
+    "country": "Estados Unidos", "category": "Militar",
+    "description": "General estadounidense. Comandante de las Fuerzas Expedicionarias Americanas en la Primera Guerra Mundial.",
+    "wikipedia": "https://es.wikipedia.org/wiki/John_Joseph_Pershing",
+    "tags": ["primera guerra mundial", "eeuu", "guerra"], "relatedIds": [276, 285]
+  },
+  {
+    "id": 278,
+    "name": "Ferdinand Foch",
+    "birthYear": 1851, "deathYear": 1929,
+    "country": "Francia", "category": "Militar",
+    "description": "Mariscal francés. Comandante supremo aliado en 1918. Aceptó la rendición alemana en el vagón de Compiègne.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Ferdinand_Foch",
+    "tags": ["primera guerra mundial", "francia", "guerra"], "relatedIds": [277, 279]
+  },
+  {
+    "id": 279,
+    "name": "Philippe Pétain",
+    "birthYear": 1856, "deathYear": 1951,
+    "country": "Francia", "category": "Militar",
+    "description": "Mariscal francés. Héroe de Verdún en la Primera Guerra Mundial. Jefe del régimen colaboracionista de Vichy en la Segunda.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Philippe_Pétain",
+    "tags": ["guerras mundiales", "francia", "vichy"], "relatedIds": [278, 287]
+  },
+  {
+    "id": 280,
+    "name": "T. E. Lawrence (de Arabia)",
+    "birthYear": 1888, "deathYear": 1935,
+    "country": "Reino Unido", "category": "Militar",
+    "description": "Oficial y arqueólogo británico. Lideró la Revuelta Árabe contra los otomanos en la Primera Guerra Mundial. Lawrence de Arabia.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Thomas_Edward_Lawrence",
+    "tags": ["primera guerra mundial", "arabia", "espionaje"], "relatedIds": [281]
+  },
+  {
+    "id": 281,
+    "name": "Mustafá Kemal Atatürk",
+    "birthYear": 1881, "deathYear": 1938,
+    "country": "Turquía", "category": "Político",
+    "description": "Fundador y primer presidente de la República de Turquía. Modernizó el país tras el colapso del Imperio Otomano.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Mustafá_Kemal_Atatürk",
+    "tags": ["turquía", "modernización", "primera guerra mundial"], "relatedIds": [280]
+  },
+  {
+    "id": 282,
+    "name": "Lev Trotski",
+    "birthYear": 1879, "deathYear": 1940,
+    "country": "Rusia", "category": "Político",
+    "description": "Revolucionario marxista ruso. Organizador del Ejército Rojo. Exiliado por Stalin y asesinado en México con un piolet.",
+    "wikipedia": "https://es.wikipedia.org/wiki/León_Trotski",
+    "tags": ["revolución", "urss", "marxismo"], "relatedIds": [87, 147]
+  },
+  {
+    "id": 283,
+    "name": "Erwin Rommel",
+    "birthYear": 1891, "deathYear": 1944,
+    "country": "Alemania", "category": "Militar",
+    "description": "Mariscal alemán. Comandante del Afrika Korps, apodado el Zorro del Desierto. Forzado a suicidarse tras el complot contra Hitler.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Erwin_Rommel",
+    "tags": ["segunda guerra mundial", "alemania", "guerra"], "relatedIds": [284, 285]
+  },
+  {
+    "id": 284,
+    "name": "Bernard Montgomery",
+    "birthYear": 1887, "deathYear": 1976,
+    "country": "Reino Unido", "category": "Militar",
+    "description": "Mariscal británico. Derrotó a Rommel en El Alamein. Comandante de tierra durante el Desembarco de Normandía.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Bernard_Law_Montgomery",
+    "tags": ["segunda guerra mundial", "reino unido", "guerra"], "relatedIds": [283, 285]
+  },
+  {
+    "id": 285,
+    "name": "Dwight D. Eisenhower",
+    "birthYear": 1890, "deathYear": 1969,
+    "country": "Estados Unidos", "category": "Militar",
+    "description": "General y 34º presidente de EE.UU. Comandante supremo aliado en el Desembarco de Normandía. Modernizó las autopistas americanas.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Dwight_D._Eisenhower",
+    "tags": ["segunda guerra mundial", "eeuu", "política"], "relatedIds": [284, 286, 75]
+  },
+  {
+    "id": 286,
+    "name": "George S. Patton",
+    "birthYear": 1885, "deathYear": 1945,
+    "country": "Estados Unidos", "category": "Militar",
+    "description": "General estadounidense. Comandante del 3er Ejército. Líder agresivo y polémico de la guerra blindada en Europa.",
+    "wikipedia": "https://es.wikipedia.org/wiki/George_Patton",
+    "tags": ["segunda guerra mundial", "eeuu", "guerra"], "relatedIds": [285, 283]
+  },
+  {
+    "id": 287,
+    "name": "Charles de Gaulle",
+    "birthYear": 1890, "deathYear": 1970,
+    "country": "Francia", "category": "Político",
+    "description": "General y presidente francés. Líder de la Francia Libre durante la Segunda Guerra Mundial. Fundador de la Quinta República.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Charles_de_Gaulle",
+    "tags": ["segunda guerra mundial", "francia", "política"], "relatedIds": [73, 279]
+  },
+  {
+    "id": 288,
+    "name": "Georgy Zhúkov",
+    "birthYear": 1896, "deathYear": 1974,
+    "country": "URSS", "category": "Militar",
+    "description": "Mariscal soviético. Comandante de las victorias en Stalingrado, Kursk y la toma de Berlín. Héroe principal de la URSS en la guerra.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Gueorgui_Zhúkov",
+    "tags": ["segunda guerra mundial", "urss", "guerra"], "relatedIds": [285, 283]
+  },
+  {
+    "id": 289,
+    "name": "Douglas MacArthur",
+    "birthYear": 1880, "deathYear": 1964,
+    "country": "Estados Unidos", "category": "Militar",
+    "description": "General estadounidense. Comandante del Pacífico en la Segunda Guerra Mundial y de la Guerra de Corea. Famoso por 'volveré' a Filipinas.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Douglas_MacArthur",
+    "tags": ["segunda guerra mundial", "eeuu", "pacífico"], "relatedIds": [285, 290]
+  },
+  {
+    "id": 290,
+    "name": "Isoroku Yamamoto",
+    "birthYear": 1884, "deathYear": 1943,
+    "country": "Japón", "category": "Militar",
+    "description": "Almirante japonés. Arquitecto del ataque a Pearl Harbor. Murió cuando su avión fue derribado por los americanos.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Isoroku_Yamamoto",
+    "tags": ["segunda guerra mundial", "japón", "pacífico"], "relatedIds": [289, 75]
+  },
+  {
+    "id": 291,
+    "name": "Benito Mussolini",
+    "birthYear": 1883, "deathYear": 1945,
+    "country": "Italia", "category": "Político",
+    "description": "Dictador italiano. Fundador del fascismo y aliado de Hitler. Ejecutado por la resistencia italiana en 1945.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Benito_Mussolini",
+    "tags": ["segunda guerra mundial", "fascismo", "italia"], "relatedIds": [73, 75]
+  },
+  {
+    "id": 292,
+    "name": "Francisco Franco",
+    "birthYear": 1892, "deathYear": 1975,
+    "country": "España", "category": "Militar",
+    "description": "General y dictador español. Lideró el bando nacional en la Guerra Civil. Gobernó España durante casi 40 años hasta su muerte.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Francisco_Franco",
+    "tags": ["guerra civil española", "dictadura", "españa"], "relatedIds": [291, 224]
+  },
+  {
+    "id": 293,
+    "name": "Hirohito",
+    "birthYear": 1901, "deathYear": 1989,
+    "country": "Japón", "category": "Político",
+    "description": "Emperador de Japón. Reinó durante la Segunda Guerra Mundial y la posguerra. Renunció a su carácter divino tras la derrota.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Hirohito",
+    "tags": ["segunda guerra mundial", "japón", "imperio"], "relatedIds": [290, 289]
+  },
+  {
+    "id": 294,
+    "name": "Nikita Jrushchov",
+    "birthYear": 1894, "deathYear": 1971,
+    "country": "URSS", "category": "Político",
+    "description": "Líder soviético. Sucesor de Stalin. Inició la desestalinización y protagonizó la Crisis de los Misiles de Cuba con Kennedy.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Nikita_Jruschov",
+    "tags": ["guerra fría", "urss", "política"], "relatedIds": [82, 84]
+  },
+  {
+    "id": 295,
+    "name": "Leonid Brézhnev",
+    "birthYear": 1906, "deathYear": 1982,
+    "country": "URSS", "category": "Político",
+    "description": "Líder soviético tras Jrushchov. Gobernó la URSS durante 18 años en la época del estancamiento y la Guerra Fría.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Leonid_Brézhnev",
+    "tags": ["guerra fría", "urss", "política"], "relatedIds": [294, 296]
+  },
+  {
+    "id": 296,
+    "name": "Mikhail Gorbachov",
+    "birthYear": 1931, "deathYear": 2022,
+    "country": "URSS", "category": "Político",
+    "description": "Último líder de la URSS. Sus reformas (Perestroika y Glasnost) condujeron al fin de la Guerra Fría y la disolución soviética.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Mijaíl_Gorbachov",
+    "tags": ["guerra fría", "urss", "reforma"], "relatedIds": [295, 297, 298]
+  },
+  {
+    "id": 297,
+    "name": "Ronald Reagan",
+    "birthYear": 1911, "deathYear": 2004,
+    "country": "Estados Unidos", "category": "Político",
+    "description": "40º presidente de EE.UU. Su política agresiva contra la URSS contribuyó al final de la Guerra Fría.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Ronald_Reagan",
+    "tags": ["guerra fría", "eeuu", "política"], "relatedIds": [296, 298]
+  },
+  {
+    "id": 298,
+    "name": "Margaret Thatcher",
+    "birthYear": 1925, "deathYear": 2013,
+    "country": "Reino Unido", "category": "Político",
+    "description": "Primera ministra británica, la Dama de Hierro. Reformó la economía británica y lideró la Guerra de las Malvinas.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Margaret_Thatcher",
+    "tags": ["reino unido", "política", "guerra fría"], "relatedIds": [297, 296]
+  },
+  {
+    "id": 299,
+    "name": "Fidel Castro",
+    "birthYear": 1926, "deathYear": 2016,
+    "country": "Cuba", "category": "Político",
+    "description": "Revolucionario y líder cubano. Derrocó a Batista y gobernó Cuba durante casi medio siglo bajo un régimen comunista.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Fidel_Castro",
+    "tags": ["revolución", "cuba", "guerra fría"], "relatedIds": [84, 82]
+  },
+  {
+    "id": 300,
+    "name": "Salvador Allende",
+    "birthYear": 1908, "deathYear": 1973,
+    "country": "Chile", "category": "Político",
+    "description": "Presidente socialista de Chile. Derrocado y muerto durante el golpe militar de Pinochet en 1973.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Salvador_Allende",
+    "tags": ["chile", "socialismo", "golpe"], "relatedIds": [301]
+  },
+  {
+    "id": 301,
+    "name": "Augusto Pinochet",
+    "birthYear": 1915, "deathYear": 2006,
+    "country": "Chile", "category": "Militar",
+    "description": "General y dictador chileno. Lideró el golpe contra Allende en 1973 y gobernó con mano dura hasta 1990.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Augusto_Pinochet",
+    "tags": ["chile", "dictadura", "guerra fría"], "relatedIds": [300]
+  },
+  {
+    "id": 302,
+    "name": "Jawaharlal Nehru",
+    "birthYear": 1889, "deathYear": 1964,
+    "country": "India", "category": "Político",
+    "description": "Primer Primer Ministro de la India tras la independencia. Aliado de Gandhi y figura clave de la descolonización.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Jawaharlal_Nehru",
+    "tags": ["india", "independencia", "descolonización"], "relatedIds": [74]
+  },
+  {
+    "id": 303,
+    "name": "Gamal Abdel Nasser",
+    "birthYear": 1918, "deathYear": 1970,
+    "country": "Egipto", "category": "Político",
+    "description": "Presidente egipcio. Nacionalizó el canal de Suez (1956) y lideró el panarabismo. Icono del nacionalismo árabe del siglo XX.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Gamal_Abdel_Nasser",
+    "tags": ["egipto", "árabe", "descolonización"], "relatedIds": [302]
+  },
+  {
+    "id": 304,
+    "name": "John Steinbeck",
+    "birthYear": 1902, "deathYear": 1968,
+    "country": "Estados Unidos", "category": "Escritor",
+    "description": "Novelista estadounidense. Premio Nobel de Literatura 1962. Autor de Las uvas de la ira y De ratones y hombres.",
+    "wikipedia": "https://es.wikipedia.org/wiki/John_Steinbeck",
+    "tags": ["literatura", "novela", "nobel"], "relatedIds": [78, 79]
+  },
+  {
+    "id": 305,
+    "name": "William Faulkner",
+    "birthYear": 1897, "deathYear": 1962,
+    "country": "Estados Unidos", "category": "Escritor",
+    "description": "Novelista estadounidense. Premio Nobel 1949. Maestro del flujo de conciencia. Autor de El ruido y la furia.",
+    "wikipedia": "https://es.wikipedia.org/wiki/William_Faulkner",
+    "tags": ["literatura", "novela", "nobel"], "relatedIds": [78, 304]
+  },
+  {
+    "id": 306,
+    "name": "Marcel Proust",
+    "birthYear": 1871, "deathYear": 1922,
+    "country": "Francia", "category": "Escritor",
+    "description": "Novelista francés. Autor de En busca del tiempo perdido, una de las obras cumbres de la literatura del siglo XX.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Marcel_Proust",
+    "tags": ["literatura", "novela", "modernismo"], "relatedIds": [77, 220]
   }
 ]

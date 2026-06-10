@@ -70,7 +70,7 @@ export default function ResultPage({ params, searchParams }: Params) {
   const shareUrl = absoluteUrl(`/reto/r/${params.result}${rounds ? `?rounds=${rounds}` : ''}`)
 
   return (
-    <main className="min-h-[100dvh] flex flex-col" style={{ background: 'var(--void)' }}>
+    <main className="flex flex-col" style={{ background: 'var(--void)', minHeight: '100vh' }}>
       <header className="flex-shrink-0 border-b border-white/6 px-3 sm:px-5 py-2.5 sm:py-3">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between gap-2">
           <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
@@ -94,10 +94,10 @@ export default function ResultPage({ params, searchParams }: Params) {
         </div>
       </header>
 
-      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-10 sm:py-16 relative" style={{ minHeight: '60vh' }}>
         <div
-          className="fixed inset-0 pointer-events-none"
-          style={{ background: `radial-gradient(ellipse 60% 40% at 50% 35%, ${rating.color}22 0%, transparent 60%)` }}
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: `radial-gradient(ellipse 80% 50% at 50% 35%, ${rating.color}22 0%, transparent 60%)` }}
         />
 
         <div className="relative max-w-xl w-full text-center">

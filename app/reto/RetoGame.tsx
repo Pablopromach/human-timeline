@@ -2,7 +2,7 @@
 import { useState, useCallback, useMemo, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowLeft, Search, Share2, RotateCcw, Infinity as InfinityIcon, ListChecks, Heart, Check, Link as LinkIcon } from 'lucide-react'
+import { ArrowLeft, Search, Share2, RotateCcw, Infinity as InfinityIcon, ListChecks, Heart, Check, Link as LinkIcon, Dice5 } from 'lucide-react'
 import { HistoricalFigure } from '@/types'
 import figuresData from '@/data/figures.json'
 import { searchFigures } from '@/lib/searchEngine'
@@ -71,6 +71,7 @@ export default function RetoGame() {
   const [lastResult, setLastResult] = useState<RoundResult | null>(null)
   const [shareToast, setShareToast] = useState<string | null>(null)
   const [shareCopied, setShareCopied] = useState(false)
+  const [hasUsedRefresh, setHasUsedRefresh] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const usedYears = useMemo(() => history.map(h => h.year), [history])
@@ -90,9 +91,16 @@ export default function RetoGame() {
     setHistory([])
     setLastResult(null)
     setQuery('')
+    setHasUsedRefresh(false)
     setTargetYear(getRandomTargetYear())
     setTimeout(() => inputRef.current?.focus(), 100)
   }, [])
+
+  const handleRefreshYear = useCallback(() => {
+    if (phase !== 'playing' || mode !== 'infinite' || hasUsedRefresh) return
+    setHasUsedRefresh(true)
+    setTargetYear(getRandomTargetYear([...usedYears, targetYear]))
+  }, [phase, mode, hasUsedRefresh, usedYears, targetYear])
 
   const handlePick = useCallback((fig: HistoricalFigure) => {
     if (phase !== 'playing') return
@@ -118,6 +126,7 @@ export default function RetoGame() {
     setLastResult(null)
     setPhase('playing')
     setQuery('')
+    setHasUsedRefresh(false)
     setTimeout(() => inputRef.current?.focus(), 100)
   }, [mode, round, misses, usedYears])
 
@@ -476,6 +485,27 @@ export default function RetoGame() {
                   <div className="text-sm sm:text-base text-white/40 font-mono mt-1">
                     {targetYear < 0 ? t('common.bc') : t('common.ad')}
                   </div>
+
+                  {/* Refresh year — only in infinite mode, once per round */}
+                  {mode === 'infinite' && (
+                    <motion.button
+                      key={`${round}-${hasUsedRefresh}`}
+                      initial={{ opacity: 0, y: -4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      onClick={handleRefreshYear}
+                      disabled={hasUsedRefresh}
+                      className="mt-4 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-mono transition-all"
+                      style={{
+                        background: hasUsedRefresh ? 'rgba(255,255,255,0.04)' : 'rgba(245,158,11,0.15)',
+                        color: hasUsedRefresh ? 'rgba(255,255,255,0.25)' : '#f59e0b',
+                        border: `1px solid ${hasUsedRefresh ? 'rgba(255,255,255,0.06)' : 'rgba(245,158,11,0.4)'}`,
+                        cursor: hasUsedRefresh ? 'not-allowed' : 'pointer',
+                      }}
+                    >
+                      <Dice5 size={11} />
+                      {hasUsedRefresh ? t('game.refresh.used') : t('game.refresh.label')}
+                    </motion.button>
+                  )}
                 </div>
 
                 <div className="relative">
