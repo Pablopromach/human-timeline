@@ -1,8 +1,10 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ExternalLink, X } from 'lucide-react'
+import Link from 'next/link'
+import { ExternalLink, X, ArrowUpRight } from 'lucide-react'
 import { HistoricalFigure } from '@/types'
 import { getCategoryColor, formatYear } from '@/lib/timelineUtils'
+import { figureSlug } from '@/lib/slug'
 
 interface Props {
   figure: HistoricalFigure | null
@@ -122,6 +124,13 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
                   Añadir al Timeline
                 </button>
               )}
+              <Link
+                href={`/personaje/${figureSlug(figure)}`}
+                className="flex items-center gap-1 text-xs py-1.5 px-3 rounded-lg bg-white/5 text-white/45 hover:bg-white/10 hover:text-white/80 transition-colors"
+              >
+                <ArrowUpRight size={11} />
+                Ficha
+              </Link>
               <a
                 href={figure.wikipedia}
                 target="_blank"

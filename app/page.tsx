@@ -1,8 +1,11 @@
 'use client'
-import { useState, useCallback, useMemo } from 'react'
+import { useState, useCallback, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Shuffle, Trash2, ChevronDown, GitCommitHorizontal } from 'lucide-react'
+import { Shuffle, Trash2, ChevronDown, GitCommitHorizontal, Crown } from 'lucide-react'
 import { useTimeline } from '@/hooks/useTimeline'
+import { findFigureBySlug } from '@/lib/slug'
+import civilizationsData from '@/data/civilizations.json'
+import { Civilization } from '@/types'
 import TimelineChart from '@/components/Timeline/TimelineChart'
 import SearchBar from '@/components/Search/SearchBar'
 import PersonCard from '@/components/UI/PersonCard'
@@ -33,6 +36,24 @@ export default function HomePage() {
 
   const [selectedCard, setSelectedCard] = useState<HistoricalFigure | null>(null)
   const [showIntro, setShowIntro] = useState(true)
+  const [showCivilizations, setShowCivilizations] = useState(false)
+  const civilizations = (civilizationsData as Civilization[])
+
+  // Deep-link: ?add=napoleon-bonaparte or ?add=slug1,slug2,slug3
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const params = new URLSearchParams(window.location.search)
+    const add = params.get('add')
+    if (add) {
+      const slugs = add.split(',').map(s => s.trim()).filter(Boolean)
+      let any = false
+      for (const slug of slugs) {
+        const fig = findFigureBySlug(slug, allFigures)
+        if (fig) { addFigure(fig); any = true }
+      }
+      if (any) setShowIntro(false)
+    }
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {}
@@ -102,6 +123,18 @@ export default function HomePage() {
 
           {/* Actions */}
           <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowCivilizations(v => !v)}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all"
+              style={{
+                background: showCivilizations ? 'rgba(245,158,11,0.18)' : 'rgba(255,255,255,0.05)',
+                color: showCivilizations ? '#f59e0b' : 'rgba(255,255,255,0.5)',
+                border: showCivilizations ? '1px solid rgba(245,158,11,0.35)' : '1px solid transparent',
+              }}
+            >
+              <Crown size={13} />
+              Civilizaciones
+            </button>
             <button
               onClick={handleRandom}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-white/5 text-white/50 hover:bg-white/10 hover:text-white/80 transition-all"
@@ -234,6 +267,7 @@ export default function HomePage() {
           <div className="flex-1 overflow-auto">
             <TimelineChart
               figures={selectedFigures}
+              civilizations={showCivilizations ? civilizations : []}
               onHover={setHoveredFigure}
               onYearClick={year => { setActiveYear(year); setShowIntro(false) }}
               onSelectFigure={handleSelectFigure}

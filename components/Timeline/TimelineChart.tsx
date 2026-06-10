@@ -1,7 +1,7 @@
 'use client'
 import { useRef, useEffect, useCallback } from 'react'
 import * as d3 from 'd3'
-import { HistoricalFigure } from '@/types'
+import { HistoricalFigure, Civilization } from '@/types'
 import { getCategoryColor, ERAS, formatYear } from '@/lib/timelineUtils'
 
 const MIN_YEAR = -4000
@@ -16,12 +16,16 @@ const FIT_PADDING_MIN = 80
 
 interface Props {
   figures: HistoricalFigure[]
+  civilizations?: Civilization[]
   onHover: (fig: HistoricalFigure | null) => void
   onYearClick: (year: number) => void
   onSelectFigure: (fig: HistoricalFigure) => void
 }
 
-export default function TimelineChart({ figures, onHover, onYearClick, onSelectFigure }: Props) {
+const CIV_BAR_HEIGHT = 14
+const CIV_TRACK_GAP = 3
+
+export default function TimelineChart({ figures, civilizations = [], onHover, onYearClick, onSelectFigure }: Props) {
   const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null)
@@ -34,7 +38,22 @@ export default function TimelineChart({ figures, onHover, onYearClick, onSelectF
     return figures.findIndex(f => f.id === figId)
   }, [figures])
 
-  const chartHeight = Math.max(figures.length * ROW_HEIGHT + AXIS_HEIGHT + 48, 280)
+  // Pack civilizations into non-overlapping tracks (greedy)
+  const civTracks = (() => {
+    if (civilizations.length === 0) return [] as Array<{ civ: Civilization; track: number }>
+    const sorted = [...civilizations].sort((a, b) => a.startYear - b.startYear)
+    const trackEnds: number[] = []
+    return sorted.map(civ => {
+      let track = trackEnds.findIndex(end => end < civ.startYear)
+      if (track === -1) { track = trackEnds.length; trackEnds.push(civ.endYear) }
+      else trackEnds[track] = civ.endYear
+      return { civ, track }
+    })
+  })()
+  const civRowCount = civTracks.length > 0 ? Math.max(...civTracks.map(c => c.track)) + 1 : 0
+  const civBandHeight = civRowCount > 0 ? civRowCount * (CIV_BAR_HEIGHT + CIV_TRACK_GAP) + 8 : 0
+
+  const chartHeight = Math.max(figures.length * ROW_HEIGHT + AXIS_HEIGHT + civBandHeight + 48, 280)
 
   const draw = useCallback(() => {
     const svg = d3.select(svgRef.current)
@@ -96,9 +115,48 @@ export default function TimelineChart({ figures, onHover, onYearClick, onSelectF
         .attr('stroke-width', 1)
     }
 
+    // ── Civilization bands (between axis and figures) ───────────────────────
+    if (civTracks.length > 0) {
+      const civG = chart.append('g').attr('class', 'civ-bands')
+      for (const { civ, track } of civTracks) {
+        const x1 = xScaled(civ.startYear)
+        const x2 = xScaled(civ.endYear)
+        const cx1 = Math.max(x1, 0)
+        const cx2 = Math.min(x2, innerW)
+        const cw = cx2 - cx1
+        if (cw <= 0) continue
+        const y = AXIS_HEIGHT + 4 + track * (CIV_BAR_HEIGHT + CIV_TRACK_GAP)
+        const g = civG.append('g')
+        // Background
+        g.append('rect')
+          .attr('x', cx1).attr('y', y)
+          .attr('width', cw).attr('height', CIV_BAR_HEIGHT)
+          .attr('rx', 2)
+          .attr('fill', civ.color).attr('opacity', 0.18)
+        // Border
+        g.append('rect')
+          .attr('x', cx1).attr('y', y)
+          .attr('width', cw).attr('height', CIV_BAR_HEIGHT)
+          .attr('rx', 2)
+          .attr('fill', 'none')
+          .attr('stroke', civ.color).attr('stroke-opacity', 0.5)
+          .attr('stroke-width', 1)
+        // Label if wide enough
+        if (cw > 70) {
+          g.append('text')
+            .attr('x', cx1 + 6).attr('y', y + CIV_BAR_HEIGHT / 2 + 3)
+            .attr('fill', civ.color)
+            .attr('font-size', '9.5px')
+            .attr('font-weight', '600')
+            .attr('font-family', 'DM Mono, monospace')
+            .text(civ.name)
+        }
+      }
+    }
+
     // ── Row separator lines ──────────────────────────────────────────────────
     for (let i = 0; i < figures.length; i++) {
-      const y = AXIS_HEIGHT + i * ROW_HEIGHT
+      const y = AXIS_HEIGHT + civBandHeight + i * ROW_HEIGHT
       chart.append('line')
         .attr('x1', 0).attr('x2', innerW)
         .attr('y1', y).attr('y2', y)
@@ -171,7 +229,7 @@ export default function TimelineChart({ figures, onHover, onYearClick, onSelectF
       const x1 = xScaled(figure.birthYear)
       const x2 = xScaled(figure.deathYear)
       const barW = Math.max(x2 - x1, 3)
-      const y = AXIS_HEIGHT + row * ROW_HEIGHT + (ROW_HEIGHT - BAR_HEIGHT) / 2
+      const y = AXIS_HEIGHT + civBandHeight + row * ROW_HEIGHT + (ROW_HEIGHT - BAR_HEIGHT) / 2
 
       // Skip bars fully out of view
       if (x2 < 0 || x1 > innerW) {
@@ -228,7 +286,7 @@ export default function TimelineChart({ figures, onHover, onYearClick, onSelectF
 
       // Invisible hit area (full row height)
       barG.append('rect')
-        .attr('x', Math.max(x1 - 2, 0)).attr('y', AXIS_HEIGHT + row * ROW_HEIGHT)
+        .attr('x', Math.max(x1 - 2, 0)).attr('y', AXIS_HEIGHT + civBandHeight + row * ROW_HEIGHT)
         .attr('width', Math.max(clipW + 4, 4)).attr('height', ROW_HEIGHT)
         .attr('fill', 'transparent')
         .on('mouseenter', () => onHover(figure))
@@ -240,16 +298,28 @@ export default function TimelineChart({ figures, onHover, onYearClick, onSelectF
     // Separator line
     svg.append('line')
       .attr('x1', LABEL_WIDTH - 1).attr('x2', LABEL_WIDTH - 1)
-      .attr('y1', AXIS_HEIGHT).attr('y2', chartHeight)
+      .attr('y1', AXIS_HEIGHT + civBandHeight).attr('y2', chartHeight)
       .attr('stroke', 'rgba(255,255,255,0.06)')
       .attr('stroke-width', 1)
+
+    // Civilization track label on left side
+    if (civBandHeight > 0) {
+      svg.append('text')
+        .attr('x', LABEL_WIDTH - 10).attr('y', AXIS_HEIGHT + civBandHeight / 2 + 4)
+        .attr('text-anchor', 'end')
+        .attr('fill', 'rgba(255,255,255,0.3)')
+        .attr('font-size', '9px')
+        .attr('font-family', 'DM Mono, monospace')
+        .attr('letter-spacing', '0.1em')
+        .text('CIVILIZACIONES')
+    }
 
     const labelsG = svg.append('g')
 
     // One label per figure, each in its own dedicated row — no overlapping
     figures.forEach((figure, i) => {
       const color = getCategoryColor(figure.category)
-      const rowY = AXIS_HEIGHT + i * ROW_HEIGHT
+      const rowY = AXIS_HEIGHT + civBandHeight + i * ROW_HEIGHT
       const centerY = rowY + ROW_HEIGHT / 2
 
       // Row background on hover (invisible by default)
@@ -306,7 +376,7 @@ export default function TimelineChart({ figures, onHover, onYearClick, onSelectF
         .attr('font-family', 'DM Sans, sans-serif')
         .text('Busca un personaje histórico para añadirlo al timeline')
     }
-  }, [figures, chartHeight, getRow, onHover, onYearClick, onSelectFigure])
+  }, [figures, chartHeight, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight])
 
   // Keep drawRef always current (avoids stale closures in zoom handler)
   useEffect(() => { drawRef.current = draw }, [draw])

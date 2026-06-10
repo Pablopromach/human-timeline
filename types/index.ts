@@ -42,6 +42,15 @@ export interface Era {
   opacity: number
 }
 
+export interface Civilization {
+  id: string
+  name: string
+  startYear: number
+  endYear: number
+  color: string
+  description: string
+}
+
 export interface CoexistenceInfo {
   person1: HistoricalFigure
   person2: HistoricalFigure
