@@ -2,12 +2,20 @@
 import Link from 'next/link'
 import { ArrowLeft, Gamepad2 } from 'lucide-react'
 import { useTranslation } from '@/hooks/useLocale'
-import { getScoreRating, TOTAL_ROUNDS } from '@/lib/game'
+import { TOTAL_ROUNDS } from '@/lib/game'
 
 function HeaderLabel() {
   const { t } = useTranslation()
   return (
-    <div className="text-[9px] sm:text-[10px] text-white/30 font-mono mt-0.5 tracking-widest">
+    <div
+      style={{
+        fontSize: 10,
+        color: 'rgba(255,255,255,0.3)',
+        fontFamily: 'DM Mono, monospace',
+        marginTop: 2,
+        letterSpacing: 2,
+      }}
+    >
       {t('result.header')}
     </div>
   )
@@ -16,7 +24,17 @@ function HeaderLabel() {
 function HomeLink() {
   const { t } = useTranslation()
   return (
-    <Link href="/reto" className="flex items-center gap-1.5 text-[11px] sm:text-xs text-white/40 hover:text-white/75 transition-colors">
+    <Link
+      href="/reto"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: 6,
+        fontSize: 12,
+        color: 'rgba(255,255,255,0.4)',
+        textDecoration: 'none',
+      }}
+    >
       <ArrowLeft size={13} />
       <span className="hidden sm:inline">{t('common.home')}</span>
     </Link>
@@ -34,8 +52,15 @@ function RatingTitle({ score, color }: { score: number; color: string }) {
   else if (pct >= 15) labelKey = 'rating.traveler'
   return (
     <h1
-      className="text-3xl sm:text-4xl md:text-5xl mb-3 tracking-tight"
-      style={{ fontFamily: 'var(--font-display)', color, fontStyle: 'italic' }}
+      style={{
+        fontSize: 'clamp(28px, 8vw, 44px)',
+        fontFamily: 'DM Serif Display, serif',
+        fontStyle: 'italic',
+        color,
+        margin: '8px 0 12px',
+        letterSpacing: -0.5,
+        lineHeight: 1.05,
+      }}
     >
       {t(labelKey)}
     </h1>
@@ -46,9 +71,10 @@ function ModeLabel({ mode, rounds }: { mode: 'clasico' | 'infinito'; rounds: str
   const { t } = useTranslation()
   const modeLabel = mode === 'clasico' ? t('game.modeClassic') : t('game.modeInfinite')
   return (
-    <div className="text-[10px] sm:text-xs text-white/40 font-mono uppercase tracking-widest">
-      {modeLabel}{rounds ? ` · ${rounds} ${t('game.rounds')}` : ''}
-    </div>
+    <span>
+      {modeLabel}
+      {rounds ? ` · ${rounds} ${t('game.rounds')}` : ''}
+    </span>
   )
 }
 
@@ -57,10 +83,17 @@ function PlayButton() {
   return (
     <Link
       href="/reto"
-      className="flex items-center gap-2 px-5 sm:px-6 py-3 rounded-xl text-sm font-semibold transition-all"
       style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 8,
+        padding: '12px 22px',
+        borderRadius: 12,
+        fontSize: 14,
+        fontWeight: 600,
         background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
         color: 'white',
+        textDecoration: 'none',
         boxShadow: '0 8px 24px rgba(99,102,241,0.35)',
       }}
     >
@@ -72,7 +105,17 @@ function PlayButton() {
 function Footer() {
   const { t } = useTranslation()
   return (
-    <p className="text-xs text-white/35 mt-10 sm:mt-12 max-w-sm mx-auto leading-relaxed">
+    <p
+      style={{
+        fontSize: 12,
+        color: 'rgba(255,255,255,0.35)',
+        marginTop: 16,
+        maxWidth: 380,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        lineHeight: 1.5,
+      }}
+    >
       {t('result.footer')}
     </p>
   )

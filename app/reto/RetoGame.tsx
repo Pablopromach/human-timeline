@@ -126,7 +126,8 @@ export default function RetoGame() {
     setLastResult(null)
     setPhase('playing')
     setQuery('')
-    setHasUsedRefresh(false)
+    // hasUsedRefresh is NOT reset here — comodín is 1 per entire game,
+    // not 1 per round. It only resets on startGame().
     setTimeout(() => inputRef.current?.focus(), 100)
   }, [mode, round, misses, usedYears])
 

@@ -105,7 +105,7 @@ const es: Dict = {
   'game.usedHint': '{n} personaje{s} ya usado{s} no puede{n2} repetirse',
   'game.nextRound': 'Siguiente ronda →',
   'game.seeResults': 'Ver resultados →',
-  'game.refresh.label': 'Cambiar año (1 por ronda)',
+  'game.refresh.label': 'Cambiar año (1 por partida)',
   'game.refresh.used': 'Comodín usado',
 
   // Game finished
@@ -232,7 +232,7 @@ const en: Dict = {
   'game.usedHint': '{n} figure{s} already used can\'t be repeated',
   'game.nextRound': 'Next round →',
   'game.seeResults': 'See results →',
-  'game.refresh.label': 'Skip year (1 per round)',
+  'game.refresh.label': 'Skip year (1 per game)',
   'game.refresh.used': 'Skip used',
 
   'game.modeClassic': 'Classic Mode',

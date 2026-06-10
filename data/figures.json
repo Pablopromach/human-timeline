@@ -3214,5 +3214,23 @@
     "description": "Novelista francés. Autor de En busca del tiempo perdido, una de las obras cumbres de la literatura del siglo XX.",
     "wikipedia": "https://es.wikipedia.org/wiki/Marcel_Proust",
     "tags": ["literatura", "novela", "modernismo"], "relatedIds": [77, 220]
+  },
+  {
+    "id": 307,
+    "name": "Adolf Hitler",
+    "birthYear": 1889, "deathYear": 1945,
+    "country": "Alemania", "category": "Político",
+    "description": " Führer de Alemania desde 1934 hasta su muerte en 1945, llevó al poder al Partido Nacionalsocialista Obrero Alemán, más comúnmente conocido como Partido Nazi, y estableció un régimen totalitario.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Adolf_Hitler",
+    "tags": ["segunda guerra mundial", "nazismo", "alemania"], "relatedIds": [77, 220]
+  },
+{
+    "id": 308,
+    "name": "Iosif Stalin",
+    "birthYear": 1878, "deathYear": 1953,
+    "country": "URSS", "category": "Político",
+    "description": "Stalin modificó la interpretación oficial del Partido Comunista del marxismo como marxismo-leninismo, y su versión de este es conocida como estalinismo.",
+    "wikipedia": "https://es.wikipedia.org/wiki/Adolf_Hitler",
+    "tags": ["segunda guerra mundial", "urss", "socialismo"], "relatedIds": [77, 220]
   }
 ]

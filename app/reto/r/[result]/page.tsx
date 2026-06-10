@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { ArrowLeft, Gamepad2 } from 'lucide-react'
 import HumanTimelineIcon from '@/components/UI/HumanTimelineIcon'
 import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
-import { getScoreRating } from '@/lib/game'
+import { getScoreRating, TOTAL_ROUNDS } from '@/lib/game'
 import { SITE, absoluteUrl } from '@/lib/seo'
 import ShareButton from './ShareButton'
 import ResultLabels from './ResultLabels'
@@ -15,7 +15,6 @@ interface Params {
 }
 
 function parseResult(result: string) {
-  // Use first dash so negative scores (e.g. "infinito--20") parse correctly
   const idx = result.indexOf('-')
   if (idx === -1) return null
   const modeSlug = result.slice(0, idx)
@@ -31,7 +30,6 @@ export async function generateMetadata({ params, searchParams }: Params): Promis
   if (!parsed) return { title: 'Reto · Human Timeline' }
   const { mode, score } = parsed
   const rating = getScoreRating(score)
-  const modeLabel = mode === 'clasico' ? 'Modo Clásico' : 'Modo Infinito'
   const rounds = searchParams.rounds ?? ''
 
   const title = `${score} puntos · ${rating.label} ${rating.emoji}`
@@ -68,55 +66,158 @@ export default function ResultPage({ params, searchParams }: Params) {
   const rating = getScoreRating(score)
   const rounds = searchParams.rounds ?? ''
   const shareUrl = absoluteUrl(`/reto/r/${params.result}${rounds ? `?rounds=${rounds}` : ''}`)
+  const modeLabelStatic = mode === 'clasico' ? 'Modo Clásico · Classic Mode' : 'Modo Infinito · Infinite Mode'
 
   return (
-    <main className="flex flex-col" style={{ background: 'var(--void)', minHeight: '100vh' }}>
-      <header className="flex-shrink-0 border-b border-white/6 px-3 sm:px-5 py-2.5 sm:py-3">
-        <div className="max-w-screen-2xl mx-auto flex items-center justify-between gap-2">
-          <Link href="/" className="flex items-center gap-2.5 sm:gap-3 group min-w-0">
+    <div
+      style={{
+        backgroundColor: '#0a0a0f',
+        backgroundImage: `radial-gradient(ellipse 90% 50% at 50% 30%, ${rating.color}22 0%, transparent 60%)`,
+        color: 'rgba(255,255,255,0.95)',
+        minHeight: '100vh',
+        width: '100%',
+        fontFamily: 'DM Sans, system-ui, sans-serif',
+        display: 'block',
+      }}
+    >
+      {/* Header */}
+      <header
+        style={{
+          borderBottom: '1px solid rgba(255,255,255,0.06)',
+          padding: '12px 16px',
+          background: 'rgba(10,10,15,0.85)',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '1400px',
+            margin: '0 auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: 12,
+          }}
+        >
+          <Link
+            href="/reto"
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+              textDecoration: 'none',
+              color: 'inherit',
+              minWidth: 0,
+            }}
+          >
             <div
-              className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-              style={{ background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', boxShadow: '0 4px 16px rgba(99,102,241,0.4)' }}
+              style={{
+                width: 36,
+                height: 36,
+                borderRadius: 12,
+                background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+                boxShadow: '0 4px 16px rgba(99,102,241,0.4)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+              }}
             >
               <HumanTimelineIcon size={20} className="text-white" />
             </div>
-            <div className="min-w-0">
-              <div className="text-sm sm:text-base font-semibold text-white/90 leading-none truncate" style={{ fontFamily: 'var(--font-display)' }}>
+            <div style={{ minWidth: 0 }}>
+              <div
+                style={{
+                  fontSize: 15,
+                  fontWeight: 600,
+                  color: 'rgba(255,255,255,0.92)',
+                  lineHeight: 1,
+                  fontFamily: 'DM Serif Display, serif',
+                }}
+              >
                 Human Timeline
               </div>
               <ResultLabels.HeaderLabel />
             </div>
           </Link>
-          <div className="flex items-center gap-2 flex-shrink-0">
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
             <ResultLabels.HomeLink />
             <LanguageSwitcher />
           </div>
         </div>
       </header>
 
-      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-10 sm:py-16 relative" style={{ minHeight: '60vh' }}>
+      {/* Main content */}
+      <div
+        style={{
+          padding: '48px 16px 64px',
+          textAlign: 'center',
+          maxWidth: '32rem',
+          margin: '0 auto',
+        }}
+      >
+        {/* Emoji */}
+        <div style={{ fontSize: 80, lineHeight: 1, marginBottom: 16 }}>{rating.emoji}</div>
+
+        {/* Rating title (client component for i18n) */}
+        <ResultLabels.RatingTitle score={score} color={rating.color} />
+
+        {/* Score */}
         <div
-          className="absolute inset-0 pointer-events-none"
-          style={{ background: `radial-gradient(ellipse 80% 50% at 50% 35%, ${rating.color}22 0%, transparent 60%)` }}
-        />
-
-        <div className="relative max-w-xl w-full text-center">
-          <div className="text-6xl sm:text-7xl mb-3 sm:mb-4">{rating.emoji}</div>
-          <ResultLabels.RatingTitle score={score} color={rating.color} />
-          <div className="text-6xl sm:text-7xl md:text-8xl font-bold font-mono mb-2" style={{ color: 'rgba(255,255,255,0.95)' }}>
-            {score}
-            {mode === 'clasico' && <span className="text-white/25 text-3xl sm:text-4xl">/100</span>}
-          </div>
-          <ResultLabels.ModeLabel mode={mode} rounds={rounds} />
-
-          <div className="flex gap-2 sm:gap-3 justify-center flex-wrap mt-8 sm:mt-10">
-            <ResultLabels.PlayButton />
-            <ShareButton url={shareUrl} score={score} mode={mode} />
-          </div>
-
-          <ResultLabels.Footer />
+          style={{
+            fontSize: 'clamp(64px, 18vw, 112px)',
+            fontWeight: 700,
+            fontFamily: 'DM Mono, monospace',
+            color: 'rgba(255,255,255,0.96)',
+            lineHeight: 1,
+            margin: '4px 0 8px',
+          }}
+        >
+          {score}
+          {mode === 'clasico' && (
+            <span style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.45em', fontWeight: 600 }}>
+              /{TOTAL_ROUNDS * 10}
+            </span>
+          )}
         </div>
+
+        {/* Mode label */}
+        <div
+          style={{
+            fontSize: 11,
+            textTransform: 'uppercase',
+            letterSpacing: 2.5,
+            color: 'rgba(255,255,255,0.4)',
+            fontFamily: 'DM Mono, monospace',
+            marginBottom: 36,
+          }}
+        >
+          <ResultLabels.ModeLabel mode={mode} rounds={rounds} />
+        </div>
+
+        {/* Static fallback (always visible even if JS fails) */}
+        <noscript>
+          <div style={{ color: 'rgba(255,255,255,0.5)', marginBottom: 24, fontSize: 14 }}>
+            {modeLabelStatic}
+          </div>
+        </noscript>
+
+        {/* Action buttons */}
+        <div
+          style={{
+            display: 'flex',
+            gap: 10,
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            marginBottom: 48,
+          }}
+        >
+          <ResultLabels.PlayButton />
+          <ShareButton url={shareUrl} score={score} mode={mode} />
+        </div>
+
+        {/* Footer text */}
+        <ResultLabels.Footer />
       </div>
-    </main>
+    </div>
   )
 }

@@ -57,7 +57,20 @@ export default function ShareButton({ url, score, mode }: Props) {
   return (
     <button
       onClick={handleShare}
-      className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold bg-white/8 text-white/90 hover:bg-white/14 transition-all"
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 8,
+        padding: '12px 22px',
+        borderRadius: 12,
+        fontSize: 14,
+        fontWeight: 600,
+        background: 'rgba(255,255,255,0.08)',
+        color: 'rgba(255,255,255,0.92)',
+        border: 'none',
+        cursor: 'pointer',
+        fontFamily: 'inherit',
+      }}
     >
       {copied ? <><Check size={15} /> {t('common.copied')}</> : <><Share2 size={15} /> {t('result.shareLink')}</>}
     </button>
