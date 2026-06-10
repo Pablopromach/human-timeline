@@ -4,7 +4,12 @@ import { ArrowLeft, Gamepad2 } from 'lucide-react'
 import { useTranslation } from '@/hooks/useLocale'
 import { TOTAL_ROUNDS } from '@/lib/game'
 
-function HeaderLabel() {
+// IMPORTANT: each client component needs to be its own named export so that
+// React Server Components can resolve them through the client manifest.
+// Do NOT collect them in an object and access via dot-notation — RSC will
+// throw "Could not find the module ... in the React Client Manifest" at runtime.
+
+export function HeaderLabel() {
   const { t } = useTranslation()
   return (
     <div
@@ -21,7 +26,7 @@ function HeaderLabel() {
   )
 }
 
-function HomeLink() {
+export function HomeLink() {
   const { t } = useTranslation()
   return (
     <Link
@@ -36,12 +41,12 @@ function HomeLink() {
       }}
     >
       <ArrowLeft size={13} />
-      <span className="hidden sm:inline">{t('common.home')}</span>
+      <span style={{ display: 'inline-block' }}>{t('common.home')}</span>
     </Link>
   )
 }
 
-function RatingTitle({ score, color }: { score: number; color: string }) {
+export function RatingTitle({ score, color }: { score: number; color: string }) {
   const { t } = useTranslation()
   const pct = (score / (TOTAL_ROUNDS * 10)) * 100
   let labelKey = 'rating.review'
@@ -67,7 +72,7 @@ function RatingTitle({ score, color }: { score: number; color: string }) {
   )
 }
 
-function ModeLabel({ mode, rounds }: { mode: 'clasico' | 'infinito'; rounds: string }) {
+export function ModeLabel({ mode, rounds }: { mode: 'clasico' | 'infinito'; rounds: string }) {
   const { t } = useTranslation()
   const modeLabel = mode === 'clasico' ? t('game.modeClassic') : t('game.modeInfinite')
   return (
@@ -78,7 +83,7 @@ function ModeLabel({ mode, rounds }: { mode: 'clasico' | 'infinito'; rounds: str
   )
 }
 
-function PlayButton() {
+export function PlayButton() {
   const { t } = useTranslation()
   return (
     <Link
@@ -102,7 +107,7 @@ function PlayButton() {
   )
 }
 
-function Footer() {
+export function Footer() {
   const { t } = useTranslation()
   return (
     <p
@@ -120,6 +125,3 @@ function Footer() {
     </p>
   )
 }
-
-const ResultLabels = { HeaderLabel, HomeLink, RatingTitle, ModeLabel, PlayButton, Footer }
-export default ResultLabels

@@ -7,7 +7,14 @@ import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
 import { getScoreRating, TOTAL_ROUNDS } from '@/lib/game'
 import { SITE, absoluteUrl } from '@/lib/seo'
 import ShareButton from './ShareButton'
-import ResultLabels from './ResultLabels'
+import {
+  HeaderLabel,
+  HomeLink,
+  RatingTitle,
+  ModeLabel,
+  PlayButton,
+  Footer as ResultFooter,
+} from './ResultLabels'
 
 interface Params {
   params: { result: string }
@@ -136,11 +143,11 @@ export default function ResultPage({ params, searchParams }: Params) {
               >
                 Human Timeline
               </div>
-              <ResultLabels.HeaderLabel />
+              <HeaderLabel />
             </div>
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-            <ResultLabels.HomeLink />
+            <HomeLink />
             <LanguageSwitcher />
           </div>
         </div>
@@ -159,7 +166,7 @@ export default function ResultPage({ params, searchParams }: Params) {
         <div style={{ fontSize: 80, lineHeight: 1, marginBottom: 16 }}>{rating.emoji}</div>
 
         {/* Rating title (client component for i18n) */}
-        <ResultLabels.RatingTitle score={score} color={rating.color} />
+        <RatingTitle score={score} color={rating.color} />
 
         {/* Score */}
         <div
@@ -191,7 +198,7 @@ export default function ResultPage({ params, searchParams }: Params) {
             marginBottom: 36,
           }}
         >
-          <ResultLabels.ModeLabel mode={mode} rounds={rounds} />
+          <ModeLabel mode={mode} rounds={rounds} />
         </div>
 
         {/* Static fallback (always visible even if JS fails) */}
@@ -211,12 +218,12 @@ export default function ResultPage({ params, searchParams }: Params) {
             marginBottom: 48,
           }}
         >
-          <ResultLabels.PlayButton />
+          <PlayButton />
           <ShareButton url={shareUrl} score={score} mode={mode} />
         </div>
 
         {/* Footer text */}
-        <ResultLabels.Footer />
+        <ResultFooter />
       </div>
     </div>
   )
