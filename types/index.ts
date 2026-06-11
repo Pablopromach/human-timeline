@@ -13,18 +13,20 @@ export interface HistoricalFigure {
 }
 
 export type Category =
-  | 'Político'
-  | 'Científico'
-  | 'Artista'
-  | 'Escritor'
-  | 'Militar'
-  | 'Filósofo'
-  | 'Explorador'
-  | 'Religioso'
-  | 'Matemático'
+  | 'Politician'
+  | 'Scientist'
+  | 'Artist'
+  | 'Writer'
+  | 'Military Leader'
+  | 'Philosopher'
+  | 'Explorer'
+  | 'Religious Figure'
+  | 'Mathematician'
   | 'Inventor'
-  | 'Músico'
-  | 'Arquitecto'
+  | 'Musician'
+  | 'Architect'
+  | 'Athlete'
+  | 'Filmmaker'
 
 export interface TimelineBar {
   figure: HistoricalFigure

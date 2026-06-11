@@ -764,6 +764,8 @@ function YearDistanceBar({ targetYear, birthYear, deathYear, color }: {
   deathYear: number
   color: string
 }) {
+  const { locale } = useTranslation()
+  const bcSuffix = locale === 'es' ? 'aC' : 'BC'
   const minY = Math.min(targetYear, birthYear) - 100
   const maxY = Math.max(targetYear, deathYear) + 100
   const range = maxY - minY
@@ -779,15 +781,15 @@ function YearDistanceBar({ targetYear, birthYear, deathYear, color }: {
         style={{ left: `${lifeStart}%`, width: `${lifeWidth}%`, background: color, boxShadow: `0 0 8px ${color}66` }}
       />
       <div className="absolute -bottom-1 text-[9px] font-mono text-white/40 transform -translate-x-1/2" style={{ left: `${lifeStart}%` }}>
-        {birthYear < 0 ? Math.abs(birthYear) + 'aC' : birthYear}
+        {birthYear < 0 ? Math.abs(birthYear) + bcSuffix : birthYear}
       </div>
       <div className="absolute -bottom-1 text-[9px] font-mono text-white/40 transform -translate-x-1/2" style={{ left: `${lifeStart + lifeWidth}%` }}>
-        {deathYear < 0 ? Math.abs(deathYear) + 'aC' : deathYear}
+        {deathYear < 0 ? Math.abs(deathYear) + bcSuffix : deathYear}
       </div>
       <div className="absolute top-0 -translate-x-1/2" style={{ left: `${targetPos}%` }}>
         <div className="w-0.5 h-12 bg-amber-400" style={{ boxShadow: '0 0 6px #f59e0b' }} />
         <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-[10px] font-mono font-semibold text-amber-400 whitespace-nowrap">
-          {targetYear < 0 ? Math.abs(targetYear) + ' aC' : targetYear}
+          {targetYear < 0 ? Math.abs(targetYear) + ' ' + bcSuffix : targetYear}
         </div>
       </div>
     </div>

@@ -1,18 +1,20 @@
 import { HistoricalFigure, CoexistenceInfo, DensityData, Era } from '@/types'
 
 export const CATEGORY_COLORS: Record<string, string> = {
-  'Político': '#ef4444',
-  'Científico': '#06b6d4',
-  'Artista': '#f59e0b',
-  'Escritor': '#10b981',
-  'Militar': '#8b5cf6',
-  'Filósofo': '#6366f1',
-  'Explorador': '#f97316',
-  'Religioso': '#fb7185',
-  'Matemático': '#22d3ee',
+  'Politician': '#ef4444',
+  'Scientist': '#06b6d4',
+  'Artist': '#f59e0b',
+  'Writer': '#10b981',
+  'Military Leader': '#8b5cf6',
+  'Philosopher': '#6366f1',
+  'Explorer': '#f97316',
+  'Religious Figure': '#fb7185',
+  'Mathematician': '#22d3ee',
   'Inventor': '#a78bfa',
-  'Músico': '#fbbf24',
-  'Arquitecto': '#34d399',
+  'Musician': '#fbbf24',
+  'Architect': '#34d399',
+  'Athlete': '#84cc16',
+  'Filmmaker': '#ec4899',
 }
 
 export const ERAS: Era[] = [

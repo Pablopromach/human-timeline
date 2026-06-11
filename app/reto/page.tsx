@@ -3,12 +3,12 @@ import RetoGame from './RetoGame'
 import { SITE } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Reto Histórico — ¿Quién vivió en este año?',
-  description: 'Juego rápido: te damos un año, tú adivinas qué personaje histórico vivió en él. 10 rondas, puntuación final, compártela.',
+  title: 'Historical Challenge — Who lived in this year?',
+  description: 'Quick game: we give you a year, you guess which historical figure lived back then. 10 rounds, final score, share it.',
   alternates: { canonical: `${SITE.url}/reto` },
   openGraph: {
-    title: 'Reto Histórico · Human Timeline',
-    description: '¿Eres capaz de adivinar quién vivió en cada año? 10 rondas para demostrarlo.',
+    title: 'Historical Challenge · Human Timeline',
+    description: 'Can you guess who lived in each year? 10 rounds to prove it.',
     url: `${SITE.url}/reto`,
     type: 'website',
   },
