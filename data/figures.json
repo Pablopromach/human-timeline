@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "name": "Ramsés II",
+    "name": "Ramesses II",
     "birthYear": -1303,
     "deathYear": -1213,
     "country": "Egypt",
@@ -89,7 +89,7 @@
   },
   {
     "id": 6,
-    "name": "Sócrates",
+    "name": "Socrates",
     "birthYear": -470,
     "deathYear": -399,
     "country": "Greece",
@@ -108,7 +108,7 @@
   },
   {
     "id": 7,
-    "name": "Platón",
+    "name": "Plato",
     "birthYear": -428,
     "deathYear": -348,
     "country": "Greece",
@@ -127,7 +127,7 @@
   },
   {
     "id": 8,
-    "name": "Aristóteles",
+    "name": "Aristotle",
     "birthYear": -384,
     "deathYear": -322,
     "country": "Greece",
@@ -182,7 +182,7 @@
   },
   {
     "id": 11,
-    "name": "Arquímedes",
+    "name": "Archimedes",
     "birthYear": -287,
     "deathYear": -212,
     "country": "Greece",
@@ -200,7 +200,7 @@
   },
   {
     "id": 12,
-    "name": "Aníbal Barca",
+    "name": "Hannibal Barca",
     "birthYear": -247,
     "deathYear": -183,
     "country": "Carthage",
@@ -218,7 +218,7 @@
   },
   {
     "id": 13,
-    "name": "Cicerón",
+    "name": "Cicero",
     "birthYear": -106,
     "deathYear": -43,
     "country": "Rome",
@@ -237,7 +237,7 @@
   },
   {
     "id": 14,
-    "name": "Julio César",
+    "name": "Julius Caesar",
     "birthYear": -100,
     "deathYear": -44,
     "country": "Rome",
@@ -276,7 +276,7 @@
   },
   {
     "id": 16,
-    "name": "Augusto César",
+    "name": "Augustus",
     "birthYear": -63,
     "deathYear": 14,
     "country": "Rome",
@@ -395,7 +395,7 @@
   },
   {
     "id": 23,
-    "name": "Tomás de Aquino",
+    "name": "Thomas Aquinas",
     "birthYear": 1225,
     "deathYear": 1274,
     "country": "Italy",
@@ -475,7 +475,7 @@
   },
   {
     "id": 28,
-    "name": "Cristóbal Colón",
+    "name": "Christopher Columbus",
     "birthYear": 1451,
     "deathYear": 1506,
     "country": "Genoa",
@@ -514,7 +514,7 @@
   },
   {
     "id": 30,
-    "name": "Nicolás Maquiavelo",
+    "name": "Niccolò Machiavelli",
     "birthYear": 1469,
     "deathYear": 1527,
     "country": "Italy",
@@ -532,7 +532,7 @@
   },
   {
     "id": 31,
-    "name": "Nicolás Copérnico",
+    "name": "Nicolaus Copernicus",
     "birthYear": 1473,
     "deathYear": 1543,
     "country": "Poland",
@@ -551,7 +551,7 @@
   },
   {
     "id": 32,
-    "name": "Miguel Ángel",
+    "name": "Michelangelo",
     "birthYear": 1475,
     "deathYear": 1564,
     "country": "Italy",
@@ -607,7 +607,7 @@
   },
   {
     "id": 35,
-    "name": "Martín Lutero",
+    "name": "Martin Luther",
     "birthYear": 1483,
     "deathYear": 1546,
     "country": "Germany",
@@ -865,7 +865,7 @@
   },
   {
     "id": 49,
-    "name": "Napoleón Bonaparte",
+    "name": "Napoleon Bonaparte",
     "birthYear": 1769,
     "deathYear": 1821,
     "country": "France",
@@ -1028,7 +1028,7 @@
   },
   {
     "id": 58,
-    "name": "León Tolstói",
+    "name": "Leo Tolstoy",
     "birthYear": 1828,
     "deathYear": 1910,
     "country": "Russia",
@@ -1047,7 +1047,7 @@
   },
   {
     "id": 59,
-    "name": "Fiódor Dostoievski",
+    "name": "Fyodor Dostoevsky",
     "birthYear": 1821,
     "deathYear": 1881,
     "country": "Russia",
@@ -1121,7 +1121,7 @@
   },
   {
     "id": 63,
-    "name": "Víctor Hugo",
+    "name": "Victor Hugo",
     "birthYear": 1802,
     "deathYear": 1885,
     "country": "France",
@@ -1626,7 +1626,7 @@
   },
   {
     "id": 90,
-    "name": "Pitágoras",
+    "name": "Pythagoras",
     "birthYear": -570,
     "deathYear": -495,
     "country": "Greece",
@@ -1645,7 +1645,7 @@
   },
   {
     "id": 91,
-    "name": "Heródoto",
+    "name": "Herodotus",
     "birthYear": -484,
     "deathYear": -425,
     "country": "Greece",
@@ -1664,7 +1664,7 @@
   },
   {
     "id": 92,
-    "name": "Hipócrates",
+    "name": "Hippocrates",
     "birthYear": -460,
     "deathYear": -370,
     "country": "Greece",
@@ -1682,7 +1682,7 @@
   },
   {
     "id": 93,
-    "name": "Tucídides",
+    "name": "Thucydides",
     "birthYear": -460,
     "deathYear": -400,
     "country": "Greece",
@@ -1700,7 +1700,7 @@
   },
   {
     "id": 94,
-    "name": "Diógenes de Sínope",
+    "name": "Diogenes of Sinope",
     "birthYear": -412,
     "deathYear": -323,
     "country": "Greece",
@@ -1774,7 +1774,7 @@
   },
   {
     "id": 98,
-    "name": "Jesús de Nazaret",
+    "name": "Jesus of Nazareth",
     "birthYear": -4,
     "deathYear": 33,
     "country": "Judea",
@@ -1942,7 +1942,7 @@
   },
   {
     "id": 107,
-    "name": "Lorenzo de Médici",
+    "name": "Lorenzo de' Medici",
     "birthYear": 1449,
     "deathYear": 1492,
     "country": "Italy",
@@ -2001,17 +2001,18 @@
   },
   {
     "id": 110,
-    "name": "Carlos V",
+    "name": "Charles V",
     "birthYear": 1500,
     "deathYear": 1558,
-    "country": "Spain",
+    "country": "Holy Roman Empire",
     "category": "Politician",
-    "description": "Holy Roman Emperor and King of Spain who ruled the most extensive empire in Europe of his time.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Carlos_I_de_España",
+    "description": "Holy Roman Emperor and King of Spain who ruled the largest empire of his time, covering Europe and the Americas, before abdicating to a monastery.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor",
     "tags": [
+      "habsburg",
+      "holy roman empire",
       "empire",
-      "spain",
-      "habsburgo"
+      "reformation"
     ],
     "relatedIds": [
       35,
@@ -2020,17 +2021,18 @@
   },
   {
     "id": 111,
-    "name": "Isabel I de Inglaterra",
+    "name": "Elizabeth I of England",
     "birthYear": 1533,
     "deathYear": 1603,
     "country": "England",
     "category": "Politician",
-    "description": "Queen of England during the Elizabethan Golden Age who defeated the Spanish Armada and was a patron of Shakespeare.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Isabel_I_de_Inglaterra",
+    "description": "The Virgin Queen who oversaw England's Golden Age, defeated the Spanish Armada in 1588, and fostered Shakespeare's era.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Elizabeth_I",
     "tags": [
-      "inglaterra",
+      "england",
       "tudor",
-      "queen"
+      "golden age",
+      "armada"
     ],
     "relatedIds": [
       37,
@@ -2039,17 +2041,18 @@
   },
   {
     "id": 112,
-    "name": "Felipe II de España",
+    "name": "Philip II of Spain",
     "birthYear": 1527,
     "deathYear": 1598,
     "country": "Spain",
     "category": "Politician",
-    "description": "King of Spain, Portugal, and Naples who ruled the empire on which the sun never set and built El Escorial.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Felipe_II_de_España",
+    "description": "King of the world's largest empire, ruling Spain, Portugal, the Americas and more; he sent the ill-fated Armada against England in 1588.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Philip_II_of_Spain",
     "tags": [
       "spain",
-      "habsburgo",
-      "empire"
+      "empire",
+      "16th century",
+      "armada"
     ],
     "relatedIds": [
       110,
@@ -2706,7 +2709,7 @@
   },
   {
     "id": 148,
-    "name": "Tutankamón",
+    "name": "Tutankhamun",
     "birthYear": -1341,
     "deathYear": -1323,
     "country": "Egypt",
@@ -2782,7 +2785,7 @@
   },
   {
     "id": 152,
-    "name": "Solón",
+    "name": "Solon",
     "birthYear": -638,
     "deathYear": -558,
     "country": "Greece",
@@ -2855,7 +2858,7 @@
   },
   {
     "id": 156,
-    "name": "Heráclito",
+    "name": "Heraclitus",
     "birthYear": -535,
     "deathYear": -475,
     "country": "Greece",
@@ -2914,7 +2917,7 @@
   },
   {
     "id": 159,
-    "name": "Sófocles",
+    "name": "Sophocles",
     "birthYear": -497,
     "deathYear": -406,
     "country": "Greece",
@@ -2934,7 +2937,7 @@
   },
   {
     "id": 160,
-    "name": "Eurípides",
+    "name": "Euripides",
     "birthYear": -480,
     "deathYear": -406,
     "country": "Greece",
@@ -2954,7 +2957,7 @@
   },
   {
     "id": 161,
-    "name": "Aristófanes",
+    "name": "Aristophanes",
     "birthYear": -446,
     "deathYear": -386,
     "country": "Greece",
@@ -2974,7 +2977,7 @@
   },
   {
     "id": 162,
-    "name": "Demócrito",
+    "name": "Democritus",
     "birthYear": -460,
     "deathYear": -370,
     "country": "Greece",
@@ -2993,7 +2996,7 @@
   },
   {
     "id": 163,
-    "name": "Diógenes Laercio",
+    "name": "Diogenes Laërtius",
     "birthYear": 180,
     "deathYear": 240,
     "country": "Greece",
@@ -3009,7 +3012,7 @@
   },
   {
     "id": 164,
-    "name": "Escipión el Africano",
+    "name": "Scipio Africanus",
     "birthYear": -236,
     "deathYear": -183,
     "country": "Rome",
@@ -3027,7 +3030,7 @@
   },
   {
     "id": 165,
-    "name": "Catón el Viejo",
+    "name": "Cato the Elder",
     "birthYear": -234,
     "deathYear": -149,
     "country": "Rome",
@@ -3104,7 +3107,7 @@
   },
   {
     "id": 169,
-    "name": "Séneca",
+    "name": "Seneca",
     "birthYear": -4,
     "deathYear": 65,
     "country": "Rome",
@@ -3124,7 +3127,7 @@
   },
   {
     "id": 170,
-    "name": "Calígula",
+    "name": "Caligula",
     "birthYear": 12,
     "deathYear": 41,
     "country": "Rome",
@@ -3142,17 +3145,18 @@
   },
   {
     "id": 171,
-    "name": "Nerón",
+    "name": "Nero",
     "birthYear": 37,
     "deathYear": 68,
     "country": "Rome",
     "category": "Politician",
-    "description": "Roman emperor famous for the Great Fire of Rome and the persecution of Christians, who ultimately died by suicide.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nerón",
+    "description": "Infamously cruel Roman emperor who blamed Christians for the Great Fire of Rome in 64 AD and was the first emperor to systematically persecute them.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Nero",
     "tags": [
       "rome",
       "empire",
-      "tiranía"
+      "persecution",
+      "1st century"
     ],
     "relatedIds": [
       169,
@@ -3161,17 +3165,18 @@
   },
   {
     "id": 172,
-    "name": "Vespasiano",
+    "name": "Vespasian",
     "birthYear": 9,
     "deathYear": 79,
     "country": "Rome",
     "category": "Politician",
-    "description": "Roman emperor and founder of the Flavian dynasty who initiated construction of the Colosseum.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Vespasiano",
+    "description": "Founder of the Flavian dynasty who restored stability after the Year of the Four Emperors and began construction of the Colosseum in Rome.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vespasian",
     "tags": [
       "rome",
       "empire",
-      "architecture"
+      "flavian",
+      "colosseum"
     ],
     "relatedIds": [
       171
@@ -3179,17 +3184,18 @@
   },
   {
     "id": 173,
-    "name": "Trajano",
+    "name": "Trajan",
     "birthYear": 53,
     "deathYear": 117,
     "country": "Rome",
     "category": "Politician",
-    "description": "Roman emperor under whose rule the Roman Empire reached its greatest territorial extent.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Trajano",
+    "description": "Roman emperor called Optimus Princeps who conquered Dacia and Parthia, expanding the empire to its greatest territorial extent.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Trajan",
     "tags": [
       "rome",
       "empire",
-      "conquest"
+      "expansion",
+      "five good emperors"
     ],
     "relatedIds": [
       174,
@@ -3198,17 +3204,18 @@
   },
   {
     "id": 174,
-    "name": "Adriano",
+    "name": "Hadrian",
     "birthYear": 76,
     "deathYear": 138,
     "country": "Rome",
     "category": "Politician",
-    "description": "Roman emperor who built Hadrian's Wall in Britain and consolidated the frontiers of the Empire.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Adriano",
+    "description": "Philosopher-emperor who codified Roman law, built Hadrian's Wall in Britain, and spent years touring and beautifying the empire.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hadrian",
     "tags": [
       "rome",
       "empire",
-      "architecture"
+      "five good emperors",
+      "wall"
     ],
     "relatedIds": [
       173,
@@ -3217,7 +3224,7 @@
   },
   {
     "id": 175,
-    "name": "Tácito",
+    "name": "Tacitus",
     "birthYear": 56,
     "deathYear": 120,
     "country": "Rome",
@@ -3347,17 +3354,18 @@
   },
   {
     "id": 182,
-    "name": "Ricardo Corazón de León",
+    "name": "Richard I the Lionheart",
     "birthYear": 1157,
     "deathYear": 1199,
     "country": "England",
     "category": "Military Leader",
-    "description": "King of England, leader of the Third Crusade, and legendary knight who died from an arrow wound during a siege.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Ricardo_I_de_Inglaterra",
+    "description": "English king celebrated as the greatest crusader of his age, leading the Third Crusade and holding Saladin to a stalemate.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Richard_I_of_England",
     "tags": [
-      "medieval",
+      "england",
       "crusades",
-      "inglaterra"
+      "medieval",
+      "chivalry"
     ],
     "relatedIds": [
       181,
@@ -3384,7 +3392,7 @@
   },
   {
     "id": 184,
-    "name": "San Francisco de Asís",
+    "name": "Saint Francis of Assisi",
     "birthYear": 1181,
     "deathYear": 1226,
     "country": "Italy",
@@ -3611,7 +3619,7 @@
   },
   {
     "id": 196,
-    "name": "Tomás Moro",
+    "name": "Thomas More",
     "birthYear": 1478,
     "deathYear": 1535,
     "country": "England",
@@ -3648,7 +3656,7 @@
   },
   {
     "id": 198,
-    "name": "Américo Vespucio",
+    "name": "Amerigo Vespucci",
     "birthYear": 1454,
     "deathYear": 1512,
     "country": "Italy",
@@ -3798,7 +3806,7 @@
   },
   {
     "id": 206,
-    "name": "Dmitri Mendeléyev",
+    "name": "Dmitri Mendeleev",
     "birthYear": 1834,
     "deathYear": 1907,
     "country": "Russia",
@@ -3835,17 +3843,18 @@
   },
   {
     "id": 208,
-    "name": "Luis XVI",
+    "name": "Louis XVI of France",
     "birthYear": 1754,
     "deathYear": 1793,
     "country": "France",
     "category": "Politician",
-    "description": "Last king of the Ancien Régime in France, guillotined during the French Revolution.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Luis_XVI_de_Francia",
+    "description": "Last king of France before the Revolution, whose financial crisis and indecision led to his arrest, trial, and execution by guillotine.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Louis_XVI",
     "tags": [
       "france",
       "revolution",
-      "monarchy"
+      "bourbon",
+      "18th century"
     ],
     "relatedIds": [
       209,
@@ -3855,7 +3864,7 @@
   },
   {
     "id": 209,
-    "name": "María Antonieta",
+    "name": "Marie Antoinette",
     "birthYear": 1755,
     "deathYear": 1793,
     "country": "France",
@@ -3931,7 +3940,7 @@
   },
   {
     "id": 213,
-    "name": "Marqués de Lafayette",
+    "name": "Marquis de Lafayette",
     "birthYear": 1757,
     "deathYear": 1834,
     "country": "France",
@@ -4278,7 +4287,7 @@
   },
   {
     "id": 231,
-    "name": "Fernando II de Aragón",
+    "name": "Ferdinand II of Aragon",
     "birthYear": 1452,
     "deathYear": 1516,
     "country": "Spain",
@@ -4429,7 +4438,7 @@
   },
   {
     "id": 239,
-    "name": "Antonino Pío",
+    "name": "Antoninus Pius",
     "birthYear": 86,
     "deathYear": 161,
     "country": "Rome",
@@ -4447,7 +4456,7 @@
   },
   {
     "id": 240,
-    "name": "Cómodo",
+    "name": "Commodus",
     "birthYear": 161,
     "deathYear": 192,
     "country": "Rome",
@@ -4539,7 +4548,7 @@
   },
   {
     "id": 245,
-    "name": "Pedro el Ermitaño",
+    "name": "Peter the Hermit",
     "birthYear": 1050,
     "deathYear": 1115,
     "country": "France",
@@ -4895,7 +4904,7 @@
   },
   {
     "id": 264,
-    "name": "Anton Chéjov",
+    "name": "Anton Chekhov",
     "birthYear": 1860,
     "deathYear": 1904,
     "country": "Russia",
@@ -5065,7 +5074,7 @@
   },
   {
     "id": 273,
-    "name": "Ígor Stravinski",
+    "name": "Igor Stravinsky",
     "birthYear": 1882,
     "deathYear": 1971,
     "country": "Russia",
@@ -5084,7 +5093,7 @@
   },
   {
     "id": 274,
-    "name": "Káiser Guillermo II",
+    "name": "Kaiser Wilhelm II",
     "birthYear": 1859,
     "deathYear": 1941,
     "country": "Germany",
@@ -5216,7 +5225,7 @@
   },
   {
     "id": 281,
-    "name": "Mustafá Kemal Atatürk",
+    "name": "Mustafa Kemal Atatürk",
     "birthYear": 1881,
     "deathYear": 1938,
     "country": "Turkey",
@@ -5349,7 +5358,7 @@
   },
   {
     "id": 288,
-    "name": "Georgy Zhúkov",
+    "name": "Georgy Zhukov",
     "birthYear": 1896,
     "deathYear": 1974,
     "country": "USSR",
@@ -5482,7 +5491,7 @@
   },
   {
     "id": 295,
-    "name": "Leonid Brézhnev",
+    "name": "Leonid Brezhnev",
     "birthYear": 1906,
     "deathYear": 1982,
     "country": "USSR",
@@ -6116,7 +6125,7 @@
   },
   {
     "id": 334,
-    "name": "Volodímir Zelenski",
+    "name": "Volodymyr Zelensky",
     "birthYear": 1978,
     "deathYear": 9999,
     "country": "Ukraine",
@@ -6238,7 +6247,7 @@
   },
   {
     "id": 342,
-    "name": "David Ben-Gurión",
+    "name": "David Ben-Gurion",
     "birthYear": 1886,
     "deathYear": 1973,
     "country": "Israel",
@@ -6845,7 +6854,7 @@
   },
   {
     "id": 382,
-    "name": "Andréi Sájarov",
+    "name": "Andrei Sakharov",
     "birthYear": 1921,
     "deathYear": 1989,
     "country": "USSR",
@@ -7968,7 +7977,7 @@
   },
   {
     "id": 457,
-    "name": "Dmitri Shostakóvich",
+    "name": "Dmitri Shostakovich",
     "birthYear": 1906,
     "deathYear": 1975,
     "country": "USSR",
@@ -8632,7 +8641,7 @@
   },
   {
     "id": 501,
-    "name": "Sargón de Acad",
+    "name": "Sargon of Akkad",
     "birthYear": -2334,
     "deathYear": -2279,
     "country": "Acad",
@@ -8681,7 +8690,7 @@
   },
   {
     "id": 504,
-    "name": "Akenatón",
+    "name": "Akhenaten",
     "birthYear": -1380,
     "deathYear": -1336,
     "country": "Egypt",
@@ -8731,7 +8740,7 @@
   },
   {
     "id": 507,
-    "name": "Darío I",
+    "name": "Darius I",
     "birthYear": -550,
     "deathYear": -486,
     "country": "Persia",
@@ -8766,7 +8775,7 @@
   },
   {
     "id": 509,
-    "name": "Darío III",
+    "name": "Darius III",
     "birthYear": -380,
     "deathYear": -330,
     "country": "Persia",
@@ -8783,7 +8792,7 @@
   },
   {
     "id": 510,
-    "name": "Hesíodo",
+    "name": "Hesiod",
     "birthYear": -750,
     "deathYear": -650,
     "country": "Greece",
@@ -8800,7 +8809,7 @@
   },
   {
     "id": 511,
-    "name": "Leónidas I",
+    "name": "Leonidas I",
     "birthYear": -540,
     "deathYear": -480,
     "country": "Sparta",
@@ -8817,7 +8826,7 @@
   },
   {
     "id": 512,
-    "name": "Temístocles",
+    "name": "Themistocles",
     "birthYear": -524,
     "deathYear": -459,
     "country": "Athens",
@@ -8834,7 +8843,7 @@
   },
   {
     "id": 513,
-    "name": "Milcíades",
+    "name": "Miltiades",
     "birthYear": -550,
     "deathYear": -489,
     "country": "Athens",
@@ -8851,7 +8860,7 @@
   },
   {
     "id": 514,
-    "name": "Alcibíades",
+    "name": "Alcibiades",
     "birthYear": -450,
     "deathYear": -404,
     "country": "Athens",
@@ -8886,7 +8895,7 @@
   },
   {
     "id": 516,
-    "name": "Anaxágoras",
+    "name": "Anaxagoras",
     "birthYear": -500,
     "deathYear": -428,
     "country": "Greece",
@@ -8901,7 +8910,7 @@
   },
   {
     "id": 517,
-    "name": "Empédocles",
+    "name": "Empedocles",
     "birthYear": -495,
     "deathYear": -435,
     "country": "Greece",
@@ -8916,7 +8925,7 @@
   },
   {
     "id": 518,
-    "name": "Parménides",
+    "name": "Parmenides",
     "birthYear": -515,
     "deathYear": -450,
     "country": "Greece",
@@ -8933,7 +8942,7 @@
   },
   {
     "id": 519,
-    "name": "Zenón de Elea",
+    "name": "Zeno of Elea",
     "birthYear": -490,
     "deathYear": -430,
     "country": "Greece",
@@ -8950,7 +8959,7 @@
   },
   {
     "id": 520,
-    "name": "Protágoras",
+    "name": "Protagoras",
     "birthYear": -490,
     "deathYear": -420,
     "country": "Greece",
@@ -8999,7 +9008,7 @@
   },
   {
     "id": 523,
-    "name": "Praxíteles",
+    "name": "Praxiteles",
     "birthYear": -395,
     "deathYear": -330,
     "country": "Greece",
@@ -9033,7 +9042,7 @@
   },
   {
     "id": 525,
-    "name": "Píndaro",
+    "name": "Pindar",
     "birthYear": -518,
     "deathYear": -438,
     "country": "Greece",
@@ -9066,7 +9075,7 @@
   },
   {
     "id": 527,
-    "name": "Ptolomeo I Sóter",
+    "name": "Ptolemy I Soter",
     "birthYear": -367,
     "deathYear": -283,
     "country": "Egypt",
@@ -9083,7 +9092,7 @@
   },
   {
     "id": 528,
-    "name": "Seleuco I Nicátor",
+    "name": "Seleucus I Nicator",
     "birthYear": -358,
     "deathYear": -281,
     "country": "Seleucid Empire",
@@ -9101,7 +9110,7 @@
   },
   {
     "id": 529,
-    "name": "Antígono I Monóftalmos",
+    "name": "Antigonus I Monophthalmus",
     "birthYear": -382,
     "deathYear": -301,
     "country": "Macedonia",
@@ -9133,7 +9142,7 @@
   },
   {
     "id": 531,
-    "name": "Zenón de Citio",
+    "name": "Zeno of Citium",
     "birthYear": -334,
     "deathYear": -262,
     "country": "Chipre",
@@ -9163,7 +9172,7 @@
   },
   {
     "id": 533,
-    "name": "Eratóstenes",
+    "name": "Eratosthenes",
     "birthYear": -276,
     "deathYear": -194,
     "country": "Greece",
@@ -9225,7 +9234,7 @@
   },
   {
     "id": 537,
-    "name": "Galeno de Pérgamo",
+    "name": "Galen of Pergamon",
     "birthYear": 129,
     "deathYear": 216,
     "country": "Roman Empire",
@@ -9242,7 +9251,7 @@
   },
   {
     "id": 538,
-    "name": "Hipatia de Alejandría",
+    "name": "Hypatia of Alexandria",
     "birthYear": 350,
     "deathYear": 415,
     "country": "Alexandria",
@@ -9272,7 +9281,7 @@
   },
   {
     "id": 540,
-    "name": "Estrabón",
+    "name": "Strabo",
     "birthYear": -63,
     "deathYear": 24,
     "country": "Greece",
@@ -9427,7 +9436,7 @@
   },
   {
     "id": 550,
-    "name": "Quinto Fabio Máximo",
+    "name": "Quintus Fabius Maximus",
     "birthYear": -280,
     "deathYear": -203,
     "country": "Rome",
@@ -9479,7 +9488,7 @@
   },
   {
     "id": 553,
-    "name": "Catón el Joven",
+    "name": "Cato the Younger",
     "birthYear": -95,
     "deathYear": -46,
     "country": "Rome",
@@ -9608,11 +9617,13 @@
     "deathYear": 98,
     "country": "Rome",
     "category": "Politician",
-    "description": "First emperor of the Antonine dynasty, who opened the period of the 'Five Good Emperors'.",
+    "description": "First of the Five Good Emperors, who established the tradition of adopting the best available successor rather than passing power to a biological heir.",
     "wikipedia": "https://en.wikipedia.org/wiki/Nerva",
     "tags": [
       "rome",
-      "antoninos"
+      "empire",
+      "five good emperors",
+      "1st century"
     ],
     "relatedIds": [
       60
@@ -9620,16 +9631,18 @@
   },
   {
     "id": 561,
-    "name": "Septimio Severo",
+    "name": "Septimius Severus",
     "birthYear": 145,
     "deathYear": 211,
     "country": "Rome",
     "category": "Politician",
-    "description": "Roman emperor and founder of the Severan dynasty, who militarized the Empire.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Septimio_Severo",
+    "description": "First African-born Roman emperor who restored order after civil war, strengthened the military, and died campaigning in Britain.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Septimius_Severus",
     "tags": [
       "rome",
-      "emperador"
+      "empire",
+      "africa",
+      "2nd century"
     ],
     "relatedIds": []
   },
@@ -9650,16 +9663,18 @@
   },
   {
     "id": 563,
-    "name": "Juliano el Apóstata",
+    "name": "Julian the Apostate",
     "birthYear": 331,
     "deathYear": 363,
     "country": "Rome",
     "category": "Politician",
-    "description": "Last pagan Roman emperor, who attempted to restore Greco-Roman polytheism.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Juliano_el_Apóstata",
+    "description": "Last pagan Roman emperor who tried to restore the old religion and reverse the Christianization of the empire before dying in battle against Persia.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Julian_(emperor)",
     "tags": [
       "rome",
-      "paganismo"
+      "empire",
+      "paganism",
+      "4th century"
     ],
     "relatedIds": []
   },
@@ -9683,7 +9698,7 @@
   },
   {
     "id": 565,
-    "name": "Estilicón",
+    "name": "Stilicho",
     "birthYear": 359,
     "deathYear": 408,
     "country": "Roman Empire",
@@ -9769,7 +9784,7 @@
   },
   {
     "id": 570,
-    "name": "Agustín de Hipona",
+    "name": "Augustine of Hippo",
     "birthYear": 354,
     "deathYear": 430,
     "country": "Roman Empire",
@@ -9784,7 +9799,7 @@
   },
   {
     "id": 571,
-    "name": "Jerónimo de Estridón",
+    "name": "Saint Jerome",
     "birthYear": 347,
     "deathYear": 420,
     "country": "Roman Empire",
@@ -9801,7 +9816,7 @@
   },
   {
     "id": 572,
-    "name": "Ambrosio de Milán",
+    "name": "Saint Ambrose",
     "birthYear": 340,
     "deathYear": 397,
     "country": "Roman Empire",
@@ -9818,7 +9833,7 @@
   },
   {
     "id": 573,
-    "name": "Orígenes de Alejandría",
+    "name": "Origen of Alexandria",
     "birthYear": 185,
     "deathYear": 253,
     "country": "Alexandria",
@@ -9896,16 +9911,18 @@
   },
   {
     "id": 578,
-    "name": "Basilio II",
+    "name": "Basil II",
     "birthYear": 958,
     "deathYear": 1025,
     "country": "Byzantine Empire",
-    "category": "Politician",
-    "description": "Byzantine emperor, known as 'Bulgaroktonos' (Bulgar-Slayer) for his campaigns against the Bulgarians.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Basilio_II",
+    "category": "Military Leader",
+    "description": "The Bulgar-Slayer, greatest Byzantine emperor, who reconquered the Balkans and blinded 15,000 Bulgarian prisoners to terrify the enemy.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Basil_II",
     "tags": [
-      "bizancio",
-      "emperador"
+      "byzantine",
+      "empire",
+      "medieval",
+      "bulgaria"
     ],
     "relatedIds": []
   },
@@ -9926,7 +9943,7 @@
   },
   {
     "id": 580,
-    "name": "Constantino XI Paleólogo",
+    "name": "Constantine XI Palaiologos",
     "birthYear": 1405,
     "deathYear": 1453,
     "country": "Byzantine Empire",
@@ -9960,7 +9977,7 @@
   },
   {
     "id": 582,
-    "name": "Solimán el Magnífico",
+    "name": "Suleiman the Magnificent",
     "birthYear": 1494,
     "deathYear": 1566,
     "country": "Ottoman Empire",
@@ -10011,7 +10028,7 @@
   },
   {
     "id": 585,
-    "name": "Alí ibn Abi Tálib",
+    "name": "Ali ibn Abi Talib",
     "birthYear": 601,
     "deathYear": 661,
     "country": "Arabia",
@@ -10028,7 +10045,7 @@
   },
   {
     "id": 586,
-    "name": "Harún al-Rashid",
+    "name": "Harun al-Rashid",
     "birthYear": 763,
     "deathYear": 809,
     "country": "Abbasid Caliphate",
@@ -10107,7 +10124,7 @@
   },
   {
     "id": 591,
-    "name": "Alhacén",
+    "name": "Alhazen",
     "birthYear": 965,
     "deathYear": 1040,
     "country": "Fatimid Caliphate",
@@ -10152,7 +10169,7 @@
   },
   {
     "id": 594,
-    "name": "Maimónides",
+    "name": "Maimonides",
     "birthYear": 1138,
     "deathYear": 1204,
     "country": "Al-Andalus",
@@ -10184,7 +10201,7 @@
   },
   {
     "id": 596,
-    "name": "Ibn Jaldún",
+    "name": "Ibn Khaldun",
     "birthYear": 1332,
     "deathYear": 1406,
     "country": "Al-Andalus",
@@ -10199,15 +10216,17 @@
   },
   {
     "id": 597,
-    "name": "Clodoveo I",
+    "name": "Clovis I",
     "birthYear": 466,
     "deathYear": 511,
-    "country": "Reino Franco",
+    "country": "Franks",
     "category": "Politician",
-    "description": "First king of the Franks, who unified the Frankish tribes and converted to Christianity.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Clodoveo_I",
+    "description": "First Frankish king to unite Gaul and convert to Christianity, founding the Merovingian dynasty and the predecessor of France.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Clovis_I",
     "tags": [
-      "francos",
+      "france",
+      "franks",
+      "medieval",
       "christianity"
     ],
     "relatedIds": []
@@ -10264,7 +10283,7 @@
   },
   {
     "id": 601,
-    "name": "Otón I el Grande",
+    "name": "Otto I the Great",
     "birthYear": 912,
     "deathYear": 973,
     "country": "Holy Roman Empire",
@@ -10279,31 +10298,35 @@
   },
   {
     "id": 602,
-    "name": "Guillermo el Conquistador",
+    "name": "William the Conqueror",
     "birthYear": 1028,
     "deathYear": 1087,
-    "country": "Normandy",
-    "category": "Military Leader",
-    "description": "Duke of Normandy who conquered England after the Battle of Hastings in 1066.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Guillermo_el_Conquistador",
+    "country": "England",
+    "category": "Politician",
+    "description": "First Norman king of England after his victory at Hastings in 1066. His conquest transformed English language, law, and culture.",
+    "wikipedia": "https://en.wikipedia.org/wiki/William_the_Conqueror",
     "tags": [
-      "normandos",
-      "inglaterra"
+      "england",
+      "medieval",
+      "conquest",
+      "normans"
     ],
     "relatedIds": []
   },
   {
     "id": 603,
-    "name": "Enrique II de Inglaterra",
+    "name": "Henry II of England",
     "birthYear": 1133,
     "deathYear": 1189,
     "country": "England",
     "category": "Politician",
-    "description": "First king of the Plantagenet dynasty and husband of Eleanor of Aquitaine.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Enrique_II_de_Inglaterra",
+    "description": "Plantagenet king who expanded English common law and faced the murder of Archbishop Thomas Becket in Canterbury Cathedral.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Henry_II_of_England",
     "tags": [
+      "england",
+      "medieval",
       "plantagenet",
-      "inglaterra"
+      "common law"
     ],
     "relatedIds": [
       82,
@@ -10330,31 +10353,35 @@
   },
   {
     "id": 605,
-    "name": "Luis IX de Francia",
+    "name": "Louis IX of France",
     "birthYear": 1214,
     "deathYear": 1270,
     "country": "France",
     "category": "Politician",
-    "description": "King of France and saint who led both the Seventh and Eighth Crusades.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Luis_IX_de_Francia",
+    "description": "Saintly French king who led two crusades and reformed justice, canonized by the Church as Saint Louis in 1297.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Louis_IX_of_France",
     "tags": [
       "france",
-      "crusades"
+      "crusades",
+      "medieval",
+      "saint"
     ],
     "relatedIds": []
   },
   {
     "id": 606,
-    "name": "Felipe IV el Hermoso",
+    "name": "Philip IV of France",
     "birthYear": 1268,
     "deathYear": 1314,
     "country": "France",
     "category": "Politician",
-    "description": "King of France who suppressed the Knights Templar and moved the papacy to Avignon.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Felipe_IV_de_Francia",
+    "description": "Powerful French king who destroyed the Knights Templar and moved the papacy to Avignon, greatly expanding royal power.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Philip_IV_of_France",
     "tags": [
       "france",
-      "templarios"
+      "medieval",
+      "templars",
+      "papacy"
     ],
     "relatedIds": [
       605
@@ -10362,46 +10389,52 @@
   },
   {
     "id": 607,
-    "name": "Eduardo I de Inglaterra",
+    "name": "Edward I of England",
     "birthYear": 1239,
     "deathYear": 1307,
     "country": "England",
-    "category": "Politician",
-    "description": "King of England who conquered Wales and fought against Scotland.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Eduardo_I_de_Inglaterra",
+    "category": "Military Leader",
+    "description": "Known as the Hammer of the Scots, he conquered Wales and came close to subjugating Scotland, also reforming English law and parliament.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Edward_I_of_England",
     "tags": [
-      "inglaterra",
-      "plantagenet"
+      "england",
+      "medieval",
+      "scotland",
+      "wales"
     ],
     "relatedIds": []
   },
   {
     "id": 608,
-    "name": "Eduardo III de Inglaterra",
+    "name": "Edward III of England",
     "birthYear": 1312,
     "deathYear": 1377,
     "country": "England",
-    "category": "Politician",
-    "description": "King of England who launched the Hundred Years' War against France.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Eduardo_III_de_Inglaterra",
+    "category": "Military Leader",
+    "description": "Victorious English king who launched the Hundred Years' War with France and founded the prestigious Order of the Garter.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Edward_III_of_England",
     "tags": [
-      "inglaterra",
-      "cien años"
+      "england",
+      "medieval",
+      "hundred years war",
+      "france"
     ],
     "relatedIds": []
   },
   {
     "id": 609,
-    "name": "Enrique V de Inglaterra",
+    "name": "Henry V of England",
     "birthYear": 1386,
     "deathYear": 1422,
     "country": "England",
     "category": "Military Leader",
-    "description": "King of England, victorious at Agincourt during the Hundred Years' War.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Enrique_V_de_Inglaterra",
+    "description": "English king who crushed the French at Agincourt in 1415 and came within reach of uniting England and France under one crown.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Henry_V_of_England",
     "tags": [
-      "inglaterra",
-      "azincourt"
+      "england",
+      "medieval",
+      "agincourt",
+      "france"
     ],
     "relatedIds": [
       608,
@@ -10445,16 +10478,18 @@
   },
   {
     "id": 612,
-    "name": "Enrique VIII de Inglaterra",
+    "name": "Henry VIII of England",
     "birthYear": 1491,
     "deathYear": 1547,
     "country": "England",
     "category": "Politician",
-    "description": "King of England who broke with Rome and founded the Church of England.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Enrique_VIII_de_Inglaterra",
+    "description": "English king who broke from Rome to annul his first marriage, founding the Church of England, and had six wives in succession.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Henry_VIII",
     "tags": [
+      "england",
+      "reformation",
       "tudor",
-      "anglicanism"
+      "church"
     ],
     "relatedIds": [
       611,
@@ -10464,7 +10499,7 @@
   },
   {
     "id": 613,
-    "name": "Catalina de Aragón",
+    "name": "Catherine of Aragon",
     "birthYear": 1485,
     "deathYear": 1536,
     "country": "Spain",
@@ -10483,7 +10518,7 @@
   },
   {
     "id": 614,
-    "name": "Tomás Cromwell",
+    "name": "Thomas Cromwell",
     "birthYear": 1485,
     "deathYear": 1540,
     "country": "England",
@@ -10500,16 +10535,18 @@
   },
   {
     "id": 615,
-    "name": "María I de Inglaterra",
+    "name": "Mary I of England",
     "birthYear": 1516,
     "deathYear": 1558,
     "country": "England",
     "category": "Politician",
-    "description": "Catholic queen of England nicknamed 'Bloody Mary' for her persecution of Protestants.",
-    "wikipedia": "https://en.wikipedia.org/wiki/María_I_de_Inglaterra",
+    "description": "First queen regnant of England who restored Catholicism and burned nearly 300 Protestants, earning the name Bloody Mary.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mary_I_of_England",
     "tags": [
+      "england",
       "tudor",
-      "catholicism"
+      "catholicism",
+      "reformation"
     ],
     "relatedIds": [
       612,
@@ -10534,7 +10571,7 @@
   },
   {
     "id": 617,
-    "name": "Alfonso VI de León",
+    "name": "Alfonso VI of León",
     "birthYear": 1040,
     "deathYear": 1109,
     "country": "Kingdom of León",
@@ -10568,16 +10605,18 @@
   },
   {
     "id": 619,
-    "name": "Alfonso X el Sabio",
+    "name": "Alfonso X of Castile",
     "birthYear": 1221,
     "deathYear": 1284,
-    "country": "Reino de Castilla",
+    "country": "Castile",
     "category": "Politician",
-    "description": "King of Castile and León who promoted Castilian as a language of culture and established the Toledo School of Translators.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Alfonso_X_de_Castilla",
+    "description": "Alfonso the Wise, king of Castile and León, who sponsored massive legal and scientific compilations and tried to become Holy Roman Emperor.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Alfonso_X_of_Castile",
     "tags": [
-      "castilla",
-      "cultura"
+      "spain",
+      "medieval",
+      "learning",
+      "castile"
     ],
     "relatedIds": [
       618
@@ -10650,7 +10689,7 @@
   },
   {
     "id": 624,
-    "name": "Eloísa",
+    "name": "Héloïse",
     "birthYear": 1101,
     "deathYear": 1164,
     "country": "France",
@@ -10794,16 +10833,18 @@
   },
   {
     "id": 633,
-    "name": "Tamerlán",
+    "name": "Timur (Tamerlane)",
     "birthYear": 1336,
     "deathYear": 1405,
-    "country": "Timurid Empire",
+    "country": "Mongol Empire",
     "category": "Military Leader",
-    "description": "Turco-Mongol conqueror and founder of the Timurid Empire with its capital at Samarkand.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Tamerlán",
+    "description": "Turco-Mongol conqueror who built a vast empire from Anatolia to India, devastating cities and creating the Timurid Renaissance.",
+    "wikipedia": "https://en.wikipedia.org/wiki/Timur",
     "tags": [
-      "timúridas",
-      "samarcanda"
+      "mongol",
+      "conquest",
+      "central asia",
+      "14th century"
     ],
     "relatedIds": [
       83
@@ -10815,12 +10856,14 @@
     "birthYear": 1483,
     "deathYear": 1530,
     "country": "Mughal Empire",
-    "category": "Politician",
-    "description": "Founder of the Mughal Empire in India, descendant of Tamerlane and Genghis Khan.",
+    "category": "Military Leader",
+    "description": "Central Asian prince who founded the Mughal Empire in India in 1526 after defeating the Delhi Sultanate; also a gifted poet and memoirist.",
     "wikipedia": "https://en.wikipedia.org/wiki/Babur",
     "tags": [
-      "mogoles",
-      "india"
+      "mughal",
+      "india",
+      "16th century",
+      "conquest"
     ],
     "relatedIds": [
       633
@@ -10905,7 +10948,7 @@
   },
   {
     "id": 640,
-    "name": "Príncipe Shōtoku",
+    "name": "Prince Shotoku",
     "birthYear": 574,
     "deathYear": 622,
     "country": "Japan",
@@ -11132,7 +11175,7 @@
   },
   {
     "id": 654,
-    "name": "Fra Angélico",
+    "name": "Fra Angelico",
     "birthYear": 1395,
     "deathYear": 1455,
     "country": "Italy",
@@ -11352,7 +11395,7 @@
   },
   {
     "id": 668,
-    "name": "Andrés Vesalio",
+    "name": "Andreas Vesalius",
     "birthYear": 1514,
     "deathYear": 1564,
     "country": "Netherlands",
@@ -11547,7 +11590,7 @@
   },
   {
     "id": 680,
-    "name": "Pachacútec",
+    "name": "Pachacuti",
     "birthYear": 1418,
     "deathYear": 1471,
     "country": "Inca Empire",
@@ -11565,7 +11608,7 @@
   },
   {
     "id": 681,
-    "name": "Túpac Yupanqui",
+    "name": "Tupac Yupanqui",
     "birthYear": 1441,
     "deathYear": 1493,
     "country": "Inca Empire",
@@ -11583,7 +11626,7 @@
   },
   {
     "id": 682,
-    "name": "Huayna Cápac",
+    "name": "Huayna Capac",
     "birthYear": 1467,
     "deathYear": 1527,
     "country": "Inca Empire",
@@ -11602,7 +11645,7 @@
   },
   {
     "id": 683,
-    "name": "Huáscar",
+    "name": "Huascar",
     "birthYear": 1503,
     "deathYear": 1532,
     "country": "Inca Empire",
@@ -11638,7 +11681,7 @@
   },
   {
     "id": 685,
-    "name": "Itzcóatl",
+    "name": "Itzcoatl",
     "birthYear": 1380,
     "deathYear": 1440,
     "country": "Aztec Empire",
@@ -11653,7 +11696,7 @@
   },
   {
     "id": 686,
-    "name": "Nezahualcóyotl",
+    "name": "Nezahualcoyotl",
     "birthYear": 1402,
     "deathYear": 1472,
     "country": "Texcoco",
@@ -11670,7 +11713,7 @@
   },
   {
     "id": 687,
-    "name": "Ahuízotl",
+    "name": "Ahuizotl",
     "birthYear": 1450,
     "deathYear": 1502,
     "country": "Aztec Empire",
@@ -11688,7 +11731,7 @@
   },
   {
     "id": 688,
-    "name": "Cuitláhuac",
+    "name": "Cuitlahuac",
     "birthYear": 1476,
     "deathYear": 1520,
     "country": "Aztec Empire",
@@ -11823,7 +11866,7 @@
   },
   {
     "id": 696,
-    "name": "Manco Cápac",
+    "name": "Manco Capac",
     "birthYear": 1200,
     "deathYear": 1230,
     "country": "Inca Empire",
@@ -11907,66 +11950,6 @@
     ]
   },
   {
-    "id": 701,
-    "name": "William the Conqueror",
-    "birthYear": 1028,
-    "deathYear": 1087,
-    "country": "England",
-    "category": "Politician",
-    "description": "First Norman king of England after his victory at Hastings in 1066. His conquest transformed English language, law, and culture.",
-    "wikipedia": "https://en.wikipedia.org/wiki/William_the_Conqueror",
-    "tags": [
-      "england",
-      "medieval",
-      "conquest",
-      "normans"
-    ],
-    "relatedIds": [
-      703,
-      704
-    ]
-  },
-  {
-    "id": 702,
-    "name": "Henry II of England",
-    "birthYear": 1133,
-    "deathYear": 1189,
-    "country": "England",
-    "category": "Politician",
-    "description": "Plantagenet king who expanded English common law and faced the murder of Archbishop Thomas Becket in Canterbury Cathedral.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Henry_II_of_England",
-    "tags": [
-      "england",
-      "medieval",
-      "plantagenet",
-      "common law"
-    ],
-    "relatedIds": [
-      701,
-      703
-    ]
-  },
-  {
-    "id": 703,
-    "name": "Richard I the Lionheart",
-    "birthYear": 1157,
-    "deathYear": 1199,
-    "country": "England",
-    "category": "Military Leader",
-    "description": "English king celebrated as the greatest crusader of his age, leading the Third Crusade and holding Saladin to a stalemate.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Richard_I_of_England",
-    "tags": [
-      "england",
-      "crusades",
-      "medieval",
-      "chivalry"
-    ],
-    "relatedIds": [
-      702,
-      704
-    ]
-  },
-  {
     "id": 704,
     "name": "John of England",
     "birthYear": 1166,
@@ -11984,124 +11967,6 @@
     "relatedIds": [
       702,
       703
-    ]
-  },
-  {
-    "id": 705,
-    "name": "Edward I of England",
-    "birthYear": 1239,
-    "deathYear": 1307,
-    "country": "England",
-    "category": "Military Leader",
-    "description": "Known as the Hammer of the Scots, he conquered Wales and came close to subjugating Scotland, also reforming English law and parliament.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Edward_I_of_England",
-    "tags": [
-      "england",
-      "medieval",
-      "scotland",
-      "wales"
-    ],
-    "relatedIds": [
-      704
-    ]
-  },
-  {
-    "id": 706,
-    "name": "Edward III of England",
-    "birthYear": 1312,
-    "deathYear": 1377,
-    "country": "England",
-    "category": "Military Leader",
-    "description": "Victorious English king who launched the Hundred Years' War with France and founded the prestigious Order of the Garter.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Edward_III_of_England",
-    "tags": [
-      "england",
-      "medieval",
-      "hundred years war",
-      "france"
-    ],
-    "relatedIds": [
-      707
-    ]
-  },
-  {
-    "id": 707,
-    "name": "Henry V of England",
-    "birthYear": 1386,
-    "deathYear": 1422,
-    "country": "England",
-    "category": "Military Leader",
-    "description": "English king who crushed the French at Agincourt in 1415 and came within reach of uniting England and France under one crown.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Henry_V_of_England",
-    "tags": [
-      "england",
-      "medieval",
-      "agincourt",
-      "france"
-    ],
-    "relatedIds": [
-      706
-    ]
-  },
-  {
-    "id": 708,
-    "name": "Henry VIII of England",
-    "birthYear": 1491,
-    "deathYear": 1547,
-    "country": "England",
-    "category": "Politician",
-    "description": "English king who broke from Rome to annul his first marriage, founding the Church of England, and had six wives in succession.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Henry_VIII",
-    "tags": [
-      "england",
-      "reformation",
-      "tudor",
-      "church"
-    ],
-    "relatedIds": [
-      709,
-      710
-    ]
-  },
-  {
-    "id": 709,
-    "name": "Mary I of England",
-    "birthYear": 1516,
-    "deathYear": 1558,
-    "country": "England",
-    "category": "Politician",
-    "description": "First queen regnant of England who restored Catholicism and burned nearly 300 Protestants, earning the name Bloody Mary.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Mary_I_of_England",
-    "tags": [
-      "england",
-      "tudor",
-      "catholicism",
-      "reformation"
-    ],
-    "relatedIds": [
-      708,
-      710
-    ]
-  },
-  {
-    "id": 710,
-    "name": "Elizabeth I of England",
-    "birthYear": 1533,
-    "deathYear": 1603,
-    "country": "England",
-    "category": "Politician",
-    "description": "The Virgin Queen who oversaw England's Golden Age, defeated the Spanish Armada in 1588, and fostered Shakespeare's era.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Elizabeth_I",
-    "tags": [
-      "england",
-      "tudor",
-      "golden age",
-      "armada"
-    ],
-    "relatedIds": [
-      708,
-      709,
-      711
     ]
   },
   {
@@ -12222,65 +12087,6 @@
     ]
   },
   {
-    "id": 717,
-    "name": "Clovis I",
-    "birthYear": 466,
-    "deathYear": 511,
-    "country": "Franks",
-    "category": "Politician",
-    "description": "First Frankish king to unite Gaul and convert to Christianity, founding the Merovingian dynasty and the predecessor of France.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Clovis_I",
-    "tags": [
-      "france",
-      "franks",
-      "medieval",
-      "christianity"
-    ],
-    "relatedIds": [
-      718
-    ]
-  },
-  {
-    "id": 718,
-    "name": "Louis IX of France",
-    "birthYear": 1214,
-    "deathYear": 1270,
-    "country": "France",
-    "category": "Politician",
-    "description": "Saintly French king who led two crusades and reformed justice, canonized by the Church as Saint Louis in 1297.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Louis_IX_of_France",
-    "tags": [
-      "france",
-      "crusades",
-      "medieval",
-      "saint"
-    ],
-    "relatedIds": [
-      717,
-      719
-    ]
-  },
-  {
-    "id": 719,
-    "name": "Philip IV of France",
-    "birthYear": 1268,
-    "deathYear": 1314,
-    "country": "France",
-    "category": "Politician",
-    "description": "Powerful French king who destroyed the Knights Templar and moved the papacy to Avignon, greatly expanding royal power.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Philip_IV_of_France",
-    "tags": [
-      "france",
-      "medieval",
-      "templars",
-      "papacy"
-    ],
-    "relatedIds": [
-      718,
-      720
-    ]
-  },
-  {
     "id": 720,
     "name": "Francis I of France",
     "birthYear": 1494,
@@ -12362,44 +12168,6 @@
     ]
   },
   {
-    "id": 724,
-    "name": "Louis XVI of France",
-    "birthYear": 1754,
-    "deathYear": 1793,
-    "country": "France",
-    "category": "Politician",
-    "description": "Last king of France before the Revolution, whose financial crisis and indecision led to his arrest, trial, and execution by guillotine.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Louis_XVI",
-    "tags": [
-      "france",
-      "revolution",
-      "bourbon",
-      "18th century"
-    ],
-    "relatedIds": [
-      723
-    ]
-  },
-  {
-    "id": 725,
-    "name": "Alfonso X of Castile",
-    "birthYear": 1221,
-    "deathYear": 1284,
-    "country": "Castile",
-    "category": "Politician",
-    "description": "Alfonso the Wise, king of Castile and León, who sponsored massive legal and scientific compilations and tried to become Holy Roman Emperor.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Alfonso_X_of_Castile",
-    "tags": [
-      "spain",
-      "medieval",
-      "learning",
-      "castile"
-    ],
-    "relatedIds": [
-      726
-    ]
-  },
-  {
     "id": 726,
     "name": "Pedro I of Castile",
     "birthYear": 1334,
@@ -12416,27 +12184,6 @@
     ],
     "relatedIds": [
       725
-    ]
-  },
-  {
-    "id": 727,
-    "name": "Philip II of Spain",
-    "birthYear": 1527,
-    "deathYear": 1598,
-    "country": "Spain",
-    "category": "Politician",
-    "description": "King of the world's largest empire, ruling Spain, Portugal, the Americas and more; he sent the ill-fated Armada against England in 1588.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Philip_II_of_Spain",
-    "tags": [
-      "spain",
-      "empire",
-      "16th century",
-      "armada"
-    ],
-    "relatedIds": [
-      720,
-      731,
-      728
     ]
   },
   {
@@ -12496,27 +12243,6 @@
     "relatedIds": [
       729,
       731
-    ]
-  },
-  {
-    "id": 731,
-    "name": "Charles V",
-    "birthYear": 1500,
-    "deathYear": 1558,
-    "country": "Holy Roman Empire",
-    "category": "Politician",
-    "description": "Holy Roman Emperor and King of Spain who ruled the largest empire of his time, covering Europe and the Americas, before abdicating to a monastery.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor",
-    "tags": [
-      "habsburg",
-      "holy roman empire",
-      "empire",
-      "reformation"
-    ],
-    "relatedIds": [
-      730,
-      732,
-      727
     ]
   },
   {
@@ -13108,45 +12834,6 @@
     ]
   },
   {
-    "id": 762,
-    "name": "Trajan",
-    "birthYear": 53,
-    "deathYear": 117,
-    "country": "Rome",
-    "category": "Politician",
-    "description": "Roman emperor called Optimus Princeps who conquered Dacia and Parthia, expanding the empire to its greatest territorial extent.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Trajan",
-    "tags": [
-      "rome",
-      "empire",
-      "expansion",
-      "five good emperors"
-    ],
-    "relatedIds": [
-      763
-    ]
-  },
-  {
-    "id": 763,
-    "name": "Hadrian",
-    "birthYear": 76,
-    "deathYear": 138,
-    "country": "Rome",
-    "category": "Politician",
-    "description": "Philosopher-emperor who codified Roman law, built Hadrian's Wall in Britain, and spent years touring and beautifying the empire.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Hadrian",
-    "tags": [
-      "rome",
-      "empire",
-      "five good emperors",
-      "wall"
-    ],
-    "relatedIds": [
-      762,
-      764
-    ]
-  },
-  {
     "id": 764,
     "name": "Valerian",
     "birthYear": 200,
@@ -13163,25 +12850,6 @@
     ],
     "relatedIds": [
       763
-    ]
-  },
-  {
-    "id": 765,
-    "name": "Julian the Apostate",
-    "birthYear": 331,
-    "deathYear": 363,
-    "country": "Rome",
-    "category": "Politician",
-    "description": "Last pagan Roman emperor who tried to restore the old religion and reverse the Christianization of the empire before dying in battle against Persia.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Julian_(emperor)",
-    "tags": [
-      "rome",
-      "empire",
-      "paganism",
-      "4th century"
-    ],
-    "relatedIds": [
-      764
     ]
   },
   {
@@ -13204,26 +12872,6 @@
     ]
   },
   {
-    "id": 767,
-    "name": "Basil II",
-    "birthYear": 958,
-    "deathYear": 1025,
-    "country": "Byzantine Empire",
-    "category": "Military Leader",
-    "description": "The Bulgar-Slayer, greatest Byzantine emperor, who reconquered the Balkans and blinded 15,000 Bulgarian prisoners to terrify the enemy.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Basil_II",
-    "tags": [
-      "byzantine",
-      "empire",
-      "medieval",
-      "bulgaria"
-    ],
-    "relatedIds": [
-      766,
-      768
-    ]
-  },
-  {
     "id": 768,
     "name": "Michael VIII Palaiologos",
     "birthYear": 1224,
@@ -13240,45 +12888,6 @@
     ],
     "relatedIds": [
       767
-    ]
-  },
-  {
-    "id": 769,
-    "name": "Timur (Tamerlane)",
-    "birthYear": 1336,
-    "deathYear": 1405,
-    "country": "Mongol Empire",
-    "category": "Military Leader",
-    "description": "Turco-Mongol conqueror who built a vast empire from Anatolia to India, devastating cities and creating the Timurid Renaissance.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Timur",
-    "tags": [
-      "mongol",
-      "conquest",
-      "central asia",
-      "14th century"
-    ],
-    "relatedIds": [
-      770
-    ]
-  },
-  {
-    "id": 770,
-    "name": "Babur",
-    "birthYear": 1483,
-    "deathYear": 1530,
-    "country": "Mughal Empire",
-    "category": "Military Leader",
-    "description": "Central Asian prince who founded the Mughal Empire in India in 1526 after defeating the Delhi Sultanate; also a gifted poet and memoirist.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Babur",
-    "tags": [
-      "mughal",
-      "india",
-      "16th century",
-      "conquest"
-    ],
-    "relatedIds": [
-      769,
-      771
     ]
   },
   {
@@ -13376,85 +12985,6 @@
     ],
     "relatedIds": [
       774
-    ]
-  },
-  {
-    "id": 776,
-    "name": "Nero",
-    "birthYear": 37,
-    "deathYear": 68,
-    "country": "Rome",
-    "category": "Politician",
-    "description": "Infamously cruel Roman emperor who blamed Christians for the Great Fire of Rome in 64 AD and was the first emperor to systematically persecute them.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nero",
-    "tags": [
-      "rome",
-      "empire",
-      "persecution",
-      "1st century"
-    ],
-    "relatedIds": [
-      762,
-      763
-    ]
-  },
-  {
-    "id": 777,
-    "name": "Vespasian",
-    "birthYear": 9,
-    "deathYear": 79,
-    "country": "Rome",
-    "category": "Politician",
-    "description": "Founder of the Flavian dynasty who restored stability after the Year of the Four Emperors and began construction of the Colosseum in Rome.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Vespasian",
-    "tags": [
-      "rome",
-      "empire",
-      "flavian",
-      "colosseum"
-    ],
-    "relatedIds": [
-      776
-    ]
-  },
-  {
-    "id": 778,
-    "name": "Nerva",
-    "birthYear": 30,
-    "deathYear": 98,
-    "country": "Rome",
-    "category": "Politician",
-    "description": "First of the Five Good Emperors, who established the tradition of adopting the best available successor rather than passing power to a biological heir.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Nerva",
-    "tags": [
-      "rome",
-      "empire",
-      "five good emperors",
-      "1st century"
-    ],
-    "relatedIds": [
-      762,
-      763,
-      777
-    ]
-  },
-  {
-    "id": 779,
-    "name": "Septimius Severus",
-    "birthYear": 145,
-    "deathYear": 211,
-    "country": "Rome",
-    "category": "Politician",
-    "description": "First African-born Roman emperor who restored order after civil war, strengthened the military, and died campaigning in Britain.",
-    "wikipedia": "https://en.wikipedia.org/wiki/Septimius_Severus",
-    "tags": [
-      "rome",
-      "empire",
-      "africa",
-      "2nd century"
-    ],
-    "relatedIds": [
-      764
     ]
   },
   {
