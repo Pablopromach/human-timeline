@@ -29,7 +29,7 @@ export function searchFigures(
   if (!query.trim()) return []
   return figures
     .map(figure => {
-      const nameScore = score(query, figure.name) * 2
+      const nameScore = Math.max(score(query, figure.name), figure.nameEs ? score(query, figure.nameEs) : 0) * 2
       const countryScore = score(query, figure.country) * 0.5
       const categoryScore = score(query, figure.category) * 0.5
       const tagScore =

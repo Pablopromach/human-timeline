@@ -1,6 +1,7 @@
 export interface HistoricalFigure {
   id: number
   name: string
+  nameEs?: string
   birthYear: number
   deathYear: number
   country: string

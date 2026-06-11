@@ -26,7 +26,7 @@ const CIV_BAR_HEIGHT = 16
 const CIV_TRACK_GAP = 4
 
 export default function TimelineChart({ figures, civilizations = [], highlightedId = null, onHover, onYearClick, onSelectFigure }: Props) {
-  const { t, locale } = useTranslation()
+  const { t, locale, fn } = useTranslation()
   const svgRef = useRef<SVGSVGElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null)
@@ -458,9 +458,10 @@ export default function TimelineChart({ figures, civilizations = [], highlighted
 
       // Name
       const maxNameLen = rowH > 60 ? 22 : 24
-      const displayName = figure.name.length > maxNameLen
-        ? figure.name.slice(0, maxNameLen - 1) + '…'
-        : figure.name
+      const localeName = fn(figure)
+      const displayName = localeName.length > maxNameLen
+        ? localeName.slice(0, maxNameLen - 1) + '…'
+        : localeName
       labelsG.append('text')
         .attr('x', 32)
         .attr('y', centerY + (rowH > 60 ? -4 : -2))
@@ -515,7 +516,7 @@ export default function TimelineChart({ figures, civilizations = [], highlighted
         .attr('letter-spacing', '0.1em')
         .text(t('home.empty.sub'))
     }
-  }, [figures, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight, t, bcSuffix, bcLabel, highlightedId])
+  }, [figures, getRow, onHover, onYearClick, onSelectFigure, civTracks, civBandHeight, t, fn, bcSuffix, bcLabel, highlightedId])
 
   useEffect(() => { drawRef.current = draw }, [draw])
 

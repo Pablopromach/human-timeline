@@ -59,7 +59,7 @@ function getRevealMessage(result: ScoreResult, t: (k: string, v?: Record<string,
 }
 
 export default function RetoGame() {
-  const { t, fy, locale } = useTranslation()
+  const { t, fy, locale, fn, fc } = useTranslation()
   const [phase, setPhase] = useState<Phase>('intro')
   const [mode, setMode] = useState<Mode>('classic')
   const [round, setRound] = useState(1)
@@ -345,7 +345,7 @@ export default function RetoGame() {
               </div>
               <div className="space-y-1.5 max-h-72 overflow-y-auto pr-1">
                 {history.map((h, i) => (
-                  <RoundRow key={i} index={i} round={h} t={t} fy={fy} locale={locale} />
+                  <RoundRow key={i} index={i} round={h} t={t} fy={fy} locale={locale} fn={fn} />
                 ))}
               </div>
             </div>
@@ -546,7 +546,7 @@ export default function RetoGame() {
                               />
                               <div className="flex-1 min-w-0">
                                 <div className="text-sm font-semibold text-white/90 truncate">
-                                  {r.figure.name}
+                                  {fn(r.figure)}
                                 </div>
                                 <div className="text-[10px] sm:text-[11px] text-white/40 mt-0.5 truncate">
                                   {r.figure.country}
@@ -556,7 +556,7 @@ export default function RetoGame() {
                                 className="text-[10px] px-2 py-0.5 rounded-md font-medium flex-shrink-0"
                                 style={{ background: `${color}22`, color }}
                               >
-                                {r.figure.category}
+                                {fc(r.figure.category)}
                               </span>
                             </motion.button>
                           )
@@ -630,12 +630,13 @@ function Header() {
   )
 }
 
-function RoundRow({ index, round, t, fy, locale }: {
+function RoundRow({ index, round, t, fy, locale, fn }: {
   index: number
   round: RoundResult
   t: (k: string, v?: Record<string, string | number>) => string
   fy: (y: number) => string
   locale: Locale
+  fn: (f: import('@/types').HistoricalFigure) => string
 }) {
   const color = getCategoryColor(round.figure.category)
   const points = round.result.points
@@ -657,7 +658,7 @@ function RoundRow({ index, round, t, fy, locale }: {
         {round.year < 0 ? Math.abs(round.year) + bcSuffix : round.year}
       </span>
       <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: color }} />
-      <span className="flex-1 text-xs sm:text-sm text-white/80 truncate">{round.figure.name}</span>
+      <span className="flex-1 text-xs sm:text-sm text-white/80 truncate">{fn(round.figure)}</span>
       <span className="text-[10px] sm:text-[11px] text-white/40 hidden md:inline truncate max-w-[140px]">
         {getRevealMessage(round.result, t)}
       </span>
@@ -721,12 +722,12 @@ function RevealCard({ round, isLastRound, onNext, t, fy }: {
               className="text-xl sm:text-2xl mb-1 tracking-tight"
               style={{ fontFamily: 'var(--font-display)', color: 'rgba(255,255,255,0.95)' }}
             >
-              {round.figure.name}
+              {fn(round.figure)}
             </h3>
             <div className="text-[11px] sm:text-xs text-white/40 font-mono">
               {fy(round.figure.birthYear)} → {fy(round.figure.deathYear)}
               <span className="mx-2 text-white/20">|</span>
-              {round.figure.country} · {round.figure.category}
+              {round.figure.country} · {fc(round.figure.category)}
             </div>
           </div>
         </div>

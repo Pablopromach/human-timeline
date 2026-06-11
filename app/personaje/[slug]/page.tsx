@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ExternalLink, Clock, Globe, Tag } from 'lucide-react'
 import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
+import FigureName, { FigureCategory } from '@/components/UI/FigureName'
 import figuresData from '@/data/figures.json'
 import { HistoricalFigure } from '@/types'
 import { figureSlug, findFigureBySlug } from '@/lib/slug'
@@ -133,7 +134,7 @@ export default function PersonajePage({ params }: Params) {
                 style={{ background: `${color}1f`, color, border: `1px solid ${color}33` }}
               >
                 <span className="w-1.5 h-1.5 rounded-full" style={{ background: color }} />
-                {figure.category}
+                <FigureCategory category={figure.category} />
               </span>
               <span className="text-white/30 text-xs flex items-center gap-1">
                 <Globe size={11} /> {figure.country}
@@ -144,7 +145,7 @@ export default function PersonajePage({ params }: Params) {
               className="text-4xl sm:text-5xl md:text-7xl leading-[0.95] mb-4 sm:mb-6 tracking-tight"
               style={{ fontFamily: 'var(--font-display)', color: 'rgba(255,255,255,0.95)' }}
             >
-              {figure.name}
+              <FigureName figure={figure} />
             </h1>
 
             <div className="flex flex-wrap items-baseline gap-x-6 gap-y-2 text-white/40 font-mono text-sm">
@@ -213,7 +214,7 @@ export default function PersonajePage({ params }: Params) {
                       style={{ background: getCategoryColor(c.category) }}
                     />
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm text-white/80 font-medium truncate">{c.name}</div>
+                      <div className="text-sm text-white/80 font-medium truncate"><FigureName figure={c} /></div>
                       <div className="text-[10px] text-white/30 font-mono">
                         {formatYear(c.birthYear)} – {formatYear(c.deathYear)}
                       </div>
@@ -247,7 +248,7 @@ export default function PersonajePage({ params }: Params) {
                       style={{ background: `${rc}15`, color: rc, border: `1px solid ${rc}28` }}
                     >
                       <span className="w-1.5 h-1.5 rounded-full" style={{ background: rc }} />
-                      {r.name}
+                      <FigureName figure={r} />
                     </Link>
                   )
                 })}

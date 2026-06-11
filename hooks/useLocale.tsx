@@ -1,6 +1,7 @@
 'use client'
 import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react'
 import { Locale, DEFAULT_LOCALE, LOCALES, translate, formatYear, formatYearShort } from '@/lib/i18n'
+import { HistoricalFigure } from '@/types'
 
 interface LocaleContextValue {
   locale: Locale
@@ -8,6 +9,8 @@ interface LocaleContextValue {
   t: (key: string, vars?: Record<string, string | number>) => string
   fy: (year: number) => string
   fys: (year: number) => string
+  fn: (figure: HistoricalFigure) => string
+  fc: (category: string) => string
 }
 
 const LocaleContext = createContext<LocaleContextValue | null>(null)
@@ -45,9 +48,11 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   const t = useCallback((key: string, vars?: Record<string, string | number>) => translate(locale, key, vars), [locale])
   const fy = useCallback((y: number) => formatYear(y, locale), [locale])
   const fys = useCallback((y: number) => formatYearShort(y, locale), [locale])
+  const fn = useCallback((f: HistoricalFigure) => locale === 'es' && f.nameEs ? f.nameEs : f.name, [locale])
+  const fc = useCallback((cat: string) => translate(locale, `cat.${cat}`), [locale])
 
   return (
-    <LocaleContext.Provider value={{ locale, setLocale, t, fy, fys }}>
+    <LocaleContext.Provider value={{ locale, setLocale, t, fy, fys, fn, fc }}>
       {children}
     </LocaleContext.Provider>
   )

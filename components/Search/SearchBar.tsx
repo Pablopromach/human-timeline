@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
-  const { t, fy } = useTranslation()
+  const { t, fy, fn, fc } = useTranslation()
   const [query, setQuery] = useState('')
   const [open, setOpen] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -100,7 +100,7 @@ export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
                   />
                   <div className="flex-1 min-w-0">
                     <div className="text-sm font-medium text-white/85 truncate">
-                      {r.figure.name}
+                      {fn(r.figure)}
                     </div>
                     <div className="text-xs text-white/35 font-mono mt-0.5">
                       {fy(r.figure.birthYear)}
@@ -114,7 +114,7 @@ export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
                     className="text-[10px] px-1.5 py-0.5 rounded font-medium flex-shrink-0"
                     style={{ background: `${color}22`, color }}
                   >
-                    {r.figure.category}
+                    {fc(r.figure.category)}
                   </span>
                   {isAdded && (
                     <span className="text-xs text-white/30 flex-shrink-0">{t('home.search.added')}</span>

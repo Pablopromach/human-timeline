@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function CoexistenceTooltip({ coexistences }: Props) {
-  const { t, fy } = useTranslation()
+  const { t, fy, fn } = useTranslation()
   return (
     <AnimatePresence>
       {coexistences.length > 0 && (
@@ -32,7 +32,7 @@ export default function CoexistenceTooltip({ coexistences }: Props) {
               <span className="text-emerald-400 text-xs">✦</span>
               <p className="text-xs text-white/65 leading-snug">
                 <span dangerouslySetInnerHTML={{
-                  __html: t('coexist.message', { a: `<strong class="text-white/85 font-medium">${cx.person1.name}</strong>`, b: `<strong class="text-white/85 font-medium">${cx.person2.name}</strong>`, n: cx.years })
+                  __html: t('coexist.message', { a: `<strong class="text-white/85 font-medium">${fn(cx.person1)}</strong>`, b: `<strong class="text-white/85 font-medium">${fn(cx.person2)}</strong>`, n: cx.years })
                     .replace(/<strong/g, '<strong')
                 }} />
                 <span className="text-white/30 text-[10px] ml-1">

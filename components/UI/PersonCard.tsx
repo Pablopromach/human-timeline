@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function PersonCard({ figure, onClose, onAdd }: Props) {
-  const { t, fy } = useTranslation()
+  const { t, fy, fn, fc } = useTranslation()
   return (
     <AnimatePresence>
       {figure && (
@@ -39,7 +39,7 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
                   className="font-display text-lg leading-tight"
                   style={{ fontFamily: 'var(--font-display)', color: 'rgba(255,255,255,0.92)' }}
                 >
-                  {figure.name}
+                  {fn(figure)}
                 </h3>
                 <div className="flex items-center gap-2 mt-1">
                   <span
@@ -49,7 +49,7 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
                       color: getCategoryColor(figure.category),
                     }}
                   >
-                    {figure.category}
+                    {fc(figure.category)}
                   </span>
                   <span className="text-white/35 text-[11px]">{figure.country}</span>
                 </div>

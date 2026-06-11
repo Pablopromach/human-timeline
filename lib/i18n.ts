@@ -135,6 +135,22 @@ const es: Dict = {
   'result.shareLink': 'Compartir enlace',
   'result.footer': 'Human Timeline es un timeline interactivo de 6.000 años de historia humana. ¿Crees que puedes hacerlo mejor?',
 
+  // Categories
+  'cat.Politician': 'Político',
+  'cat.Scientist': 'Científico',
+  'cat.Artist': 'Artista',
+  'cat.Writer': 'Escritor',
+  'cat.Military Leader': 'Militar',
+  'cat.Philosopher': 'Filósofo',
+  'cat.Explorer': 'Explorador',
+  'cat.Religious Figure': 'Religioso',
+  'cat.Mathematician': 'Matemático',
+  'cat.Inventor': 'Inventor',
+  'cat.Musician': 'Músico',
+  'cat.Architect': 'Arquitecto',
+  'cat.Athlete': 'Deportista',
+  'cat.Filmmaker': 'Cineasta',
+
   // Ratings
   'rating.master': 'Maestro de la Historia',
   'rating.brilliant': 'Historiador Brillante',
@@ -258,6 +274,22 @@ const en: Dict = {
   'result.playYourself': 'Play yourself',
   'result.shareLink': 'Share link',
   'result.footer': 'Human Timeline is an interactive timeline of 6,000 years of human history. Think you can do better?',
+
+  // Categories (same in English, just use the key)
+  'cat.Politician': 'Politician',
+  'cat.Scientist': 'Scientist',
+  'cat.Artist': 'Artist',
+  'cat.Writer': 'Writer',
+  'cat.Military Leader': 'Military Leader',
+  'cat.Philosopher': 'Philosopher',
+  'cat.Explorer': 'Explorer',
+  'cat.Religious Figure': 'Religious Figure',
+  'cat.Mathematician': 'Mathematician',
+  'cat.Inventor': 'Inventor',
+  'cat.Musician': 'Musician',
+  'cat.Architect': 'Architect',
+  'cat.Athlete': 'Athlete',
+  'cat.Filmmaker': 'Filmmaker',
 
   'rating.master': 'History Master',
   'rating.brilliant': 'Brilliant Historian',

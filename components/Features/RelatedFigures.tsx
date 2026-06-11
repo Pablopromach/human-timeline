@@ -12,7 +12,7 @@ interface Props {
 }
 
 export default function RelatedFigures({ figures, sourceName, onAdd }: Props) {
-  const { t } = useTranslation()
+  const { t, fn } = useTranslation()
   return (
     <AnimatePresence>
       {figures.length > 0 && (
@@ -45,7 +45,7 @@ export default function RelatedFigures({ figures, sourceName, onAdd }: Props) {
                   }}
                 >
                   <Plus size={10} />
-                  {fig.name.split(' ')[0]}
+                  {fn(fig).split(' ')[0]}
                 </motion.button>
               )
             })}
