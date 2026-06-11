@@ -35,7 +35,13 @@ const goodYearsCache: number[] = (() => {
 export function getRandomTargetYear(exclude: number[] = []): number {
   const pool = goodYearsCache.filter(y => !exclude.some(e => Math.abs(e - y) < 30))
   const arr = pool.length > 0 ? pool : goodYearsCache
-  return arr[Math.floor(Math.random() * arr.length)]
+  // Years >= 1950 are 5x less likely to appear (fewer notable figures)
+  const weighted: number[] = []
+  for (const y of arr) {
+    const times = y >= 1950 ? 1 : 5
+    for (let i = 0; i < times; i++) weighted.push(y)
+  }
+  return weighted[Math.floor(Math.random() * weighted.length)]
 }
 
 export interface ScoreResult {
