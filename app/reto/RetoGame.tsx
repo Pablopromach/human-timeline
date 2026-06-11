@@ -585,6 +585,8 @@ export default function RetoGame() {
                 onNext={nextRound}
                 t={t}
                 fy={fy}
+                fn={fn}
+                fc={fc}
               />
             )}
           </AnimatePresence>
@@ -672,12 +674,14 @@ function RoundRow({ index, round, t, fy, locale, fn }: {
   )
 }
 
-function RevealCard({ round, isLastRound, onNext, t, fy }: {
+function RevealCard({ round, isLastRound, onNext, t, fy, fn, fc }: {
   round: RoundResult
   isLastRound: boolean
   onNext: () => void
   t: (k: string, v?: Record<string, string | number>) => string
   fy: (y: number) => string
+  fn: (f: import('@/types').HistoricalFigure) => string
+  fc: (cat: string) => string
 }) {
   const color = getCategoryColor(round.figure.category)
   const points = round.result.points
