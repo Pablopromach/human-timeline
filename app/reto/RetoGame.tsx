@@ -78,7 +78,7 @@ export default function RetoGame() {
   const usedFigureIds = useMemo(() => new Set(history.map(h => h.figure.id)), [history])
 
   const results = useMemo(
-    () => searchFigures(query, allFigures, 8).filter(r => !usedFigureIds.has(r.figure.id)),
+    () => searchFigures(query, allFigures, 50).filter(r => !usedFigureIds.has(r.figure.id)),
     [query, usedFigureIds]
   )
 
@@ -527,7 +527,8 @@ export default function RetoGame() {
                         initial={{ opacity: 0, y: -4 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -4 }}
-                        className="absolute top-full mt-2 w-full z-30 glass-2 rounded-2xl overflow-hidden border border-white/12 shadow-2xl"
+                        className="absolute top-full mt-2 w-full z-30 glass-2 rounded-2xl overflow-y-auto border border-white/12 shadow-2xl"
+                        style={{ maxHeight: '60vh' }}
                       >
                         {results.map((r, i) => {
                           const color = getCategoryColor(r.figure.category)
