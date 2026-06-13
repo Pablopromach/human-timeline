@@ -20,7 +20,7 @@ export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
   const inputRef = useRef<HTMLInputElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
 
-  const results = searchFigures(query, allFigures, 8)
+  const results = searchFigures(query, allFigures, 50)
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -71,7 +71,8 @@ export default function SearchBar({ allFigures, selectedIds, onAdd }: Props) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -4, scale: 0.98 }}
             transition={{ duration: 0.15, ease: 'easeOut' }}
-            className="absolute top-full mt-2 w-full z-50 rounded-xl overflow-hidden glass-2 shadow-2xl border border-white/10"
+            className="absolute top-full mt-2 w-full z-50 rounded-xl overflow-y-auto glass-2 shadow-2xl border border-white/10"
+            style={{ maxHeight: '60vh' }}
           >
             {results.map((r, i) => {
               const isAdded = selectedIds.includes(r.figure.id)
