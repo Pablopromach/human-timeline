@@ -24,7 +24,7 @@ export interface Room {
 }
 
 export const ROOM_TTL = 7200        // 2h in Redis
-export const ROUND_MS = 60_000      // 60s per round
+export const ROUND_MS = 30_000      // 30s per round
 export const REVEAL_MS = 4_000      // 4s reveal
 export const MAX_LIVES = 3
 
