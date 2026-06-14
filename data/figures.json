@@ -13,7 +13,8 @@
       "ley",
       "mesopotamia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Rey de Babilonia, famoso por promulgar uno de los primeros conjuntos de leyes escritas de la historia: el Código de Hammurabi."
   },
   {
     "id": 2,
@@ -30,7 +31,8 @@
       "war"
     ],
     "relatedIds": [],
-    "nameEs": "Ramsés II"
+    "nameEs": "Ramsés II",
+    "descriptionEs": "Faraón egipcio considerado el más poderoso de todos los tiempos. Reinó durante 66 años y construyó Abu Simbel."
   },
   {
     "id": 3,
@@ -49,7 +51,8 @@
     "relatedIds": [
       7,
       8
-    ]
+    ],
+    "descriptionEs": "Poeta griego antiguo, autor de la Ilíada y la Odisea, las dos grandes epopeyas de la literatura occidental."
   },
   {
     "id": 4,
@@ -68,7 +71,8 @@
     "relatedIds": [
       5,
       6
-    ]
+    ],
+    "descriptionEs": "Filósofo chino cuyas enseñanzas influyeron profundamente en la cultura del este de Asia durante más de dos milenios."
   },
   {
     "id": 5,
@@ -86,7 +90,8 @@
     ],
     "relatedIds": [
       4
-    ]
+    ],
+    "descriptionEs": "Maestro espiritual de la antigua India, fundador del budismo, una de las grandes religiones del mundo."
   },
   {
     "id": 6,
@@ -106,7 +111,8 @@
       7,
       8
     ],
-    "nameEs": "Sócrates"
+    "nameEs": "Sócrates",
+    "descriptionEs": "Filósofo griego considerado uno de los fundadores de la filosofía occidental. Maestro de Platón."
   },
   {
     "id": 7,
@@ -126,7 +132,8 @@
       6,
       8
     ],
-    "nameEs": "Platón"
+    "nameEs": "Platón",
+    "descriptionEs": "Filósofo griego, alumno de Sócrates y maestro de Aristóteles. Fundó la Academia de Atenas."
   },
   {
     "id": 8,
@@ -146,7 +153,8 @@
       7,
       9
     ],
-    "nameEs": "Aristóteles"
+    "nameEs": "Aristóteles",
+    "descriptionEs": "Filósofo griego, alumno de Platón y maestro de Alejandro Magno. Padre de la lógica formal."
   },
   {
     "id": 9,
@@ -164,7 +172,8 @@
     ],
     "relatedIds": [
       8
-    ]
+    ],
+    "descriptionEs": "Rey de Macedonia que construyó uno de los imperios más grandes de la historia antigua, conquistando desde Grecia hasta la India."
   },
   {
     "id": 10,
@@ -182,7 +191,8 @@
     ],
     "relatedIds": [
       11
-    ]
+    ],
+    "descriptionEs": "Matemático griego conocido como el padre de la geometría. Su obra Elementos fue el principal texto matemático durante siglos."
   },
   {
     "id": 11,
@@ -201,7 +211,8 @@
     "relatedIds": [
       10
     ],
-    "nameEs": "Arquímedes"
+    "nameEs": "Arquímedes",
+    "descriptionEs": "Matemático, físico e ingeniero griego. Uno de los más grandes científicos de la antigüedad."
   },
   {
     "id": 12,
@@ -220,7 +231,8 @@
     "relatedIds": [
       13
     ],
-    "nameEs": "Aníbal Barca"
+    "nameEs": "Aníbal Barca",
+    "descriptionEs": "General cartaginés, uno de los mejores estrategas militares de la historia. Cruzó los Alpes con elefantes durante la Segunda Guerra Púnica."
   },
   {
     "id": 13,
@@ -240,7 +252,8 @@
       14,
       15
     ],
-    "nameEs": "Cicerón"
+    "nameEs": "Cicerón",
+    "descriptionEs": "Político, orador y filósofo romano. Uno de los más grandes escritores latinos y defensor de la República Romana."
   },
   {
     "id": 14,
@@ -261,7 +274,8 @@
       15,
       16
     ],
-    "nameEs": "Julio César"
+    "nameEs": "Julio César",
+    "descriptionEs": "Político y general romano, una de las figuras más influyentes de la historia. Dictador de Roma hasta su asesinato en los idus de marzo."
   },
   {
     "id": 15,
@@ -280,7 +294,8 @@
     "relatedIds": [
       14,
       16
-    ]
+    ],
+    "descriptionEs": "Último gobernante activo del Reino Ptolemaico de Egipto. Aliado y amante de Julio César y Marco Antonio."
   },
   {
     "id": 16,
@@ -300,7 +315,8 @@
       14,
       17
     ],
-    "nameEs": "Augusto"
+    "nameEs": "Augusto",
+    "descriptionEs": "Primer emperador romano. Transformó la República Romana en el Imperio Romano durante su largo reinado."
   },
   {
     "id": 17,
@@ -318,7 +334,8 @@
     ],
     "relatedIds": [
       18
-    ]
+    ],
+    "descriptionEs": "Poeta épico romano, autor de la Eneida, las Geórgicas y las Églogas. Considerado el mayor poeta latino."
   },
   {
     "id": 18,
@@ -336,7 +353,8 @@
     ],
     "relatedIds": [
       17
-    ]
+    ],
+    "descriptionEs": "Poeta romano, autor de las Metamorfosis, obra maestra de la literatura latina. Exiliado por Augusto."
   },
   {
     "id": 19,
@@ -352,7 +370,8 @@
       "philosophy",
       "rome"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Emperador romano y filósofo estoico. Sus Meditaciones son una obra maestra de la filosofía personal."
   },
   {
     "id": 20,
@@ -368,7 +387,8 @@
       "medieval",
       "emperador"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Rey de los francos y primer emperador del Sacro Imperio Romano Germánico. Unificó gran parte de Europa occidental."
   },
   {
     "id": 21,
@@ -384,7 +404,8 @@
       "philosophy",
       "islam"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Médico y filósofo persa. Su Canon de Medicina sirvió como texto de referencia en Europa durante siglos."
   },
   {
     "id": 22,
@@ -400,7 +421,8 @@
       "mongolia",
       "empire"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Fundador y primer Gran Khan del Imperio Mongol, el imperio contiguo más grande de la historia."
   },
   {
     "id": 23,
@@ -417,7 +439,8 @@
       "medieval"
     ],
     "relatedIds": [],
-    "nameEs": "Tomás de Aquino"
+    "nameEs": "Tomás de Aquino",
+    "descriptionEs": "Filósofo y teólogo medieval, figura central de la escolástica. Canonizado por la Iglesia Católica."
   },
   {
     "id": 24,
@@ -433,7 +456,8 @@
       "china",
       "exploration"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Comerciante y explorador veneciano. Su viaje a China y a la corte de Kublai Khan abrió Europa hacia el Este."
   },
   {
     "id": 25,
@@ -449,7 +473,8 @@
       "italy",
       "literature"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta italiano, autor de la Divina Comedia. Considerado el padre de la lengua italiana."
   },
   {
     "id": 26,
@@ -465,7 +490,8 @@
       "france",
       "religion"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Heroína francesa y santa de la Iglesia católica. Dirigió el ejército francés durante la Guerra de los Cien Años."
   },
   {
     "id": 27,
@@ -481,7 +507,8 @@
       "printing press",
       "comunicación"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Inventor alemán de la imprenta de tipos móviles. Su invento revolucionó la transmisión del conocimiento."
   },
   {
     "id": 28,
@@ -501,7 +528,8 @@
       29,
       30
     ],
-    "nameEs": "Cristóbal Colón"
+    "nameEs": "Cristóbal Colón",
+    "descriptionEs": "Navegante y explorador que llegó a América en 1492, iniciando la era de la exploración europea."
   },
   {
     "id": 29,
@@ -521,7 +549,8 @@
       30,
       31,
       32
-    ]
+    ],
+    "descriptionEs": "Genio del Renacimiento italiano: pintor, escultor, arquitecto, músico, matemático, ingeniero, inventor y científico."
   },
   {
     "id": 30,
@@ -540,7 +569,8 @@
     "relatedIds": [
       29
     ],
-    "nameEs": "Nicolás Maquiavelo"
+    "nameEs": "Nicolás Maquiavelo",
+    "descriptionEs": "Filósofo y diplomático italiano. Su obra El Príncipe definió la ciencia política moderna."
   },
   {
     "id": 31,
@@ -560,7 +590,8 @@
       29,
       36
     ],
-    "nameEs": "Nicolás Copérnico"
+    "nameEs": "Nicolás Copérnico",
+    "descriptionEs": "Astrónomo que formuló el modelo heliocéntrico del sistema solar, iniciando la Revolución Científica."
   },
   {
     "id": 32,
@@ -580,7 +611,8 @@
       29,
       33
     ],
-    "nameEs": "Miguel Ángel"
+    "nameEs": "Miguel Ángel",
+    "descriptionEs": "Pintor, escultor, arquitecto y poeta renacentista. Autor del techo de la Capilla Sixtina y del David."
   },
   {
     "id": 33,
@@ -599,7 +631,8 @@
     "relatedIds": [
       32,
       29
-    ]
+    ],
+    "descriptionEs": "Pintor y arquitecto renacentista italiano, uno de los tres grandes maestros del Alto Renacimiento."
   },
   {
     "id": 34,
@@ -617,7 +650,8 @@
     ],
     "relatedIds": [
       28
-    ]
+    ],
+    "descriptionEs": "Explorador portugués que organizó la primera expedición para circunnavegar la Tierra."
   },
   {
     "id": 35,
@@ -634,7 +668,8 @@
       "protestantism"
     ],
     "relatedIds": [],
-    "nameEs": "Martín Lutero"
+    "nameEs": "Martín Lutero",
+    "descriptionEs": "Monje alemán que inició la Reforma Protestante, uno de los acontecimientos más importantes del mundo occidental."
   },
   {
     "id": 36,
@@ -654,7 +689,8 @@
       31,
       37,
       41
-    ]
+    ],
+    "descriptionEs": "Astrónomo, físico y matemático italiano. Considerado el padre de la astronomía observacional y la física moderna."
   },
   {
     "id": 37,
@@ -672,7 +708,8 @@
     ],
     "relatedIds": [
       38
-    ]
+    ],
+    "descriptionEs": "Dramaturgo y poeta inglés, considerado el escritor más importante en lengua inglesa."
   },
   {
     "id": 38,
@@ -690,7 +727,8 @@
     ],
     "relatedIds": [
       37
-    ]
+    ],
+    "descriptionEs": "Escritor español, autor de Don Quijote, considerado la primera novela moderna."
   },
   {
     "id": 39,
@@ -706,7 +744,8 @@
       "barroco",
       "netherlands"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor y grabador holandés. Considerado uno de los grandes maestros del arte europeo."
   },
   {
     "id": 40,
@@ -724,7 +763,8 @@
     ],
     "relatedIds": [
       41
-    ]
+    ],
+    "descriptionEs": "Filósofo, matemático y científico francés. Padre de la filosofía moderna y creador de la geometría analítica."
   },
   {
     "id": 41,
@@ -744,7 +784,8 @@
       36,
       40,
       42
-    ]
+    ],
+    "descriptionEs": "Físico y matemático inglés. Formuló las leyes del movimiento y la gravitación universal e inventó el cálculo."
   },
   {
     "id": 42,
@@ -763,7 +804,8 @@
     "relatedIds": [
       43,
       44
-    ]
+    ],
+    "descriptionEs": "Compositor y músico barroco alemán, considerado uno de los más grandes compositores de la historia."
   },
   {
     "id": 43,
@@ -781,7 +823,8 @@
     ],
     "relatedIds": [
       42
-    ]
+    ],
+    "descriptionEs": "Compositor barroco alemán, naturalizado británico. Autor del oratorio Mesías."
   },
   {
     "id": 44,
@@ -800,7 +843,8 @@
     "relatedIds": [
       45,
       46
-    ]
+    ],
+    "descriptionEs": "Escritor, historiador y filósofo francés. Figura central de la Ilustración y defensor de la libertad de expresión."
   },
   {
     "id": 45,
@@ -819,7 +863,8 @@
     "relatedIds": [
       44,
       46
-    ]
+    ],
+    "descriptionEs": "Filósofo suizo cuyas ideas políticas y educativas influyeron profundamente en la Revolución Francesa."
   },
   {
     "id": 46,
@@ -838,7 +883,8 @@
     "relatedIds": [
       44,
       45
-    ]
+    ],
+    "descriptionEs": "Filósofo de la Ilustración de Alemania central. Su Crítica de la razón pura revolucionó la filosofía moderna."
   },
   {
     "id": 47,
@@ -857,7 +903,8 @@
     "relatedIds": [
       48,
       42
-    ]
+    ],
+    "descriptionEs": "Compositor y pianista austríaco del período clásico. Compuso más de 600 obras y es considerado un genio musical."
   },
   {
     "id": 48,
@@ -876,7 +923,8 @@
     "relatedIds": [
       47,
       49
-    ]
+    ],
+    "descriptionEs": "Compositor y pianista alemán, figura central en la transición entre el Clasicismo y el Romanticismo."
   },
   {
     "id": 49,
@@ -896,7 +944,8 @@
       50,
       48
     ],
-    "nameEs": "Napoleón Bonaparte"
+    "nameEs": "Napoleón Bonaparte",
+    "descriptionEs": "General y estadista francés que dominó Europa durante las guerras napoleónicas. Emperador de los franceses."
   },
   {
     "id": 50,
@@ -914,7 +963,8 @@
     ],
     "relatedIds": [
       49
-    ]
+    ],
+    "descriptionEs": "General y estadista británico. Derrotó a Napoleón en la batalla de Waterloo y sirvió como Primer Ministro del Reino Unido."
   },
   {
     "id": 51,
@@ -930,7 +980,8 @@
       "politics",
       "usa"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Polímata estadounidense: científico, inventor, político, diplomático y uno de los padres fundadores de los Estados Unidos."
   },
   {
     "id": 52,
@@ -949,7 +1000,8 @@
     "relatedIds": [
       44,
       45
-    ]
+    ],
+    "descriptionEs": "Filósofo y economista escocés. Su obra La riqueza de las naciones se considera la base de la economía moderna."
   },
   {
     "id": 53,
@@ -967,7 +1019,8 @@
     ],
     "relatedIds": [
       55
-    ]
+    ],
+    "descriptionEs": "16º presidente de los Estados Unidos. Dirigió el país durante la Guerra Civil y abolió la esclavitud."
   },
   {
     "id": 54,
@@ -985,7 +1038,8 @@
     ],
     "relatedIds": [
       57
-    ]
+    ],
+    "descriptionEs": "Naturalista y biólogo inglés. Desarrolló la teoría de la evolución por selección natural."
   },
   {
     "id": 55,
@@ -1003,7 +1057,8 @@
     ],
     "relatedIds": [
       54
-    ]
+    ],
+    "descriptionEs": "Filósofo, economista y teórico político alemán. Sus ideas sobre el capitalismo y el socialismo transformaron el mundo."
   },
   {
     "id": 56,
@@ -1021,7 +1076,8 @@
     ],
     "relatedIds": [
       58
-    ]
+    ],
+    "descriptionEs": "Novelista inglés victoriano, uno de los escritores más importantes del siglo XIX. Autor de Oliver Twist."
   },
   {
     "id": 57,
@@ -1040,7 +1096,8 @@
     "relatedIds": [
       54,
       64
-    ]
+    ],
+    "descriptionEs": "Químico y microbiólogo francés. Padre de la microbiología, desarrolló la pasteurización y la vacuna contra la rabia."
   },
   {
     "id": 58,
@@ -1060,7 +1117,8 @@
       59,
       56
     ],
-    "nameEs": "León Tolstói"
+    "nameEs": "León Tolstói",
+    "descriptionEs": "Novelista ruso, autor de Guerra y Paz y Anna Karenina. Una de las figuras más importantes de la literatura mundial."
   },
   {
     "id": 59,
@@ -1079,7 +1137,8 @@
     "relatedIds": [
       58
     ],
-    "nameEs": "Fiódor Dostoievski"
+    "nameEs": "Fiódor Dostoievski",
+    "descriptionEs": "Novelista ruso, autor de Crimen y castigo, El idiota y Los hermanos Karamazov."
   },
   {
     "id": 60,
@@ -1098,7 +1157,8 @@
     "relatedIds": [
       48,
       61
-    ]
+    ],
+    "descriptionEs": "Compositor y pianista romántico polaco. Considerado uno de los más grandes compositores para piano."
   },
   {
     "id": 61,
@@ -1117,7 +1177,8 @@
     "relatedIds": [
       60,
       62
-    ]
+    ],
+    "descriptionEs": "Compositor y pianista húngaro. Considerado el pianista más virtuoso del siglo XIX."
   },
   {
     "id": 62,
@@ -1135,7 +1196,8 @@
     ],
     "relatedIds": [
       61
-    ]
+    ],
+    "descriptionEs": "Compositor alemán, principalmente de óperas. Su trabajo influyó en la historia de la música occidental."
   },
   {
     "id": 63,
@@ -1155,7 +1217,8 @@
       56,
       58
     ],
-    "nameEs": "Víctor Hugo"
+    "nameEs": "Víctor Hugo",
+    "descriptionEs": "Escritor francés, autor de Los Miserables y El jorobado de Notre-Dame. Figura central del Romanticismo."
   },
   {
     "id": 64,
@@ -1173,7 +1236,8 @@
     ],
     "relatedIds": [
       65
-    ]
+    ],
+    "descriptionEs": "Científico inglés que hizo importantes contribuciones a los campos del electromagnetismo y la electroquímica."
   },
   {
     "id": 65,
@@ -1192,7 +1256,8 @@
     "relatedIds": [
       64,
       66
-    ]
+    ],
+    "descriptionEs": "Físico escocés que formuló las ecuaciones del electromagnetismo. Einstein lo llamó el físico más grande del siglo XIX."
   },
   {
     "id": 66,
@@ -1213,7 +1278,8 @@
       68,
       69,
       70
-    ]
+    ],
+    "descriptionEs": "Físico teórico alemán que desarrolló la teoría de la relatividad. Premio Nobel de Física en 1921."
   },
   {
     "id": 67,
@@ -1232,7 +1298,8 @@
     "relatedIds": [
       66,
       68
-    ]
+    ],
+    "descriptionEs": "Inventor e ingeniero eléctrico serbio. Desarrolló el sistema de corriente alterna y contribuyó al campo electromagnético."
   },
   {
     "id": 68,
@@ -1251,7 +1318,8 @@
     "relatedIds": [
       66,
       70
-    ]
+    ],
+    "descriptionEs": "Físico y químico polaco-francés. La primera persona en ganar dos premios Nobel en ciencias diferentes."
   },
   {
     "id": 69,
@@ -1269,7 +1337,8 @@
     ],
     "relatedIds": [
       66
-    ]
+    ],
+    "descriptionEs": "Neurólogo austriaco y fundador del psicoanálisis. Sus teorías sobre el inconsciente revolucionaron la psicología."
   },
   {
     "id": 70,
@@ -1289,7 +1358,8 @@
       66,
       68,
       71
-    ]
+    ],
+    "descriptionEs": "Físico alemán que originó la teoría cuántica. Premio Nobel de Física en 1918."
   },
   {
     "id": 71,
@@ -1309,7 +1379,8 @@
       66,
       70,
       72
-    ]
+    ],
+    "descriptionEs": "Físico danés que hizo contribuciones fundamentales a la comprensión de la estructura atómica y la mecánica cuántica."
   },
   {
     "id": 72,
@@ -1328,7 +1399,8 @@
     "relatedIds": [
       71,
       66
-    ]
+    ],
+    "descriptionEs": "Físico alemán, pionero de la mecánica cuántica. Formuló el principio de incertidumbre."
   },
   {
     "id": 73,
@@ -1347,7 +1419,8 @@
     "relatedIds": [
       74,
       75
-    ]
+    ],
+    "descriptionEs": "Político y estadista británico. Primer Ministro del Reino Unido durante la Segunda Guerra Mundial. Premio Nobel de Literatura."
   },
   {
     "id": 74,
@@ -1365,7 +1438,8 @@
     ],
     "relatedIds": [
       73
-    ]
+    ],
+    "descriptionEs": "Líder político y espiritual indio. Dirigió la independencia de la India del dominio británico mediante la desobediencia civil no violenta."
   },
   {
     "id": 75,
@@ -1383,7 +1457,8 @@
     ],
     "relatedIds": [
       73
-    ]
+    ],
+    "descriptionEs": "32º presidente de los Estados Unidos. Dirigió al país durante la Gran Depresión y la Segunda Guerra Mundial."
   },
   {
     "id": 76,
@@ -1399,7 +1474,8 @@
       "cubismo",
       "arte moderno"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor y escultor español, cofundador del cubismo. Una de las figuras más influyentes del arte del siglo XX."
   },
   {
     "id": 77,
@@ -1418,7 +1494,8 @@
     "relatedIds": [
       78,
       79
-    ]
+    ],
+    "descriptionEs": "Escritor checo de lengua alemana. Sus obras La Metamorfosis y El Proceso son pilares de la literatura moderna."
   },
   {
     "id": 78,
@@ -1437,7 +1514,8 @@
     "relatedIds": [
       77,
       79
-    ]
+    ],
+    "descriptionEs": "Novelista y periodista estadounidense. Premio Nobel de Literatura en 1954. Autor de El viejo y el mar."
   },
   {
     "id": 79,
@@ -1455,7 +1533,8 @@
     ],
     "relatedIds": [
       78
-    ]
+    ],
+    "descriptionEs": "Escritor estadounidense de la era del jazz. Autor de El gran Gatsby, símbolo de los años 20."
   },
   {
     "id": 80,
@@ -1474,7 +1553,8 @@
     "relatedIds": [
       66,
       72
-    ]
+    ],
+    "descriptionEs": "Matemático, lógico y criptógrafo británico. Considerado el padre de la informática y la inteligencia artificial."
   },
   {
     "id": 81,
@@ -1493,7 +1573,8 @@
     "relatedIds": [
       74,
       83
-    ]
+    ],
+    "descriptionEs": "Ministro bautista estadounidense y activista político. Líder del movimiento afroamericano por los derechos civiles."
   },
   {
     "id": 82,
@@ -1512,7 +1593,8 @@
     "relatedIds": [
       75,
       81
-    ]
+    ],
+    "descriptionEs": "35º presidente de los Estados Unidos. Dirigió el país durante la Crisis de los Misiles Cubanos."
   },
   {
     "id": 83,
@@ -1531,7 +1613,8 @@
     "relatedIds": [
       74,
       81
-    ]
+    ],
+    "descriptionEs": "Líder y estadista sudafricano contra el apartheid. Primer presidente negro de Sudáfrica. Premio Nobel de la Paz en 1993."
   },
   {
     "id": 84,
@@ -1547,7 +1630,8 @@
       "marxism",
       "cuba"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Médico, escritor y político marxista-leninista, figura clave de la Revolución Cubana."
   },
   {
     "id": 85,
@@ -1567,7 +1651,8 @@
       66,
       72,
       80
-    ]
+    ],
+    "descriptionEs": "Físico teórico estadounidense y director científico del Proyecto Manhattan, que desarrolló la primera bomba atómica."
   },
   {
     "id": 86,
@@ -1586,7 +1671,8 @@
     "relatedIds": [
       57,
       68
-    ]
+    ],
+    "descriptionEs": "Médico y bacteriólogo escocés. Descubrió la penicilina en 1928, revolucionando la medicina moderna."
   },
   {
     "id": 87,
@@ -1605,7 +1691,8 @@
     "relatedIds": [
       55,
       74
-    ]
+    ],
+    "descriptionEs": "Político y teórico revolucionario ruso. Líder de la Revolución Rusa de 1917 y primer jefe de Estado de la URSS."
   },
   {
     "id": 88,
@@ -1623,7 +1710,8 @@
     ],
     "relatedIds": [
       76
-    ]
+    ],
+    "descriptionEs": "Pintor surrealista español, conocido por sus imágenes oníricas y su precisa técnica pictórica."
   },
   {
     "id": 89,
@@ -1641,7 +1729,8 @@
     ],
     "relatedIds": [
       69
-    ]
+    ],
+    "descriptionEs": "Psiquiatra y psicólogo suizo. Fundador de la psicología analítica. Estudiante y luego rival de Freud."
   },
   {
     "id": 90,
@@ -1661,7 +1750,8 @@
       6,
       7
     ],
-    "nameEs": "Pitágoras"
+    "nameEs": "Pitágoras",
+    "descriptionEs": "Filósofo y matemático griego. Famoso por el teorema que lleva su nombre y por fundar la escuela pitagórica."
   },
   {
     "id": 91,
@@ -1681,7 +1771,8 @@
       6,
       7
     ],
-    "nameEs": "Heródoto"
+    "nameEs": "Heródoto",
+    "descriptionEs": "Historiador y geógrafo griego. Considerado el padre de la historia por su obra Historias sobre las guerras persas."
   },
   {
     "id": 92,
@@ -1700,7 +1791,8 @@
     "relatedIds": [
       6
     ],
-    "nameEs": "Hipócrates"
+    "nameEs": "Hipócrates",
+    "descriptionEs": "Médico griego, considerado el padre de la medicina occidental. Autor del Juramento Hipocrático."
   },
   {
     "id": 93,
@@ -1719,7 +1811,8 @@
     "relatedIds": [
       91
     ],
-    "nameEs": "Tucídides"
+    "nameEs": "Tucídides",
+    "descriptionEs": "Historiador y comandante militar ateniense. Autor de la Historia de la Guerra del Peloponeso, considerado el primer historiador científico."
   },
   {
     "id": 94,
@@ -1739,7 +1832,8 @@
       9,
       6
     ],
-    "nameEs": "Diógenes de Sínope"
+    "nameEs": "Diógenes de Sínope",
+    "descriptionEs": "Filósofo griego, principal representante de la escuela cínica. Conocido por vivir en un barril y desafiar las convenciones sociales."
   },
   {
     "id": 95,
@@ -1758,7 +1852,8 @@
     "relatedIds": [
       8,
       7
-    ]
+    ],
+    "descriptionEs": "Filósofo griego y fundador del epicureísmo. Abogó por la búsqueda del placer racional como camino hacia la felicidad."
   },
   {
     "id": 96,
@@ -1776,7 +1871,8 @@
     ],
     "relatedIds": [
       4
-    ]
+    ],
+    "descriptionEs": "General, estratega militar y filósofo chino. Autor de El arte de la guerra, el tratado militar más influyente de la historia."
   },
   {
     "id": 97,
@@ -1794,7 +1890,8 @@
     ],
     "relatedIds": [
       4
-    ]
+    ],
+    "descriptionEs": "Filósofo chino, fundador del taoísmo. Autor del Tao Te Ching, uno de los textos más traducidos del mundo."
   },
   {
     "id": 98,
@@ -1814,7 +1911,8 @@
       16,
       19
     ],
-    "nameEs": "Jesús de Nazaret"
+    "nameEs": "Jesús de Nazaret",
+    "descriptionEs": "Predicador judío del siglo I, figura central del cristianismo. Su vida y enseñanzas marcaron el comienzo de la era común."
   },
   {
     "id": 99,
@@ -1833,7 +1931,8 @@
     "relatedIds": [
       98,
       5
-    ]
+    ],
+    "descriptionEs": "Profeta árabe, fundador del Islam. Unificó la Península Arábiga bajo una sola religión y estableció el Corán."
   },
   {
     "id": 100,
@@ -1852,7 +1951,8 @@
     "relatedIds": [
       19,
       98
-    ]
+    ],
+    "descriptionEs": "Emperador romano. Legalizó el cristianismo y fundó Constantinopla. Su reinado marcó una transición clave en la historia."
   },
   {
     "id": 101,
@@ -1870,7 +1970,8 @@
     ],
     "relatedIds": [
       100
-    ]
+    ],
+    "descriptionEs": "Rey de los hunos, conocido como \"el Azote de Dios\", cuyo imperio se extendía desde Europa Central hasta el Mar Negro."
   },
   {
     "id": 102,
@@ -1889,7 +1990,8 @@
     "relatedIds": [
       100,
       99
-    ]
+    ],
+    "descriptionEs": "Emperador bizantino que compiló el Código de Justiniano, la base del derecho civil moderno, y construyó Santa Sofía."
   },
   {
     "id": 103,
@@ -1909,7 +2011,8 @@
       8,
       21,
       23
-    ]
+    ],
+    "descriptionEs": "Filósofo y médico andaluz cuyos comentarios sobre Aristóteles influyeron profundamente en el pensamiento europeo medieval."
   },
   {
     "id": 104,
@@ -1927,7 +2030,8 @@
     ],
     "relatedIds": [
       99
-    ]
+    ],
+    "descriptionEs": "Sultán de Egipto y Siria que recuperó Jerusalén de los cruzados, famoso por su nobleza y caballerosidad."
   },
   {
     "id": 105,
@@ -1945,7 +2049,8 @@
     ],
     "relatedIds": [
       24
-    ]
+    ],
+    "descriptionEs": "Explorador y geógrafo marroquí que recorrió más de 120.000 km a través de África, Asia y Europa, dejando un registro invaluable de sus viajes."
   },
   {
     "id": 106,
@@ -1963,7 +2068,8 @@
     ],
     "relatedIds": [
       25
-    ]
+    ],
+    "descriptionEs": "Escritor inglés, autor de Los cuentos de Canterbury, considerado el padre de la literatura inglesa."
   },
   {
     "id": 107,
@@ -1984,7 +2090,8 @@
       32,
       30
     ],
-    "nameEs": "Lorenzo de Médici"
+    "nameEs": "Lorenzo de Médici",
+    "descriptionEs": "Estadista florentino y mecenas de las artes bajo cuyo patrocinio florecieron Botticelli, Miguel Ángel y Leonardo da Vinci."
   },
   {
     "id": 108,
@@ -2004,7 +2111,8 @@
       28,
       34,
       109
-    ]
+    ],
+    "descriptionEs": "Conquistador español que provocó la caída del Imperio Azteca y la incorporación de México a la Corona española."
   },
   {
     "id": 109,
@@ -2023,7 +2131,8 @@
     "relatedIds": [
       108,
       28
-    ]
+    ],
+    "descriptionEs": "Conquistador español del Imperio Inca que fundó Lima y completó la conquista de América del Sur para España."
   },
   {
     "id": 110,
@@ -2044,7 +2153,8 @@
       35,
       108
     ],
-    "nameEs": "Carlos V"
+    "nameEs": "Carlos V",
+    "descriptionEs": "Emperador del Sacro Imperio Romano Germánico y rey ​​de España que gobernó el imperio más grande de su tiempo, que abarcaba Europa y América, antes de abdicar en un monasterio."
   },
   {
     "id": 111,
@@ -2065,7 +2175,8 @@
       37,
       110
     ],
-    "nameEs": "Isabel I de Inglaterra"
+    "nameEs": "Isabel I de Inglaterra",
+    "descriptionEs": "La Reina Virgen que supervisó la Edad de Oro de Inglaterra, derrotó a la Armada Española en 1588 y fomentó la era de Shakespeare."
   },
   {
     "id": 112,
@@ -2086,7 +2197,8 @@
       110,
       111
     ],
-    "nameEs": "Felipe II de España"
+    "nameEs": "Felipe II de España",
+    "descriptionEs": "Rey del imperio más grande del mundo, que gobierna España, Portugal, América y más; envió la desafortunada Armada contra Inglaterra en 1588."
   },
   {
     "id": 113,
@@ -2105,7 +2217,8 @@
     "relatedIds": [
       39,
       112
-    ]
+    ],
+    "descriptionEs": "Pintor español del Siglo de Oro cuya obra Las Meninas está considerada una de las pinturas más importantes de la historia."
   },
   {
     "id": 114,
@@ -2123,7 +2236,8 @@
     ],
     "relatedIds": [
       115
-    ]
+    ],
+    "descriptionEs": "Zar de Rusia que modernizó el país, fundó San Petersburgo y transformó a Rusia en una potencia europea."
   },
   {
     "id": 115,
@@ -2142,7 +2256,8 @@
     "relatedIds": [
       44,
       114
-    ]
+    ],
+    "descriptionEs": "Emperatriz de Rusia que llevó al país a su edad de oro, expandió el imperio y patrocinó las artes y la educación."
   },
   {
     "id": 116,
@@ -2161,7 +2276,8 @@
     "relatedIds": [
       51,
       117
-    ]
+    ],
+    "descriptionEs": "Primer presidente de los Estados Unidos y comandante del Ejército Continental durante la Revolución Americana."
   },
   {
     "id": 117,
@@ -2181,7 +2297,8 @@
       116,
       51,
       44
-    ]
+    ],
+    "descriptionEs": "Tercer presidente de los Estados Unidos y autor principal de la Declaración de Independencia."
   },
   {
     "id": 118,
@@ -2200,7 +2317,8 @@
     "relatedIds": [
       49,
       119
-    ]
+    ],
+    "descriptionEs": "Líder de la independencia hispanoamericana y libertador de Venezuela, Colombia, Ecuador, Perú y Bolivia."
   },
   {
     "id": 119,
@@ -2219,7 +2337,8 @@
     "relatedIds": [
       118,
       49
-    ]
+    ],
+    "descriptionEs": "General y libertador que lideró los movimientos independentistas de Argentina, Chile y Perú durante las guerras de emancipación."
   },
   {
     "id": 120,
@@ -2238,7 +2357,8 @@
     "relatedIds": [
       84,
       118
-    ]
+    ],
+    "descriptionEs": "Primera Dama de Argentina y activista por los derechos de los trabajadores y las mujeres, ícono cultural de América Latina."
   },
   {
     "id": 121,
@@ -2256,7 +2376,8 @@
     ],
     "relatedIds": [
       76
-    ]
+    ],
+    "descriptionEs": "Arquitecto catalán y principal exponente del modernismo que diseñó la Sagrada Familia y el Parque Güell."
   },
   {
     "id": 122,
@@ -2274,7 +2395,8 @@
     ],
     "relatedIds": [
       123
-    ]
+    ],
+    "descriptionEs": "Pintor posimpresionista holandés, una de las figuras más influyentes del arte occidental, que pintó La noche estrellada."
   },
   {
     "id": 123,
@@ -2292,7 +2414,8 @@
     ],
     "relatedIds": [
       122
-    ]
+    ],
+    "descriptionEs": "Pintor francés y fundador del impresionismo, conocido por sus series de nenúfares y pinturas catedralicias."
   },
   {
     "id": 124,
@@ -2310,7 +2433,8 @@
     ],
     "relatedIds": [
       123
-    ]
+    ],
+    "descriptionEs": "Escultor francés considerado uno de los padres de la escultura moderna y autor de El pensador."
   },
   {
     "id": 125,
@@ -2330,7 +2454,8 @@
       55,
       46,
       69
-    ]
+    ],
+    "descriptionEs": "Filósofo alemán cuyas ideas sobre el Übermensch, la muerte de Dios y la moralidad transformaron el pensamiento occidental."
   },
   {
     "id": 126,
@@ -2348,7 +2473,8 @@
     ],
     "relatedIds": [
       125
-    ]
+    ],
+    "descriptionEs": "Filósofo danés considerado el padre del existencialismo y crítico de la religión institucional y de la filosofía hegeliana."
   },
   {
     "id": 127,
@@ -2367,7 +2493,8 @@
     "relatedIds": [
       67,
       128
-    ]
+    ],
+    "descriptionEs": "Inventor estadounidense que desarrolló la bombilla incandescente, el fonógrafo y el sistema eléctrico moderno."
   },
   {
     "id": 128,
@@ -2386,7 +2513,8 @@
     "relatedIds": [
       127,
       67
-    ]
+    ],
+    "descriptionEs": "Científico e inventor escocés-estadounidense al que se le atribuye la invención del teléfono y fundador de Bell Telephone Company."
   },
   {
     "id": 129,
@@ -2404,7 +2532,8 @@
     ],
     "relatedIds": [
       127
-    ]
+    ],
+    "descriptionEs": "Wilbur y Orville Wright, pioneros de la aviación que lograron el primer vuelo controlado con motor en 1903."
   },
   {
     "id": 130,
@@ -2422,7 +2551,8 @@
     ],
     "relatedIds": [
       127
-    ]
+    ],
+    "descriptionEs": "Industrial estadounidense que revolucionó la fabricación con la línea de montaje y el Ford Modelo T."
   },
   {
     "id": 131,
@@ -2441,7 +2571,8 @@
     "relatedIds": [
       76,
       88
-    ]
+    ],
+    "descriptionEs": "Pintora mexicana famosa por sus autorretratos cargados de simbolismo y dolor personal."
   },
   {
     "id": 132,
@@ -2459,7 +2590,8 @@
     ],
     "relatedIds": [
       133
-    ]
+    ],
+    "descriptionEs": "Escritor colombiano y premio Nobel de Literatura en 1982, maestro del realismo mágico y autor de Cien años de soledad."
   },
   {
     "id": 133,
@@ -2478,7 +2610,8 @@
     "relatedIds": [
       132,
       77
-    ]
+    ],
+    "descriptionEs": "Escritor argentino y uno de los autores más influyentes del siglo XX, maestro del cuento y del ensayo."
   },
   {
     "id": 134,
@@ -2494,7 +2627,8 @@
       "cinema",
       "entretenimiento"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Animador, productor y empresario estadounidense, pionero de la animación y fundador del imperio Disney."
   },
   {
     "id": 135,
@@ -2512,7 +2646,8 @@
     ],
     "relatedIds": [
       134
-    ]
+    ],
+    "descriptionEs": "Actor, director y compositor británico, uno de los iconos más reconocibles del cine mudo con su personaje el Vagabundo."
   },
   {
     "id": 136,
@@ -2531,7 +2666,8 @@
     "relatedIds": [
       134,
       135
-    ]
+    ],
+    "descriptionEs": "Director de cine estadounidense y maestro del cine que dirigió 2001: Una odisea en el espacio y La naranja mecánica."
   },
   {
     "id": 137,
@@ -2549,7 +2685,8 @@
     ],
     "relatedIds": [
       138
-    ]
+    ],
+    "descriptionEs": "Músico, cantante y compositor británico, cofundador de The Beatles, una de las bandas más influyentes de la historia."
   },
   {
     "id": 138,
@@ -2567,7 +2704,8 @@
     ],
     "relatedIds": [
       137
-    ]
+    ],
+    "descriptionEs": "Cantante y compositor británico, vocalista principal de Queen y una de las voces más legendarias del rock."
   },
   {
     "id": 139,
@@ -2586,7 +2724,8 @@
     "relatedIds": [
       140,
       80
-    ]
+    ],
+    "descriptionEs": "Emprendedor y cofundador de Apple que revolucionó la informática personal, la música digital y la telefonía móvil."
   },
   {
     "id": 140,
@@ -2605,7 +2744,8 @@
     "relatedIds": [
       66,
       80
-    ]
+    ],
+    "descriptionEs": "Físico teórico británico que hizo contribuciones fundamentales a la comprensión de los agujeros negros y la cosmología."
   },
   {
     "id": 141,
@@ -2621,7 +2761,8 @@
       "monarchy",
       "humanitario"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Princesa de Gales, un ícono global por su labor humanitaria y carisma cuya muerte conmocionó al mundo."
   },
   {
     "id": 142,
@@ -2640,7 +2781,8 @@
     "relatedIds": [
       140,
       66
-    ]
+    ],
+    "descriptionEs": "Astrónomo y comunicador científico estadounidense, autor de Cosmos, que popularizó la ciencia para el público en general."
   },
   {
     "id": 143,
@@ -2658,7 +2800,8 @@
     ],
     "relatedIds": [
       69
-    ]
+    ],
+    "descriptionEs": "Médico y educador italiano que creó el método Montessori, revolucionando la educación infantil en todo el mundo."
   },
   {
     "id": 144,
@@ -2677,7 +2820,8 @@
     "relatedIds": [
       57,
       86
-    ]
+    ],
+    "descriptionEs": "Enfermera británica y fundadora de la enfermería moderna que reformó las prácticas sanitarias durante la Guerra de Crimea."
   },
   {
     "id": 145,
@@ -2696,7 +2840,8 @@
     "relatedIds": [
       80,
       146
-    ]
+    ],
+    "descriptionEs": "Matemática británica considerada la primera programadora informática por sus notas sobre el motor analítico de Babbage."
   },
   {
     "id": 146,
@@ -2715,7 +2860,8 @@
     "relatedIds": [
       145,
       80
-    ]
+    ],
+    "descriptionEs": "Matemático e inventor británico que diseñó el motor analítico, considerado un precursor de la computadora moderna."
   },
   {
     "id": 147,
@@ -2734,7 +2880,8 @@
     "relatedIds": [
       87,
       84
-    ]
+    ],
+    "descriptionEs": "Político, líder militar y revolucionario chino, líder de la Revolución Comunista y fundador de la República Popular China."
   },
   {
     "id": 148,
@@ -2753,7 +2900,8 @@
     "relatedIds": [
       2
     ],
-    "nameEs": "Tutankamón"
+    "nameEs": "Tutankamón",
+    "descriptionEs": "Faraón de Egipto cuya tumba intacta, descubierta en 1922, reveló los tesoros más espectaculares del antiguo Egipto."
   },
   {
     "id": 149,
@@ -2772,7 +2920,8 @@
     "relatedIds": [
       148,
       2
-    ]
+    ],
+    "descriptionEs": "Reina del antiguo Egipto y esposa del faraón Akenatón, cuyo busto es uno de los iconos más reconocibles del arte egipcio."
   },
   {
     "id": 150,
@@ -2791,7 +2940,8 @@
     "relatedIds": [
       14,
       13
-    ]
+    ],
+    "descriptionEs": "Gladiador romano que lideró la mayor rebelión de esclavos contra la República Romana, conocida como la Tercera Guerra Servil."
   },
   {
     "id": 151,
@@ -2811,7 +2961,8 @@
       6,
       90,
       174
-    ]
+    ],
+    "descriptionEs": "Filósofo y matemático griego, considerado uno de los Siete Sabios de Grecia y el primer filósofo occidental conocido."
   },
   {
     "id": 152,
@@ -2831,7 +2982,8 @@
       151,
       166
     ],
-    "nameEs": "Solón"
+    "nameEs": "Solón",
+    "descriptionEs": "Estadista, legislador y poeta ateniense que sentó las bases de la democracia ateniense a través de sus reformas."
   },
   {
     "id": 153,
@@ -2849,7 +3001,8 @@
     ],
     "relatedIds": [
       3
-    ]
+    ],
+    "descriptionEs": "Poeta lírico griego de Lesbos, una de las voces más célebres de la poesía antigua, llamada la \"Décima Musa\" por Platón."
   },
   {
     "id": 154,
@@ -2867,7 +3020,8 @@
     ],
     "relatedIds": [
       151
-    ]
+    ],
+    "descriptionEs": "Filósofo presocrático y alumno de Tales, pionero de la cosmología y la cartografía."
   },
   {
     "id": 155,
@@ -2885,7 +3039,8 @@
     ],
     "relatedIds": [
       3
-    ]
+    ],
+    "descriptionEs": "Fabulista griego cuyas célebres fábulas de animales han inspirado la literatura mundial."
   },
   {
     "id": 156,
@@ -2905,7 +3060,8 @@
       151,
       154
     ],
-    "nameEs": "Heráclito"
+    "nameEs": "Heráclito",
+    "descriptionEs": "Filósofo presocrático conocido por el dicho \"todo fluye\", quien argumentó que el cambio es la esencia del universo."
   },
   {
     "id": 157,
@@ -2925,7 +3081,8 @@
       6,
       152,
       158
-    ]
+    ],
+    "descriptionEs": "Estadista ateniense cuyo gobierno marcó la Edad de Oro de Atenas; construyó el Partenón y consolidó la democracia."
   },
   {
     "id": 158,
@@ -2945,7 +3102,8 @@
       159,
       160,
       161
-    ]
+    ],
+    "descriptionEs": "Dramaturgo griego considerado el padre de la tragedia y autor de la Orestíada."
   },
   {
     "id": 159,
@@ -2966,7 +3124,8 @@
       160,
       161
     ],
-    "nameEs": "Sófocles"
+    "nameEs": "Sófocles",
+    "descriptionEs": "Dramaturgo griego y autor de Edipo Rey y Antígona, uno de los tres grandes trágicos del teatro ateniense."
   },
   {
     "id": 160,
@@ -2987,7 +3146,8 @@
       159,
       161
     ],
-    "nameEs": "Eurípides"
+    "nameEs": "Eurípides",
+    "descriptionEs": "Dramaturga griega y autora de Medea y Las troyanas que innovó la tragedia con personajes psicológicamente complejos."
   },
   {
     "id": 161,
@@ -3008,7 +3168,8 @@
       159,
       160
     ],
-    "nameEs": "Aristófanes"
+    "nameEs": "Aristófanes",
+    "descriptionEs": "Dramaturgo cómico griego, máximo representante de la comedia antigua y autor de Las nubes y Lisístrata."
   },
   {
     "id": 162,
@@ -3028,7 +3189,8 @@
       95,
       156
     ],
-    "nameEs": "Demócrito"
+    "nameEs": "Demócrito",
+    "descriptionEs": "Filósofo presocrático que propuso por primera vez la teoría atómica de la materia, milenios antes de su confirmación."
   },
   {
     "id": 163,
@@ -3045,7 +3207,8 @@
       "biografía"
     ],
     "relatedIds": [],
-    "nameEs": "Diógenes Laercio"
+    "nameEs": "Diógenes Laercio",
+    "descriptionEs": "Biógrafo griego cuya obra Vidas de los filósofos eminentes es la fuente principal sobre los filósofos antiguos."
   },
   {
     "id": 164,
@@ -3064,7 +3227,8 @@
     "relatedIds": [
       12
     ],
-    "nameEs": "Escipión el Africano"
+    "nameEs": "Escipión el Africano",
+    "descriptionEs": "General romano que derrotó a Aníbal en la batalla de Zama, poniendo fin a la Segunda Guerra Púnica."
   },
   {
     "id": 165,
@@ -3084,7 +3248,8 @@
       164,
       12
     ],
-    "nameEs": "Catón el Viejo"
+    "nameEs": "Catón el Viejo",
+    "descriptionEs": "Político y escritor romano, implacable defensor de las tradiciones republicanas y de la destrucción de Cartago."
   },
   {
     "id": 166,
@@ -3103,7 +3268,8 @@
     "relatedIds": [
       14,
       13
-    ]
+    ],
+    "descriptionEs": "General y estadista romano, miembro del Primer Triunvirato junto a César y Craso, y más tarde rival de César."
   },
   {
     "id": 167,
@@ -3123,7 +3289,8 @@
       14,
       15,
       16
-    ]
+    ],
+    "descriptionEs": "General romano, aliado de César y amante de Cleopatra cuya derrota en Actium a manos de Octaviano cambió la historia de Roma."
   },
   {
     "id": 168,
@@ -3142,7 +3309,8 @@
     "relatedIds": [
       14,
       167
-    ]
+    ],
+    "descriptionEs": "Senador romano, conspirador y uno de los asesinos de Julio César en los idus de marzo del 44 a.C."
   },
   {
     "id": 169,
@@ -3163,7 +3331,8 @@
       170,
       171
     ],
-    "nameEs": "Séneca"
+    "nameEs": "Séneca",
+    "descriptionEs": "Filósofo estoico, escritor y político romano que fue tutor del emperador Nerón; sus Cartas a Lucilio son una joya filosófica."
   },
   {
     "id": 170,
@@ -3182,7 +3351,8 @@
     "relatedIds": [
       16
     ],
-    "nameEs": "Calígula"
+    "nameEs": "Calígula",
+    "descriptionEs": "Emperador romano, símbolo del despotismo y la locura imperial, asesinado por la Guardia Pretoriana tras cuatro años de gobierno."
   },
   {
     "id": 171,
@@ -3203,7 +3373,8 @@
       169,
       170
     ],
-    "nameEs": "Nerón"
+    "nameEs": "Nerón",
+    "descriptionEs": "Emperador romano infame y cruel que culpó a los cristianos por el Gran Incendio de Roma en el año 64 d.C. y fue el primer emperador en perseguirlos sistemáticamente."
   },
   {
     "id": 172,
@@ -3223,7 +3394,8 @@
     "relatedIds": [
       171
     ],
-    "nameEs": "Vespasiano"
+    "nameEs": "Vespasiano",
+    "descriptionEs": "Fundador de la dinastía Flavia que restauró la estabilidad después del Año de los Cuatro Emperadores y comenzó la construcción del Coliseo en Roma."
   },
   {
     "id": 173,
@@ -3244,7 +3416,8 @@
       174,
       19
     ],
-    "nameEs": "Trajano"
+    "nameEs": "Trajano",
+    "descriptionEs": "Emperador romano llamado Optimus Princeps que conquistó Dacia y Partia, expandiendo el imperio a su mayor extensión territorial."
   },
   {
     "id": 174,
@@ -3265,7 +3438,8 @@
       173,
       19
     ],
-    "nameEs": "Adriano"
+    "nameEs": "Adriano",
+    "descriptionEs": "Emperador filósofo que codificó el derecho romano, construyó el Muro de Adriano en Gran Bretaña y pasó años recorriendo y embelleciendo el imperio."
   },
   {
     "id": 175,
@@ -3286,7 +3460,8 @@
       174,
       169
     ],
-    "nameEs": "Tácito"
+    "nameEs": "Tácito",
+    "descriptionEs": "Historiador romano cuyos Anales e Historias son fuentes esenciales para comprender el Imperio Romano."
   },
   {
     "id": 176,
@@ -3305,7 +3480,8 @@
     "relatedIds": [
       172,
       175
-    ]
+    ],
+    "descriptionEs": "Naturalista y militar romano, autor de Historia Natural, que murió investigando la erupción del Vesubio."
   },
   {
     "id": 177,
@@ -3324,7 +3500,8 @@
     "relatedIds": [
       19,
       169
-    ]
+    ],
+    "descriptionEs": "Filósofo estoico nacido en esclavitud cuyas enseñanzas, registradas por su discípulo Arriano, siguen siendo influyentes en la actualidad."
   },
   {
     "id": 178,
@@ -3342,7 +3519,8 @@
     ],
     "relatedIds": [
       179
-    ]
+    ],
+    "descriptionEs": "Monje y erudito anglosajón, padre de la historia inglesa, cuya Historia eclesiástica es una piedra angular de la literatura medieval."
   },
   {
     "id": 179,
@@ -3361,7 +3539,8 @@
     "relatedIds": [
       20,
       178
-    ]
+    ],
+    "descriptionEs": "Erudito y teólogo anglosajón, consejero de Carlomagno e impulsor del Renacimiento carolingio."
   },
   {
     "id": 180,
@@ -3377,7 +3556,8 @@
       "reconquista",
       "spain"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Caballero castellano y legendario líder militar de la Reconquista cuyas hazañas inspiraron el poema épico El Cantar de Mio Cid."
   },
   {
     "id": 181,
@@ -3396,7 +3576,8 @@
     "relatedIds": [
       182,
       104
-    ]
+    ],
+    "descriptionEs": "Reina de Francia e Inglaterra, una de las mujeres más poderosas de la Edad Media y madre de Ricardo Corazón de León."
   },
   {
     "id": 182,
@@ -3417,7 +3598,8 @@
       181,
       104
     ],
-    "nameEs": "Ricardo Corazón de León"
+    "nameEs": "Ricardo Corazón de León",
+    "descriptionEs": "El rey inglés fue celebrado como el mayor cruzado de su época, al liderar la Tercera Cruzada y mantener a Saladino en un punto muerto."
   },
   {
     "id": 183,
@@ -3435,7 +3617,8 @@
     ],
     "relatedIds": [
       20
-    ]
+    ],
+    "descriptionEs": "El emperador del Sacro Imperio Romano Germánico llamó 'estupor mundi' cuya corte siciliana fue un faro de la cultura medieval."
   },
   {
     "id": 184,
@@ -3454,7 +3637,8 @@
     "relatedIds": [
       23
     ],
-    "nameEs": "San Francisco de Asís"
+    "nameEs": "San Francisco de Asís",
+    "descriptionEs": "Fraile italiano y fundador de la Orden Franciscana, símbolo universal de pobreza voluntaria y amor a la naturaleza."
   },
   {
     "id": 185,
@@ -3473,7 +3657,8 @@
     "relatedIds": [
       23,
       184
-    ]
+    ],
+    "descriptionEs": "Filósofo y científico franciscano que defendió el método experimental como precursor de la ciencia moderna."
   },
   {
     "id": 186,
@@ -3492,7 +3677,8 @@
     "relatedIds": [
       23,
       185
-    ]
+    ],
+    "descriptionEs": "Filósofo franciscano famoso por la \"navaja de Ockham\", el principio de simplicidad lógica."
   },
   {
     "id": 187,
@@ -3511,7 +3697,8 @@
     "relatedIds": [
       25,
       188
-    ]
+    ],
+    "descriptionEs": "Poeta y humanista italiano, padre del humanismo renacentista, cuyos sonetos a Laura son clásicos universales."
   },
   {
     "id": 188,
@@ -3530,7 +3717,8 @@
     "relatedIds": [
       187,
       25
-    ]
+    ],
+    "descriptionEs": "Escritor italiano y autor del Decamerón, una de las grandes obras narrativas del Trecento."
   },
   {
     "id": 189,
@@ -3549,7 +3737,8 @@
     "relatedIds": [
       190,
       107
-    ]
+    ],
+    "descriptionEs": "Arquitecto e ingeniero florentino que diseñó la cúpula de la catedral de Florencia, una maravilla técnica del Renacimiento."
   },
   {
     "id": 190,
@@ -3568,7 +3757,8 @@
     "relatedIds": [
       189,
       32
-    ]
+    ],
+    "descriptionEs": "Escultor florentino, maestro del Renacimiento temprano y pionero de la fundición del bronce y el realismo escultórico."
   },
   {
     "id": 191,
@@ -3587,7 +3777,8 @@
     "relatedIds": [
       29,
       107
-    ]
+    ],
+    "descriptionEs": "Pintor florentino y autor de El nacimiento de Venus y Primavera, obras emblemáticas del Renacimiento."
   },
   {
     "id": 192,
@@ -3607,7 +3798,8 @@
       32,
       33,
       193
-    ]
+    ],
+    "descriptionEs": "Pintor veneciano, maestro del color y figura clave del Renacimiento veneciano que retrató a la realeza europea."
   },
   {
     "id": 193,
@@ -3625,7 +3817,8 @@
     ],
     "relatedIds": [
       192
-    ]
+    ],
+    "descriptionEs": "Pintor manierista veneciano conocido por la dramática energía y los efectos de luz de sus obras."
   },
   {
     "id": 194,
@@ -3644,7 +3837,8 @@
     "relatedIds": [
       193,
       113
-    ]
+    ],
+    "descriptionEs": "Pintor greco-español cuyo estilo único, con figuras alargadas y colores intensos, anticipó el expresionismo."
   },
   {
     "id": 195,
@@ -3663,7 +3857,8 @@
     "relatedIds": [
       35,
       196
-    ]
+    ],
+    "descriptionEs": "Humanista holandés cuyo Elogio de la locura es un clásico; abogó por la reforma de la Iglesia sin romper con Roma."
   },
   {
     "id": 196,
@@ -3682,7 +3877,8 @@
     "relatedIds": [
       195
     ],
-    "nameEs": "Tomás Moro"
+    "nameEs": "Tomás Moro",
+    "descriptionEs": "Humanista y estadista inglés, autor de Utopía, que fue ejecutado por oponerse a Enrique VIII."
   },
   {
     "id": 197,
@@ -3701,7 +3897,8 @@
     "relatedIds": [
       28,
       34
-    ]
+    ],
+    "descriptionEs": "Navegante portugués y primer europeo en llegar a la India por mar, inaugurando la era colonial portuguesa."
   },
   {
     "id": 198,
@@ -3720,7 +3917,8 @@
     "relatedIds": [
       28
     ],
-    "nameEs": "Américo Vespucio"
+    "nameEs": "Américo Vespucio",
+    "descriptionEs": "Explorador italiano cuyos viajes demostraron que las tierras descubiertas por Colón eran un nuevo continente; América lleva su nombre."
   },
   {
     "id": 199,
@@ -3740,7 +3938,8 @@
       31,
       36,
       200
-    ]
+    ],
+    "descriptionEs": "Astrónomo y matemático alemán que formuló las tres leyes del movimiento planetario."
   },
   {
     "id": 200,
@@ -3759,7 +3958,8 @@
     "relatedIds": [
       199,
       31
-    ]
+    ],
+    "descriptionEs": "Astrónomo danés que realizó las observaciones pretelescópicas más precisas y fue mentor de Kepler."
   },
   {
     "id": 201,
@@ -3778,7 +3978,8 @@
     "relatedIds": [
       40,
       202
-    ]
+    ],
+    "descriptionEs": "Filósofo racionalista cuya ética, demostrada geométricamente, es la piedra angular de la filosofía moderna."
   },
   {
     "id": 202,
@@ -3797,7 +3998,8 @@
     "relatedIds": [
       41,
       201
-    ]
+    ],
+    "descriptionEs": "Erudito alemán y coinventor del cálculo infinitesimal junto con Newton, y pionero de la lógica simbólica."
   },
   {
     "id": 203,
@@ -3815,7 +4017,8 @@
     ],
     "relatedIds": [
       204
-    ]
+    ],
+    "descriptionEs": "Químico francés, padre de la química moderna, que fue guillotinado durante el Terror Revolucionario."
   },
   {
     "id": 204,
@@ -3834,7 +4037,8 @@
     "relatedIds": [
       41,
       202
-    ]
+    ],
+    "descriptionEs": "Matemático alemán conocido como el \"Príncipe de las Matemáticas\", con contribuciones fundamentales al álgebra, la geometría y la estadística."
   },
   {
     "id": 205,
@@ -3852,7 +4056,8 @@
     ],
     "relatedIds": [
       54
-    ]
+    ],
+    "descriptionEs": "Monje y científico, padre de la genética moderna, cuyas leyes de herencia revolucionaron la biología."
   },
   {
     "id": 206,
@@ -3872,7 +4077,8 @@
       203,
       65
     ],
-    "nameEs": "Dmitri Mendeléyev"
+    "nameEs": "Dmitri Mendeléyev",
+    "descriptionEs": "Químico ruso que creó la tabla periódica de elementos, base de la química moderna."
   },
   {
     "id": 207,
@@ -3890,7 +4096,8 @@
     ],
     "relatedIds": [
       208
-    ]
+    ],
+    "descriptionEs": "El Rey Sol, encarnación del absolutismo francés, que construyó el Palacio de Versalles y reinó durante 72 años."
   },
   {
     "id": 208,
@@ -3912,7 +4119,8 @@
       210,
       207
     ],
-    "nameEs": "Luis XVI"
+    "nameEs": "Luis XVI",
+    "descriptionEs": "Último rey de Francia antes de la Revolución, cuya crisis financiera e indecisión llevaron a su arresto, juicio y ejecución en la guillotina."
   },
   {
     "id": 209,
@@ -3931,7 +4139,8 @@
     "relatedIds": [
       208
     ],
-    "nameEs": "María Antonieta"
+    "nameEs": "María Antonieta",
+    "descriptionEs": "Reina de Francia y esposa de Luis XVI, cuya extravagancia percibida simbolizaba los excesos del Antiguo Régimen; ella fue guillotinada."
   },
   {
     "id": 210,
@@ -3951,7 +4160,8 @@
       208,
       211,
       212
-    ]
+    ],
+    "descriptionEs": "Líder jacobino durante la Revolución Francesa que encabezó el Reino del Terror antes de ser guillotinado durante el Termidor."
   },
   {
     "id": 211,
@@ -3970,7 +4180,8 @@
     "relatedIds": [
       210,
       212
-    ]
+    ],
+    "descriptionEs": "Líder revolucionario francés que codirigió el Terror antes de ser guillotinado por orden de Robespierre."
   },
   {
     "id": 212,
@@ -3989,7 +4200,8 @@
     "relatedIds": [
       210,
       211
-    ]
+    ],
+    "descriptionEs": "Periodista radical y revolucionario que fue asesinado en su bañera por Charlotte Corday durante la Revolución Francesa."
   },
   {
     "id": 213,
@@ -4010,7 +4222,8 @@
       117,
       208
     ],
-    "nameEs": "Marqués de Lafayette"
+    "nameEs": "Marqués de Lafayette",
+    "descriptionEs": "General francés y héroe de las revoluciones francesa y estadounidense, símbolo transatlántico de libertad."
   },
   {
     "id": 214,
@@ -4029,7 +4242,8 @@
     "relatedIds": [
       49,
       208
-    ]
+    ],
+    "descriptionEs": "Diplomático francés que sirvió a la Revolución, a Napoleón y a la Restauración, un maestro de la supervivencia política."
   },
   {
     "id": 215,
@@ -4049,7 +4263,8 @@
       44,
       45,
       46
-    ]
+    ],
+    "descriptionEs": "Filósofo de la Ilustración que formuló la separación de poderes en El espíritu de las leyes, sentando las bases de las democracias modernas."
   },
   {
     "id": 216,
@@ -4069,7 +4284,8 @@
       44,
       45,
       215
-    ]
+    ],
+    "descriptionEs": "Filósofo y enciclopedista que dirigió la Encyclopédie, obra clave de la Ilustración."
   },
   {
     "id": 217,
@@ -4087,7 +4303,8 @@
     ],
     "relatedIds": [
       210
-    ]
+    ],
+    "descriptionEs": "Escritora y feminista francesa, autora de la Declaración de los Derechos de la Mujer, guillotinada por sus ideas."
   },
   {
     "id": 218,
@@ -4106,7 +4323,8 @@
     "relatedIds": [
       196,
       36
-    ]
+    ],
+    "descriptionEs": "Filósofo dominicano italiano y autor de La ciudad del sol, una utopía renacentista; Pasó 27 años en prisión por sus ideas."
   },
   {
     "id": 219,
@@ -4125,7 +4343,8 @@
     "relatedIds": [
       220,
       78
-    ]
+    ],
+    "descriptionEs": "Escritor británico y autor de 1984 y Animal Farm, un agudo crítico del totalitarismo del siglo XX."
   },
   {
     "id": 220,
@@ -4144,7 +4363,8 @@
     "relatedIds": [
       219,
       77
-    ]
+    ],
+    "descriptionEs": "Escritor modernista británico y autor de Mrs Dalloway y A Room of One's Own."
   },
   {
     "id": 221,
@@ -4164,7 +4384,8 @@
       222,
       223,
       125
-    ]
+    ],
+    "descriptionEs": "Filósofo existencialista francés que rechazó el Premio Nobel y fue socio intelectual de Simone de Beauvoir."
   },
   {
     "id": 222,
@@ -4183,7 +4404,8 @@
     "relatedIds": [
       221,
       217
-    ]
+    ],
+    "descriptionEs": "Filósofa y feminista francesa cuya obra El segundo sexo fundó el feminismo moderno."
   },
   {
     "id": 223,
@@ -4202,7 +4424,8 @@
     "relatedIds": [
       221,
       222
-    ]
+    ],
+    "descriptionEs": "Escritor y filósofo franco-argelino, Premio Nobel de Literatura y autor de El extranjero y La peste."
   },
   {
     "id": 224,
@@ -4221,7 +4444,8 @@
     "relatedIds": [
       225,
       88
-    ]
+    ],
+    "descriptionEs": "Poeta y dramaturgo español, figura central de la Generación del 27, asesinado al inicio de la Guerra Civil."
   },
   {
     "id": 225,
@@ -4241,7 +4465,8 @@
       132,
       133,
       224
-    ]
+    ],
+    "descriptionEs": "Poeta chileno, Premio Nobel de Literatura en 1971 y voz preeminente de la poesía amorosa y política latinoamericana."
   },
   {
     "id": 226,
@@ -4261,7 +4486,8 @@
       66,
       71,
       72
-    ]
+    ],
+    "descriptionEs": "Físico austriaco cuya ecuación de onda es fundamental para la mecánica cuántica, famoso por el experimento mental del gato."
   },
   {
     "id": 227,
@@ -4280,7 +4506,8 @@
     "relatedIds": [
       62,
       60
-    ]
+    ],
+    "descriptionEs": "Compositor de ópera italiano y maestro del bel canto, autor de Norma y La Sonnambula."
   },
   {
     "id": 228,
@@ -4299,7 +4526,8 @@
     "relatedIds": [
       14,
       17
-    ]
+    ],
+    "descriptionEs": "Primer emperador romano nacido fuera de la península italiana."
   },
   {
     "id": 229,
@@ -4318,7 +4546,8 @@
     "relatedIds": [
       14,
       17
-    ]
+    ],
+    "descriptionEs": "Emperador romano cuyo reinado estuvo notablemente marcado por el Edicto de Caracalla, que amplió la ciudadanía romana."
   },
   {
     "id": 230,
@@ -4337,7 +4566,8 @@
     "relatedIds": [
       14,
       17
-    ]
+    ],
+    "descriptionEs": "Reina de Castilla y reina consorte de Aragón, también conocida como Isabel la Católica."
   },
   {
     "id": 231,
@@ -4357,7 +4587,8 @@
       14,
       17
     ],
-    "nameEs": "Fernando II de Aragón"
+    "nameEs": "Fernando II de Aragón",
+    "descriptionEs": "Rey de Aragón y regente de Castilla; junto con su esposa Isabel, los primeros monarcas de Castilla y Aragón en denominarse Reyes Católicos."
   },
   {
     "id": 232,
@@ -4376,7 +4607,8 @@
     "relatedIds": [
       233,
       166
-    ]
+    ],
+    "descriptionEs": "General y estadista romano que reformó el ejército creando legiones profesionales; Cónsul siete veces y rival de Sila."
   },
   {
     "id": 233,
@@ -4395,7 +4627,8 @@
     "relatedIds": [
       232,
       166
-    ]
+    ],
+    "descriptionEs": "Dictador romano y primer general que marchó sobre Roma con sus legiones; sus proscripciones marcaron el fin de la República."
   },
   {
     "id": 234,
@@ -4415,7 +4648,8 @@
       14,
       166,
       150
-    ]
+    ],
+    "descriptionEs": "Político y general romano, el hombre más rico de Roma y miembro del Primer Triunvirato con César y Pompeyo, que aplastó la rebelión de Espartaco."
   },
   {
     "id": 235,
@@ -4433,7 +4667,8 @@
     "relatedIds": [
       16,
       170
-    ]
+    ],
+    "descriptionEs": "Segundo emperador romano y sucesor de Augusto, que se retiró a Capri en sus últimos años y dejó el poder en manos de Sejano."
   },
   {
     "id": 236,
@@ -4452,7 +4687,8 @@
     "relatedIds": [
       171,
       170
-    ]
+    ],
+    "descriptionEs": "Cuarto emperador romano que conquistó Gran Bretaña y expandió el Imperio; envenenado por su esposa Agripina."
   },
   {
     "id": 237,
@@ -4471,7 +4707,8 @@
     "relatedIds": [
       172,
       173
-    ]
+    ],
+    "descriptionEs": "Emperador romano que destruyó el Templo de Jerusalén en el año 70 d.C. e inauguró el Coliseo en Roma."
   },
   {
     "id": 238,
@@ -4489,7 +4726,8 @@
     "relatedIds": [
       237,
       172
-    ]
+    ],
+    "descriptionEs": "Último emperador de la dinastía Flavia que gobernó con mano de hierro y fue asesinado en una conspiración palaciega."
   },
   {
     "id": 239,
@@ -4508,7 +4746,8 @@
       174,
       19
     ],
-    "nameEs": "Antonino Pío"
+    "nameEs": "Antonino Pío",
+    "descriptionEs": "Emperador romano y uno de los Cinco Buenos Emperadores cuyo reinado fue un período de paz y prosperidad."
   },
   {
     "id": 240,
@@ -4527,7 +4766,8 @@
     "relatedIds": [
       19
     ],
-    "nameEs": "Cómodo"
+    "nameEs": "Cómodo",
+    "descriptionEs": "Hijo de Marco Aurelio y emperador romano, conocido por su pasión por el combate de gladiadores; su muerte desencadenó una guerra civil."
   },
   {
     "id": 241,
@@ -4545,7 +4785,8 @@
     ],
     "relatedIds": [
       100
-    ]
+    ],
+    "descriptionEs": "Emperador romano que estableció la Tetrarquía dividiendo el Imperio en cuatro partes y abdicó voluntariamente para retirarse a su huerto de coles."
   },
   {
     "id": 242,
@@ -4564,7 +4805,8 @@
     "relatedIds": [
       100,
       241
-    ]
+    ],
+    "descriptionEs": "Último emperador del Imperio Romano unificado que estableció el cristianismo como religión oficial del estado."
   },
   {
     "id": 243,
@@ -4582,7 +4824,8 @@
     ],
     "relatedIds": [
       102
-    ]
+    ],
+    "descriptionEs": "General bizantino al servicio de Justiniano I que reconquistó el norte de África y gran parte de Italia para el Imperio."
   },
   {
     "id": 244,
@@ -4601,7 +4844,8 @@
     "relatedIds": [
       182,
       104
-    ]
+    ],
+    "descriptionEs": "Caballero franco, líder de la Primera Cruzada y primer gobernante del Reino de Jerusalén tras conquistar la ciudad en 1099."
   },
   {
     "id": 245,
@@ -4620,7 +4864,8 @@
     "relatedIds": [
       244
     ],
-    "nameEs": "Pedro el Ermitaño"
+    "nameEs": "Pedro el Ermitaño",
+    "descriptionEs": "Monje francés que predicó la Cruzada Popular que precedió a la Primera Cruzada oficial."
   },
   {
     "id": 246,
@@ -4639,7 +4884,8 @@
     "relatedIds": [
       182,
       104
-    ]
+    ],
+    "descriptionEs": "Emperador del Sacro Imperio Romano Germánico y líder de la Tercera Cruzada, que se ahogó en el río Saleph."
   },
   {
     "id": 247,
@@ -4658,7 +4904,8 @@
     "relatedIds": [
       184,
       23
-    ]
+    ],
+    "descriptionEs": "Papa que convocó la Cuarta Cruzada y el Cuarto Concilio de Letrán, llevando el poder papal a su cenit."
   },
   {
     "id": 248,
@@ -4678,7 +4925,8 @@
       28,
       108,
       109
-    ]
+    ],
+    "descriptionEs": "Conquistador español y primer europeo en avistar el Océano Pacífico desde América (1513), posteriormente ejecutado por orden de Pedrarias."
   },
   {
     "id": 249,
@@ -4696,7 +4944,8 @@
     ],
     "relatedIds": [
       108
-    ]
+    ],
+    "descriptionEs": "Último gran tlatoani del Imperio Azteca que recibió como huésped a Hernán Cortés antes de ser derrocado y morir durante la Conquista."
   },
   {
     "id": 250,
@@ -4714,7 +4963,8 @@
     ],
     "relatedIds": [
       109
-    ]
+    ],
+    "descriptionEs": "Último emperador inca antes de la conquista española, capturado y ejecutado por Pizarro en Cajamarca."
   },
   {
     "id": 251,
@@ -4733,7 +4983,8 @@
     "relatedIds": [
       108,
       249
-    ]
+    ],
+    "descriptionEs": "Intérprete, consejera y consorte de Hernán Cortés quien fue una figura clave en la conquista de México como intermediaria cultural y lingüística."
   },
   {
     "id": 252,
@@ -4752,7 +5003,8 @@
     "relatedIds": [
       108,
       109
-    ]
+    ],
+    "descriptionEs": "Fraile dominico español y defensor de los pueblos indígenas cuyos escritos influyeron en las Nuevas Leyes de Indias (1542)."
   },
   {
     "id": 253,
@@ -4770,7 +5022,8 @@
     ],
     "relatedIds": [
       248
-    ]
+    ],
+    "descriptionEs": "Explorador español que sobrevivió ocho años perdido en América del Norte caminando desde Florida hasta México y fue un cronista pionero."
   },
   {
     "id": 254,
@@ -4789,7 +5042,8 @@
     "relatedIds": [
       56,
       63
-    ]
+    ],
+    "descriptionEs": "Escritor estadounidense y maestro del cuento, pionero del cuento policial y del terror gótico moderno."
   },
   {
     "id": 255,
@@ -4807,7 +5061,8 @@
     ],
     "relatedIds": [
       254
-    ]
+    ],
+    "descriptionEs": "Poeta y ensayista estadounidense, autor de Leaves of Grass y padre del verso libre estadounidense."
   },
   {
     "id": 256,
@@ -4826,7 +5081,8 @@
     "relatedIds": [
       56,
       254
-    ]
+    ],
+    "descriptionEs": "Escritor y humorista estadounidense, autor de Las aventuras de Tom Sawyer y Huckleberry Finn, considerado el padre de la literatura estadounidense."
   },
   {
     "id": 257,
@@ -4845,7 +5101,8 @@
     "relatedIds": [
       56,
       220
-    ]
+    ],
+    "descriptionEs": "Escritor, poeta y dramaturgo irlandés, autor de El retrato de Dorian Gray, icono del esteticismo y célebre víctima del puritanismo victoriano."
   },
   {
     "id": 258,
@@ -4864,7 +5121,8 @@
     "relatedIds": [
       63,
       56
-    ]
+    ],
+    "descriptionEs": "Escritor francés, padre de la ciencia ficción moderna y autor de Veinte mil leguas de viaje submarino y La vuelta al mundo en ochenta días."
   },
   {
     "id": 259,
@@ -4882,7 +5140,8 @@
     ],
     "relatedIds": [
       254
-    ]
+    ],
+    "descriptionEs": "Novelista británico y autor de Frankenstein, o El Prometeo moderno, considerada la primera novela de ciencia ficción."
   },
   {
     "id": 260,
@@ -4901,7 +5160,8 @@
     "relatedIds": [
       56,
       259
-    ]
+    ],
+    "descriptionEs": "Novelista británico y autor de Orgullo y prejuicio, maestro del retrato social de la nobleza rural inglesa."
   },
   {
     "id": 261,
@@ -4920,7 +5180,8 @@
     "relatedIds": [
       262,
       46
-    ]
+    ],
+    "descriptionEs": "Escritor alemán y autor de Fausto y Las penas del joven Werther, figura destacada de la literatura europea."
   },
   {
     "id": 262,
@@ -4939,7 +5200,8 @@
     "relatedIds": [
       261,
       48
-    ]
+    ],
+    "descriptionEs": "Poeta y dramaturgo alemán, amigo de Goethe y autor de Guillermo Tell y la Oda a la Alegría que Beethoven puso música."
   },
   {
     "id": 263,
@@ -4958,7 +5220,8 @@
     "relatedIds": [
       58,
       59
-    ]
+    ],
+    "descriptionEs": "Poeta ruso considerado el padre de la literatura rusa moderna, asesinado en duelo a la edad de 37 años."
   },
   {
     "id": 264,
@@ -4979,7 +5242,8 @@
       59,
       263
     ],
-    "nameEs": "Antón Chéjov"
+    "nameEs": "Antón Chéjov",
+    "descriptionEs": "Escritor y dramaturgo ruso, maestro del cuento y del teatro moderno, y autor de El jardín de los cerezos."
   },
   {
     "id": 265,
@@ -4998,7 +5262,8 @@
     "relatedIds": [
       48,
       60
-    ]
+    ],
+    "descriptionEs": "Compositor austríaco y pionero del lied romántico que compuso más de 600 canciones y nueve sinfonías en sus 31 años de vida."
   },
   {
     "id": 266,
@@ -5018,7 +5283,8 @@
       60,
       61,
       62
-    ]
+    ],
+    "descriptionEs": "Compositor y crítico musical alemán, figura central del romanticismo musical y esposo de la pianista Clara Schumann."
   },
   {
     "id": 267,
@@ -5037,7 +5303,8 @@
     "relatedIds": [
       266,
       62
-    ]
+    ],
+    "descriptionEs": "Compositor alemán, cuarta gran 'B' de la música alemana (junto a Bach, Beethoven y Bruckner) y maestro de la sinfonía romántica."
   },
   {
     "id": 268,
@@ -5056,7 +5323,8 @@
     "relatedIds": [
       62,
       269
-    ]
+    ],
+    "descriptionEs": "Compositor italiano y maestro de ópera, autor de Aida, La Traviata, Rigoletto y Nabucco."
   },
   {
     "id": 269,
@@ -5074,7 +5342,8 @@
     ],
     "relatedIds": [
       268
-    ]
+    ],
+    "descriptionEs": "Compositor italiano y heredero de Verdi en la ópera italiana, autor de Madama Butterfly, La Bohème y Tosca."
   },
   {
     "id": 270,
@@ -5093,7 +5362,8 @@
     "relatedIds": [
       266,
       267
-    ]
+    ],
+    "descriptionEs": "Compositor ruso y autor de El lago de los cisnes y El cascanueces, maestro de la melodía romántica."
   },
   {
     "id": 271,
@@ -5111,7 +5381,8 @@
     ],
     "relatedIds": [
       272
-    ]
+    ],
+    "descriptionEs": "Compositor francés y pionero del impresionismo musical, autor de Clair de lune y La mer."
   },
   {
     "id": 272,
@@ -5129,7 +5400,8 @@
     ],
     "relatedIds": [
       271
-    ]
+    ],
+    "descriptionEs": "Compositor francés, autor del célebre Bolero y de los Cuadros de una exposición orquestados y maestro del color orquestal."
   },
   {
     "id": 273,
@@ -5149,7 +5421,8 @@
       270,
       271
     ],
-    "nameEs": "Ígor Stravinski"
+    "nameEs": "Ígor Stravinski",
+    "descriptionEs": "Compositor ruso cuya obra La consagración de la primavera (1913) causó escándalo y revolucionó la música del siglo XX."
   },
   {
     "id": 274,
@@ -5169,7 +5442,8 @@
       275,
       276
     ],
-    "nameEs": "Káiser Guillermo II"
+    "nameEs": "Káiser Guillermo II",
+    "descriptionEs": "Último emperador alemán cuyas ambiciones navales y diplomacia agresiva contribuyeron al estallido de la Primera Guerra Mundial."
   },
   {
     "id": 275,
@@ -5188,7 +5462,8 @@
     "relatedIds": [
       274,
       276
-    ]
+    ],
+    "descriptionEs": "General alemán y comandante de facto del ejército alemán durante la Primera Guerra Mundial junto a Hindenburg."
   },
   {
     "id": 276,
@@ -5207,7 +5482,8 @@
     "relatedIds": [
       274,
       275
-    ]
+    ],
+    "descriptionEs": "Mariscal de campo alemán, héroe de Tannenberg en 1914 y presidente de la República de Weimar que nombró canciller a Hitler en 1933."
   },
   {
     "id": 277,
@@ -5226,7 +5502,8 @@
     "relatedIds": [
       276,
       285
-    ]
+    ],
+    "descriptionEs": "General estadounidense y comandante de las Fuerzas Expedicionarias Estadounidenses en la Primera Guerra Mundial."
   },
   {
     "id": 278,
@@ -5245,7 +5522,8 @@
     "relatedIds": [
       277,
       279
-    ]
+    ],
+    "descriptionEs": "Mariscal francés y comandante supremo aliado en 1918 que aceptó la rendición alemana en el vagón de ferrocarril de Compiègne."
   },
   {
     "id": 279,
@@ -5264,7 +5542,8 @@
     "relatedIds": [
       278,
       287
-    ]
+    ],
+    "descriptionEs": "Mariscal francés, héroe de Verdún en la Primera Guerra Mundial y jefe del régimen colaboracionista de Vichy en la Segunda Guerra Mundial."
   },
   {
     "id": 280,
@@ -5282,7 +5561,8 @@
     ],
     "relatedIds": [
       281
-    ]
+    ],
+    "descriptionEs": "Oficial y arqueólogo británico que dirigió la revuelta árabe contra los otomanos en la Primera Guerra Mundial, conocido como Lawrence de Arabia."
   },
   {
     "id": 281,
@@ -5300,7 +5580,8 @@
     ],
     "relatedIds": [
       280
-    ]
+    ],
+    "descriptionEs": "Fundador y primer presidente de la República de Turquía que modernizó el país tras el colapso del Imperio Otomano."
   },
   {
     "id": 282,
@@ -5319,7 +5600,8 @@
     "relatedIds": [
       87,
       147
-    ]
+    ],
+    "descriptionEs": "Revolucionario marxista ruso y organizador del Ejército Rojo, exiliado por Stalin y asesinado en México con un piolet."
   },
   {
     "id": 283,
@@ -5338,7 +5620,8 @@
     "relatedIds": [
       284,
       285
-    ]
+    ],
+    "descriptionEs": "Mariscal de campo alemán y comandante del Afrika Korps, apodado el Zorro del Desierto, que se vio obligado a suicidarse tras el complot contra Hitler."
   },
   {
     "id": 284,
@@ -5357,7 +5640,8 @@
     "relatedIds": [
       283,
       285
-    ]
+    ],
+    "descriptionEs": "Mariscal de campo británico que derrotó a Rommel en El Alamein y comandó fuerzas terrestres durante el desembarco de Normandía."
   },
   {
     "id": 285,
@@ -5377,7 +5661,8 @@
       284,
       286,
       75
-    ]
+    ],
+    "descriptionEs": "General y 34º presidente de los Estados Unidos que sirvió como Comandante Supremo Aliado durante el desembarco de Normandía y modernizó el sistema de carreteras estadounidense."
   },
   {
     "id": 286,
@@ -5396,7 +5681,8 @@
     "relatedIds": [
       285,
       283
-    ]
+    ],
+    "descriptionEs": "General estadounidense y comandante del 3.er Ejército, un líder agresivo y controvertido de la guerra blindada en Europa."
   },
   {
     "id": 287,
@@ -5415,7 +5701,8 @@
     "relatedIds": [
       73,
       279
-    ]
+    ],
+    "descriptionEs": "General y presidente francés que dirigió la Francia libre durante la Segunda Guerra Mundial y fundó la Quinta República."
   },
   {
     "id": 288,
@@ -5435,7 +5722,8 @@
       285,
       283
     ],
-    "nameEs": "Georgy Zhúkov"
+    "nameEs": "Georgy Zhúkov",
+    "descriptionEs": "Mariscal soviético que comandó las victorias en Stalingrado, Kursk y la captura de Berlín, el principal héroe de la URSS en la guerra."
   },
   {
     "id": 289,
@@ -5454,7 +5742,8 @@
     "relatedIds": [
       285,
       290
-    ]
+    ],
+    "descriptionEs": "General estadounidense y comandante del Pacífico en la Segunda Guerra Mundial y la Guerra de Corea, famoso por su promesa de \"Volveré\" a Filipinas."
   },
   {
     "id": 290,
@@ -5473,7 +5762,8 @@
     "relatedIds": [
       289,
       75
-    ]
+    ],
+    "descriptionEs": "Almirante japonés y arquitecto del ataque a Pearl Harbor, muerto cuando su avión fue derribado por los estadounidenses."
   },
   {
     "id": 291,
@@ -5492,7 +5782,8 @@
     "relatedIds": [
       73,
       75
-    ]
+    ],
+    "descriptionEs": "Dictador italiano, fundador del fascismo y aliado de Hitler, ejecutado por la resistencia italiana en 1945."
   },
   {
     "id": 292,
@@ -5511,7 +5802,8 @@
     "relatedIds": [
       291,
       224
-    ]
+    ],
+    "descriptionEs": "General y dictador español que lideró el bando nacionalista en la Guerra Civil y gobernó España durante casi 40 años hasta su muerte."
   },
   {
     "id": 293,
@@ -5530,7 +5822,8 @@
     "relatedIds": [
       290,
       289
-    ]
+    ],
+    "descriptionEs": "Emperador de Japón que reinó durante la Segunda Guerra Mundial y la posguerra, renunciando a su estatus divino tras la derrota."
   },
   {
     "id": 294,
@@ -5549,7 +5842,8 @@
     "relatedIds": [
       82,
       84
-    ]
+    ],
+    "descriptionEs": "Líder soviético y sucesor de Stalin que inició la desestalinización y se enfrentó a Kennedy durante la crisis de los misiles cubanos."
   },
   {
     "id": 295,
@@ -5569,7 +5863,8 @@
       294,
       296
     ],
-    "nameEs": "Leonid Brézhnev"
+    "nameEs": "Leonid Brézhnev",
+    "descriptionEs": "Líder soviético después de Jruschov que gobernó la URSS durante 18 años durante la era del estancamiento y la Guerra Fría."
   },
   {
     "id": 296,
@@ -5589,7 +5884,8 @@
       295,
       297,
       298
-    ]
+    ],
+    "descriptionEs": "Último líder de la URSS cuyas reformas (Perestroika y Glasnost) condujeron al fin de la Guerra Fría y a la disolución de la Unión Soviética."
   },
   {
     "id": 297,
@@ -5608,7 +5904,8 @@
     "relatedIds": [
       296,
       298
-    ]
+    ],
+    "descriptionEs": "40º presidente de los Estados Unidos cuya política agresiva hacia la URSS contribuyó al fin de la Guerra Fría."
   },
   {
     "id": 298,
@@ -5627,7 +5924,8 @@
     "relatedIds": [
       297,
       296
-    ]
+    ],
+    "descriptionEs": "Primera Ministra británica conocida como la Dama de Hierro que reformó la economía británica y dirigió la Guerra de las Malvinas."
   },
   {
     "id": 299,
@@ -5646,7 +5944,8 @@
     "relatedIds": [
       84,
       82
-    ]
+    ],
+    "descriptionEs": "Líder y revolucionario cubano que derrocó a Batista y gobernó Cuba durante casi medio siglo bajo un régimen comunista."
   },
   {
     "id": 300,
@@ -5664,7 +5963,8 @@
     ],
     "relatedIds": [
       301
-    ]
+    ],
+    "descriptionEs": "Presidente socialista de Chile que fue derrocado y asesinado durante el golpe militar de Pinochet en 1973."
   },
   {
     "id": 301,
@@ -5682,7 +5982,8 @@
     ],
     "relatedIds": [
       300
-    ]
+    ],
+    "descriptionEs": "General y dictador chileno que lideró el golpe de estado contra Allende en 1973 y gobernó con mano de hierro hasta 1990."
   },
   {
     "id": 302,
@@ -5700,7 +6001,8 @@
     ],
     "relatedIds": [
       74
-    ]
+    ],
+    "descriptionEs": "Primer Primer Ministro de la India tras la independencia, estrecho aliado de Gandhi y figura clave de la descolonización."
   },
   {
     "id": 303,
@@ -5718,7 +6020,8 @@
     ],
     "relatedIds": [
       302
-    ]
+    ],
+    "descriptionEs": "Presidente egipcio que nacionalizó el Canal de Suez en 1956 y defendió el panarabismo, convirtiéndose en un ícono del nacionalismo árabe del siglo XX."
   },
   {
     "id": 304,
@@ -5737,7 +6040,8 @@
     "relatedIds": [
       78,
       79
-    ]
+    ],
+    "descriptionEs": "Novelista estadounidense y Premio Nobel de Literatura en 1962, autor de Las uvas de la ira y De ratones y hombres."
   },
   {
     "id": 305,
@@ -5756,7 +6060,8 @@
     "relatedIds": [
       78,
       304
-    ]
+    ],
+    "descriptionEs": "Novelista estadounidense y premio Nobel de 1949, maestro de la prosa sobre el flujo de la conciencia y autor de El sonido y la furia."
   },
   {
     "id": 306,
@@ -5775,7 +6080,8 @@
     "relatedIds": [
       77,
       220
-    ]
+    ],
+    "descriptionEs": "Novelista francés y autor de En busca del tiempo perdido, una de las obras emblemáticas de la literatura del siglo XX."
   },
   {
     "id": 307,
@@ -5794,7 +6100,8 @@
     "relatedIds": [
       77,
       220
-    ]
+    ],
+    "descriptionEs": "Führer de Alemania desde 1934 hasta su muerte en 1945, llevó al poder al Partido Nacionalsocialista de los Trabajadores Alemanes y estableció un régimen totalitario."
   },
   {
     "id": 308,
@@ -5813,7 +6120,8 @@
     "relatedIds": [
       77,
       220
-    ]
+    ],
+    "descriptionEs": "Líder soviético que dio forma a la doctrina oficial del Partido Comunista como marxismo-leninismo; su propia versión llegó a ser conocida como estalinismo."
   },
   {
     "id": 309,
@@ -5828,7 +6136,8 @@
       "presidente",
       "progresismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "26º presidente de Estados Unidos, campeón del progresismo, los parques nacionales y la política exterior del 'Big Stick'."
   },
   {
     "id": 310,
@@ -5843,7 +6152,8 @@
       "presidente",
       "world war i"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "28.º Presidente de los Estados Unidos, que dirigió al país durante la Primera Guerra Mundial y promovió la Sociedad de Naciones."
   },
   {
     "id": 311,
@@ -5858,7 +6168,8 @@
       "presidente",
       "cold war"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "33º Presidente de Estados Unidos, que ordenó el bombardeo atómico de Japón y diseñó la doctrina de contención de la Guerra Fría."
   },
   {
     "id": 312,
@@ -5873,7 +6184,8 @@
       "presidente",
       "civil rights"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "36º presidente de los Estados Unidos, que firmó la Ley de Derechos Civiles de 1964 e intensificó la guerra de Vietnam."
   },
   {
     "id": 313,
@@ -5888,7 +6200,8 @@
       "presidente",
       "watergate"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "37º presidente de los Estados Unidos, que abrió relaciones diplomáticas con China y dimitió tras el escándalo Watergate."
   },
   {
     "id": 314,
@@ -5903,7 +6216,8 @@
       "presidente",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "39º Presidente de Estados Unidos y Premio Nobel de la Paz, reconocido por su labor humanitaria tras su presidencia."
   },
   {
     "id": 315,
@@ -5918,7 +6232,8 @@
       "presidente",
       "cold war"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "41º presidente de los Estados Unidos, que supervisó el fin de la Guerra Fría y dirigió la coalición de la Guerra del Golfo."
   },
   {
     "id": 316,
@@ -5932,7 +6247,8 @@
     "tags": [
       "presidente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "42º Presidente de los Estados Unidos, que presidió un período de prosperidad económica en la década de 1990."
   },
   {
     "id": 317,
@@ -5947,7 +6263,8 @@
       "presidente",
       "11-s"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "43º presidente de los Estados Unidos, que respondió a los ataques del 11 de septiembre lanzando las guerras en Afganistán e Irak."
   },
   {
     "id": 318,
@@ -5962,7 +6279,8 @@
       "presidente",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "44º Presidente de los Estados Unidos, el primer afroamericano en ocupar el cargo y ganador del Premio Nobel de la Paz en 2009."
   },
   {
     "id": 319,
@@ -5977,7 +6295,8 @@
       "presidente",
       "populismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "45º y 47º presidente de Estados Unidos, empresario y personalidad mediática que se convirtió en abanderado del populismo conservador."
   },
   {
     "id": 320,
@@ -5991,7 +6310,8 @@
     "tags": [
       "presidente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "46º Presidente de Estados Unidos, con una larga carrera en el Senado y como Vicepresidente bajo Obama."
   },
   {
     "id": 321,
@@ -6006,7 +6326,8 @@
       "politics",
       "feminism"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Secretaria de Estado de Estados Unidos y la primera mujer nominada a la presidencia por un importante partido político estadounidense."
   },
   {
     "id": 322,
@@ -6021,7 +6342,8 @@
       "diplomacy",
       "cold war"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Secretario de Estado y asesor de Seguridad Nacional de Estados Unidos, artífice de la distensión con la URSS y de la apertura hacia China."
   },
   {
     "id": 323,
@@ -6036,7 +6358,8 @@
       "canciller",
       "posguerra"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer Canciller de la República Federal de Alemania y artífice de la reconstrucción de posguerra."
   },
   {
     "id": 324,
@@ -6051,7 +6374,8 @@
       "canciller",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Canciller alemán, defensor de la política de Ostpolitik de compromiso con Europa del Este y premio Nobel de la Paz en 1971."
   },
   {
     "id": 325,
@@ -6066,7 +6390,8 @@
       "canciller",
       "reunificación"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Canciller alemán que dirigió la reunificación de Alemania en 1990."
   },
   {
     "id": 326,
@@ -6081,7 +6406,8 @@
       "canciller",
       "ue"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primera canciller de Alemania (2005-2021) y figura central de la política europea durante 16 años."
   },
   {
     "id": 327,
@@ -6096,7 +6422,8 @@
       "presidente",
       "socialism"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Presidente socialista de Francia (1981-1995) y figura clave de la integración europea."
   },
   {
     "id": 328,
@@ -6110,7 +6437,8 @@
     "tags": [
       "presidente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Presidente de Francia (1995-2007) que reconoció formalmente la responsabilidad francesa en el Holocausto."
   },
   {
     "id": 329,
@@ -6124,7 +6452,8 @@
     "tags": [
       "presidente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Presidente de Francia desde 2017 y fundador del movimiento centrista La République En Marche."
   },
   {
     "id": 330,
@@ -6139,7 +6468,8 @@
       "primer ministro",
       "laborismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer Ministro británico (1997-2007), líder del Nuevo Laborismo y aliado clave en la guerra de Irak."
   },
   {
     "id": 331,
@@ -6154,7 +6484,8 @@
       "primer ministro",
       "medios"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Magnate de los medios y tres veces Primer Ministro de Italia, una figura controvertida en la política italiana."
   },
   {
     "id": 332,
@@ -6169,7 +6500,8 @@
       "presidente",
       "russia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer presidente de la Federación de Rusia tras la disolución de la URSS."
   },
   {
     "id": 333,
@@ -6184,7 +6516,8 @@
       "presidente",
       "russia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Presidente de Rusia y figura dominante en su política desde 2000."
   },
   {
     "id": 334,
@@ -6200,7 +6533,8 @@
       "war"
     ],
     "relatedIds": [],
-    "nameEs": "Volodímir Zelenski"
+    "nameEs": "Volodímir Zelenski",
+    "descriptionEs": "Presidente de Ucrania desde 2019 que dirigió el país durante la invasión rusa que comenzó en 2022."
   },
   {
     "id": 335,
@@ -6215,7 +6549,8 @@
       "yugoslavia",
       "non-aligned"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder de la Yugoslavia socialista y figura clave del Movimiento de Países No Alineados."
   },
   {
     "id": 336,
@@ -6230,7 +6565,8 @@
       "solidaridad",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder del sindicato Solidaridad y primer presidente poscomunista de Polonia, premio Nobel de la Paz en 1983."
   },
   {
     "id": 337,
@@ -6245,7 +6581,8 @@
       "disidente",
       "presidente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Dramaturgo y primer presidente de la Checoslovaquia poscomunista y más tarde de la República Checa."
   },
   {
     "id": 338,
@@ -6260,7 +6597,8 @@
       "palestina",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder histórico de la OLP y presidente de la Autoridad Nacional Palestina, premio Nobel de la Paz en 1994."
   },
   {
     "id": 339,
@@ -6277,7 +6615,8 @@
     ],
     "relatedIds": [
       338
-    ]
+    ],
+    "descriptionEs": "Primer Ministro israelí que firmó los Acuerdos de Oslo y fue asesinado por un extremista en 1995."
   },
   {
     "id": 340,
@@ -6292,7 +6631,8 @@
       "egypt",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Presidente egipcio que firmó el acuerdo de paz de Camp David con Israel y recibió el Premio Nobel de la Paz en 1978."
   },
   {
     "id": 341,
@@ -6307,7 +6647,8 @@
       "israel",
       "primera ministra"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primera mujer Primera Ministra de Israel, que dirigió el país durante la Guerra de Yom Kippur."
   },
   {
     "id": 342,
@@ -6323,7 +6664,8 @@
       "fundador"
     ],
     "relatedIds": [],
-    "nameEs": "David Ben-Gurión"
+    "nameEs": "David Ben-Gurión",
+    "descriptionEs": "Fundador del Estado de Israel y su primer Primer Ministro."
   },
   {
     "id": 343,
@@ -6338,7 +6680,8 @@
       "israel",
       "primer ministro"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "El primer ministro con más años de servicio en Israel y líder del partido Likud."
   },
   {
     "id": 344,
@@ -6353,7 +6696,8 @@
       "iraq",
       "dictator"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Presidente iraquí que libró guerras contra Irán y Kuwait y fue derrocado en la invasión de 2003."
   },
   {
     "id": 345,
@@ -6368,7 +6712,8 @@
       "iran",
       "revolution"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Ayatolá que dirigió la Revolución Islámica de 1979 y fundó la República Islámica de Irán."
   },
   {
     "id": 346,
@@ -6383,7 +6728,8 @@
       "libia",
       "dictator"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Gobernante de Libia durante 42 años, derrocado y asesinado durante la guerra civil de 2011."
   },
   {
     "id": 347,
@@ -6398,7 +6744,8 @@
       "china",
       "republic"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Padre fundador de la China republicana tras la caída de la dinastía Qing."
   },
   {
     "id": 348,
@@ -6413,7 +6760,8 @@
       "china",
       "taiwán"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder nacionalista chino del Kuomintang y presidente de la República de China en Taiwán después de 1949."
   },
   {
     "id": 349,
@@ -6428,7 +6776,8 @@
       "china",
       "diplomacy"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer ministro de la República Popular China bajo Mao y arquitecto de su política exterior."
   },
   {
     "id": 350,
@@ -6443,7 +6792,8 @@
       "china",
       "reformation"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder chino que lanzó las reformas económicas que transformaron a China en una potencia global."
   },
   {
     "id": 351,
@@ -6458,7 +6808,8 @@
       "china",
       "presidente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Secretario General del Partido Comunista Chino y Presidente de la República Popular China desde 2013."
   },
   {
     "id": 352,
@@ -6473,7 +6824,8 @@
       "vietnam",
       "communism"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder revolucionario vietnamita y fundador de la República Democrática de Vietnam."
   },
   {
     "id": 353,
@@ -6488,7 +6840,8 @@
       "camboya",
       "genocidio"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder de los Jemeres Rojos y arquitecto del genocidio camboyano (1975-1979)."
   },
   {
     "id": 354,
@@ -6503,7 +6856,8 @@
       "indonesia",
       "independence"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer presidente de Indonesia y líder de su movimiento independentista contra Holanda."
   },
   {
     "id": 355,
@@ -6518,7 +6872,8 @@
       "singapur",
       "desarrollo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer Ministro fundador de Singapur y arquitecto de su transformación en una potencia económica."
   },
   {
     "id": 356,
@@ -6533,7 +6888,8 @@
       "corea",
       "dinastía"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Fundador y líder vitalicio de Corea del Norte después de la Guerra de Corea."
   },
   {
     "id": 357,
@@ -6550,7 +6906,8 @@
     ],
     "relatedIds": [
       356
-    ]
+    ],
+    "descriptionEs": "Líder Supremo de Corea del Norte desde 2011 y tercera generación de la dinastía Kim."
   },
   {
     "id": 358,
@@ -6565,7 +6922,8 @@
       "pakistán",
       "independence"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Fundador de Pakistán y líder de la Liga Musulmana durante la partición de la India."
   },
   {
     "id": 359,
@@ -6580,7 +6938,8 @@
       "india",
       "primera ministra"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primera mujer Primera Ministra de la India, asesinada por sus propios guardaespaldas en 1984."
   },
   {
     "id": 360,
@@ -6595,7 +6954,8 @@
       "pakistán",
       "primera ministra"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primera mujer Primera Ministra de un país de mayoría musulmana, asesinada en un ataque en 2007."
   },
   {
     "id": 361,
@@ -6610,7 +6970,8 @@
       "áfrica",
       "panafricanismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder de la independencia de Ghana y figura central del panafricanismo."
   },
   {
     "id": 362,
@@ -6625,7 +6986,8 @@
       "áfrica",
       "decolonization"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer Primer Ministro del Congo independiente, asesinado en una operación con respaldo extranjero."
   },
   {
     "id": 363,
@@ -6640,7 +7002,8 @@
       "etiopía",
       "emperador"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Último emperador de Etiopía, símbolo de resistencia contra el fascismo y figura venerada del rastafarianismo."
   },
   {
     "id": 364,
@@ -6655,7 +7018,8 @@
       "áfrica",
       "presidente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder de la independencia de Zimbabwe que se convirtió en un presidente autoritario durante casi cuatro décadas."
   },
   {
     "id": 365,
@@ -6670,7 +7034,8 @@
       "argentina",
       "peronismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Tres veces presidente de Argentina y fundador del peronismo."
   },
   {
     "id": 366,
@@ -6685,7 +7050,8 @@
       "venezuela",
       "socialism"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Presidente de Venezuela y promotor del 'socialismo del siglo XXI' en toda América Latina."
   },
   {
     "id": 367,
@@ -6700,7 +7066,8 @@
       "brazil",
       "izquierda"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder sindical y presidente de Brasil durante tres mandatos, figura destacada de la izquierda latinoamericana."
   },
   {
     "id": 368,
@@ -6715,7 +7082,8 @@
       "chemistry",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Químico estadounidense y la única persona en ganar dos premios Nobel no compartidos, en Química y en Paz."
   },
   {
     "id": 369,
@@ -6730,7 +7098,8 @@
       "physics",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Físico estadounidense, premio Nobel de electrodinámica cuántica y legendario comunicador científico."
   },
   {
     "id": 370,
@@ -6745,7 +7114,8 @@
       "física cuántica",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Físico británico que predijo la existencia de la antimateria y formuló la ecuación que lleva su nombre."
   },
   {
     "id": 371,
@@ -6760,7 +7130,8 @@
       "física cuántica",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Físico austriaco que formuló el principio de exclusión que rige el comportamiento de los electrones."
   },
   {
     "id": 372,
@@ -6775,7 +7146,8 @@
       "nuclear physics",
       "mujer"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Físico que co-descubrió la fisión nuclear pero fue pasado por alto en el Premio Nobel otorgado a Otto Hahn."
   },
   {
     "id": 373,
@@ -6790,7 +7162,8 @@
       "astronomy",
       "cosmology"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Astrónomo que demostró la expansión del universo y la existencia de galaxias más allá de la Vía Láctea."
   },
   {
     "id": 374,
@@ -6805,7 +7178,8 @@
       "nuclear physics",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Físico italiano que construyó el primer reactor nuclear y participó en el Proyecto Manhattan."
   },
   {
     "id": 375,
@@ -6820,7 +7194,8 @@
       "adn",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Biólogo molecular y codescubridor de la estructura de doble hélice del ADN."
   },
   {
     "id": 376,
@@ -6837,7 +7212,8 @@
     ],
     "relatedIds": [
       375
-    ]
+    ],
+    "descriptionEs": "Biólogo molecular que, junto con Watson, co-descubrió la estructura del ADN."
   },
   {
     "id": 377,
@@ -6855,7 +7231,8 @@
     "relatedIds": [
       375,
       376
-    ]
+    ],
+    "descriptionEs": "Químico cuyas imágenes de difracción de rayos X fueron cruciales para descubrir la estructura del ADN."
   },
   {
     "id": 378,
@@ -6870,7 +7247,8 @@
       "medicine",
       "vacuna"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Virólogo que desarrolló la primera vacuna eficaz contra la poliomielitis."
   },
   {
     "id": 379,
@@ -6885,7 +7263,8 @@
       "agricultura",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Agrónomo y padre de la Revolución Verde, premio Nobel de la Paz por salvar a millones de la hambruna."
   },
   {
     "id": 380,
@@ -6900,7 +7279,8 @@
       "ecology",
       "biology"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Biólogo marino cuyo libro Silent Spring desató el movimiento ecologista moderno."
   },
   {
     "id": 381,
@@ -6915,7 +7295,8 @@
       "primatología",
       "etología"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primatólogo británico y pionero en el estudio de los chimpancés en su hábitat natural."
   },
   {
     "id": 382,
@@ -6931,7 +7312,8 @@
       "disidente"
     ],
     "relatedIds": [],
-    "nameEs": "Andréi Sájarov"
+    "nameEs": "Andréi Sájarov",
+    "descriptionEs": "Físico soviético y padre de la bomba de hidrógeno que se convirtió en disidente y premio Nobel de la Paz por su defensa de los derechos humanos."
   },
   {
     "id": 383,
@@ -6946,7 +7328,8 @@
       "computación",
       "mathematics"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Matemático húngaro-estadounidense, pionero de la teoría de juegos y la arquitectura de las computadoras modernas."
   },
   {
     "id": 384,
@@ -6961,7 +7344,8 @@
       "información",
       "computación"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Padre de la teoría de la información, fundamento matemático de la comunicación digital."
   },
   {
     "id": 385,
@@ -6976,7 +7360,8 @@
       "computación",
       "mujer"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pionero de la informática que desarrolló el primer compilador y el lenguaje de programación COBOL."
   },
   {
     "id": 386,
@@ -6991,7 +7376,8 @@
       "computación",
       "apolo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Ingeniero de software que dirigió el desarrollo del software de vuelo para el programa Apollo."
   },
   {
     "id": 387,
@@ -7006,7 +7392,8 @@
       "nasa",
       "mujer"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Matemático de la NASA cuyos cálculos hicieron posibles las misiones Mercurio y Apolo."
   },
   {
     "id": 388,
@@ -7021,7 +7408,8 @@
       "computación",
       "unix"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Creador del lenguaje de programación C y cocreador del sistema operativo Unix."
   },
   {
     "id": 389,
@@ -7036,7 +7424,8 @@
       "internet",
       "web"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Inventor de la World Wide Web y de los protocolos HTTP y HTML."
   },
   {
     "id": 390,
@@ -7051,7 +7440,8 @@
       "computación",
       "linux"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Creador del kernel de Linux y del sistema de control de versiones Git."
   },
   {
     "id": 391,
@@ -7066,7 +7456,8 @@
       "microsoft",
       "filantropía"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cofundador de Microsoft y filántropo, una de las personas más ricas del mundo."
   },
   {
     "id": 392,
@@ -7081,7 +7472,8 @@
       "apple",
       "computación"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cofundador de Apple y diseñador de los ordenadores Apple I y Apple II."
   },
   {
     "id": 393,
@@ -7096,7 +7488,8 @@
       "amazon",
       "espacio"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Fundador de Amazon y de la empresa aeroespacial Blue Origin."
   },
   {
     "id": 394,
@@ -7111,7 +7504,8 @@
       "tesla",
       "spacex"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Emprendedor y fundador de Tesla y SpaceX, una fuerza disruptiva en la industria tecnológica del siglo XXI."
   },
   {
     "id": 395,
@@ -7126,7 +7520,8 @@
       "google",
       "internet"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cofundador de Google y coautor del algoritmo PageRank."
   },
   {
     "id": 396,
@@ -7143,7 +7538,8 @@
     ],
     "relatedIds": [
       395
-    ]
+    ],
+    "descriptionEs": "Cofundador de Google junto a Larry Page."
   },
   {
     "id": 397,
@@ -7158,7 +7554,8 @@
       "facebook",
       "meta"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Fundador y CEO de Meta (Facebook)."
   },
   {
     "id": 398,
@@ -7173,7 +7570,8 @@
       "politics",
       "totalitarismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo político germano-estadounidense y autor de Los orígenes del totalitarismo."
   },
   {
     "id": 399,
@@ -7188,7 +7586,8 @@
       "lenguaje",
       "lógica"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo del lenguaje y autor del Tractatus Logico-Philosophicus e Investigaciones filosóficas."
   },
   {
     "id": 400,
@@ -7203,7 +7602,8 @@
       "lógica",
       "pacifismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo, matemático y activista pacifista, premio Nobel de Literatura en 1950."
   },
   {
     "id": 401,
@@ -7218,7 +7618,8 @@
       "science",
       "epistemología"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filosofía del pensador científico que propuso el criterio de falsabilidad como sello distintivo de las teorías científicas y defendió la sociedad abierta contra el totalitarismo."
   },
   {
     "id": 402,
@@ -7233,7 +7634,8 @@
       "lingüística",
       "politics"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Lingüista y crítico político considerado como el padre de la gramática generativa, que revolucionó el estudio científico del lenguaje."
   },
   {
     "id": 403,
@@ -7248,7 +7650,8 @@
       "poder",
       "posestructuralismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo francés que analizó las relaciones entre poder, conocimiento y disciplina en la sociedad moderna, influyendo en la sociología, los estudios culturales y la teoría política."
   },
   {
     "id": 404,
@@ -7263,7 +7666,8 @@
       "deconstrucción",
       "posestructuralismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo francés y fundador de la deconstrucción, un método de análisis crítico que desafía los significados fijos en textos y estructuras."
   },
   {
     "id": 405,
@@ -7278,7 +7682,8 @@
       "justicia",
       "politics"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo político y autor de 'Una teoría de la justicia', una obra histórica del liberalismo igualitario construida en torno al concepto de justicia como equidad."
   },
   {
     "id": 406,
@@ -7293,7 +7698,8 @@
       "economics",
       "liberalismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Economista y filósofo austriaco, premio Nobel y principal referente intelectual del liberalismo y el pensamiento de libre mercado del siglo XX."
   },
   {
     "id": 407,
@@ -7308,7 +7714,8 @@
       "economics",
       "keynesianismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Economista británico y padre de la macroeconomía moderna, cuyas teorías sobre la intervención gubernamental y la demanda agregada dieron forma a la política económica del siglo XX."
   },
   {
     "id": 408,
@@ -7323,7 +7730,8 @@
       "economics",
       "monetarismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Economista ganador del Premio Nobel, líder de la Escuela de Chicago y destacado defensor del monetarismo y el capitalismo de libre mercado."
   },
   {
     "id": 409,
@@ -7338,7 +7746,8 @@
       "poetry",
       "modernismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta angloamericano y autor de 'The Waste Land', una obra definitoria del modernismo literario; recibió el Premio Nobel de Literatura en 1948."
   },
   {
     "id": 410,
@@ -7353,7 +7762,8 @@
       "modernismo",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista irlandés y autor de 'Ulysses' y 'Finnegans Wake', obras emblemáticas de la ficción modernista basada en la corriente de la conciencia."
   },
   {
     "id": 411,
@@ -7368,7 +7778,8 @@
       "poetry",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta irlandés y premio Nobel de Literatura (1923), figura central del renacimiento literario irlandés y uno de los más grandes poetas de lengua inglesa del siglo XX."
   },
   {
     "id": 412,
@@ -7383,7 +7794,8 @@
       "theater",
       "absurdo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "dramaturgo irlandés y autor de 'Esperando a Godot', piedra angular del Teatro del Absurdo; recibió el Premio Nobel de Literatura en 1969."
   },
   {
     "id": 413,
@@ -7398,7 +7810,8 @@
       "fantasía",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filólogo y autor de 'El Señor de los Anillos' y 'El Hobbit', obras fundacionales de la literatura fantástica moderna."
   },
   {
     "id": 414,
@@ -7415,7 +7828,8 @@
     ],
     "relatedIds": [
       413
-    ]
+    ],
+    "descriptionEs": "Escritor británico y apologista cristiano, autor de 'Las Crónicas de Narnia' e influyentes obras de ficción y no ficción teológica."
   },
   {
     "id": 415,
@@ -7430,7 +7844,8 @@
       "distopía",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista británico y autor de 'Un mundo feliz', una distopía clásica del siglo XX que describe una sociedad futura controlada tecnológicamente."
   },
   {
     "id": 416,
@@ -7444,7 +7859,8 @@
     "tags": [
       "ciencia ficción"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Padre de la ciencia ficción moderna, autor de 'La máquina del tiempo' y 'La guerra de los mundos', cuyas historias visionarias dieron forma al género."
   },
   {
     "id": 417,
@@ -7459,7 +7875,8 @@
       "misterio",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Reina de la ficción policial y creadora de los detectives Hercule Poirot y Miss Marple, la novelista de misterio más vendida de todos los tiempos."
   },
   {
     "id": 418,
@@ -7474,7 +7891,8 @@
       "misterio",
       "sherlock"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Creador de Sherlock Holmes, el detective más famoso de la historia de la literatura y uno de los autores británicos más leídos."
   },
   {
     "id": 419,
@@ -7489,7 +7907,8 @@
       "infantil",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Autor británico de queridos clásicos infantiles como 'Matilda' y 'Charlie and the Chocolate Factory', conocido por su humor negro y su imaginativa narración."
   },
   {
     "id": 420,
@@ -7504,7 +7923,8 @@
       "fantasía",
       "harry potter"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Autor de la serie 'Harry Potter', una de las obras de ficción más vendidas y con mayor influencia cultural de la historia contemporánea."
   },
   {
     "id": 421,
@@ -7519,7 +7939,8 @@
       "terror",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Maestro contemporáneo de la ficción de terror y autor de 'It', 'The Shining' y 'Carrie', uno de los novelistas más prolíficos y populares de su época."
   },
   {
     "id": 422,
@@ -7534,7 +7955,8 @@
       "novel",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Premio Nobel de Literatura afroamericano (1993) y autor de 'Beloved', cuyas novelas exploran el legado de la esclavitud y la experiencia negra en Estados Unidos."
   },
   {
     "id": 423,
@@ -7549,7 +7971,8 @@
       "novel",
       "racismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Autor de 'Matar a un ruiseñor', un clásico ganador del Premio Pulitzer que confronta la injusticia racial en el sur de Estados Unidos."
   },
   {
     "id": 424,
@@ -7563,7 +7986,8 @@
     "tags": [
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Autor de 'El guardián entre el centeno', una novela icónica sobre la mayoría de edad que se convirtió en un texto definitorio de la experiencia adolescente estadounidense."
   },
   {
     "id": 425,
@@ -7578,7 +8002,8 @@
       "beat",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Figura central de la Generación Beat y autor de 'On the Road', una novela fundamental de inquietud contracultural y prosa espontánea."
   },
   {
     "id": 426,
@@ -7593,7 +8018,8 @@
       "poetry",
       "confesional"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta y novelista estadounidense, autora de 'La campana de cristal', conocida por sus versos confesionales y su inquebrantable descripción de las enfermedades mentales."
   },
   {
     "id": 427,
@@ -7608,7 +8034,8 @@
       "boom",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista argentino del boom latinoamericano y autor de 'Hopscotch', una obra experimental que puede leerse en múltiples órdenes."
   },
   {
     "id": 428,
@@ -7623,7 +8050,8 @@
       "boom",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista peruano del boom latinoamericano y premio Nobel de Literatura (2010), conocido por obras que exploran la política, el poder y la identidad."
   },
   {
     "id": 429,
@@ -7638,7 +8066,8 @@
       "novel",
       "chile"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Autor chileno de 'La casa de los espíritus' y de numerosos bestsellers internacionales que fusionan el realismo mágico con la historia política."
   },
   {
     "id": 430,
@@ -7653,7 +8082,8 @@
       "poetry",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta y ensayista mexicano, premio Nobel de Literatura (1990), cuya obra medita sobre la identidad, la modernidad y el amor mexicanos."
   },
   {
     "id": 431,
@@ -7668,7 +8098,8 @@
       "poetry",
       "98"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta español de la Generación del 98 y autor de 'Campos de Castilla', célebre por sus evocaciones líricas del paisaje castellano."
   },
   {
     "id": 432,
@@ -7683,7 +8114,8 @@
       "poetry",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta español y premio Nobel de Literatura (1956), autor de 'Platero y yo', poema lírico en prosa considerado una obra maestra de la literatura española."
   },
   {
     "id": 433,
@@ -7698,7 +8130,8 @@
       "disidente",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Escritor disidente soviético, premio Nobel de Literatura y autor de 'El archipiélago Gulag', un relato monumental del sistema de campos de trabajos forzados soviéticos."
   },
   {
     "id": 434,
@@ -7713,7 +8146,8 @@
       "novel",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta y novelista ruso, autor de 'Doctor Zhivago', que se vio obligado por la presión soviética a rechazar el Premio Nobel de Literatura que le concedieron en 1958."
   },
   {
     "id": 435,
@@ -7727,7 +8161,8 @@
     "tags": [
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista ruso-estadounidense y autor de 'Lolita' y 'Pale Fire', célebre por su intrincado estilo de prosa y su alegría literaria."
   },
   {
     "id": 436,
@@ -7742,7 +8177,8 @@
       "novel",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista portugués, premio Nobel de Literatura (1998) y autor de 'La ceguera', una parábola sobre el colapso social contada con puntuación mínima."
   },
   {
     "id": 437,
@@ -7757,7 +8193,8 @@
       "poetry",
       "modernismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta portugués conocido por escribir bajo múltiples personajes literarios llamados heterónimos, incluidos Álvaro de Campos y Ricardo Reis, una piedra angular del modernismo literario."
   },
   {
     "id": 438,
@@ -7772,7 +8209,8 @@
       "novel",
       "fantasía"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista italiano y autor de 'Ciudades invisibles' y la trilogía 'Nuestros antepasados', célebre por su ficción lúdica, filosófica y fantástica."
   },
   {
     "id": 439,
@@ -7787,7 +8225,8 @@
       "novel",
       "semiótica"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Semiótico y novelista italiano, autor de 'El nombre de la rosa', una historia de detectives medieval y obra de ficción posmoderna más vendida."
   },
   {
     "id": 440,
@@ -7802,7 +8241,8 @@
       "holocaust",
       "testimonio"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Sobreviviente y escritor de Auschwitz, autor de 'Si esto es un hombre', un testimonio sobrio y lúcido de la experiencia de los campos de concentración nazis."
   },
   {
     "id": 441,
@@ -7817,7 +8257,8 @@
       "novel",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista alemán-suizo y premio Nobel (1946), autor de 'Siddhartha' y 'El lobo estepario', cuyas obras combinan la espiritualidad oriental con la psicología europea."
   },
   {
     "id": 442,
@@ -7832,7 +8273,8 @@
       "novel",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Novelista alemán y premio Nobel (1929), autor de 'La montaña mágica' y 'Los Buddenbrooks', obras destacadas del modernismo literario europeo."
   },
   {
     "id": 443,
@@ -7847,7 +8289,8 @@
       "theater",
       "épico"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Dramaturga alemana y creadora de teatro épico, autora de 'Madre Coraje y sus hijos', cuyas técnicas brechtianas pretendían provocar el pensamiento crítico en el público."
   },
   {
     "id": 444,
@@ -7862,7 +8305,8 @@
       "biografía",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Escritor austríaco y autor de 'El mundo de ayer' y de numerosas aclamadas biografías, uno de los autores europeos más leídos de principios del siglo XX."
   },
   {
     "id": 445,
@@ -7876,7 +8320,8 @@
     "tags": [
       "poetry"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta austríaco-bohemio y autor de las 'Elegías de Duino', considerado uno de los más grandes poetas líricos en lengua alemana."
   },
   {
     "id": 446,
@@ -7891,7 +8336,8 @@
       "fovismo",
       "painting"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor francés, líder del fauvismo y uno de los grandes coloristas del siglo XX, célebre por su audaz uso del color puro."
   },
   {
     "id": 447,
@@ -7906,7 +8352,8 @@
       "abstracción",
       "painting"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor y teórico ruso, pionero del arte abstracto y uno de los fundadores de la pintura no representacional de principios del siglo XX."
   },
   {
     "id": 448,
@@ -7921,7 +8368,8 @@
       "dadá",
       "conceptual"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Artista francés, padre del arte conceptual y del readymade, cuyas provocativas obras alteraron permanentemente la definición de arte."
   },
   {
     "id": 449,
@@ -7936,7 +8384,8 @@
       "surrealismo",
       "painting"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor surrealista belga y autor de 'La traición de las imágenes', famoso por yuxtaposiciones que invitan a la reflexión y que desafían la percepción y el significado."
   },
   {
     "id": 450,
@@ -7951,7 +8400,8 @@
       "muralismo",
       "mexico"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Muralista mexicano y figura central del movimiento muralista, conocido por sus frescos públicos a gran escala y su matrimonio con Frida Kahlo."
   },
   {
     "id": 451,
@@ -7965,7 +8415,8 @@
     "tags": [
       "pop art"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Artista estadounidense y figura destacada del arte pop, célebre por sus serigrafías de bienes de consumo y celebridades como las latas de sopa Campbell's y Marilyn Monroe."
   },
   {
     "id": 452,
@@ -7980,7 +8431,8 @@
       "expresionismo",
       "abstracto"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor estadounidense y figura clave del expresionismo abstracto, famoso por su técnica de pintura por goteo que le situó a la vanguardia de la vanguardia neoyorquina."
   },
   {
     "id": 453,
@@ -7994,7 +8446,8 @@
     "tags": [
       "neoexpresionismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor neoexpresionista neoyorquino que surgió de la escena del graffiti y se convirtió en uno de los artistas más célebres de los años 1980."
   },
   {
     "id": 454,
@@ -8009,7 +8462,8 @@
       "contemporary",
       "instalación"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Artista japonesa contemporánea celebrada en todo el mundo por sus inmersivas instalaciones de lunares y esculturas de calabazas, una figura destacada del arte de vanguardia."
   },
   {
     "id": 455,
@@ -8024,7 +8478,8 @@
       "street art",
       "anónimo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Artista callejero británico anónimo y símbolo mundial del arte urbano políticamente comprometido, cuyas obras estarcidas aparecen en paredes y espacios públicos de todo el mundo."
   },
   {
     "id": 456,
@@ -8039,7 +8494,8 @@
       "romanticism",
       "piano"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Compositor y pianista ruso, uno de los últimos grandes románticos, célebre por sus amplios conciertos para piano y sinfonías."
   },
   {
     "id": 457,
@@ -8055,7 +8511,8 @@
       "ussr"
     ],
     "relatedIds": [],
-    "nameEs": "Dmitri Shostakóvich"
+    "nameEs": "Dmitri Shostakóvich",
+    "descriptionEs": "Compositor soviético de quince sinfonías, cuya música navegó por las limitaciones y los terrores de la era estalinista con una intensidad emocional codificada."
   },
   {
     "id": 458,
@@ -8070,7 +8527,8 @@
       "sinfonía",
       "postromántico"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Compositor y director de orquesta austriaco, creador de monumentales sinfonías posrománticas que llevaron la música orquestal a nuevos extremos expresivos."
   },
   {
     "id": 459,
@@ -8085,7 +8543,8 @@
       "musical",
       "director"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Compositor y director de orquesta estadounidense, autor de 'West Side Story', que unió la música clásica y la popular y se convirtió en uno de los músicos más célebres de su época."
   },
   {
     "id": 460,
@@ -8100,7 +8559,8 @@
       "jazz",
       "trompeta"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Trompetista y cantante ampliamente considerado como la figura fundamental del jazz, cuyo virtuosismo y carisma dieron forma a la música del siglo XX."
   },
   {
     "id": 461,
@@ -8115,7 +8575,8 @@
       "jazz",
       "fusion"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Trompetista y compositor que fue pionero en múltiples estilos de jazz, incluidos el bebop, el cool jazz y la fusión, lo que lo convirtió en uno de los músicos más influyentes de la historia."
   },
   {
     "id": 462,
@@ -8130,7 +8591,8 @@
       "jazz",
       "saxofón"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Saxofonista de jazz y figura central del jazz modal y del free jazz, cuyas grabaciones como 'A Love Supreme' se consideran hitos del género."
   },
   {
     "id": 463,
@@ -8145,7 +8607,8 @@
       "jazz",
       "vocal"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Conocida como la 'Primera Dama de la Canción', es considerada la mejor vocalista de jazz del siglo XX, reconocida por su tono puro y su fraseo impecable."
   },
   {
     "id": 464,
@@ -8160,7 +8623,8 @@
       "jazz",
       "vocal"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cantante de jazz con una voz inconfundible, célebre por su profundidad emocional y por grabar 'Strange Fruit', un himno contra la violencia racial."
   },
   {
     "id": 465,
@@ -8175,7 +8639,8 @@
       "pop",
       "crooner"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cantante y actor conocido como 'Ol' Blue Eyes', un ícono de la música popular estadounidense y el intérprete por excelencia del Great American Songbook."
   },
   {
     "id": 466,
@@ -8190,7 +8655,8 @@
       "rock",
       "icono"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "'El Rey del Rock and Roll', uno de los músicos más influyentes del siglo XX que ayudó a llevar el rock and roll a una audiencia global."
   },
   {
     "id": 467,
@@ -8205,7 +8671,8 @@
       "folk",
       "nobel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cantautor estadounidense y premio Nobel de Literatura (2016), cuyas canciones folk y rock se convirtieron en himnos de cambio social y expresión poética."
   },
   {
     "id": 468,
@@ -8220,7 +8687,8 @@
       "reggae",
       "jamaica"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cantante jamaicana y embajadora mundial de la música reggae y el rastafarianismo, cuyas canciones de paz, amor y resistencia trascienden generaciones."
   },
   {
     "id": 469,
@@ -8235,7 +8703,8 @@
       "pop",
       "icono"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "'El Rey del Pop', uno de los artistas musicales más influyentes y con mayores ventas de la historia, conocido por sus electrizantes actuaciones y vídeos musicales."
   },
   {
     "id": 470,
@@ -8250,7 +8719,8 @@
       "pop",
       "funk"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cantante multiinstrumentista que innovó en el funk, el pop y el rock, ampliamente considerado como uno de los músicos más talentosos y prolíficos de su generación."
   },
   {
     "id": 471,
@@ -8265,7 +8735,8 @@
       "rock",
       "glam"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Ícono del rock británico camaleónico, pionero del glam rock y uno de los artistas más influyentes en la historia de la música pop, conocido por reinventarse a lo largo de décadas."
   },
   {
     "id": 472,
@@ -8280,7 +8751,8 @@
       "pop",
       "icono"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "'La Reina del Pop', una figura definitoria de la cultura popular desde la década de 1980 que reinventó continuamente su identidad musical y visual."
   },
   {
     "id": 473,
@@ -8295,7 +8767,8 @@
       "rock",
       "guitarra"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Guitarrista revolucionario considerado el más grande de la historia del rock, que transformó la guitarra eléctrica en un instrumento expresivo de extraordinario alcance y potencia."
   },
   {
     "id": 474,
@@ -8310,7 +8783,8 @@
       "grunge",
       "rock"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Líder y cofundador de Nirvana y la voz definitoria del movimiento grunge que dominó la música rock a principios de los noventa."
   },
   {
     "id": 475,
@@ -8325,7 +8799,8 @@
       "soul",
       "góspel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "'La Reina del Soul', una de las voces más poderosas e influyentes de la música del siglo XX, celebrada por sus actuaciones de base gospel y su activismo por los derechos civiles."
   },
   {
     "id": 476,
@@ -8340,7 +8815,8 @@
       "opera",
       "soprano"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Soprano griega ampliamente considerada como una de las cantantes de ópera más influyentes del siglo XX, reconocida por su intensidad dramática y dominio vocal."
   },
   {
     "id": 477,
@@ -8355,7 +8831,8 @@
       "opera",
       "tenor"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Tenor italiano, uno de los cantantes de ópera más célebres y queridos del siglo XX, conocido por su poderosa voz y su atractivo popular."
   },
   {
     "id": 478,
@@ -8370,7 +8847,8 @@
       "tango",
       "argentina"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Bandoneonista y compositor argentino, creador del 'nuevo tango', que transformó el tango tradicional en una forma de arte reconocida internacionalmente."
   },
   {
     "id": 479,
@@ -8385,7 +8863,8 @@
       "suspense",
       "cinema"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director británico y 'Maestro del Suspense', creador de 'Psicosis' y 'Vértigo', cuyas técnicas innovadoras influyeron profundamente en el arte del cine."
   },
   {
     "id": 480,
@@ -8400,7 +8879,8 @@
       "cinema",
       "actor"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director y actor estadounidense, creador de 'Ciudadano Kane', considerada una de las mejores películas jamás realizadas y un hito de la técnica cinematográfica."
   },
   {
     "id": 481,
@@ -8415,7 +8895,8 @@
       "cinema",
       "japan"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director japonés y autor de 'Los siete samuráis' y 'Rashomon', uno de los cineastas más influyentes de la historia del cine."
   },
   {
     "id": 482,
@@ -8430,7 +8911,8 @@
       "cinema",
       "italy"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director italiano y autor de 'La Dolce Vita' y '8½', un maestro de la imaginación cinematográfica cuyo trabajo definió el cine artístico europeo."
   },
   {
     "id": 483,
@@ -8445,7 +8927,8 @@
       "cinema",
       "autor"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director sueco y figura destacada del cine de autor, conocido por obras que sondean existencial y espiritualmente como 'El séptimo sello'."
   },
   {
     "id": 484,
@@ -8460,7 +8943,8 @@
       "surrealismo",
       "cinema"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director español y pionero del cine surrealista, autor de 'Un Chien Andalou', cuyas provocativas películas desafiaron las convenciones burguesas y religiosas."
   },
   {
     "id": 485,
@@ -8475,7 +8959,8 @@
       "cinema",
       "spain"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cineasta español de La Mancha y figura central del cine español contemporáneo, conocido por sus dramas vívidos y cargados de emociones."
   },
   {
     "id": 486,
@@ -8490,7 +8975,8 @@
       "cinema",
       "hollywood"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director estadounidense de 'Taxi Driver' y 'Goodfellas', un maestro de la narración visceral y uno de los cineastas más aclamados de Hollywood."
   },
   {
     "id": 487,
@@ -8505,7 +8991,8 @@
       "cinema",
       "blockbuster"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director estadounidense de 'E.T.', 'Jurassic Park' y 'La lista de Schindler', uno de los cineastas de mayor éxito comercial y célebre de la historia del cine."
   },
   {
     "id": 488,
@@ -8520,7 +9007,8 @@
       "cinema",
       "independiente"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director estadounidense de 'Pulp Fiction' y 'Kill Bill', conocido por sus narrativas no lineales, diálogos agudos y referencias eclécticas a la cultura pop."
   },
   {
     "id": 489,
@@ -8535,7 +9023,8 @@
       "cinema",
       "ciencia ficción"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Director británico de 'Memento', la trilogía del Caballero Oscuro y 'Inception', reconocida por narrativas complejas que desdibujan la línea entre la realidad y la ilusión."
   },
   {
     "id": 490,
@@ -8550,7 +9039,8 @@
       "cinema",
       "icono"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Actriz e ícono cultural del Hollywood clásico, cuya imagen se convirtió en uno de los símbolos más reconocibles de la cultura popular del siglo XX."
   },
   {
     "id": 491,
@@ -8565,7 +9055,8 @@
       "cinema",
       "humanitaria"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Actriz británica y protagonista de 'Desayuno con diamantes', celebrada por su elegancia en la pantalla y su labor humanitaria como Embajadora de Buena Voluntad de UNICEF."
   },
   {
     "id": 492,
@@ -8580,7 +9071,8 @@
       "artes marciales",
       "cinema"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Actor y artista marcial que popularizó el cine de artes marciales en Occidente, convirtiéndose en un ícono global del dominio físico y la disciplina filosófica."
   },
   {
     "id": 493,
@@ -8595,7 +9087,8 @@
       "fútbol",
       "brazil"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Futbolista brasileño, tres veces campeón del mundo, considerado uno de los mejores jugadores de la historia de este deporte."
   },
   {
     "id": 494,
@@ -8610,7 +9103,8 @@
       "fútbol",
       "argentina"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Futbolista argentino, campeón de la Copa del Mundo de 1986 y una de las figuras más legendarias de la historia del fútbol, ​​celebrado tanto por su brillantez como por su controversia."
   },
   {
     "id": 495,
@@ -8627,7 +9121,8 @@
     ],
     "relatedIds": [
       494
-    ]
+    ],
+    "descriptionEs": "Futbolista argentino, ocho veces ganador del Balón de Oro y campeón del Mundial de 2022, ampliamente considerado como el mejor jugador de su generación."
   },
   {
     "id": 496,
@@ -8644,7 +9139,8 @@
     ],
     "relatedIds": [
       495
-    ]
+    ],
+    "descriptionEs": "Futbolista portugués, cinco veces ganador del Balón de Oro y máximo goleador histórico de selecciones nacionales, uno de los más grandes futbolistas de su época."
   },
   {
     "id": 497,
@@ -8659,7 +9155,8 @@
       "fútbol",
       "barcelona"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Futbolista y entrenador holandés, padre del 'Fútbol Total' y artífice del estilo de juego moderno del FC Barcelona."
   },
   {
     "id": 498,
@@ -8674,7 +9171,8 @@
       "baloncesto",
       "nba"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Jugador de baloncesto, seis veces campeón de la NBA, ampliamente considerado el mejor jugador de baloncesto de todos los tiempos y un ícono deportivo mundial definitorio."
   },
   {
     "id": 499,
@@ -8689,7 +9187,8 @@
       "boxeo",
       "activismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Boxeador estadounidense y tres veces campeón mundial de peso pesado, célebre tanto por su activismo político y su negativa al servicio militar como por su brillantez en el ring."
   },
   {
     "id": 500,
@@ -8704,7 +9203,8 @@
       "atletismo",
       "jamaica"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Velocista jamaicano, poseedor del récord mundial en los 100 y 200 metros, y ocho veces medallista de oro olímpico, el hombre más rápido de la historia."
   },
   {
     "id": 501,
@@ -8722,7 +9222,8 @@
     "relatedIds": [
       1
     ],
-    "nameEs": "Sargón de Acad"
+    "nameEs": "Sargón de Acad",
+    "descriptionEs": "Fundador del Imperio Acadio, considerado el primer imperio multiétnico de la historia."
   },
   {
     "id": 502,
@@ -8737,7 +9238,8 @@
       "egypt",
       "pharaoh"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Faraón de la XVIII Dinastía, una de las pocas mujeres que gobernó Egipto como rey de pleno derecho."
   },
   {
     "id": 503,
@@ -8754,7 +9256,8 @@
     ],
     "relatedIds": [
       502
-    ]
+    ],
+    "descriptionEs": "Faraón conquistador de la XVIII Dinastía, a veces llamado \"el Napoleón de Egipto\"."
   },
   {
     "id": 504,
@@ -8773,7 +9276,8 @@
       25,
       26
     ],
-    "nameEs": "Akenatón"
+    "nameEs": "Akenatón",
+    "descriptionEs": "Faraón que impuso el culto monoteísta de Atón; esposo de Nefertiti y padre de Tutankamón."
   },
   {
     "id": 505,
@@ -8790,7 +9294,8 @@
     ],
     "relatedIds": [
       1
-    ]
+    ],
+    "descriptionEs": "Rey de Babilonia, conquistador de Jerusalén y constructor de los Jardines Colgantes."
   },
   {
     "id": 506,
@@ -8805,7 +9310,8 @@
       "persia",
       "empire"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Fundador del Imperio Aqueménida, conocido por su tolerancia religiosa y administrativa."
   },
   {
     "id": 507,
@@ -8823,7 +9329,8 @@
     "relatedIds": [
       506
     ],
-    "nameEs": "Darío I"
+    "nameEs": "Darío I",
+    "descriptionEs": "Rey aqueménida bajo el cual el Imperio persa alcanzó su mayor extensión; invadió Grecia en Maratón."
   },
   {
     "id": 508,
@@ -8841,7 +9348,8 @@
     "relatedIds": [
       507,
       511
-    ]
+    ],
+    "descriptionEs": "Rey persa que invadió Grecia y fue derrotado en Salamina y Platea."
   },
   {
     "id": 509,
@@ -8859,7 +9367,8 @@
     "relatedIds": [
       37
     ],
-    "nameEs": "Darío III"
+    "nameEs": "Darío III",
+    "descriptionEs": "Último rey aqueménida, derrotado por Alejandro Magno en Issus y Gaugamela."
   },
   {
     "id": 510,
@@ -8877,7 +9386,8 @@
     "relatedIds": [
       3
     ],
-    "nameEs": "Hesíodo"
+    "nameEs": "Hesíodo",
+    "descriptionEs": "Poeta griego arcaico, autor de la 'Teogonía' y 'Obras y días'."
   },
   {
     "id": 511,
@@ -8895,7 +9405,8 @@
     "relatedIds": [
       508
     ],
-    "nameEs": "Leónidas I"
+    "nameEs": "Leónidas I",
+    "descriptionEs": "Rey de Esparta, célebre por su defensa del paso de las Termópilas contra los persas."
   },
   {
     "id": 512,
@@ -8913,7 +9424,8 @@
     "relatedIds": [
       508
     ],
-    "nameEs": "Temístocles"
+    "nameEs": "Temístocles",
+    "descriptionEs": "Estadista ateniense, artífice de la victoria griega en la batalla de Salamina."
   },
   {
     "id": 513,
@@ -8931,7 +9443,8 @@
     "relatedIds": [
       507
     ],
-    "nameEs": "Milcíades"
+    "nameEs": "Milcíades",
+    "descriptionEs": "General ateniense que derrotó a los persas en la batalla de Maratón."
   },
   {
     "id": 514,
@@ -8949,7 +9462,8 @@
     "relatedIds": [
       16
     ],
-    "nameEs": "Alcibíades"
+    "nameEs": "Alcibíades",
+    "descriptionEs": "Político y general ateniense, figura controvertida de la Guerra del Peloponeso."
   },
   {
     "id": 515,
@@ -8967,7 +9481,8 @@
     "relatedIds": [
       14,
       16
-    ]
+    ],
+    "descriptionEs": "Historiador y soldado griego, autor de la 'Anábasis' y discípulo de Sócrates."
   },
   {
     "id": 516,
@@ -8983,7 +9498,8 @@
       "presocrático"
     ],
     "relatedIds": [],
-    "nameEs": "Anaxágoras"
+    "nameEs": "Anaxágoras",
+    "descriptionEs": "Filósofo presocrático, el primero en llevar la filosofía a Atenas; propuso el 'Nous' como principio ordenador."
   },
   {
     "id": 517,
@@ -8999,7 +9515,8 @@
       "presocrático"
     ],
     "relatedIds": [],
-    "nameEs": "Empédocles"
+    "nameEs": "Empédocles",
+    "descriptionEs": "Filósofo presocrático que propuso los cuatro elementos (tierra, agua, aire, fuego)."
   },
   {
     "id": 518,
@@ -9017,7 +9534,8 @@
     "relatedIds": [
       519
     ],
-    "nameEs": "Parménides"
+    "nameEs": "Parménides",
+    "descriptionEs": "Filósofo presocrático de Elea, defensor de la inmutabilidad del Ser."
   },
   {
     "id": 519,
@@ -9035,7 +9553,8 @@
     "relatedIds": [
       518
     ],
-    "nameEs": "Zenón de Elea"
+    "nameEs": "Zenón de Elea",
+    "descriptionEs": "Filósofo presocrático conocido por sus paradojas sobre el movimiento."
   },
   {
     "id": 520,
@@ -9051,7 +9570,8 @@
       "relativismo"
     ],
     "relatedIds": [],
-    "nameEs": "Protágoras"
+    "nameEs": "Protágoras",
+    "descriptionEs": "Sofista griego, autor del famoso dicho \"El hombre es la medida de todas las cosas\"."
   },
   {
     "id": 521,
@@ -9068,7 +9588,8 @@
     ],
     "relatedIds": [
       520
-    ]
+    ],
+    "descriptionEs": "Sofista y orador griego, maestro de la retórica."
   },
   {
     "id": 522,
@@ -9085,7 +9606,8 @@
     ],
     "relatedIds": [
       15
-    ]
+    ],
+    "descriptionEs": "Escultor griego, creador del Zeus de Olimpia y supervisor de las esculturas del Partenón."
   },
   {
     "id": 523,
@@ -9103,7 +9625,8 @@
     "relatedIds": [
       522
     ],
-    "nameEs": "Praxíteles"
+    "nameEs": "Praxíteles",
+    "descriptionEs": "Escultor griego del período clásico tardío, creador del Hermes de Olimpia."
   },
   {
     "id": 524,
@@ -9120,7 +9643,8 @@
     ],
     "relatedIds": [
       522
-    ]
+    ],
+    "descriptionEs": "Escultor griego, creador del 'Doríforo' y teórico del canon clásico de proporciones."
   },
   {
     "id": 525,
@@ -9136,7 +9660,8 @@
       "lírica"
     ],
     "relatedIds": [],
-    "nameEs": "Píndaro"
+    "nameEs": "Píndaro",
+    "descriptionEs": "Poeta lírico griego, célebre por sus odas dedicadas a los vencedores de los Juegos Panhelénicos."
   },
   {
     "id": 526,
@@ -9154,7 +9679,8 @@
     "relatedIds": [
       37,
       36
-    ]
+    ],
+    "descriptionEs": "Rey de Macedonia que reformó su ejército y unificó Grecia; padre de Alejandro Magno."
   },
   {
     "id": 527,
@@ -9172,7 +9698,8 @@
     "relatedIds": [
       37
     ],
-    "nameEs": "Ptolomeo I Sóter"
+    "nameEs": "Ptolomeo I Sóter",
+    "descriptionEs": "General de Alejandro Magno y fundador de la dinastía ptolemaica de Egipto."
   },
   {
     "id": 528,
@@ -9191,7 +9718,8 @@
       37,
       527
     ],
-    "nameEs": "Seleuco I Nicátor"
+    "nameEs": "Seleuco I Nicátor",
+    "descriptionEs": "General de Alejandro Magno y fundador del Imperio Seléucida tras la división de su imperio."
   },
   {
     "id": 529,
@@ -9209,7 +9737,8 @@
     "relatedIds": [
       37
     ],
-    "nameEs": "Antígono I Monóftalmos"
+    "nameEs": "Antígono I Monóftalmos",
+    "descriptionEs": "General de Alejandro Magno que intentó mantener unido su imperio después de su muerte."
   },
   {
     "id": 530,
@@ -9224,7 +9753,8 @@
       "war",
       "rome"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Rey de Epiro, célebre por sus \"victorias pírricas\" contra Roma."
   },
   {
     "id": 531,
@@ -9240,7 +9770,8 @@
       "philosophy"
     ],
     "relatedIds": [],
-    "nameEs": "Zenón de Citio"
+    "nameEs": "Zenón de Citio",
+    "descriptionEs": "Fundador de la filosofía estoica en Atenas."
   },
   {
     "id": 532,
@@ -9255,7 +9786,8 @@
       "astronomy",
       "heliocentrismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Astrónomo griego que propuso por primera vez un modelo heliocéntrico del universo."
   },
   {
     "id": 533,
@@ -9271,7 +9803,8 @@
       "mathematics"
     ],
     "relatedIds": [],
-    "nameEs": "Eratóstenes"
+    "nameEs": "Eratóstenes",
+    "descriptionEs": "Erudito griego que calculó la circunferencia de la Tierra con notable precisión."
   },
   {
     "id": 534,
@@ -9286,7 +9819,8 @@
       "astronomy",
       "trigonometry"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Astrónomo griego, descubridor de la precesión de los equinoccios y padre de la trigonometría."
   },
   {
     "id": 535,
@@ -9301,7 +9835,8 @@
       "geometry",
       "cónicas"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Matemático griego, autor del tratado clásico sobre secciones cónicas."
   },
   {
     "id": 536,
@@ -9318,7 +9853,8 @@
     ],
     "relatedIds": [
       532
-    ]
+    ],
+    "descriptionEs": "Astrónomo y geógrafo greco-egipcio, autor del 'Almagest' y del modelo geocéntrico."
   },
   {
     "id": 537,
@@ -9336,7 +9872,8 @@
     "relatedIds": [
       21
     ],
-    "nameEs": "Galeno de Pérgamo"
+    "nameEs": "Galeno de Pérgamo",
+    "descriptionEs": "Médico grecorromano cuyo trabajo dominó la medicina occidental durante más de mil años."
   },
   {
     "id": 538,
@@ -9352,7 +9889,8 @@
       "mujer"
     ],
     "relatedIds": [],
-    "nameEs": "Hipatia de Alejandría"
+    "nameEs": "Hipatia de Alejandría",
+    "descriptionEs": "Filósofo, matemático y astrónomo neoplatónico; asesinado por una turba cristiana en Alejandría."
   },
   {
     "id": 539,
@@ -9367,7 +9905,8 @@
       "historia",
       "biografía"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Historiador y biógrafo griego, autor de 'Vidas paralelas'."
   },
   {
     "id": 540,
@@ -9383,7 +9922,8 @@
       "historia"
     ],
     "relatedIds": [],
-    "nameEs": "Estrabón"
+    "nameEs": "Estrabón",
+    "descriptionEs": "Geógrafo e historiador griego, autor de la 'Geografía' en 17 libros."
   },
   {
     "id": 541,
@@ -9400,7 +9940,8 @@
     ],
     "relatedIds": [
       38
-    ]
+    ],
+    "descriptionEs": "Poeta y filósofo epicúreo romano, autor del poema 'De rerum natura'."
   },
   {
     "id": 542,
@@ -9415,7 +9956,8 @@
       "poetry",
       "lírica"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta lírico romano del círculo 'neotérico'."
   },
   {
     "id": 543,
@@ -9433,7 +9975,8 @@
     "relatedIds": [
       40,
       47
-    ]
+    ],
+    "descriptionEs": "Poeta romano de época augusta, autor de las 'Odas' y del 'Ars Poetica'."
   },
   {
     "id": 544,
@@ -9448,7 +9991,8 @@
       "historia",
       "rome"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Historiador romano, autor de 'Ab Urbe Condita', una monumental historia de Roma."
   },
   {
     "id": 545,
@@ -9463,7 +10007,8 @@
       "historia",
       "biografía"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Historiador romano, autor de 'La vida de los doce césares'."
   },
   {
     "id": 546,
@@ -9478,7 +10023,8 @@
       "sátira",
       "poetry"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta satírico romano, autor de las 'Sátiras' que representan la decadencia romana."
   },
   {
     "id": 547,
@@ -9493,7 +10039,8 @@
       "epigrama",
       "hispania"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta hispanorromano, maestro del epigrama latino."
   },
   {
     "id": 548,
@@ -9508,7 +10055,8 @@
       "novel",
       "latín"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Escritor latino, autor de 'El asno de oro', la primera novela latina que se conserva íntegramente."
   },
   {
     "id": 549,
@@ -9523,7 +10071,8 @@
       "rome",
       "republic"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cónsul y dictador romano, símbolo de virtud cívica por renunciar al poder después de salvar a Roma."
   },
   {
     "id": 550,
@@ -9542,7 +10091,8 @@
       44,
       45
     ],
-    "nameEs": "Quinto Fabio Máximo"
+    "nameEs": "Quinto Fabio Máximo",
+    "descriptionEs": "Cónsul romano que ideó la estrategia de desgaste ('cunctator') contra Aníbal."
   },
   {
     "id": 551,
@@ -9559,7 +10109,8 @@
     ],
     "relatedIds": [
       552
-    ]
+    ],
+    "descriptionEs": "Tribuno de la plebe que defendió la reforma agraria; asesinado por la aristocracia romana."
   },
   {
     "id": 552,
@@ -9576,7 +10127,8 @@
     ],
     "relatedIds": [
       551
-    ]
+    ],
+    "descriptionEs": "Tribuno romano de la plebe, hermano de Tiberio; Continuó las reformas hasta su muerte violenta."
   },
   {
     "id": 553,
@@ -9595,7 +10147,8 @@
       50,
       51
     ],
-    "nameEs": "Catón el Joven"
+    "nameEs": "Catón el Joven",
+    "descriptionEs": "Senador romano estoico, símbolo de la resistencia republicana contra Julio César."
   },
   {
     "id": 554,
@@ -9613,7 +10166,8 @@
     "relatedIds": [
       52,
       50
-    ]
+    ],
+    "descriptionEs": "Senador romano, coorganizador del asesinato de Julio César junto a Bruto."
   },
   {
     "id": 555,
@@ -9630,7 +10184,8 @@
     ],
     "relatedIds": [
       40
-    ]
+    ],
+    "descriptionEs": "General y arquitecto de Augusto, vencedor en Actium; promotor del Panteón de Roma."
   },
   {
     "id": 556,
@@ -9649,7 +10204,8 @@
       40,
       47,
       543
-    ]
+    ],
+    "descriptionEs": "Asesor de Augusto y mecenas de poetas como Virgilio y Horacio; su nombre se convirtió en sinónimo de mecenazgo de las artes."
   },
   {
     "id": 557,
@@ -9667,7 +10223,8 @@
     "relatedIds": [
       40,
       49
-    ]
+    ],
+    "descriptionEs": "Emperatriz romana, esposa de Augusto y madre de Tiberio; una figura de gran influencia política."
   },
   {
     "id": 558,
@@ -9684,7 +10241,8 @@
     ],
     "relatedIds": [
       55
-    ]
+    ],
+    "descriptionEs": "emperatriz romana y madre de Nerón; una figura clave de la dinastía Julio-Claudia."
   },
   {
     "id": 559,
@@ -9701,7 +10259,8 @@
     ],
     "relatedIds": [
       53
-    ]
+    ],
+    "descriptionEs": "emperatriz romana, tercera esposa de Claudio; famosa por su controvertida vida."
   },
   {
     "id": 560,
@@ -9720,7 +10279,8 @@
     ],
     "relatedIds": [
       60
-    ]
+    ],
+    "descriptionEs": "Primero de los Cinco Buenos Emperadores, que establecieron la tradición de adoptar al mejor sucesor disponible en lugar de pasar el poder a un heredero biológico."
   },
   {
     "id": 561,
@@ -9738,7 +10298,8 @@
       "2nd century"
     ],
     "relatedIds": [],
-    "nameEs": "Septimio Severo"
+    "nameEs": "Septimio Severo",
+    "descriptionEs": "Primer emperador romano nacido en África que restableció el orden después de la guerra civil, fortaleció al ejército y murió haciendo campaña en Gran Bretaña."
   },
   {
     "id": 562,
@@ -9753,7 +10314,8 @@
       "rome",
       "emperador"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Emperador romano que reunificó el Imperio durante la crisis del siglo III."
   },
   {
     "id": 563,
@@ -9771,7 +10333,8 @@
       "4th century"
     ],
     "relatedIds": [],
-    "nameEs": "Juliano el Apóstata"
+    "nameEs": "Juliano el Apóstata",
+    "descriptionEs": "Último emperador romano pagano que intentó restaurar la antigua religión y revertir la cristianización del imperio antes de morir en la batalla contra Persia."
   },
   {
     "id": 564,
@@ -9789,7 +10352,8 @@
     "relatedIds": [
       566,
       567
-    ]
+    ],
+    "descriptionEs": "Emperador romano occidental bajo el cual los visigodos saquearon Roma en el año 410 d.C."
   },
   {
     "id": 565,
@@ -9808,7 +10372,8 @@
       564,
       566
     ],
-    "nameEs": "Estilicón"
+    "nameEs": "Estilicón",
+    "descriptionEs": "General romano de origen vándalo, defensor del Imperio contra los godos."
   },
   {
     "id": 566,
@@ -9825,7 +10390,8 @@
     ],
     "relatedIds": [
       564
-    ]
+    ],
+    "descriptionEs": "Rey visigodo que conquistó y saqueó Roma en el año 410 d.C."
   },
   {
     "id": 567,
@@ -9842,7 +10408,8 @@
     ],
     "relatedIds": [
       568
-    ]
+    ],
+    "descriptionEs": "Cacique bárbaro que en el año 476 d. C. depuso al último emperador romano occidental, Rómulo Augústulo."
   },
   {
     "id": 568,
@@ -9859,7 +10426,8 @@
     ],
     "relatedIds": [
       567
-    ]
+    ],
+    "descriptionEs": "Rey ostrogodo de Italia, que gobernó tras derrotar a Odoacro y mantuvo las tradiciones romanas."
   },
   {
     "id": 569,
@@ -9876,7 +10444,8 @@
     ],
     "relatedIds": [
       568
-    ]
+    ],
+    "descriptionEs": "Filósofo romano, autor de 'La Consolación de la Filosofía', puente entre la Antigüedad y la Edad Media."
   },
   {
     "id": 570,
@@ -9892,7 +10461,8 @@
       "theology"
     ],
     "relatedIds": [],
-    "nameEs": "Agustín de Hipona"
+    "nameEs": "Agustín de Hipona",
+    "descriptionEs": "Obispo y Padre de la Iglesia, autor de 'Confesiones' y 'La Ciudad de Dios'."
   },
   {
     "id": 571,
@@ -9910,7 +10480,8 @@
     "relatedIds": [
       570
     ],
-    "nameEs": "San Jerónimo"
+    "nameEs": "San Jerónimo",
+    "descriptionEs": "Padre de la Iglesia, traductor de la Biblia al latín (la Vulgata)."
   },
   {
     "id": 572,
@@ -9928,7 +10499,8 @@
     "relatedIds": [
       570
     ],
-    "nameEs": "San Ambrosio"
+    "nameEs": "San Ambrosio",
+    "descriptionEs": "Obispo de Milán y padre de la Iglesia, mentor de Agustín de Hipona."
   },
   {
     "id": 573,
@@ -9944,7 +10516,8 @@
       "theology"
     ],
     "relatedIds": [],
-    "nameEs": "Orígenes de Alejandría"
+    "nameEs": "Orígenes de Alejandría",
+    "descriptionEs": "Teólogo y filósofo cristiano, uno de los grandes pensadores de la tradición patrística griega."
   },
   {
     "id": 574,
@@ -9959,7 +10532,8 @@
       "christianity",
       "latín"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Teólogo cartaginés, el primer autor cristiano importante que escribió en latín."
   },
   {
     "id": 575,
@@ -9974,7 +10548,8 @@
       "christianity",
       "enciclopedia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Obispo y enciclopedista hispano-romano, autor de las 'Etymologiae'."
   },
   {
     "id": 576,
@@ -9992,7 +10567,8 @@
     "relatedIds": [
       70,
       71
-    ]
+    ],
+    "descriptionEs": "Emperatriz bizantina, esposa de Justiniano I y figura de enorme influencia política."
   },
   {
     "id": 577,
@@ -10007,7 +10583,8 @@
       "bizancio",
       "islam"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Emperador bizantino que derrotó al Imperio Sasánida pero perdió Oriente ante el Islam."
   },
   {
     "id": 578,
@@ -10025,7 +10602,8 @@
       "bulgaria"
     ],
     "relatedIds": [],
-    "nameEs": "Basilio II"
+    "nameEs": "Basilio II",
+    "descriptionEs": "El Matador de Búlgaros, el mayor emperador bizantino, que reconquistó los Balcanes y cegó a 15.000 prisioneros búlgaros para aterrorizar al enemigo."
   },
   {
     "id": 579,
@@ -10040,7 +10618,8 @@
       "bizancio",
       "historia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Princesa e historiadora bizantina, autora de la 'Alexiada'."
   },
   {
     "id": 580,
@@ -10058,7 +10637,8 @@
     "relatedIds": [
       581
     ],
-    "nameEs": "Constantino XI Paleólogo"
+    "nameEs": "Constantino XI Paleólogo",
+    "descriptionEs": "Último emperador bizantino, que murió defendiendo Constantinopla del ejército otomano."
   },
   {
     "id": 581,
@@ -10075,7 +10655,8 @@
     ],
     "relatedIds": [
       580
-    ]
+    ],
+    "descriptionEs": "Sultán otomano que conquistó Constantinopla en 1453 d.C."
   },
   {
     "id": 582,
@@ -10093,7 +10674,8 @@
     "relatedIds": [
       581
     ],
-    "nameEs": "Solimán el Magnífico"
+    "nameEs": "Solimán el Magnífico",
+    "descriptionEs": "Sultán otomano bajo cuyo reinado el Imperio alcanzó su mayor esplendor."
   },
   {
     "id": 583,
@@ -10110,7 +10692,8 @@
     ],
     "relatedIds": [
       76
-    ]
+    ],
+    "descriptionEs": "Primer califa del Islam tras la muerte de Mahoma; inició las grandes conquistas árabes."
   },
   {
     "id": 584,
@@ -10127,7 +10710,8 @@
     ],
     "relatedIds": [
       583
-    ]
+    ],
+    "descriptionEs": "Segundo califa, que expandió el dominio islámico sobre Persia, Egipto y el Levante."
   },
   {
     "id": 585,
@@ -10145,7 +10729,8 @@
     "relatedIds": [
       76
     ],
-    "nameEs": "Alí ibn Abi Tálib"
+    "nameEs": "Alí ibn Abi Tálib",
+    "descriptionEs": "Primo y yerno de Mahoma, cuarto califa y figura central del Islam chiita."
   },
   {
     "id": 586,
@@ -10161,7 +10746,8 @@
       "abasíes"
     ],
     "relatedIds": [],
-    "nameEs": "Harún al-Rashid"
+    "nameEs": "Harún al-Rashid",
+    "descriptionEs": "Califa abasí bajo cuyo reinado Bagdad fue el centro cultural y científico del mundo islámico."
   },
   {
     "id": 587,
@@ -10178,7 +10764,8 @@
     ],
     "relatedIds": [
       586
-    ]
+    ],
+    "descriptionEs": "Matemático persa, padre del álgebra; su nombre dio origen a la palabra \"algoritmo\"."
   },
   {
     "id": 588,
@@ -10193,7 +10780,8 @@
       "philosophy",
       "islam"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo árabe, primer gran pensador del Islam y pionero del pensamiento racional."
   },
   {
     "id": 589,
@@ -10208,7 +10796,8 @@
       "medicine",
       "persia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Médico y erudito persa, autor de tratados pioneros sobre la viruela y el sarampión."
   },
   {
     "id": 590,
@@ -10225,7 +10814,8 @@
     ],
     "relatedIds": [
       27
-    ]
+    ],
+    "descriptionEs": "Filósofo musulmán llamado \"el segundo maestro\" (en honor a Aristóteles)."
   },
   {
     "id": 591,
@@ -10241,7 +10831,8 @@
       "science"
     ],
     "relatedIds": [],
-    "nameEs": "Alhacén"
+    "nameEs": "Alhacén",
+    "descriptionEs": "Polímata árabe, pionero de la óptica moderna con su 'Libro de la Óptica'."
   },
   {
     "id": 592,
@@ -10256,7 +10847,8 @@
       "astronomy",
       "india"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Erudito, astrónomo, matemático y etnógrafo persa de la India medieval."
   },
   {
     "id": 593,
@@ -10271,7 +10863,8 @@
       "poetry",
       "astronomy"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta, astrónomo y matemático persa, autor del 'Rubaiyat'."
   },
   {
     "id": 594,
@@ -10289,7 +10882,8 @@
     "relatedIds": [
       78
     ],
-    "nameEs": "Maimónides"
+    "nameEs": "Maimónides",
+    "descriptionEs": "Filósofo y rabino judío sefardí, autor de la 'Guía para los perplejos'."
   },
   {
     "id": 595,
@@ -10304,7 +10898,8 @@
       "sufism",
       "poetry"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Poeta místico persa, máximo exponente del sufismo y autor del 'Masnavi'."
   },
   {
     "id": 596,
@@ -10320,7 +10915,8 @@
       "sociología"
     ],
     "relatedIds": [],
-    "nameEs": "Ibn Jaldún"
+    "nameEs": "Ibn Jaldún",
+    "descriptionEs": "Historiador y filósofo árabe, considerado el fundador de la sociología y la historiografía moderna."
   },
   {
     "id": 597,
@@ -10338,7 +10934,8 @@
       "christianity"
     ],
     "relatedIds": [],
-    "nameEs": "Clodoveo I"
+    "nameEs": "Clodoveo I",
+    "descriptionEs": "Primer rey franco en unir la Galia y convertirse al cristianismo, fundando la dinastía merovingia y predecesora de Francia."
   },
   {
     "id": 598,
@@ -10355,7 +10952,8 @@
     ],
     "relatedIds": [
       73
-    ]
+    ],
+    "descriptionEs": "Alcalde franco del palacio que detuvo la expansión musulmana en Europa en la batalla de Poitiers (732 d.C.)."
   },
   {
     "id": 599,
@@ -10373,7 +10971,8 @@
     "relatedIds": [
       73,
       598
-    ]
+    ],
+    "descriptionEs": "Primer rey carolingio de los francos y padre de Carlomagno."
   },
   {
     "id": 600,
@@ -10388,7 +10987,8 @@
       "inglaterra",
       "vikingos"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Rey de Wessex que defendió Inglaterra de los vikingos y promovió la cultura anglosajona."
   },
   {
     "id": 601,
@@ -10404,7 +11004,8 @@
       "germany"
     ],
     "relatedIds": [],
-    "nameEs": "Otón I el Grande"
+    "nameEs": "Otón I el Grande",
+    "descriptionEs": "Primer emperador del Sacro Imperio Romano Germánico, revivió la idea imperial en Occidente."
   },
   {
     "id": 602,
@@ -10422,7 +11023,8 @@
       "normans"
     ],
     "relatedIds": [],
-    "nameEs": "Guillermo el Conquistador"
+    "nameEs": "Guillermo el Conquistador",
+    "descriptionEs": "Primer rey normando de Inglaterra después de su victoria en Hastings en 1066. Su conquista transformó el idioma, el derecho y la cultura inglesa."
   },
   {
     "id": 603,
@@ -10443,7 +11045,8 @@
       82,
       87
     ],
-    "nameEs": "Enrique II de Inglaterra"
+    "nameEs": "Enrique II de Inglaterra",
+    "descriptionEs": "Rey Plantagenet que amplió el derecho consuetudinario inglés y se enfrentó al asesinato del arzobispo Thomas Becket en la catedral de Canterbury."
   },
   {
     "id": 604,
@@ -10461,7 +11064,8 @@
     "relatedIds": [
       87,
       88
-    ]
+    ],
+    "descriptionEs": "Rey de Francia que consolidó el poder real y participó en la Tercera Cruzada."
   },
   {
     "id": 605,
@@ -10479,7 +11083,8 @@
       "saint"
     ],
     "relatedIds": [],
-    "nameEs": "Luis IX de Francia"
+    "nameEs": "Luis IX de Francia",
+    "descriptionEs": "Santo rey francés que dirigió dos cruzadas y reformó la justicia, canonizado por la Iglesia como San Luis en 1297."
   },
   {
     "id": 606,
@@ -10499,7 +11104,8 @@
     "relatedIds": [
       605
     ],
-    "nameEs": "Felipe IV el Hermoso"
+    "nameEs": "Felipe IV el Hermoso",
+    "descriptionEs": "Poderoso rey francés que destruyó a los Caballeros Templarios y trasladó el papado a Aviñón, ampliando enormemente el poder real."
   },
   {
     "id": 607,
@@ -10517,7 +11123,8 @@
       "wales"
     ],
     "relatedIds": [],
-    "nameEs": "Eduardo I de Inglaterra"
+    "nameEs": "Eduardo I de Inglaterra",
+    "descriptionEs": "Conocido como el Martillo de los Escoceses, conquistó Gales y estuvo a punto de subyugar a Escocia, reformando también la ley y el parlamento ingleses."
   },
   {
     "id": 608,
@@ -10535,7 +11142,8 @@
       "france"
     ],
     "relatedIds": [],
-    "nameEs": "Eduardo III de Inglaterra"
+    "nameEs": "Eduardo III de Inglaterra",
+    "descriptionEs": "Rey inglés victorioso que lanzó la Guerra de los Cien Años con Francia y fundó la prestigiosa Orden de la Jarretera."
   },
   {
     "id": 609,
@@ -10556,7 +11164,8 @@
       608,
       96
     ],
-    "nameEs": "Enrique V de Inglaterra"
+    "nameEs": "Enrique V de Inglaterra",
+    "descriptionEs": "Rey inglés que aplastó a los franceses en Agincourt en 1415 y estuvo a punto de unir Inglaterra y Francia bajo una sola corona."
   },
   {
     "id": 610,
@@ -10573,7 +11182,8 @@
     ],
     "relatedIds": [
       611
-    ]
+    ],
+    "descriptionEs": "Último rey Plantagenet, que murió en Bosworth poniendo fin a las Guerras de las Dos Rosas."
   },
   {
     "id": 611,
@@ -10591,7 +11201,8 @@
     "relatedIds": [
       610,
       612
-    ]
+    ],
+    "descriptionEs": "Fundador de la dinastía Tudor, que derrotó a Ricardo III en Bosworth."
   },
   {
     "id": 612,
@@ -10613,7 +11224,8 @@
       613,
       119
     ],
-    "nameEs": "Enrique VIII de Inglaterra"
+    "nameEs": "Enrique VIII de Inglaterra",
+    "descriptionEs": "Rey inglés que rompió con Roma para anular su primer matrimonio, fundó la Iglesia de Inglaterra y tuvo seis esposas seguidas."
   },
   {
     "id": 613,
@@ -10633,7 +11245,8 @@
       105,
       106
     ],
-    "nameEs": "Catalina de Aragón"
+    "nameEs": "Catalina de Aragón",
+    "descriptionEs": "Primera esposa de Enrique VIII e hija de los Reyes Católicos, cuyo divorcio desencadenó el cisma anglicano."
   },
   {
     "id": 614,
@@ -10651,7 +11264,8 @@
     "relatedIds": [
       612
     ],
-    "nameEs": "Tomás Cromwell"
+    "nameEs": "Tomás Cromwell",
+    "descriptionEs": "Ministro de Enrique VIII y artífice de la Reforma Anglicana y de la disolución de los monasterios."
   },
   {
     "id": 615,
@@ -10673,7 +11287,8 @@
       613,
       119
     ],
-    "nameEs": "María I de Inglaterra"
+    "nameEs": "María I de Inglaterra",
+    "descriptionEs": "Primera reina reinante de Inglaterra que restauró el catolicismo y quemó a casi 300 protestantes, ganándose el nombre de Bloody Mary."
   },
   {
     "id": 616,
@@ -10688,7 +11303,8 @@
       "reconquista",
       "asturias"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer rey de Asturias, que inició la Reconquista tras la Batalla de Covadonga."
   },
   {
     "id": 617,
@@ -10706,7 +11322,8 @@
     "relatedIds": [
       80
     ],
-    "nameEs": "Alfonso VI de León"
+    "nameEs": "Alfonso VI de León",
+    "descriptionEs": "Rey de León y Castilla que conquistó Toledo en 1085 y fue a la vez patrón y rival de El Cid."
   },
   {
     "id": 618,
@@ -10723,7 +11340,8 @@
     ],
     "relatedIds": [
       619
-    ]
+    ],
+    "descriptionEs": "Rey de Castilla y León que conquistó Córdoba y Sevilla durante la Reconquista."
   },
   {
     "id": 619,
@@ -10743,7 +11361,8 @@
     "relatedIds": [
       618
     ],
-    "nameEs": "Alfonso X el Sabio"
+    "nameEs": "Alfonso X el Sabio",
+    "descriptionEs": "Alfonso el Sabio, rey de Castilla y León, que patrocinó enormes compilaciones jurídicas y científicas e intentó convertirse en emperador del Sacro Imperio Romano Germánico."
   },
   {
     "id": 620,
@@ -10758,7 +11377,8 @@
       "aragón",
       "reconquista"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Rey de Aragón que conquistó Mallorca y Valencia para la corona cristiana."
   },
   {
     "id": 621,
@@ -10776,7 +11396,8 @@
     "relatedIds": [
       105,
       106
-    ]
+    ],
+    "descriptionEs": "Último rey nazarí de Granada, que entregó la ciudad a los Reyes Católicos en 1492."
   },
   {
     "id": 622,
@@ -10791,7 +11412,8 @@
       "scholasticism",
       "theology"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Teólogo y filósofo escolástico, conocido como el padre del argumento ontológico."
   },
   {
     "id": 623,
@@ -10808,7 +11430,8 @@
     ],
     "relatedIds": [
       624
-    ]
+    ],
+    "descriptionEs": "Filósofo y teólogo francés, pionero del método escolástico y famoso por su romance con Héloïse."
   },
   {
     "id": 624,
@@ -10825,7 +11448,8 @@
     ],
     "relatedIds": [
       623
-    ]
+    ],
+    "descriptionEs": "Filósofa y escritora francesa, célebre por su correspondencia amorosa con Abelardo."
   },
   {
     "id": 625,
@@ -10840,7 +11464,8 @@
       "misticismo",
       "music"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Abadesa, mística, compositora y erudita medieval alemana."
   },
   {
     "id": 626,
@@ -10855,7 +11480,8 @@
       "cister",
       "crusades"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Monje cisterciense que impulsó la Segunda Cruzada y reformó la vida monástica."
   },
   {
     "id": 627,
@@ -10872,7 +11498,8 @@
     ],
     "relatedIds": [
       89
-    ]
+    ],
+    "descriptionEs": "Filósofo y científico dominicano alemán, maestro de Tomás de Aquino."
   },
   {
     "id": 628,
@@ -10887,7 +11514,8 @@
       "scholasticism",
       "franciscanos"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Filósofo y teólogo franciscano escocés, conocido como el \"Doctor Sutil\"."
   },
   {
     "id": 629,
@@ -10904,7 +11532,8 @@
     ],
     "relatedIds": [
       85
-    ]
+    ],
+    "descriptionEs": "Teólogo franciscano italiano, Doctor de la Iglesia y biógrafo de San Francisco."
   },
   {
     "id": 630,
@@ -10919,7 +11548,8 @@
       "misticismo",
       "italy"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Místico y reformador dominicano, Doctor de la Iglesia que influyó en el regreso del papado a Roma."
   },
   {
     "id": 631,
@@ -10934,7 +11564,8 @@
       "mathematics",
       "sucesión"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Matemático italiano que introdujo los números arábigos en Europa y describió la famosa secuencia que lleva su nombre."
   },
   {
     "id": 632,
@@ -10952,7 +11583,8 @@
     "relatedIds": [
       83,
       91
-    ]
+    ],
+    "descriptionEs": "Nieto de Genghis Khan y fundador de la dinastía Yuan en China."
   },
   {
     "id": 633,
@@ -10972,7 +11604,8 @@
     "relatedIds": [
       83
     ],
-    "nameEs": "Tamerlán"
+    "nameEs": "Tamerlán",
+    "descriptionEs": "Conquistador turco-mongol que construyó un vasto imperio desde Anatolia hasta la India, devastando ciudades y creando el Renacimiento timúrida."
   },
   {
     "id": 634,
@@ -10991,7 +11624,8 @@
     ],
     "relatedIds": [
       633
-    ]
+    ],
+    "descriptionEs": "Príncipe de Asia Central que fundó el Imperio Mughal en la India en 1526 después de derrotar al Sultanato de Delhi; También un talentoso poeta y autor de memorias."
   },
   {
     "id": 635,
@@ -11006,7 +11640,8 @@
       "china",
       "empire"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer emperador de una China unificada, que ordenó la construcción de la Gran Muralla y el Ejército de Terracota."
   },
   {
     "id": 636,
@@ -11023,7 +11658,8 @@
     ],
     "relatedIds": [
       635
-    ]
+    ],
+    "descriptionEs": "Emperador Han que expandió el imperio chino y consolidó el confucianismo como ideología oficial."
   },
   {
     "id": 637,
@@ -11038,7 +11674,8 @@
       "china",
       "emperatriz"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "La única emperatriz que gobernó China por derecho propio, fundadora de la efímera dinastía Zhou."
   },
   {
     "id": 638,
@@ -11053,7 +11690,8 @@
       "china",
       "tang"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Segundo emperador de la dinastía Tang, considerado uno de los más grandes gobernantes de China."
   },
   {
     "id": 639,
@@ -11068,7 +11706,8 @@
       "china",
       "exploration"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Almirante chino de la dinastía Ming que dirigió siete importantes expediciones marítimas hasta África."
   },
   {
     "id": 640,
@@ -11084,7 +11723,8 @@
       "buddhism"
     ],
     "relatedIds": [],
-    "nameEs": "Príncipe Shōtoku"
+    "nameEs": "Príncipe Shōtoku",
+    "descriptionEs": "Regente japonés que impulsó el budismo y organizó el estado según el modelo chino."
   },
   {
     "id": 641,
@@ -11099,7 +11739,8 @@
       "japan",
       "novel"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Dama de la corte Heian y autora de 'El cuento de Genji', considerada la primera novela del mundo."
   },
   {
     "id": 642,
@@ -11116,7 +11757,8 @@
     ],
     "relatedIds": [
       641
-    ]
+    ],
+    "descriptionEs": "Escritor japonés de la corte Heian y autor de 'The Pillow Book'."
   },
   {
     "id": 643,
@@ -11131,7 +11773,8 @@
       "japan",
       "shōgun"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Primer shogun de Japón y fundador del shogunato Kamakura."
   },
   {
     "id": 644,
@@ -11148,7 +11791,8 @@
     ],
     "relatedIds": [
       645
-    ]
+    ],
+    "descriptionEs": "Daimyo japonés que inició la unificación de Japón durante el período Sengoku."
   },
   {
     "id": 645,
@@ -11166,7 +11810,8 @@
     "relatedIds": [
       644,
       646
-    ]
+    ],
+    "descriptionEs": "Daimyo japonés que completó la unificación de Japón tras la muerte de Oda Nobunaga."
   },
   {
     "id": 646,
@@ -11183,7 +11828,8 @@
     ],
     "relatedIds": [
       645
-    ]
+    ],
+    "descriptionEs": "Fundador del shogunato Tokugawa, que gobernó Japón durante 250 años."
   },
   {
     "id": 647,
@@ -11200,7 +11846,8 @@
     ],
     "relatedIds": [
       97
-    ]
+    ],
+    "descriptionEs": "Pintor florentino y pionero de la perspectiva en el Quattrocento."
   },
   {
     "id": 648,
@@ -11217,7 +11864,8 @@
     ],
     "relatedIds": [
       97
-    ]
+    ],
+    "descriptionEs": "Orfebre y escultor florentino, creador de las \"Puertas del Paraíso\" para el Baptisterio de Florencia."
   },
   {
     "id": 649,
@@ -11232,7 +11880,8 @@
       "flamenco",
       "óleo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor flamenco, maestro de la pintura al óleo y creador del Retablo de Gante."
   },
   {
     "id": 650,
@@ -11247,7 +11896,8 @@
       "renaissance",
       "engraving"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor y grabador alemán, figura destacada del Renacimiento del Norte."
   },
   {
     "id": 651,
@@ -11264,7 +11914,8 @@
     ],
     "relatedIds": [
       612
-    ]
+    ],
+    "descriptionEs": "Pintor y retratista de la corte alemán de Enrique VIII de Inglaterra."
   },
   {
     "id": 652,
@@ -11279,7 +11930,8 @@
       "flamenco",
       "simbolismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor flamenco y autor de 'El jardín de las delicias' y otras visiones simbólicas."
   },
   {
     "id": 653,
@@ -11296,7 +11948,8 @@
     ],
     "relatedIds": [
       652
-    ]
+    ],
+    "descriptionEs": "Pintor flamenco conocido por sus escenas y paisajes campesinos."
   },
   {
     "id": 654,
@@ -11312,7 +11965,8 @@
       "frescos"
     ],
     "relatedIds": [],
-    "nameEs": "Fra Angélico"
+    "nameEs": "Fra Angélico",
+    "descriptionEs": "Pintor dominicano florentino y autor de los frescos del Convento de San Marcos."
   },
   {
     "id": 655,
@@ -11329,7 +11983,8 @@
     ],
     "relatedIds": [
       97
-    ]
+    ],
+    "descriptionEs": "Pintor del Quattrocento y maestro de la perspectiva matemática."
   },
   {
     "id": 656,
@@ -11344,7 +11999,8 @@
       "renaissance",
       "perspectiva"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor del Quattrocento célebre por su dominio de la perspectiva y el escorzo."
   },
   {
     "id": 657,
@@ -11359,7 +12015,8 @@
       "renaissance",
       "venecia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor veneciano y figura central de la escuela veneciana del Renacimiento."
   },
   {
     "id": 658,
@@ -11376,7 +12033,8 @@
     ],
     "relatedIds": [
       113
-    ]
+    ],
+    "descriptionEs": "Pintor veneciano y precursor del estilo tonal de Tiziano."
   },
   {
     "id": 659,
@@ -11390,7 +12048,8 @@
     "tags": [
       "renaissance"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor del Renacimiento italiano que anticipó el Barroco con sus efectos luminísticos."
   },
   {
     "id": 660,
@@ -11405,7 +12064,8 @@
       "manierismo",
       "sculpture"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Orfebre y escultor manierista florentino, creador de 'Perseo' y de una célebre autobiografía."
   },
   {
     "id": 661,
@@ -11420,7 +12080,8 @@
       "architecture",
       "clasicismo"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Arquitecto veneciano y autor de 'Los cuatro libros de la arquitectura', referente definitorio del clasicismo."
   },
   {
     "id": 662,
@@ -11435,7 +12096,8 @@
       "renaissance",
       "vaticano"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Arquitecto italiano y primer maestro de obras de la nueva Basílica de San Pedro en Roma."
   },
   {
     "id": 663,
@@ -11450,7 +12112,8 @@
       "renaissance",
       "art"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Pintor y biógrafo italiano, autor de 'La vida de los artistas', la primera historia del arte del Renacimiento."
   },
   {
     "id": 664,
@@ -11468,7 +12131,8 @@
     "relatedIds": [
       17,
       103
-    ]
+    ],
+    "descriptionEs": "Filósofo florentino, traductor de Platón y figura central del neoplatonismo renacentista."
   },
   {
     "id": 665,
@@ -11485,7 +12149,8 @@
     ],
     "relatedIds": [
       664
-    ]
+    ],
+    "descriptionEs": "Filósofo humanista italiano y autor de la 'Oración sobre la dignidad del hombre'."
   },
   {
     "id": 666,
@@ -11502,7 +12167,8 @@
     ],
     "relatedIds": [
       103
-    ]
+    ],
+    "descriptionEs": "Fraile dominico florentino y predicador reformista que gobernó brevemente Florencia antes de ser ejecutado."
   },
   {
     "id": 667,
@@ -11517,7 +12183,8 @@
       "medicine",
       "alquimia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Médico y alquimista suizo, padre de la toxicología y figura revolucionaria de la medicina renacentista."
   },
   {
     "id": 668,
@@ -11535,7 +12202,8 @@
     "relatedIds": [
       537
     ],
-    "nameEs": "Andrés Vesalio"
+    "nameEs": "Andrés Vesalio",
+    "descriptionEs": "Anatomista flamenco y autor de 'De humani corporis fabrica', fundador de la anatomía moderna."
   },
   {
     "id": 669,
@@ -11550,7 +12218,8 @@
       "cartography",
       "geography"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Cartógrafo flamenco y creador de la proyección cartográfica que lleva su nombre."
   },
   {
     "id": 670,
@@ -11568,7 +12237,8 @@
     "relatedIds": [
       108,
       671
-    ]
+    ],
+    "descriptionEs": "Conquistador español, socio y rival de Pizarro en la conquista del Perú, que también exploró Chile."
   },
   {
     "id": 671,
@@ -11586,7 +12256,8 @@
     "relatedIds": [
       670,
       699
-    ]
+    ],
+    "descriptionEs": "Conquistador español y fundador de Santiago de Chile, asesinado por los mapuche."
   },
   {
     "id": 672,
@@ -11601,7 +12272,8 @@
       "amazonas",
       "conquest"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Conquistador español y primer europeo en navegar el río Amazonas hasta su desembocadura."
   },
   {
     "id": 673,
@@ -11616,7 +12288,8 @@
       "conquest",
       "colombia"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Conquistador español que fundó Bogotá y conquistó el territorio muisca de Nueva Granada."
   },
   {
     "id": 674,
@@ -11631,7 +12304,8 @@
       "conquest",
       "rebelión"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Conquistador vasco famoso por su rebelión contra la Corona española durante la expedición a El Dorado."
   },
   {
     "id": 675,
@@ -11649,7 +12323,8 @@
     "relatedIds": [
       115,
       116
-    ]
+    ],
+    "descriptionEs": "Conquistador español, lugarteniente de Cortés y conquistador de Guatemala."
   },
   {
     "id": 676,
@@ -11664,7 +12339,8 @@
       "conquest",
       "florida"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Conquistador español, primer europeo en explorar Florida y gobernador de Puerto Rico."
   },
   {
     "id": 677,
@@ -11679,7 +12355,8 @@
       "conquest",
       "misisipi"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Conquistador español que exploró el sureste de Estados Unidos y fue el primer europeo en descubrir el río Mississippi."
   },
   {
     "id": 678,
@@ -11696,7 +12373,8 @@
     ],
     "relatedIds": [
       120
-    ]
+    ],
+    "descriptionEs": "Conquistador español que dirigió una desastrosa expedición a Florida, de la que Cabeza de Vaca estuvo entre los pocos supervivientes."
   },
   {
     "id": 679,
@@ -11713,7 +12391,8 @@
     ],
     "relatedIds": [
       112
-    ]
+    ],
+    "descriptionEs": "Navegante vasco que completó la primera vuelta al mundo tras la muerte de Magallanes."
   },
   {
     "id": 680,
@@ -11732,7 +12411,8 @@
       681,
       682
     ],
-    "nameEs": "Pachacútec"
+    "nameEs": "Pachacútec",
+    "descriptionEs": "Emperador inca que transformó Cusco en capital imperial y amplió enormemente el Tahuantinsuyo."
   },
   {
     "id": 681,
@@ -11751,7 +12431,8 @@
       680,
       682
     ],
-    "nameEs": "Túpac Yupanqui"
+    "nameEs": "Túpac Yupanqui",
+    "descriptionEs": "Emperador inca e hijo de Pachacútec quien expandió el imperio a su mayor extensión."
   },
   {
     "id": 682,
@@ -11771,7 +12452,8 @@
       683,
       117
     ],
-    "nameEs": "Huayna Cápac"
+    "nameEs": "Huayna Cápac",
+    "descriptionEs": "Último gran emperador inca antes de la llegada de los españoles, que murió de viruela."
   },
   {
     "id": 683,
@@ -11790,7 +12472,8 @@
       682,
       117
     ],
-    "nameEs": "Huáscar"
+    "nameEs": "Huáscar",
+    "descriptionEs": "Inca del Cuzco, derrotado en la guerra civil contra su hermano Atahualpa."
   },
   {
     "id": 684,
@@ -11808,7 +12491,8 @@
     "relatedIds": [
       108,
       117
-    ]
+    ],
+    "descriptionEs": "Líder inca que encabezó la gran rebelión contra los españoles desde la fortaleza de Vilcabamba."
   },
   {
     "id": 685,
@@ -11824,7 +12508,8 @@
       "tenochtitlán"
     ],
     "relatedIds": [],
-    "nameEs": "Itzcóatl"
+    "nameEs": "Itzcóatl",
+    "descriptionEs": "Cuarto tlatoani de Tenochtitlán, fundador de la Triple Alianza y verdadero arquitecto del Imperio Azteca."
   },
   {
     "id": 686,
@@ -11842,7 +12527,8 @@
     "relatedIds": [
       685
     ],
-    "nameEs": "Nezahualcóyotl"
+    "nameEs": "Nezahualcóyotl",
+    "descriptionEs": "Poeta-tlatoani de Texcoco, miembro de la Triple Alianza y figura cultural central del mundo mexica."
   },
   {
     "id": 687,
@@ -11861,7 +12547,8 @@
       685,
       110
     ],
-    "nameEs": "Ahuízotl"
+    "nameEs": "Ahuízotl",
+    "descriptionEs": "Octavo tlatoani mexica que expandió el Imperio Azteca a su mayor extensión."
   },
   {
     "id": 688,
@@ -11880,7 +12567,8 @@
       110,
       115
     ],
-    "nameEs": "Cuitláhuac"
+    "nameEs": "Cuitláhuac",
+    "descriptionEs": "Décimo tlatoani mexica que lideró la 'Noche Triste' contra los españoles y murió de viruela poco después."
   },
   {
     "id": 689,
@@ -11899,7 +12587,8 @@
       110,
       115,
       688
-    ]
+    ],
+    "descriptionEs": "Último tlatoani mexica que resistió el asedio español a Tenochtitlán y fue ejecutado por Hernán Cortés."
   },
   {
     "id": 690,
@@ -11914,7 +12603,8 @@
       "maya",
       "palenque"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Gobernante maya de Palenque, uno de los más célebres por su tumba y monumentos."
   },
   {
     "id": 691,
@@ -11931,7 +12621,8 @@
     ],
     "relatedIds": [
       690
-    ]
+    ],
+    "descriptionEs": "Hijo y sucesor de Pakal en Palenque, quien completó los templos del Grupo de la Cruz."
   },
   {
     "id": 692,
@@ -11946,7 +12637,8 @@
       "maya",
       "copán"
     ],
-    "relatedIds": []
+    "relatedIds": [],
+    "descriptionEs": "Fundador de la dinastía maya de Copán, en la actual Honduras."
   },
   {
     "id": 693,
@@ -11963,7 +12655,8 @@
     ],
     "relatedIds": [
       692
-    ]
+    ],
+    "descriptionEs": "Gobernante maya de Copán y mecenas artístico, que fue capturado y ejecutado por el rey de Quiriguá."
   },
   {
     "id": 694,
@@ -11980,7 +12673,8 @@
     ],
     "relatedIds": [
       671
-    ]
+    ],
+    "descriptionEs": "Toqui mapuche que lideró la resistencia contra los conquistadores españoles en Arauco."
   },
   {
     "id": 695,
@@ -11997,7 +12691,8 @@
     ],
     "relatedIds": [
       694
-    ]
+    ],
+    "descriptionEs": "Toqui mapuche que lideró la resistencia tras la muerte de Lautaro contra los españoles en Chile."
   },
   {
     "id": 696,
@@ -12015,7 +12710,8 @@
     "relatedIds": [
       680
     ],
-    "nameEs": "Manco Cápac"
+    "nameEs": "Manco Cápac",
+    "descriptionEs": "Mítico fundador del Curacazgo del Cusco y origen legendario de la dinastía Inca."
   },
   {
     "id": 697,
@@ -12032,7 +12728,8 @@
     ],
     "relatedIds": [
       675
-    ]
+    ],
+    "descriptionEs": "Héroe k'iche' que murió luchando contra Pedro de Alvarado durante la conquista de Guatemala."
   },
   {
     "id": 698,
@@ -12049,7 +12746,8 @@
     ],
     "relatedIds": [
       104
-    ]
+    ],
+    "descriptionEs": "Jefa taína de La Española, ejecutada por los españoles tras una masacre en Jaragua."
   },
   {
     "id": 699,
@@ -12066,7 +12764,8 @@
     ],
     "relatedIds": [
       698
-    ]
+    ],
+    "descriptionEs": "Cacique taíno que lideró la resistencia contra los conquistadores españoles en Cuba."
   },
   {
     "id": 700,
@@ -12083,7 +12782,8 @@
     ],
     "relatedIds": [
       115
-    ]
+    ],
+    "descriptionEs": "Primer virrey de Nueva España y más tarde del Perú, organizador del gobierno colonial temprano."
   },
   {
     "id": 704,
@@ -12103,7 +12803,8 @@
     "relatedIds": [
       702,
       703
-    ]
+    ],
+    "descriptionEs": "Impopular rey inglés que fue obligado por barones rebeldes a firmar la Carta Magna en 1215, piedra angular del derecho constitucional."
   },
   {
     "id": 711,
@@ -12124,7 +12825,8 @@
       710,
       712
     ],
-    "nameEs": "Jacobo I de Inglaterra"
+    "nameEs": "Jacobo I de Inglaterra",
+    "descriptionEs": "Primer rey Estuardo, que unió las coronas inglesa y escocesa y encargó la Biblia King James en 1611."
   },
   {
     "id": 712,
@@ -12145,7 +12847,8 @@
       711,
       713
     ],
-    "nameEs": "Carlos I de Inglaterra"
+    "nameEs": "Carlos I de Inglaterra",
+    "descriptionEs": "Rey inglés que chocó con el Parlamento por la prerrogativa real y fue ejecutado en 1649, el único monarca inglés decapitado públicamente."
   },
   {
     "id": 713,
@@ -12166,7 +12869,8 @@
       712,
       714
     ],
-    "nameEs": "Carlos II de Inglaterra"
+    "nameEs": "Carlos II de Inglaterra",
+    "descriptionEs": "El alegre monarca que restauró la monarquía después de la Commonwealth de Cromwell, presidiendo la Gran Plaga y el Gran Incendio de Londres."
   },
   {
     "id": 714,
@@ -12186,7 +12890,8 @@
     "relatedIds": [
       713
     ],
-    "nameEs": "Guillermo III de Orange"
+    "nameEs": "Guillermo III de Orange",
+    "descriptionEs": "Príncipe holandés que se convirtió en rey de Inglaterra mediante la Revolución Gloriosa de 1688, estableciendo una monarquía constitucional y la Declaración de Derechos."
   },
   {
     "id": 715,
@@ -12206,7 +12911,8 @@
     "relatedIds": [
       716
     ],
-    "nameEs": "Jorge III de Gran Bretaña"
+    "nameEs": "Jorge III de Gran Bretaña",
+    "descriptionEs": "Rey británico durante la Revolución Americana, cuyas políticas desencadenaron la independencia colonial y que luego sufrió una enfermedad mental."
   },
   {
     "id": 716,
@@ -12226,7 +12932,8 @@
     "relatedIds": [
       715
     ],
-    "nameEs": "Reina Victoria"
+    "nameEs": "Reina Victoria",
+    "descriptionEs": "Reina del Reino Unido y emperatriz de la India cuyo reinado de 63 años definió la era victoriana y el apogeo del Imperio Británico."
   },
   {
     "id": 720,
@@ -12248,7 +12955,8 @@
       721,
       731
     ],
-    "nameEs": "Francisco I de Francia"
+    "nameEs": "Francisco I de Francia",
+    "descriptionEs": "Rey del Renacimiento que invitó a Leonardo da Vinci a Francia, defendió las artes y pasó décadas rivalizando con Carlos V por la supremacía europea."
   },
   {
     "id": 721,
@@ -12269,7 +12977,8 @@
       720,
       722
     ],
-    "nameEs": "Enrique IV de Francia"
+    "nameEs": "Enrique IV de Francia",
+    "descriptionEs": "Primer rey Borbón de Francia que puso fin a las Guerras de Religión al emitir el Edicto de Nantes y fue asesinado por un fanático católico."
   },
   {
     "id": 722,
@@ -12290,7 +12999,8 @@
       721,
       723
     ],
-    "nameEs": "Luis XIII de Francia"
+    "nameEs": "Luis XIII de Francia",
+    "descriptionEs": "Rey francés que gobernó en estrecha colaboración con el cardenal Richelieu, quien centralizó el poder y convirtió a Francia en el estado líder de Europa."
   },
   {
     "id": 723,
@@ -12311,7 +13021,8 @@
       722,
       724
     ],
-    "nameEs": "Luis XV de Francia"
+    "nameEs": "Luis XV de Francia",
+    "descriptionEs": "Rey francés cuyo largo reinado estuvo marcado por intrigas cortesanas, guerras costosas y una deuda creciente que eventualmente conduciría a la Revolución."
   },
   {
     "id": 726,
@@ -12331,7 +13042,8 @@
     "relatedIds": [
       725
     ],
-    "nameEs": "Pedro I el Cruel"
+    "nameEs": "Pedro I el Cruel",
+    "descriptionEs": "Rey de Castilla conocido como el Cruel, cuyo reinado desató una guerra civil contra su hermano ilegítimo Enrique y sus aliados extranjeros."
   },
   {
     "id": 728,
@@ -12351,7 +13063,8 @@
     "relatedIds": [
       727
     ],
-    "nameEs": "Felipe IV de España"
+    "nameEs": "Felipe IV de España",
+    "descriptionEs": "Rey español que presidió el declive de la hegemonía castellana mientras patrocinaba a Velázquez y hacía de Madrid una capital cultural."
   },
   {
     "id": 729,
@@ -12372,7 +13085,8 @@
       730,
       731
     ],
-    "nameEs": "Rodolfo I de Habsburgo"
+    "nameEs": "Rodolfo I de Habsburgo",
+    "descriptionEs": "Fundador de la dinastía de los Habsburgo y primer emperador del Sacro Imperio Romano Germánico de los Habsburgo, cuyas victorias establecieron el dominio de la familia durante siglos."
   },
   {
     "id": 730,
@@ -12393,7 +13107,8 @@
       729,
       731
     ],
-    "nameEs": "Maximiliano I"
+    "nameEs": "Maximiliano I",
+    "descriptionEs": "Emperador del Sacro Imperio Romano Germánico conocido como el Último Caballero, que expandió el poder de los Habsburgo mediante matrimonios estratégicos en lugar de guerras."
   },
   {
     "id": 732,
@@ -12414,7 +13129,8 @@
       731,
       733
     ],
-    "nameEs": "Fernando I"
+    "nameEs": "Fernando I",
+    "descriptionEs": "Emperador del Sacro Imperio Romano Germánico que sucedió a su hermano Carlos V y organizó la defensa de la Europa cristiana contra el avance del Imperio Otomano."
   },
   {
     "id": 733,
@@ -12435,7 +13151,8 @@
       732,
       734
     ],
-    "nameEs": "Rodolfo II"
+    "nameEs": "Rodolfo II",
+    "descriptionEs": "Emperador solitario de los Habsburgo que trasladó su corte a Praga, patrocinó a Kepler y Tycho Brahe y coleccionó arte de forma obsesiva."
   },
   {
     "id": 734,
@@ -12456,7 +13173,8 @@
       733,
       735
     ],
-    "nameEs": "Leopoldo I"
+    "nameEs": "Leopoldo I",
+    "descriptionEs": "Emperador Habsburgo que reinó durante mucho tiempo y organizó el socorro de Viena en 1683, deteniendo el avance otomano hacia Europa."
   },
   {
     "id": 735,
@@ -12476,7 +13194,8 @@
     "relatedIds": [
       734
     ],
-    "nameEs": "José II"
+    "nameEs": "José II",
+    "descriptionEs": "Déspota ilustrado que impulsó reformas radicales, incluida la abolición de la servidumbre, edictos de tolerancia religiosa y modernización judicial."
   },
   {
     "id": 736,
@@ -12496,7 +13215,8 @@
     "relatedIds": [
       737
     ],
-    "nameEs": "Iván III el Grande"
+    "nameEs": "Iván III el Grande",
+    "descriptionEs": "Gran Príncipe de Moscú que unió los principados rusos, puso fin al señorío mongol y sentó las bases del estado ruso."
   },
   {
     "id": 737,
@@ -12517,7 +13237,8 @@
       736,
       738
     ],
-    "nameEs": "Iván IV el Terrible"
+    "nameEs": "Iván IV el Terrible",
+    "descriptionEs": "Primer zar de Rusia que expandió enormemente el imperio hacia el este mientras aterrorizaba a la nobleza con su policía secreta, la Oprichnina."
   },
   {
     "id": 738,
@@ -12537,7 +13258,8 @@
     "relatedIds": [
       737,
       739
-    ]
+    ],
+    "descriptionEs": "Regente que se convirtió en zar de Rusia, protagonista del drama de Pushkin y de la ópera de Mussorgsky, que murió en medio del caos político y el hambre."
   },
   {
     "id": 739,
@@ -12557,7 +13279,8 @@
     "relatedIds": [
       738
     ],
-    "nameEs": "Alejo de Rusia"
+    "nameEs": "Alejo de Rusia",
+    "descriptionEs": "Zar de Rusia y padre de Pedro el Grande, cuyo reinado vio reformas eclesiásticas, expansión territorial y la fundación del poder de la dinastía Romanov."
   },
   {
     "id": 740,
@@ -12578,7 +13301,8 @@
       739,
       741
     ],
-    "nameEs": "Isabel de Rusia"
+    "nameEs": "Isabel de Rusia",
+    "descriptionEs": "Emperatriz de Rusia e hija de Pedro el Grande, quien fundó la Universidad de Moscú, patrocinó las artes y mantuvo a Rusia fuera del alcance de Prusia."
   },
   {
     "id": 741,
@@ -12599,7 +13323,8 @@
       740,
       742
     ],
-    "nameEs": "Pablo I de Rusia"
+    "nameEs": "Pablo I de Rusia",
+    "descriptionEs": "Zar ruso errático que revirtió muchas de las reformas de Catalina la Grande y fue asesinado por conspiradores de la corte después de sólo cinco años en el poder."
   },
   {
     "id": 742,
@@ -12620,7 +13345,8 @@
       741,
       743
     ],
-    "nameEs": "Alejandro I de Rusia"
+    "nameEs": "Alejandro I de Rusia",
+    "descriptionEs": "Zar ruso que derrotó la invasión de Napoleón en 1812 y creó la Santa Alianza, transformándose de un reformador liberal a un reaccionario místico."
   },
   {
     "id": 743,
@@ -12641,7 +13367,8 @@
       742,
       744
     ],
-    "nameEs": "Nicolás I de Rusia"
+    "nameEs": "Nicolás I de Rusia",
+    "descriptionEs": "El Zar de Hierro que aplastó las revueltas en toda Europa y murió en medio de la humillante derrota de Rusia en la Guerra de Crimea contra Gran Bretaña y Francia."
   },
   {
     "id": 744,
@@ -12662,7 +13389,8 @@
       743,
       745
     ],
-    "nameEs": "Alejandro II de Rusia"
+    "nameEs": "Alejandro II de Rusia",
+    "descriptionEs": "El Zar Libertador que liberó a los siervos en 1861 y llevó a cabo importantes reformas, pero fue asesinado por terroristas revolucionarios."
   },
   {
     "id": 745,
@@ -12683,7 +13411,8 @@
       744,
       746
     ],
-    "nameEs": "Alejandro III de Rusia"
+    "nameEs": "Alejandro III de Rusia",
+    "descriptionEs": "Zar nacionalista y reaccionario que revirtió las reformas liberales de su padre y promovió la cultura rusa y la ortodoxia en todo el imperio."
   },
   {
     "id": 746,
@@ -12703,7 +13432,8 @@
     "relatedIds": [
       745
     ],
-    "nameEs": "Nicolás II de Rusia"
+    "nameEs": "Nicolás II de Rusia",
+    "descriptionEs": "El último zar Romanov, cuyo gobierno autocrático no logró detener la revolución; abdicó en 1917 y fue ejecutado con su familia por los bolcheviques."
   },
   {
     "id": 747,
@@ -12724,7 +13454,8 @@
       739,
       740
     ],
-    "nameEs": "Ana de Rusia"
+    "nameEs": "Ana de Rusia",
+    "descriptionEs": "Emperatriz de Rusia cuyo reinado estuvo dominado por los favoritos alemanes y famoso por su fastuosa corte y represión política."
   },
   {
     "id": 748,
@@ -12744,7 +13475,8 @@
     "relatedIds": [
       749
     ],
-    "nameEs": "Harald Diente Azul"
+    "nameEs": "Harald Diente Azul",
+    "descriptionEs": "Rey danés que unió a las tribus danesas y las convirtió al cristianismo, celebrado por el moderno estándar inalámbrico Bluetooth que lleva su nombre."
   },
   {
     "id": 749,
@@ -12764,7 +13496,8 @@
     "relatedIds": [
       748
     ],
-    "nameEs": "Canuto el Grande"
+    "nameEs": "Canuto el Grande",
+    "descriptionEs": "Rey de Inglaterra, Dinamarca y Noruega que creó un gran imperio en el Mar del Norte y es famoso por la leyenda de ordenar que la marea se detuviera."
   },
   {
     "id": 750,
@@ -12784,7 +13517,8 @@
     "relatedIds": [
       751
     ],
-    "nameEs": "Erik el Rojo"
+    "nameEs": "Erik el Rojo",
+    "descriptionEs": "Explorador nórdico exiliado de Islandia que descubrió y colonizó Groenlandia alrededor del año 985, nombrándola para atraer colonos."
   },
   {
     "id": 751,
@@ -12804,7 +13538,8 @@
     "relatedIds": [
       750
     ],
-    "nameEs": "Leif Eriksson"
+    "nameEs": "Leif Eriksson",
+    "descriptionEs": "Hijo de Erico el Rojo y explorador nórdico que llegó a las costas de América del Norte alrededor del año 1000 d.C., casi 500 años antes que Colón."
   },
   {
     "id": 752,
@@ -12825,7 +13560,8 @@
       748,
       749
     ],
-    "nameEs": "Margarita I de Dinamarca"
+    "nameEs": "Margarita I de Dinamarca",
+    "descriptionEs": "Poderosa reina escandinava que creó la Unión de Kalmar, uniendo a Dinamarca, Noruega y Suecia bajo una sola corona."
   },
   {
     "id": 753,
@@ -12845,7 +13581,8 @@
     "relatedIds": [
       752
     ],
-    "nameEs": "Gustavo Vasa"
+    "nameEs": "Gustavo Vasa",
+    "descriptionEs": "Fundador de la Suecia moderna que lideró la revuelta contra el dominio danés, estableció la dinastía Vasa y rompió con Roma para abrazar el luteranismo."
   },
   {
     "id": 754,
@@ -12865,7 +13602,8 @@
     "relatedIds": [
       753
     ],
-    "nameEs": "Cristina de Suecia"
+    "nameEs": "Cristina de Suecia",
+    "descriptionEs": "Excéntrica reina sueca celebrada por su aprendizaje y mecenazgo de las artes que abdicó del trono en 1654 y se convirtió al catolicismo."
   },
   {
     "id": 755,
@@ -12885,7 +13623,8 @@
     "relatedIds": [
       756
     ],
-    "nameEs": "Mieszko I de Polonia"
+    "nameEs": "Mieszko I de Polonia",
+    "descriptionEs": "Primer gobernante histórico de Polonia que se convirtió al cristianismo en 966, integrando Polonia al mundo cristiano latino."
   },
   {
     "id": 756,
@@ -12906,7 +13645,8 @@
       755,
       757
     ],
-    "nameEs": "Boleslao I el Bravo"
+    "nameEs": "Boleslao I el Bravo",
+    "descriptionEs": "Primer rey coronado de Polonia que amplió enormemente el reino y aseguró la independencia eclesiástica de la Iglesia polaca."
   },
   {
     "id": 757,
@@ -12926,7 +13666,8 @@
     "relatedIds": [
       756
     ],
-    "nameEs": "Esteban I de Hungría"
+    "nameEs": "Esteban I de Hungría",
+    "descriptionEs": "Primer rey de Hungría que cristianizó el reino, organizó la Iglesia y posteriormente fue canonizado como santo patrón de Hungría."
   },
   {
     "id": 758,
@@ -12946,7 +13687,8 @@
     "relatedIds": [
       757
     ],
-    "nameEs": "Matías Corvino"
+    "nameEs": "Matías Corvino",
+    "descriptionEs": "Rey renacentista de Hungría que construyó una brillante corte en Buda, patrocinó a eruditos humanistas y creó una de las mejores bibliotecas de Europa."
   },
   {
     "id": 759,
@@ -12967,7 +13709,8 @@
       755,
       756,
       760
-    ]
+    ],
+    "descriptionEs": "Primera mujer rey de Polonia que financió la Universidad de Cracovia, unificó Polonia y Lituania, y fue canonizada como santa por la Iglesia Católica."
   },
   {
     "id": 760,
@@ -12988,7 +13731,8 @@
       759,
       761
     ],
-    "nameEs": "Juan III Sobieski"
+    "nameEs": "Juan III Sobieski",
+    "descriptionEs": "Rey guerrero de Polonia que dirigió la fuerza de socorro cristiana que rompió el asedio otomano de Viena en 1683, salvando a Europa Central."
   },
   {
     "id": 761,
@@ -13009,7 +13753,8 @@
       759,
       760
     ],
-    "nameEs": "Segismundo II Augusto"
+    "nameEs": "Segismundo II Augusto",
+    "descriptionEs": "Último rey jagellónico de Polonia, cuyo reinado coincidió con la Edad de Oro polaca de cultura, tolerancia religiosa y poder político."
   },
   {
     "id": 764,
@@ -13029,7 +13774,8 @@
     "relatedIds": [
       763
     ],
-    "nameEs": "Valeriano"
+    "nameEs": "Valeriano",
+    "descriptionEs": "Emperador romano que se convirtió en el primero de la historia en ser capturado por un enemigo extranjero, hecho prisionero por el rey persa Sapur I en el año 260 d.C."
   },
   {
     "id": 766,
@@ -13049,7 +13795,8 @@
     "relatedIds": [
       765
     ],
-    "nameEs": "Rómulo Augústulo"
+    "nameEs": "Rómulo Augústulo",
+    "descriptionEs": "El último emperador romano occidental, depuesto en 476 d.C. por el caudillo germánico Odoacro, marcó el tradicional fin del Imperio Romano Occidental."
   },
   {
     "id": 768,
@@ -13069,7 +13816,8 @@
     "relatedIds": [
       767
     ],
-    "nameEs": "Miguel VIII Paleólogo"
+    "nameEs": "Miguel VIII Paleólogo",
+    "descriptionEs": "Emperador bizantino que reconquistó Constantinopla a los latinos en 1261 y restauró el Imperio Bizantino después de medio siglo de exilio."
   },
   {
     "id": 771,
@@ -13090,7 +13838,8 @@
       770,
       772
     ],
-    "nameEs": "Akbar el Grande"
+    "nameEs": "Akbar el Grande",
+    "descriptionEs": "El mayor emperador mogol que triplicó el tamaño del imperio, promovió la tolerancia religiosa entre hindúes y musulmanes y reformó la administración."
   },
   {
     "id": 772,
@@ -13109,7 +13858,8 @@
     ],
     "relatedIds": [
       771
-    ]
+    ],
+    "descriptionEs": "Último gran emperador mogol que expandió el imperio a su mayor tamaño pero cuyas estrictas políticas islámicas y guerras interminables aceleraron su declive."
   },
   {
     "id": 773,
@@ -13129,7 +13879,8 @@
     "relatedIds": [
       774
     ],
-    "nameEs": "Emperador Yongle"
+    "nameEs": "Emperador Yongle",
+    "descriptionEs": "Tercer emperador Ming que trasladó la capital a Beijing, construyó la Ciudad Prohibida y envió las grandes expediciones navales de Zheng He a través de Asia y África."
   },
   {
     "id": 774,
@@ -13150,7 +13901,8 @@
       773,
       775
     ],
-    "nameEs": "Emperador Kangxi"
+    "nameEs": "Emperador Kangxi",
+    "descriptionEs": "El emperador Kangxi, uno de los emperadores con el reinado más largo de la historia, consolidó la dinastía Qing y supervisó una vasta expansión territorial."
   },
   {
     "id": 775,
@@ -13170,7 +13922,8 @@
     "relatedIds": [
       774
     ],
-    "nameEs": "Emperador Qianlong"
+    "nameEs": "Emperador Qianlong",
+    "descriptionEs": "Emperador Qing que presidió la mayor extensión territorial de la dinastía y fue un prolífico poeta y coleccionista de arte, pero cuyo declive abrió China a las presiones occidentales."
   },
   {
     "id": 780,
@@ -13191,6 +13944,7 @@
       765,
       766
     ],
-    "nameEs": "Teodosio II"
+    "nameEs": "Teodosio II",
+    "descriptionEs": "Emperador romano oriental que codificó el derecho romano en el Código Teodosiano y construyó las enormes murallas teodosianas que defendieron Constantinopla durante mil años."
   }
 ]
