@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Search, Heart, Copy, Check, ArrowLeft, Trophy, Swords, X } from 'lucide-react'
 import { Room, MAX_LIVES, ROUND_MS } from '@/lib/gameRoom'
 import { scoreAnswer } from '@/lib/game'
-import { getRank, RANKS } from '@/lib/ranks'
+import { getRank } from '@/lib/ranks'
+import { Medal, RankScale } from '@/components/UI/RankMedal'
 import { searchFigures } from '@/lib/searchEngine'
 import { getCategoryColor } from '@/lib/timelineUtils'
 import { useTranslation } from '@/hooks/useLocale'
@@ -16,104 +17,6 @@ const allFigures = figuresData as HistoricalFigure[]
 const POLL_MS = 1500
 
 interface Props { code: string }
-
-// ── Medal SVG component ────────────────────────────────────────────────────────
-function Medal({ rank, size = 64 }: { rank: ReturnType<typeof getRank>; size?: number }) {
-  const id = rank.name.toLowerCase().replace(/\s/g, '-')
-  if (rank.name === 'Maestro') {
-    return (
-      <svg width={size} height={size} viewBox="0 0 64 64" fill="none">
-        <defs>
-          <linearGradient id={`g-${id}`} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#f59e0b" />
-            <stop offset="100%" stopColor="#a855f7" />
-          </linearGradient>
-          <filter id={`glow-${id}`}>
-            <feGaussianBlur stdDeviation="3" result="blur" />
-            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-          </filter>
-        </defs>
-        {/* Crown */}
-        <circle cx="32" cy="32" r="30" fill={`url(#g-${id})`} opacity="0.2" />
-        <circle cx="32" cy="32" r="30" fill="none" stroke={`url(#g-${id})`} strokeWidth="2.5" />
-        <path d="M14 40 L14 26 L22 34 L32 18 L42 34 L50 26 L50 40 Z" fill={`url(#g-${id})`} filter={`url(#glow-${id})`} />
-        <rect x="12" y="40" width="40" height="5" rx="2.5" fill={`url(#g-${id})`} />
-        <circle cx="32" cy="32" r="4" fill="white" opacity="0.9" />
-      </svg>
-    )
-  }
-  if (rank.name === 'Diamante') {
-    return (
-      <svg width={size} height={size} viewBox="0 0 64 64" fill="none">
-        <defs>
-          <linearGradient id={`g-${id}`} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#b9f2ff" />
-            <stop offset="100%" stopColor="#0ea5e9" />
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="32" r="30" fill={`url(#g-${id})`} opacity="0.15" />
-        <circle cx="32" cy="32" r="30" fill="none" stroke={`url(#g-${id})`} strokeWidth="2.5" />
-        {/* Diamond gem */}
-        <path d="M32 14 L46 28 L32 50 L18 28 Z" fill={`url(#g-${id})`} opacity="0.9" />
-        <path d="M18 28 L32 14 L46 28 L32 32 Z" fill="white" opacity="0.35" />
-        <path d="M18 28 L32 32 L32 50 Z" fill="white" opacity="0.15" />
-      </svg>
-    )
-  }
-  if (rank.name === 'Platino') {
-    return (
-      <svg width={size} height={size} viewBox="0 0 64 64" fill="none">
-        <defs>
-          <linearGradient id={`g-${id}`} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#e0f0ff" />
-            <stop offset="100%" stopColor="#7ab8d4" />
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="32" r="30" fill={`url(#g-${id})`} opacity="0.15" />
-        <circle cx="32" cy="32" r="30" fill="none" stroke={`url(#g-${id})`} strokeWidth="2.5" />
-        <circle cx="32" cy="32" r="16" fill={`url(#g-${id})`} opacity="0.4" />
-        <circle cx="32" cy="32" r="16" fill="none" stroke={`url(#g-${id})`} strokeWidth="2" />
-        <path d="M32 20 L35 29 L44 29 L37 35 L40 44 L32 38 L24 44 L27 35 L20 29 L29 29 Z" fill={`url(#g-${id})`} />
-      </svg>
-    )
-  }
-  // Bronze, Silver, Gold — circular medal with star
-  const colors: Record<string, [string, string]> = {
-    'Bronce':  ['#cd7f32', '#8b4513'],
-    'Plata':   ['#e8e8e8', '#9e9e9e'],
-    'Oro':     ['#ffd700', '#ff8c00'],
-  }
-  const [c1, c2] = colors[rank.name] ?? ['#cd7f32', '#8b4513']
-  const points = rank.name === 'Oro' ? 5 : rank.name === 'Plata' ? 4 : 3
-  const starPath = buildStar(32, 32, 14, 7, points)
-  return (
-    <svg width={size} height={size} viewBox="0 0 64 64" fill="none">
-      <defs>
-        <linearGradient id={`g-${id}`} x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor={c1} />
-          <stop offset="100%" stopColor={c2} />
-        </linearGradient>
-      </defs>
-      <circle cx="32" cy="32" r="30" fill={`url(#g-${id})`} opacity="0.2" />
-      <circle cx="32" cy="32" r="30" fill="none" stroke={`url(#g-${id})`} strokeWidth="3" />
-      <circle cx="32" cy="32" r="22" fill={`url(#g-${id})`} opacity="0.3" />
-      <path d={starPath} fill={`url(#g-${id})`} />
-    </svg>
-  )
-}
-
-function buildStar(cx: number, cy: number, outerR: number, innerR: number, points: number): string {
-  const step = Math.PI / points
-  let d = ''
-  for (let i = 0; i < points * 2; i++) {
-    const r = i % 2 === 0 ? outerR : innerR
-    const angle = i * step - Math.PI / 2
-    const x = cx + Math.cos(angle) * r
-    const y = cy + Math.sin(angle) * r
-    d += (i === 0 ? 'M' : 'L') + `${x.toFixed(2)},${y.toFixed(2)}`
-  }
-  return d + 'Z'
-}
 
 // ── Main component ─────────────────────────────────────────────────────────────
 export default function MultiGame({ code }: Props) {
@@ -330,18 +233,9 @@ export default function MultiGame({ code }: Props) {
           </div>
 
           {/* Rank scale */}
-          <div className="glass rounded-xl p-3 mb-6">
-            <div className="text-[9px] font-mono text-white/25 tracking-widest uppercase mb-2.5">Escala de rangos</div>
-            <div className="flex justify-between">
-              {RANKS.map(r => (
-                <div key={r.name} className="flex flex-col items-center gap-1">
-                  <Medal rank={r} size={22} />
-                  <span className="text-[8px] font-mono" style={{ color: r.name === myRank.name ? r.color : 'rgba(255,255,255,0.2)' }}>
-                    {r.name}
-                  </span>
-                </div>
-              ))}
-            </div>
+          <div className="glass rounded-xl px-4 py-3 mb-6">
+            <div className="text-[9px] font-mono text-white/25 tracking-widest uppercase mb-3">Escala de rangos</div>
+            <RankScale currentScore={myPlayer.score} />
           </div>
 
           <div className="flex gap-2">

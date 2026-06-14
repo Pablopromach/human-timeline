@@ -10,12 +10,12 @@ import { getCategoryColor } from '@/lib/timelineUtils'
 import {
   getRandomTargetYear,
   scoreAnswer,
-  getScoreRating,
   TOTAL_ROUNDS,
   ScoreResult,
 } from '@/lib/game'
 import HumanTimelineIcon from '@/components/UI/HumanTimelineIcon'
 import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
+import { Medal, RankScale, getRank } from '@/components/UI/RankMedal'
 import { useTranslation } from '@/hooks/useLocale'
 import { Locale } from '@/lib/i18n'
 
@@ -31,17 +31,6 @@ interface RoundResult {
   result: ScoreResult
 }
 
-function getRatingTranslated(score: number, t: (k: string) => string) {
-  const r = getScoreRating(score)
-  const pct = (score / (TOTAL_ROUNDS * 10)) * 100
-  let labelKey = 'rating.review'
-  if (pct >= 90) labelKey = 'rating.master'
-  else if (pct >= 75) labelKey = 'rating.brilliant'
-  else if (pct >= 55) labelKey = 'rating.advanced'
-  else if (pct >= 35) labelKey = 'rating.curious'
-  else if (pct >= 15) labelKey = 'rating.traveler'
-  return { ...r, label: t(labelKey) }
-}
 
 function getRevealMessage(result: ScoreResult, t: (k: string, v?: Record<string, string | number>) => string): string {
   const n = result.distance
@@ -324,7 +313,7 @@ export default function RetoGame() {
 
   // ── FINISHED ──────────────────────────────────────────────────────────────
   if (phase === 'finished') {
-    const rating = getRatingTranslated(score, t)
+    const rank = getRank(score)
     return (
       <div className="min-h-[100dvh] flex flex-col" style={{ background: 'var(--void)' }}>
         <Header />
@@ -337,18 +326,18 @@ export default function RetoGame() {
           >
             <div className="text-center mb-6 sm:mb-8">
               <motion.div
-                initial={{ scale: 0, rotate: -30 }}
+                initial={{ scale: 0, rotate: -20 }}
                 animate={{ scale: 1, rotate: 0 }}
-                transition={{ delay: 0.2, type: 'spring', stiffness: 180, damping: 14 }}
-                className="text-6xl sm:text-7xl mb-3 sm:mb-4"
+                transition={{ delay: 0.15, type: 'spring', stiffness: 180, damping: 14 }}
+                className="flex justify-center mb-3 sm:mb-4"
               >
-                {rating.emoji}
+                <Medal rank={rank} size={80} />
               </motion.div>
               <h2
-                className="text-3xl sm:text-4xl md:text-5xl mb-2 sm:mb-3 tracking-tight"
-                style={{ fontFamily: 'var(--font-display)', color: rating.color, fontStyle: 'italic' }}
+                className="text-3xl sm:text-4xl md:text-5xl mb-2 sm:mb-3 tracking-tight font-semibold"
+                style={{ fontFamily: 'var(--font-display)', color: rank.color, fontStyle: 'italic' }}
               >
-                {rating.label}
+                {rank.name}
               </h2>
               <div className="text-6xl sm:text-7xl font-bold font-mono" style={{ color: 'rgba(255,255,255,0.92)' }}>
                 {score}
@@ -361,6 +350,12 @@ export default function RetoGame() {
                   ? `${t('game.modeClassic')} · ${history.length} ${t('game.rounds')}`
                   : `${t('game.modeInfinite')} · ${history.length} ${t('game.rounds')} · ${MAX_MISSES} ${t('game.misses')}`}
               </div>
+            </div>
+
+            {/* Rank scale */}
+            <div className="glass rounded-2xl px-4 py-3 mb-4 sm:mb-5">
+              <div className="text-[9px] font-mono text-white/25 tracking-widest uppercase mb-3">Escala de rangos</div>
+              <RankScale currentScore={score} />
             </div>
 
             <div className="glass rounded-2xl p-4 sm:p-5 mb-6">
