@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function CategoryFilter({ active, onChange, counts }: Props) {
-  const { t } = useTranslation()
+  const { t, fc } = useTranslation()
   const cats = Object.keys(counts).filter(c => counts[c] > 0)
   if (cats.length === 0) return null
 
@@ -39,7 +39,7 @@ export default function CategoryFilter({ active, onChange, counts }: Props) {
               border: isActive ? `1px solid ${color}44` : '1px solid transparent',
             }}
           >
-            {cat}
+            {fc(cat)}
             <span className="ml-1.5 opacity-60 font-mono">{counts[cat]}</span>
           </button>
         )
