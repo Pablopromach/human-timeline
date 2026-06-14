@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowLeft, ExternalLink, Clock, Globe, Tag } from 'lucide-react'
 import LanguageSwitcher from '@/components/UI/LanguageSwitcher'
-import FigureName, { FigureCategory } from '@/components/UI/FigureName'
+import FigureName, { FigureCategory, FigureDescription } from '@/components/UI/FigureName'
 import figuresData from '@/data/figures.json'
 import { HistoricalFigure } from '@/types'
 import { figureSlug, findFigureBySlug } from '@/lib/slug'
@@ -177,7 +177,7 @@ export default function PersonajePage({ params }: Params) {
             <h2 className="text-xs font-mono text-white/30 tracking-widest uppercase mb-3">
               Biografía
             </h2>
-            <p className="text-lg text-white/75 leading-relaxed">{figure.description}</p>
+            <p className="text-lg text-white/75 leading-relaxed"><FigureDescription figure={figure} /></p>
           </section>
 
           {/* Tags */}

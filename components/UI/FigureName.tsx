@@ -12,4 +12,9 @@ export function FigureCategory({ category }: { category: string }) {
   return <>{fc(category)}</>
 }
 
+export function FigureDescription({ figure }: { figure: HistoricalFigure }) {
+  const { locale } = useTranslation()
+  return <>{locale === 'es' && figure.descriptionEs ? figure.descriptionEs : figure.description}</>
+}
+
 export default FigureName

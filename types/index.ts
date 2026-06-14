@@ -7,6 +7,7 @@ export interface HistoricalFigure {
   country: string
   category: Category
   description: string
+  descriptionEs?: string
   wikipedia: string
   image?: string
   tags?: string[]

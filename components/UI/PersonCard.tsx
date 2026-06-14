@@ -6,6 +6,7 @@ import { HistoricalFigure } from '@/types'
 import { getCategoryColor } from '@/lib/timelineUtils'
 import { figureSlug } from '@/lib/slug'
 import { useTranslation } from '@/hooks/useLocale'
+import { FigureDescription } from '@/components/UI/FigureName'
 
 interface Props {
   figure: HistoricalFigure | null
@@ -94,7 +95,7 @@ export default function PersonCard({ figure, onClose, onAdd }: Props) {
 
             {/* Description */}
             <p className="text-xs text-white/50 leading-relaxed mb-4 line-clamp-3">
-              {figure.description}
+              <FigureDescription figure={figure} />
             </p>
 
             {/* Tags */}
