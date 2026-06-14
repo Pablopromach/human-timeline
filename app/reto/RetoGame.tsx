@@ -2,7 +2,7 @@
 import { useState, useCallback, useMemo, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowLeft, Search, Share2, RotateCcw, Infinity as InfinityIcon, ListChecks, Heart, Check, Link as LinkIcon, Dice5 } from 'lucide-react'
+import { ArrowLeft, Search, Share2, RotateCcw, Infinity as InfinityIcon, ListChecks, Heart, Check, Link as LinkIcon, Dice5, Swords } from 'lucide-react'
 import { HistoricalFigure } from '@/types'
 import figuresData from '@/data/figures.json'
 import { searchFigures } from '@/lib/searchEngine'
@@ -211,7 +211,7 @@ export default function RetoGame() {
               {t('game.subtitle')}
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 sm:mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6 sm:mb-8">
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -259,6 +259,30 @@ export default function RetoGame() {
                   {t('game.mode.infiniteBadge')} <Heart size={9} fill="currentColor" /> <Heart size={9} fill="currentColor" /> <Heart size={9} fill="currentColor" />
                 </div>
               </motion.button>
+
+              <motion.a
+                href="/reto/multi"
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                className="glass-2 rounded-2xl p-5 sm:p-6 text-left transition-all hover:border-white/20 block"
+                style={{ border: '1px solid rgba(255,255,255,0.1)' }}
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  <div
+                    className="w-9 h-9 rounded-xl flex items-center justify-center"
+                    style={{ background: 'linear-gradient(135deg, #10b981, #06b6d4)' }}
+                  >
+                    <Swords size={18} className="text-white" />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-semibold text-white/90">1 vs 1</h3>
+                </div>
+                <p className="text-xs sm:text-sm text-white/55 leading-snug mb-3">
+                  Enfrenta a un amigo. Mismo año, respuesta simultánea. Gana quien aguante más vidas.
+                </p>
+                <div className="text-[10px] font-mono text-emerald-400 tracking-wider">
+                  MODO MULTIJUGADOR →
+                </div>
+              </motion.a>
             </div>
 
             <div className="glass rounded-2xl p-4 sm:p-5 text-left">

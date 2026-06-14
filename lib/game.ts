@@ -18,7 +18,7 @@ function aliveCount(year: number): number {
   return count
 }
 
-const goodYearsCache: number[] = (() => {
+export const goodYears: number[] = (() => {
   const years: number[] = []
   for (let y = SAMPLE_FROM; y <= SAMPLE_TO; y += YEAR_STEP) {
     if (aliveCount(y) >= MIN_ALIVE) years.push(y)
@@ -33,8 +33,8 @@ const goodYearsCache: number[] = (() => {
 })()
 
 export function getRandomTargetYear(exclude: number[] = []): number {
-  const pool = goodYearsCache.filter(y => !exclude.some(e => Math.abs(e - y) < 30))
-  const arr = pool.length > 0 ? pool : goodYearsCache
+  const pool = goodYears.filter(y => !exclude.some(e => Math.abs(e - y) < 30))
+  const arr = pool.length > 0 ? pool : goodYears
   // Years >= 1950 are 5x less likely to appear (fewer notable figures)
   const weighted: number[] = []
   for (const y of arr) {
